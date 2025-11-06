@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Consigli di Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            color: #764ba2;
+            margin: 45px 0 25px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            font-size: 1.6em;
+            color: #667eea;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .principle-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .principle-box h3 {
+            margin-top: 0;
+            color: #764ba2;
+        }
+        
+        .example-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box {
+            background: #ffe5e5;
+            border: 2px solid #ff4444;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .warning-box h3 {
+            color: #cc0000;
+            margin-top: 0;
+        }
+        
+        .tip-box {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        blockquote {
+            background: #f8f9fa;
+            border-left: 5px solid #764ba2;
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Consigli di Design e Customizzazione</div>
+        </header>
+
+        <blockquote>
+            "Anamnesia è stato progettato per essere flessibile. Queste note ti aiuteranno a capire 
+            le scelte di design dietro il gioco e come modificarlo per adattarlo al tuo gruppo senza 
+            rompere le meccaniche fondamentali."
+        </blockquote>
+
+        <h2>Filosofia di Design</h2>
+
+        <h3>I Tre Pilastri</h3>
+
+        <div class="principle-box">
+            <h3>1. La Verità È Emergente</h3>
+            <p>
+                Anamnesia non ha una "verità prestabilita" fino a quando i giocatori non la costruiscono 
+                attraverso l'interpretazione dei frammenti. Anche se il Master ha un'idea della verità 
+                nascosta, questa deve rimanere flessibile abbastanza da adattarsi alle interpretazioni 
+                creative dei giocatori.
+            </p>
+            <p style="margin-top: 15px;"><strong>Implicazione:</strong></p>
+            <ul>
+                <li>Il Master non deve mai dire "No, non è così". Piuttosto: "Interessante. Come lo 
+                spieghi rispetto a questo altro frammento?"</li>
+                <li>Se un'interpretazione inaspettata è più interessante della "verità" originale, 
+                abbracciala.</li>
+                <li>La coerenza emotiva è più importante della coerenza fattuale.</li>
+            </ul>
+        </div>
+
+        <div class="principle-box">
+            <h3>2. Il Costo del Ricordare</h3>
+            <p>
+                Lo Stress non è solo un indicatore meccanico: rappresenta il peso psicologico di confrontare 
+                la verità. Più i personaggi ricordano, più soffrono. Questo crea una tensione naturale tra 
+                il desiderio di sapere e la paura di scoprire.
+            </p>
+            <p style="margin-top: 15px;"><strong>Implicazione:</strong></p>
+            <ul>
+                <li>Lo Stress deve sempre avere peso narrativo. Non è solo "-1d6", è "le tue mani tremano", 
+                "fai fatica a respirare".</li>
+                <li>Il Breakdown non è un fallimento del giocatore ma un momento drammatico potente.</li>
+                <li>A volte dimenticare è la scelta più umana.</li>
+            </ul>
+        </div>
+
+        <div class="principle-box">
+            <h3>3. Sicurezza Prima di Tutto</h3>
+            <p>
+                Gli strumenti di sicurezza non sono "extra" ma parte integrante del sistema. Un gioco che 
+                esplora trauma psicologico senza strumenti di sicurezza non è coraggioso, è irresponsabile.
+            </p>
+            <p style="margin-top: 15px;"><strong>Implicazione:</strong></p>
+            <ul>
+                <li>La Sessione Zero non è negoziabile. Mai.</li>
+                <li>Se qualcuno usa la X-Card, non stai "perdendo" parte della storia. Stai guadagnando 
+                la fiducia del gruppo.</li>
+                <li>È meglio un gioco meno intenso ma sicuro che un'esperienza traumatizzante.</li>
+            </ul>
+        </div>
+
+        <h2>Decisioni di Design Spiegate</h2>
+
+        <h3>Perché Pool Decrescente?</h3>
+
+        <p>
+            Il Pool di dadi che diminuisce con lo Stress crea una spirale discendente meccanica che rispecchia 
+            la spirale psicologica dei personaggi. Man mano che scoprono più verità, hanno meno risorse per 
+            affrontarle.
+        </p>
+
+        <div class="tip-box">
+            <p><strong>💡 Se vuoi modificare questo aspetto:</strong></p>
+            <p>
+                Puoi usare un Pool fisso (sempre 6d6) ma aumentare la difficoltà richiesta: a Stress 0-2 
+                servono 2 successi, a Stress 3-4 servono 3 successi, a Stress 5-6 servono 4 successi. 
+                Questo mantiene la pressione crescente senza ridurre i dadi.
+            </p>
+        </div>
+
+        <h3>Perché Non C'è Esperienza o Progressione?</h3>
+
+        <p>
+            Anamnesia è progettato per storie one-shot o brevi campagne (3-5 sessioni max). I personaggi 
+            non "migliorano" meccanicamente perché non è una storia di crescita ma di scoperta. La loro 
+            evoluzione è emotiva, non numerica.
+        </p>
+
+        <div class="tip-box">
+            <p><strong>💡 Per campagne più lunghe:</strong></p>
+            <p>
+                Dopo ogni sessione, permetti ai giocatori di sostituire uno degli Approcci con uno nuovo, 
+                rappresentando come il trauma li ha cambiati. Oppure introduce <strong>Echi Permanenti</strong> 
+                che danno piccoli bonus narrativi in situazioni specifiche.
+            </p>
+        </div>
+
+        <h3>Perché Successo su 4-5-6?</h3>
+
+        <p>
+            Una probabilità del 50% per successo rende i tiri significativi senza essere punitivi. Con pool 
+            di 3-6 dadi, i giocatori ottengono mediamente 1-3 successi, che copre bene la scala dei risultati.
+        </p>
+
+        <div class="tip-box">
+            <p><strong>💡 Per un gioco più facile:</strong></p>
+            <p>
+                Successo su 3-4-5-6 (66% di probabilità). Per un gioco più difficile: successo solo su 5-6 
+                (33% di probabilità). Attenzione però: cambiare questo può alterare drasticamente l'equilibrio.
+            </p>
+        </div>
+
+        <h2>Customizzare Anamnesia</h2>
+
+        <h3>Creare Nuovi Archetipi</h3>
+
+        <p>Un archetipo efficace deve avere:</p>
+
+        <ol>
+            <li><strong>Una Domanda Guida</strong> - La tensione emotiva centrale</li>
+            <li><strong>Un Ruolo nel Trauma</strong> - Come sono connessi all'evento</li>
+            <li><strong>Tre Approcci Consigliati</strong> - Che riflettono il loro modo di processare il trauma</li>
+        </ol>
+
+        <div class="example-box">
+            <div class="example-title">Esempio: L'Accusatore (Archetipo Nuovo)</div>
+            <p><strong>Domanda Guida:</strong> "Chi deve pagare per questo?"</p>
+            <p><strong>Ruolo:</strong> Chi cerca un colpevole, forse per evitare di guardarsi allo specchio.</p>
+            <p><strong>Approcci:</strong> Analitico +2, Impulsivo +1, Protettivo 0</p>
+        </div>
+
+        <h3>Creare Nuovi Scenari</h3>
+
+        <p>Un buon scenario per Anamnesia necessita di:</p>
+
+        <div class="principle-box">
+            <h3>Elemento 1: Un Trauma Chiaro</h3>
+            <p>
+                Cosa è accaduto? Deve essere qualcosa che i personaggi vorrebbe dimenticare. Non 
+                necessariamente malvagio, ma sicuramente doloroso.
+            </p>
+            <p><strong>Buoni traumi:</strong> Scelte impossibili, colpe condivise, segreti devastanti</p>
+            <p><strong>Traumi da evitare:</strong> Eventi casuali senza responsabilità personale, 
+            "cattivi" esterni ovvi</p>
+        </div>
+
+        <div class="principle-box">
+            <h3>Elemento 2: Ambiguità Morale</h3>
+            <p>
+                Nessuno dovrebbe essere semplicemente "il cattivo". Tutti hanno fatto scelte comprensibili 
+                nel contesto, anche se le conseguenze sono state terribili.
+            </p>
+            <p><strong>Domanda chiave:</strong> "Io avrei fatto diversamente in quella situazione?"</p>
+        </div>
+
+        <div class="principle-box">
+            <h3>Elemento 3: Conseguenze Presenti</h3>
+            <p>
+                Il trauma non è solo passato: ha ripercussioni attive. Qualcuno sta cercando la verità? 
+                Prove stanno emergendo? Il tempo sta per scadere?
+            </p>
+            <p><strong>Questo crea urgenza narrativa</strong> e impedisce ai personaggi di nascondersi 
+            nell'amnesia.</p>
+        </div>
+
+        <h3>Template per Creare Frammenti</h3>
+
+        <p>I frammenti efficaci seguono queste linee guida:</p>
+
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+            <tr style="background: #667eea; color: white;">
+                <th style="border: 1px solid #ddd; padding: 12px;">Fase</th>
+                <th style="border: 1px solid #ddd; padding: 12px;">Caratteristiche</th>
+                <th style="border: 1px solid #ddd; padding: 12px;">Esempio</th>
+            </tr>
+            <tr style="background: #f8f9fa;">
+                <td style="border: 1px solid #ddd; padding: 12px;"><strong>Nebbia</strong></td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Sensoriale, vago, senza soggetto chiaro</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">"Odore di benzina e pioggia"</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;"><strong>Connessioni</strong></td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Concreto ma interpretabile</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">"Una figura che corre nella nebbia"</td>
+            </tr>
+            <tr style="background: #f8f9fa;">
+                <td style="border: 1px solid #ddd; padding: 12px;"><strong>Rivelazioni</strong></td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Diretto, doloroso, accusatorio</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">"Tu sapevi e non hai detto nulla"</td>
+            </tr>
+        </table>
+
+        <div class="warning-box">
+            <h3>❌ Errori Comuni nei Frammenti</h3>
+            <ul>
+                <li><strong>Troppo specifici nelle fasi precoci</strong> - "Vedi Marco investire Emma" 
+                nella fase Nebbia è troppo diretto</li>
+                <li><strong>Troppo vaghi nelle Rivelazioni</strong> - "Qualcosa di brutto è successo" 
+                nella fase finale non risolve nulla</li>
+                <li><strong>Senza gancio emotivo</strong> - "C'è una sedia" non evoca nessuna reazione</li>
+                <li><strong>Linearmente ovvi</strong> - Se ogni frammento punta alla stessa conclusione 
+                senza ambiguità, perdi la tensione</li>
+            </ul>
+        </div>
+
+        <h2>Bilanciamento e Pacing</h2>
+
+        <h3>Gestire lo Stress del Gruppo</h3>
+
+        <div class="tip-box">
+            <p><strong>Regola del Pollice:</strong></p>
+            <ul>
+                <li>Se TUTTI i giocatori sono sotto Stress 3 a metà gioco → Aumenta la pressione</li>
+                <li>Se METÀ dei giocatori sono sopra Stress 4 a metà gioco → Rallenta, offri momenti di respiro</li>
+                <li>Se QUALCUNO è a Stress 6 prima dell'ultimo ciclo → Permetti recupero o anticipa il finale</li>
+            </ul>
+        </div>
+
+        <h3>Ritmo dei Cicli</h3>
+
+        <p>Un buon ritmo alterna tensione e rilascio:</p>
+
+        <ul>
+            <li><strong>Cicli 1-2 (Nebbia):</strong> Lenti, esplorativi, costruzione atmosfera</li>
+            <li><strong>Cicli 3-4 (Connessioni):</strong> Ritmo crescente, prime tensioni tra PG</li>
+            <li><strong>Cicli 5-6 (Rivelazioni):</strong> Veloci, intensi, catartici</li>
+        </ul>
+
+        <div class="example-box">
+            <div class="example-title">Se il Gioco Ristagna</div>
+            <p><strong>Problema:</strong> I giocatori girano in tondo, nessuno prende decisioni</p>
+            <p><strong>Soluzione:</strong></p>
+            <ul>
+                <li>Introduci una complicazione esterna (qualcuno arriva, tempo che scade)</li>
+                <li>Usa un Frammento di Rivelazione in anticipo</li>
+                <li>Fai una domanda diretta: "Chi di voi sta nascondendo qualcosa?"</li>
+            </ul>
+        </div>
+
+        <h2>Hack e Varianti</h2>
+
+        <h3>Modalità Senza Master</h3>
+
+        <p>
+            Anamnesia può essere giocato senza Master usando queste modifiche:
+        </p>
+
+        <ol>
+            <li>Ogni giocatore scrive in segreto la propria versione della "verità" prima del gioco</li>
+            <li>I frammenti vengono pescati da un mazzo condiviso</li>
+            <li>Quando c'è disaccordo su un'interpretazione, si tira: chi ha più successi stabilisce 
+            la versione "canonica" per ora</li>
+            <li>Le complicazioni vengono generate dalla tabella con un tiro casuale</li>
+        </ol>
+
+        <h3>Modalità Campagna</h3>
+
+        <p>
+            Per giocare Anamnesia come campagna di 4-6 sessioni:
+        </p>
+
+        <ul>
+            <li>Ogni sessione è un nuovo trauma collegato, formando una catena</li>
+            <li>I personaggi mantengono Stress e Echi tra le sessioni (ma riducono di 2 Stress tra una e l'altra)</li>
+            <li>Ogni nuova sessione introduce un nuovo archetipo o modifica uno esistente in base a come 
+            sono cambiati</li>
+            <li>Il finale della campagna rivela come tutti i traumi erano interconnessi</li>
+        </ul>
+
+        <h3>Modalità Thriller Leggero</h3>
+
+        <p>
+            Per gruppi che vogliono un'esperienza meno intensa:
+        </p>
+
+        <ul>
+            <li>Stress massimo è 8 invece di 6 (più spazio di manovra)</li>
+            <li>Recupero automatico di 1 Stress alla fine di ogni Ciclo</li>
+            <li>I Breakdown sono temporanei e reversibili facilmente</li>
+            <li>Focus su misteri da risolvere piuttosto che colpe da affrontare</li>
+        </ul>
+
+        <h2>Playtesting e Feedback</h2>
+
+        <div class="principle-box">
+            <h3>Cosa Osservare Durante il Playtesting</h3>
+            <ul>
+                <li><strong>Engagement Emotivo:</strong> I giocatori sono coinvolti o distaccati?</li>
+                <li><strong>Pool Management:</strong> I giocatori finiscono i dadi troppo presto o troppo tardi?</li>
+                <li><strong>Pacing:</strong> Ci sono momenti morti o fretta eccessiva?</li>
+                <li><strong>Sicurezza:</strong> Qualcuno si è sentito a disagio? Gli strumenti sono stati usati?</li>
+                <li><strong>Risoluzione:</strong> Il finale è stato soddisfacente emotivamente?</li>
+            </ul>
+        </div>
+
+        <h3>Domande Post-Partita</h3>
+
+        <p>Dopo il debrief, se vuoi feedback sul design, chiedi:</p>
+
+        <ol>
+            <li>"Le meccaniche hanno aiutato o ostacolato la narrazione?"</li>
+            <li>"C'è stato un momento in cui ti sei sentito bloccato dalle regole?"</li>
+            <li>"Lo Stress ha avuto peso narrativo o era solo matematica?"</li>
+            <li>"Cosa cambieresti se dovessimo rigiocare?"</li>
+            <li>"Ti sei sentito al sicuro durante tutto il gioco?"</li>
+        </ol>
+
+        <h2>Conclusione</h2>
+
+        <blockquote>
+            "Anamnesia è un gioco su cosa significa ricordare quando ricordare fa male. Non c'è un modo 
+            'giusto' di giocarlo. C'è solo il modo che funziona per il tuo tavolo, nel rispetto di tutti.<br><br>
+            
+            Se modifichi qualcosa, fallo per servire la storia e proteggere i giocatori. Tutto il resto 
+            è secondario.<br><br>
+            
+            Grazie per aver giocato ad Anamnesia. Spero che le storie che creerete siano significative, 
+            dolorose, catartiche e, soprattutto, sicure."
+        </blockquote>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #667eea;">
+            <p><strong>ANAMNESIA</strong> Consigli di Design v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                "La memoria è un bugiardo. Ma le storie che raccontiamo possono essere vere."
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

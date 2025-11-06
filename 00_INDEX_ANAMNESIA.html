@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Indice Progetto GDR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .meta-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .meta-label {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .meta-value {
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+        
+        h2 {
+            color: #764ba2;
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            padding-left: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+        
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .file-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .file-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .file-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        .file-description {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .file-meta {
+            font-size: 0.85em;
+            color: #888;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .intro-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #764ba2;
+        }
+        
+        .intro-section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .download-note {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Un gioco di ruolo di horror psicologico</div>
+            <p style="font-style: italic; color: #666; margin-top: 15px;">
+                "La memoria è un bugiardo. Cosa resta quando anche le bugie svaniscono?"
+            </p>
+        </header>
+
+        <div class="meta-info">
+            <div class="meta-item">
+                <div class="meta-label">Versione</div>
+                <div class="meta-value">1.0</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Data</div>
+                <div class="meta-value">Ottobre 2025</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Giocatori</div>
+                <div class="meta-value">2-4 + Master</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Durata</div>
+                <div class="meta-value">90-150 min</div>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h3>📖 Benvenuto nel Progetto Anamnesia</h3>
+            <p>
+                <strong>Anamnesia</strong> è un gioco di ruolo narrativo che esplora i temi della memoria frammentata, 
+                del trauma condiviso e della ricerca della verità in un contesto di horror psicologico.
+            </p>
+            <p>
+                I personaggi hanno dimenticato un evento traumatico del loro passato. Attraverso frammenti di memoria 
+                che riemergono gradualmente, dovranno ricostruire cosa è accaduto, sapendo che la verità potrebbe 
+                essere più terribile del vuoto che ha lasciato.
+            </p>
+            <p>
+                Questa raccolta contiene tutti i materiali necessari per giocare, dalla versione completa a quella 
+                rapida, fino alle espansioni e agli strumenti di gioco.
+            </p>
+        </div>
+
+        <div class="download-note">
+            <strong>💾 Come utilizzare questi file:</strong> Ogni file HTML può essere scaricato e aperto con qualsiasi 
+            browser web. Sono ottimizzati per la stampa e la lettura digitale. Consigliamo di iniziare con il Quickstart 
+            per le prime partite.
+        </div>
+
+        <h2>📚 Materiali Core</h2>
+        
+        <div class="file-grid">
+            <div class="file-card">
+                <span class="icon">📖</span>
+                <div class="file-title">01. Manuale Completo</div>
+                <div class="file-description">
+                    Il manuale definitivo di Anamnesia con tutte le regole, gli archetipi, le meccaniche 
+                    di Stress ed Echi Emotivi, scenari di esempio e una guida completa per il Master.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 01_MANUALE_COMPLETO.html<br>
+                    <strong>Pagine:</strong> ~60-70<br>
+                    <strong>Uso:</strong> Riferimento completo
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">⚡</span>
+                <div class="file-title">02. Quickstart</div>
+                <div class="file-description">
+                    Versione rapida e semplificata per iniziare a giocare in 5 minuti. Include regole 
+                    essenziali, setup immediato e uno scenario introduttivo pronto all'uso.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 02_QUICKSTART.html<br>
+                    <strong>Pagine:</strong> ~12-15<br>
+                    <strong>Uso:</strong> Prime partite e demo
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">🌀</span>
+                <div class="file-title">03. Espansione: Echi dall'Abisso</div>
+                <div class="file-description">
+                    Contenuti aggiuntivi con elementi soprannaturali e lovecraftiani. Nuovi archetipi, 
+                    meccaniche del Velo della Realtà e scenari cosmici.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 03_ESPANSIONE_ECHI_ABISSO.html<br>
+                    <strong>Pagine:</strong> ~25-30<br>
+                    <strong>Uso:</strong> Campagne avanzate
+                </div>
+            </div>
+        </div>
+
+        <h2>🎭 Materiali di Gioco</h2>
+        
+        <div class="file-grid">
+            <div class="file-card">
+                <span class="icon">👤</span>
+                <div class="file-title">04. Schede Personaggio</div>
+                <div class="file-description">
+                    Schede complete per tutti gli archetipi base e dell'espansione, pronte da stampare 
+                    e compilare. Include tracciati per Stress, Echi e Frammenti.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 04_SCHEDE_PERSONAGGIO.html<br>
+                    <strong>Formato:</strong> A4 stampabile
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">🎴</span>
+                <div class="file-title">05. Carte Frammento</div>
+                <div class="file-description">
+                    60 carte Frammento suddivise per tipo (Nebbia, Connessioni, Rivelazioni). 
+                    Stampabili fronte-retro su cartoncino.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 05_CARTE_FRAMMENTO.html<br>
+                    <strong>Quantità:</strong> 60 carte
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">🎯</span>
+                <div class="file-title">06. Scheda del Master</div>
+                <div class="file-description">
+                    Strumenti per il Master: tracciamento dei cicli, tabelle di riferimento rapido, 
+                    generatore di complicazioni e mappa emotiva.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 06_SCHEDA_MASTER.html<br>
+                    <strong>Formato:</strong> A4 stampabile
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">📋</span>
+                <div class="file-title">07. Scenari Pronti</div>
+                <div class="file-description">
+                    Tre scenari completi pronti all'uso: "L'Incidente", "Il Tradimento" e "L'Esperimento". 
+                    Include PNG, location e timeline degli eventi.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 07_SCENARI_PRONTI.html<br>
+                    <strong>Scenari:</strong> 3 completi
+                </div>
+            </div>
+        </div>
+
+        <h2>🛠️ Strumenti Aggiuntivi</h2>
+        
+        <div class="file-grid">
+            <div class="file-card">
+                <span class="icon">🔍</span>
+                <div class="file-title">08. Guida alla Sessione Zero</div>
+                <div class="file-description">
+                    Checklist dettagliata per la Sessione Zero, strumenti di sicurezza (X-Card, Lines & Veils), 
+                    calibrazione dei toni e questionario pre-partita.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 08_GUIDA_SESSIONE_ZERO.html<br>
+                    <strong>Durata:</strong> 30-45 min
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">📊</span>
+                <div class="file-title">09. Tabelle di Riferimento</div>
+                <div class="file-description">
+                    Tutte le tabelle del gioco in un unico documento: modificatori, conseguenze, 
+                    esempi di frammenti e generatori casuali.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 09_TABELLE_RIFERIMENTO.html<br>
+                    <strong>Uso:</strong> Quick reference
+                </div>
+            </div>
+
+            <div class="file-card">
+                <span class="icon">💡</span>
+                <div class="file-title">10. Consigli di Design</div>
+                <div class="file-description">
+                    Note del designer su meccaniche, bilanciamento, playtesting e come customizzare 
+                    Anamnesia per il tuo gruppo.
+                </div>
+                <div class="file-meta">
+                    <strong>File:</strong> 10_CONSIGLI_DESIGN.html<br>
+                    <strong>Per:</strong> Master e designer
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Avvertenze Importanti</h3>
+            <p>
+                <strong>Anamnesia tratta temi delicati</strong> che possono risultare emotivamente intensi:
+            </p>
+            <ul>
+                <li>Trauma psicologico e disturbi mentali</li>
+                <li>Morte, violenza e colpa</li>
+                <li>Amnesia dissociativa e crisi d'identità</li>
+                <li>Situazioni di pericolo e vulnerabilità</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                <strong>È fondamentale</strong> utilizzare gli strumenti di sicurezza forniti, condurre 
+                una Sessione Zero adeguata e rispettare sempre i limiti dei giocatori. In caso di dubbio, 
+                fermarsi e discutere apertamente.
+            </p>
+        </div>
+
+        <h2>🚀 Da Dove Iniziare</h2>
+        
+        <div class="intro-section">
+            <h3>Per chi non ha mai giocato a GDR narrativi:</h3>
+            <ol style="margin-left: 20px;">
+                <li>Leggi il <strong>Quickstart (02)</strong> - 15 minuti</li>
+                <li>Consulta la <strong>Guida alla Sessione Zero (08)</strong> - 30 minuti</li>
+                <li>Stampa le <strong>Schede Personaggio (04)</strong></li>
+                <li>Gioca il primo scenario dal <strong>Quickstart</strong></li>
+                <li>Se il gioco piace, passa al <strong>Manuale Completo (01)</strong></li>
+            </ol>
+
+            <h3 style="margin-top: 25px;">Per Master esperti:</h3>
+            <ol style="margin-left: 20px;">
+                <li>Sfoglia il <strong>Manuale Completo (01)</strong> per comprendere le meccaniche</li>
+                <li>Scegli uno <strong>Scenario Pronto (07)</strong> o creane uno personalizzato</li>
+                <li>Stampa tutti i materiali necessari (schede, carte, riferimenti)</li>
+                <li>Organizza la Sessione Zero con gli strumenti forniti</li>
+                <li>Esplora l'<strong>Espansione (03)</strong> per varianti avanzate</li>
+            </ol>
+        </div>
+
+        <h2>📞 Supporto e Community</h2>
+        
+        <p style="margin: 20px 0;">
+            Per domande, feedback o per condividere le tue esperienze di gioco:
+        </p>
+        <ul style="margin-left: 30px;">
+            <li><strong>Email:</strong> [Inserisci la tua email]</li>
+            <li><strong>Social:</strong> [Inserisci i tuoi social]</li>
+            <li><strong>Forum:</strong> [Inserisci eventuale forum/Discord]</li>
+        </ul>
+
+        <footer>
+            <p><strong>ANAMNESIA</strong> © 2025 - Tutti i diritti riservati</p>
+            <p style="margin-top: 10px;">
+                Progetto di gioco di ruolo narrativo • Versione 1.0<br>
+                Creato con passione per esplorare la fragilità della memoria
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

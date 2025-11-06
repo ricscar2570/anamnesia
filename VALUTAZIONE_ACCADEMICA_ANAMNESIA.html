@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Valutazione Accademica Completa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 20px;
+            margin: -60px -60px 50px -60px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            font-style: italic;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+        
+        .meta-info {
+            font-size: 1em;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #764ba2;
+            margin: 60px 0 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            page-break-before: always;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin: 40px 0 20px 0;
+        }
+        
+        h4 {
+            font-size: 1.3em;
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+        
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .executive-summary {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            font-size: 1.1em;
+        }
+        
+        .executive-summary h3 {
+            margin-top: 0;
+            color: #764ba2;
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        .rating-badge {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .analysis-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .strength-box {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .weakness-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .critical-box {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .star-rating {
+            color: #ffc107;
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        tr:hover {
+            background: #e7f3ff;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 40px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        blockquote {
+            background: #667eea10;
+            border-left: 5px solid #764ba2;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .comparison-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-card h4 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .score-bar {
+            background: #e0e0e0;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .score-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.5s ease;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            color: #764ba2;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+        }
+        
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.05em;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+            color: #764ba2;
+        }
+        
+        .recommendation-box {
+            background: linear-gradient(135deg, #e7f3ff 0%, #d4edda 100%);
+            border: 3px solid #28a745;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .recommendation-box h3 {
+            color: #28a745;
+            margin-top: 0;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #764ba2;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #ffc107 0%, #ffc107 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 80%;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 3px solid #667eea;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            h2 {
+                page-break-before: always;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2em;
+                letter-spacing: 5px;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Valutazione Accademica Completa</div>
+            <div class="meta-info">
+                Analisi secondo i Principi di Game Design per GdR<br>
+                Framework: Caillois, Nguyen, Edwards (GNS), Costikyan
+            </div>
+        </header>
+
+        <!-- EXECUTIVE SUMMARY -->
+        <div class="executive-summary">
+            <h3>📊 Executive Summary</h3>
+            <p>
+                <strong>Anamnesia</strong> dimostra <span class="highlight">eccellenza nel design narrativo contemporaneo</span> 
+                con una comprensione sofisticata della ludonarrativa emergente. È un progetto maturo che risolve elegantemente 
+                problemi complessi di agency, sicurezza e struttura narrativa.
+            </p>
+            <p style="margin-top: 20px;">
+                Presenta alcune aree di miglioramento nell'onboarding e bilanciamento numerico, ma il nucleo è 
+                <strong>eccezionalmente solido</strong>.
+            </p>
+            <div style="text-align: center; margin-top: 30px;">
+                <div class="rating-badge">Valutazione Complessiva: 8.9/10</div>
+            </div>
+        </div>
+
+        <!-- INDICE -->
+        <div class="toc">
+            <h3>📑 Indice dei Contenuti</h3>
+            <ul>
+                <li><a href="#fondamenta">1. Analisi Fondamentale (Modulo 1)</a></li>
+                <li><a href="#gns">2. Analisi GNS (Modulo 3)</a></li>
+                <li><a href="#risoluzione">3. Sistema di Risoluzione</a></li>
+                <li><a href="#integrazione">4. Integrazione Meccaniche-Tema</a></li>
+                <li><a href="#onboarding">5. Onboarding e Accessibilità</a></li>
+                <li><a href="#bilanciamento">6. Bilanciamento e Economia</a></li>
+                <li><a href="#sicurezza">7. Sicurezza e Etica del Design</a></li>
+                <li><a href="#presentazione">8. Presentazione e Produzione</a></li>
+                <li><a href="#innovazione">9. Innovazione e Contributo al Medium</a></li>
+                <li><a href="#adattabilita">10. Adattabilità e Longevità</a></li>
+                <li><a href="#criticita">11. Criticità e Aree di Miglioramento</a></li>
+                <li><a href="#valutazione-finale">12. Valutazione Finale per Aree</a></li>
+                <li><a href="#raccomandazioni">13. Raccomandazioni Prioritarie</a></li>
+                <li><a href="#confronto">14. Confronto con Altri Tuoi Progetti</a></li>
+                <li><a href="#mercato">15. Posizionamento di Mercato</a></li>
+                <li><a href="#conclusioni">16. Conclusioni</a></li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 1 -->
+        <h2 id="fondamenta">1. Analisi Fondamentale (Modulo 1)</h2>
+
+        <h3>1.1 Pulsioni Ludiche (Caillois)</h3>
+
+        <div class="analysis-box">
+            <h4>Mimicry (Simulazione)</h4>
+            <div class="star-rating">⭐⭐⭐⭐⭐ MOLTO ALTA</div>
+            <ul>
+                <li>Focus totale sull'interpretazione psicologica profonda</li>
+                <li>I personaggi non sono avatar meccanici ma lenti emotive</li>
+                <li>Archetipi definiti da tensioni interne, non statistiche</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Paidia (Spontaneità)</h4>
+            <div class="star-rating">⭐⭐⭐⭐⭐ MOLTO ALTA</div>
+            <ul>
+                <li>La verità emerge dal gioco, non è prestabilita</li>
+                <li>Interpretazione libera dei frammenti</li>
+                <li>Sistema aperto che abbraccia l'improvvisazione</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Agon (Competizione)</h4>
+            <div class="star-rating">⭐ ASSENTE</div>
+            <ul>
+                <li>Zero competizione tra giocatori</li>
+                <li>Collaborativo per natura</li>
+                <li>Questo è coerente con il design</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Alea (Casualità)</h4>
+            <div class="star-rating">⭐⭐⭐ MEDIA</div>
+            <ul>
+                <li>Pool di d6 con probabilità chiare</li>
+                <li>Casualità al servizio della narrazione, non fine a sé stessa</li>
+            </ul>
+        </div>
+
+        <div class="strength-box">
+            <h4>✅ Posizionamento Paidia/Ludus: 60% Paidia / 40% Ludus</h4>
+            <p>
+                Struttura definita (Cicli, Fasi, Pool) ma con enorme spazio per emergenza narrativa. 
+                <strong>Eccellente bilanciamento</strong> per un gioco narrativo.
+            </p>
+        </div>
+
+        <h3>1.2 Agency e Identità (Nguyen)</h3>
+
+        <div class="strength-box">
+            <h4>⭐ PUNTO DI FORZA ECCEZIONALE</h4>
+            <p>
+                Il gioco è letteralmente <strong>"arte dell'agency" incarnata</strong>. Ogni archetipo offre:
+            </p>
+            
+            <h4 style="margin-top: 20px;">Schemi Decisionali Distintivi:</h4>
+            <ul>
+                <li>Il <strong>Sopravvissuto</strong> pensa in termini di colpa e sopravvivenza</li>
+                <li>Il <strong>Testimone</strong> in termini di verità nascosta</li>
+                <li>Il <strong>Catalizzatore</strong> in termini di responsabilità per azioni passate</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Vincoli Agenziali Significativi:</h4>
+            <ul>
+                <li>Lo Stress riduce meccanicamente le opzioni</li>
+                <li>Gli Echi Emotivi cambiano permanentemente le modalità di interazione</li>
+                <li>Il Breakdown rappresenta perdita totale di agency</li>
+            </ul>
+            
+            <h4 style="margin-top: 20px;">Crescita di Agency:</h4>
+            <p>
+                Non progressione di potere ma <strong>trasformazione psicologica</strong>. I personaggi non 
+                diventano "più forti" ma "diversi". Questo è <span class="highlight">design maturo</span>.
+            </p>
+        </div>
+
+        <h3>1.3 Sistema di Regole Costitutive</h3>
+
+        <table>
+            <tr>
+                <th>Aspetto</th>
+                <th>Valutazione</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td><strong>Chiarezza Formula Core</strong></td>
+                <td>9/10</td>
+                <td>Formula cristallina: (Pool - Stress + Approccio)d6</td>
+            </tr>
+            <tr>
+                <td><strong>Scala Risultati</strong></td>
+                <td>10/10</td>
+                <td>Intuitiva e narrativamente significativa</td>
+            </tr>
+            <tr>
+                <td><strong>Esempi Pratici</strong></td>
+                <td>7/10</td>
+                <td>Presenti ma insufficienti per complessità narrativa</td>
+            </tr>
+            <tr>
+                <td><strong>Regole Implicite</strong></td>
+                <td>9/10</td>
+                <td>Contratto sociale molto chiaro (Sessione Zero obbligatoria)</td>
+            </tr>
+        </table>
+
+        <div class="weakness-box">
+            <h4>⚠️ Area di Miglioramento</h4>
+            <p>
+                <strong>"Quando tirare"</strong> è implicito ma mai esplicitato chiaramente. Serve una sezione 
+                dedicata con esempi concreti tipo:
+            </p>
+            <ul>
+                <li>✅ "Quando Tirare: Cerchi di ricordare dettaglio cruciale, interpreti frammento ambiguo..."</li>
+                <li>❌ "Quando NON Tirare: Descrivi emozioni, fai domande ad altri PG..."</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 2 -->
+        <h2 id="gns">2. Analisi GNS (Modulo 3)</h2>
+
+        <div class="analysis-box">
+            <h3>Priorità di Design</h3>
+            
+            <h4>Narrativist (Narrativo): 75%</h4>
+            <div class="score-bar">
+                <div class="score-fill" style="width: 75%;">75%</div>
+            </div>
+            <ul>
+                <li>Tutto serve la storia emotiva</li>
+                <li>Frammenti ambigui generano dilemmi morali</li>
+                <li>Non c'è "vittoria", solo risoluzione narrativa</li>
+                <li>Meccaniche progettate per creare "scelte impossibili"</li>
+            </ul>
+
+            <h4 style="margin-top: 25px;">Simulationist (Simulativo): 15%</h4>
+            <div class="score-bar">
+                <div class="score-fill" style="width: 15%;">15%</div>
+            </div>
+            <ul>
+                <li>Stress simula genuinamente il trauma psicologico</li>
+                <li>Pool decrescente rispecchia deterioramento mentale</li>
+                <li>Ma simulazione è al servizio della narrativa</li>
+            </ul>
+
+            <h4 style="margin-top: 25px;">Gamist (Ludico): 10%</h4>
+            <div class="score-bar">
+                <div class="score-fill" style="width: 10%;">10%</div>
+            </div>
+            <ul>
+                <li>Gestione del Pool ha elementi tattici</li>
+                <li>Ma ottimizzazione è secondaria rispetto all'emozione</li>
+                <li>Non c'è progressione o "build optimization"</li>
+            </ul>
+        </div>
+
+        <div class="strength-box">
+            <h4>✅ Identità GNS Perfettamente Coerente</h4>
+            <p>
+                Anamnesia sa cosa vuole essere e non cerca di compiacere tutti. Questo è 
+                <span class="highlight">design maturo</span>.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Confronto con Rinascimento Oscuro:</strong> RO era 40% Sim / 35% Game / 25% Narr 
+                (più tradizionale). Anamnesia è nettamente narrativista, mostrando <strong>evoluzione del 
+                tuo design</strong> verso maggiore coerenza.
+            </p>
+        </div>
+
+        <!-- SEZIONE 3 -->
+        <h2 id="risoluzione">3. Sistema di Risoluzione</h2>
+
+        <h3>3.1 Meccanica Core</h3>
+
+        <div class="analysis-box">
+            <h4>Pool di d6 con successi su 4-5-6</h4>
+            
+            <p><strong>Matematica delle Probabilità:</strong></p>
+            <ul>
+                <li>Probabilità successo singolo dado: <strong>50%</strong></li>
+                <li>Con pool 3d6: <strong>~87.5%</strong> almeno 1 successo</li>
+                <li>Con pool 6d6: <strong>~98.4%</strong> almeno 1 successo</li>
+            </ul>
+
+            <p style="margin-top: 20px;"><strong>Analisi della Scelta di Design:</strong></p>
+            <ul>
+                <li>✅ La curva supporta il design: con Stress alto, il fallimento diventa reale</li>
+                <li>✅ Non usa curva gaussiana (2d6) perché vuole varianza maggiore</li>
+                <li>✅ Pool decrescente crea spirale narrativa efficace</li>
+            </ul>
+        </div>
+
+        <h3>3.2 Scala Risultati</h3>
+
+        <table>
+            <tr>
+                <th>Successi</th>
+                <th>Risultato</th>
+                <th>Conseguenze</th>
+                <th>Valutazione Design</th>
+            </tr>
+            <tr>
+                <td><strong>0</strong></td>
+                <td>Fallimento</td>
+                <td>Non riesci + Stress + Complicazione</td>
+                <td>⭐⭐⭐⭐⭐ Perfetto</td>
+            </tr>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>Successo Parziale</td>
+                <td>Riesci MA costo o distorsione</td>
+                <td>⭐⭐⭐⭐⭐ Eccellente</td>
+            </tr>
+            <tr>
+                <td><strong>2-3</strong></td>
+                <td>Successo</td>
+                <td>Successo pulito</td>
+                <td>⭐⭐⭐⭐⭐ Chiaro</td>
+            </tr>
+            <tr>
+                <td><strong>4+</strong></td>
+                <td>Successo Critico</td>
+                <td>Successo + Bonus</td>
+                <td>⭐⭐⭐⭐⭐ Soddisfacente</td>
+            </tr>
+        </table>
+
+        <div class="strength-box">
+            <h4>⭐ ECCELLENTE: Ogni risultato è narrativamente interessante</h4>
+            <p>
+                Nessun "fallimento vuoto". Questo rispecchia perfettamente i principi del corso (pag. 9-10): 
+                <em>"I fallimenti devono essere interessanti quanto i successi"</em>.
+            </p>
+        </div>
+
+        <h3>3.3 Gestione Pool</h3>
+
+        <div class="weakness-box">
+            <h4>⚠️ Potenziale Problema di Bilanciamento</h4>
+            <p>
+                Con <strong>Stress 4-5</strong>, il pool diventa 1-2d6. A quel punto la probabilità di 
+                fallimento è ~25-50%. Questo può creare spirale rapida verso Breakdown.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>È intenzionale?</strong> Probabilmente sì, ma potrebbe essere troppo punitivo.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Considera:</strong>
+            </p>
+            <ul>
+                <li>Dare almeno <strong>2d6 minimi</strong> anche con Stress alto</li>
+                <li>OPPURE rendere il Breakdown meno definitivo</li>
+                <li>OPPURE offrire più modi per recuperare Stress</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                <strong>Raccomandazione:</strong> Playtesta accuratamente la velocità della spirale dello Stress.
+            </p>
+        </div>
+
+        <!-- SEZIONE 4 -->
+        <h2 id="integrazione">4. Integrazione Meccaniche-Tema</h2>
+
+        <div class="strength-box">
+            <h3>⭐ PUNTO DI FORZA ECCEZIONALE</h3>
+            <p>
+                Ogni meccanica <span class="highlight">serve la narrativa</span> in modo elegante:
+            </p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>Pool Decrescente</h4>
+                <p><strong>= Deterioramento Mentale</strong></p>
+                <ul>
+                    <li>Non è arbitrario</li>
+                    <li>Riflette genuinamente il trauma</li>
+                    <li>I giocatori SENTONO il peso emotivo meccanicamente</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Stress</h4>
+                <p><strong>= Prezzo del Ricordare</strong></p>
+                <ul>
+                    <li>Non è danno generico</li>
+                    <li>È specificamente trauma psicologico</li>
+                    <li>Crea dilemma: "Voglio davvero sapere?"</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Breakdown</h4>
+                <p><strong>= Crisi Esistenziale</strong></p>
+                <ul>
+                    <li>Non è "morte del personaggio"</li>
+                    <li>È momento drammatico</li>
+                    <li>Opportunità narrativa, non punizione</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Frammenti Ambigui</h4>
+                <p><strong>= Memoria Inaffidabile</strong></p>
+                <ul>
+                    <li>Riflette natura soggettiva del ricordo</li>
+                    <li>Interpretazione multipla è feature</li>
+                    <li>Non bug</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Cicli Graduali</h4>
+                <p><strong>= Arco Narrativo Classico</strong></p>
+                <ul>
+                    <li>Nebbia → Connessioni → Rivelazioni</li>
+                    <li>Struttura integrata meccanicamente</li>
+                    <li>Supporta pacing emotivo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="strength-box">
+            <h4>Voto: 10/10 per coerenza ludonarrativa</h4>
+            <p>
+                Questa è una delle migliori integrazioni tema-meccaniche vista in un GDR italiano moderno. 
+                Ogni regola è giustificata narrativamente e ogni elemento narrativo ha supporto meccanico.
+            </p>
+        </div>
+
+        <!-- SEZIONE 5 -->
+        <h2 id="onboarding">5. Onboarding e Accessibilità</h2>
+
+        <h3>5.1 Curva di Apprendimento</h3>
+
+        <table>
+            <tr>
+                <th>Elemento</th>
+                <th>Valutazione</th>
+                <th>Tempo Richiesto</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td><strong>Quickstart</strong></td>
+                <td>⭐⭐⭐⭐⭐ ECCELLENTE</td>
+                <td>5 minuti</td>
+                <td>Setup guidato elimina paralisi decisionale</td>
+            </tr>
+            <tr>
+                <td><strong>Manuale Completo</strong></td>
+                <td>⭐⭐⭐⭐ BUONO</td>
+                <td>45-60 minuti</td>
+                <td>Chiaro ma ~60 pagine possono intimorire</td>
+            </tr>
+            <tr>
+                <td><strong>Scenari Pronti</strong></td>
+                <td>⭐⭐⭐⭐⭐ ECCELLENTE</td>
+                <td>10 minuti prep</td>
+                <td>Rimuovono barriera della preparazione</td>
+            </tr>
+        </table>
+
+        <div class="weakness-box">
+            <h4>⚠️ Area di Miglioramento: Esempi Concreti</h4>
+            <p>
+                Il manuale ha esempi, ma <strong>non abbastanza</strong> per un design così narrativo.
+            </p>
+            <p style="margin-top: 15px;"><strong>Mancano:</strong></p>
+            <ul>
+                <li>Esempio completo di un Ciclo giocato passo-passo (10-15 minuti trascritti)</li>
+                <li>Dialogo reale al tavolo che mostri come risolvere ambiguità</li>
+                <li>5-6 esempi "Quando Tirare vs Quando No"</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                <strong>Raccomandazione:</strong> Aggiungi sezione <em>"Gioco Simulato: Un Ciclo Completo"</em> 
+                con trascritto di dialogo reale.
+            </p>
+        </div>
+
+        <h3>5.2 Accessibilità a Diversi Pubblici</h3>
+
+        <div class="analysis-box">
+            <h4>Per Giocatori Nuovi ai GDR Narrativi</h4>
+            <p><strong>Accessibilità: ALTA</strong></p>
+            <ul>
+                <li>Quickstart rimuove barriere d'ingresso</li>
+                <li>Meccaniche core semplici (tira dadi, conta successi)</li>
+                <li>Scenario pronto fornisce struttura rassicurante</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Per Giocatori Tradizionalisti (D&D, Pathfinder)</h4>
+            <p><strong>Accessibilità: MEDIA</strong></p>
+            <ul>
+                <li>Assenza di combattimento/progressione potrebbe disorientare</li>
+                <li>Focus narrativo richiede cambio mentalità</li>
+                <li>Ma presenza di dadi e meccaniche aiuta transizione</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Per Giocatori Narrativi Esperti</h4>
+            <p><strong>Accessibilità: MOLTO ALTA</strong></p>
+            <ul>
+                <li>Riconosceranno influenze (Ten Candles, Bluebeard's Bride)</li>
+                <li>Apprezzeranno raffinatezza design</li>
+                <li>Strumenti di sicurezza sono mainstream in questo pubblico</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 6 -->
+        <h2 id="bilanciamento">6. Bilanciamento e Economia</h2>
+
+        <h3>6.1 Economia dello Stress</h3>
+
+        <div class="analysis-box">
+            <h4>Flusso di Stress</h4>
+            
+            <p><strong>Entrate Stress (Come si Guadagna):</strong></p>
+            <ul>
+                <li>Fallimento (0 successi): +1 Stress</li>
+                <li>Successo Parziale (1 successo): +1 Stress</li>
+                <li>Rivelazione traumatica: +1 o +2 Stress</li>
+                <li>Aiutare altro personaggio: +1 Stress</li>
+            </ul>
+
+            <p style="margin-top: 20px;"><strong>Uscite Stress (Come si Recupera):</strong></p>
+            <ul>
+                <li>Successo Critico (4+ successi): -1 Stress</li>
+                <li>Catarsi positiva: -1 Stress (discrezione Master)</li>
+                <li>Fine ciclo: <strong>0</strong> (no recupero automatico)</li>
+            </ul>
+        </div>
+
+        <div class="weakness-box">
+            <h4>⚠️ Rischio: Spirale Troppo Veloce</h4>
+            
+            <p><strong>Simulazione Matematica:</strong></p>
+            <p>
+                Con 4 cicli di gioco, supponendo 2 tiri per ciclo per personaggio:
+            </p>
+            <ul>
+                <li>Probabilità di almeno 1 fallimento per ciclo: <strong>alta con pool ridotto</strong></li>
+                <li>Stress medio accumulato: <strong>4-6 punti in 4 cicli</strong></li>
+                <li>Risultato: <strong>Breakdown probabile prima del finale</strong></li>
+            </ul>
+
+            <p style="margin-top: 20px;"><strong>È intenzionale?</strong></p>
+            <p>
+                Sembra di sì (il gioco è progettato per 4-6 cicli). Ma playtesta attentamente se non è troppo rapido. 
+                Il rischio è che i personaggi raggiungano Breakdown prima della catarsi narrativa naturale.
+            </p>
+
+            <p style="margin-top: 20px;"><strong>Possibili Soluzioni:</strong></p>
+            <ol>
+                <li><strong>Pool minimo garantito:</strong> Anche con Stress 5-6, garantire almeno 2d6</li>
+                <li><strong>Recupero graduale:</strong> -1 Stress automatico ogni 2 cicli</li>
+                <li><strong>Breakdown "soft":</strong> A Stress 6, Breakdown ma poi recupero a Stress 4 invece di blocco totale</li>
+            </ol>
+        </div>
+
+        <h3>6.2 Bilanciamento Archetipi</h3>
+
+        <div class="strength-box">
+            <h4>✅ Tutti gli Archetipi Sono Narrativamente Equivalenti</h4>
+            <p>
+                Non c'è "migliore" o "peggiore". Questo è <strong>design corretto</strong> per un gioco narrativo. 
+                Gli archetipi offrono esperienze diverse, non vantaggi meccanici.
+            </p>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Osservazione: Abilità Speciali</h4>
+            <p>
+                Gli archetipi base non hanno abilità speciali meccaniche, mentre l'espansione "Echi dall'Abisso" 
+                li introduce (es. "Visione oltre il Velo", "Sussurri dell'Entità").
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Questa è una scelta deliberata e valida:</strong>
+            </p>
+            <ul>
+                <li>Gioco base mantiene focus sulla narrazione pura</li>
+                <li>Espansione aggiunge complessità per giocatori esperti</li>
+                <li>Approccio modulare permette scalabilità</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 7 -->
+        <h2 id="sicurezza">7. Sicurezza e Etica del Design</h2>
+
+        <div class="strength-box">
+            <h3>⭐⭐⭐⭐⭐ ECCELLENZA ASSOLUTA</h3>
+            <p style="font-size: 1.2em;">
+                <strong>Questo è il punto più forte del gioco.</strong> Anamnesia stabilisce un 
+                <span class="highlight">nuovo standard</span> per GDR emotivamente intensi.
+            </p>
+        </div>
+
+        <h3>7.1 Sessione Zero</h3>
+
+        <table>
+            <tr>
+                <th>Aspetto</th>
+                <th>Implementazione</th>
+                <th>Valutazione</th>
+            </tr>
+            <tr>
+                <td><strong>Obbligatorietà</strong></td>
+                <td>Non opzionale, esplicitata chiaramente</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td><strong>Struttura</strong></td>
+                <td>Timeline dettagliata (60 minuti) con fasi chiare</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td><strong>Checklist</strong></td>
+                <td>Verifiche pre e post sessione zero</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td><strong>Questionario</strong></td>
+                <td>Pre-sessione per raccogliere sensibilità private</td>
+                <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+        </table>
+
+        <h3>7.2 Strumenti di Sicurezza</h3>
+
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>🛑 X-Card</h4>
+                <p><strong>Implementazione: CORRETTA</strong></p>
+                <ul>
+                    <li>Spiegazione chiara</li>
+                    <li>Nessuna richiesta di spiegazione</li>
+                    <li>Esempio concreto fornito</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>📋 Lines & Veils</h4>
+                <p><strong>Implementazione: ECCELLENTE</strong></p>
+                <ul>
+                    <li>Distinzione chiara tra Lines e Veils</li>
+                    <li>Tabella con esempi per categorie</li>
+                    <li>Processo di definizione guidato</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>✋ Pause Check-in</h4>
+                <p><strong>Implementazione: CORRETTA</strong></p>
+                <ul>
+                    <li>Ogni 30-45 minuti</li>
+                    <li>Domande specifiche fornite</li>
+                    <li>Tempo fuori personaggio</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>👌 OK Check-in</h4>
+                <p><strong>Implementazione: INNOVATIVA</strong></p>
+                <ul>
+                    <li>Sistema gestuale discreto</li>
+                    <li>Non interrompe flow narrativo</li>
+                    <li>Tre livelli chiari (OK/Rallenta/Stop)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>7.3 Avvertenze sui Contenuti</h3>
+
+        <div class="analysis-box">
+            <h4>Qualità delle Avvertenze</h4>
+            <ul>
+                <li>✅ Presenti e in evidenza all'inizio</li>
+                <li>✅ Specifiche (non generiche "contenuti per adulti")</li>
+                <li>✅ Ripetute quando rilevanti (prima di scenari sensibili)</li>
+                <li>✅ Senza essere paternalistiche</li>
+                <li>✅ Linguaggio chiaro e diretto</li>
+            </ul>
+        </div>
+
+        <h3>7.4 Debrief Post-Sessione</h3>
+
+        <div class="strength-box">
+            <h4>✅ Obbligatorio Quanto la Sessione Zero</h4>
+            <p>
+                Il debrief è <strong>integrato nel sistema</strong>, non suggerito come opzione. Include:
+            </p>
+            <ul>
+                <li>Check emotivo generale</li>
+                <li>Discussione esperienze</li>
+                <li>Feedback per miglioramenti</li>
+                <li>Tecniche di disconnessione dal personaggio</li>
+                <li>Tempo per elaborare emotivamente</li>
+            </ul>
+        </div>
+
+        <h3>7.5 Confronto con Altri GDR</h3>
+
+        <blockquote>
+            <strong>Molti GDR horror/dark hanno avvertenze generiche tipo:</strong> "Questo gioco contiene 
+            temi maturi. Discrezione del giocatore consigliata."
+            <br><br>
+            <strong>Anamnesia invece:</strong> Integra sicurezza nel sistema stesso, fornisce strumenti 
+            multipli ridondanti, struttura Sessione Zero obbligatoria, e tratta la sicurezza come 
+            meccanica di gioco fondamentale.
+        </blockquote>
+
+        <div class="strength-box">
+            <h4>Conclusione: Nuovo Standard</h4>
+            <p>
+                Anamnesia dovrebbe essere il <span class="highlight">modello di riferimento</span> per tutti 
+                i giochi che trattano contenuti emotivamente intensi. Non è perfetto, ma è 
+                <strong>anni luce avanti</strong> rispetto alla media del mercato.
+            </p>
+        </div>
+
+        <!-- SEZIONE 8 -->
+        <h2 id="presentazione">8. Presentazione e Produzione</h2>
+
+        <h3>8.1 Struttura dei File</h3>
+
+        <div class="strength-box">
+            <h4>⭐ ECCELLENTE - Design UX Maturo</h4>
+            <p>La suite di 11 file HTML dimostra comprensione professionale della User Experience:</p>
+            <ul>
+                <li>✅ <strong>Modulari:</strong> Ogni file ha scopo chiaro e delimitato</li>
+                <li>✅ <strong>Hub centrale:</strong> INDEX funziona come navigazione master</li>
+                <li>✅ <strong>Autosufficenti:</strong> CSS inline, nessuna dipendenza esterna</li>
+                <li>✅ <strong>Ottimizzati:</strong> Sia per web che per stampa A4</li>
+                <li>✅ <strong>Progressivi:</strong> Da Quickstart a contenuti avanzati</li>
+            </ul>
+        </div>
+
+        <h3>8.2 Design Visivo</h3>
+
+        <table>
+            <tr>
+                <th>Elemento</th>
+                <th>Valutazione</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td><strong>Palette Colori</strong></td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>Viola/blu coerente per core, variazioni per espansione (cosmico)</td>
+            </tr>
+            <tr>
+                <td><strong>Tipografia</strong></td>
+                <td>⭐⭐⭐⭐</td>
+                <td>Georgia leggibile, gerarchia chiara, ma potrebbe beneficiare di font custom</td>
+            </tr>
+            <tr>
+                <td><strong>Layout</strong></td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>Responsive, spaziatura generosa, box colorati per categorizzazione</td>
+            </tr>
+            <tr>
+                <td><strong>Iconografia</strong></td>
+                <td>⭐⭐⭐</td>
+                <td>Emoji funzionali ma potrebbe beneficiare di icon set dedicato</td>
+            </tr>
+            <tr>
+                <td><strong>Immagini</strong></td>
+                <td>⭐⭐</td>
+                <td>Assenti (ma costose). Watermark/mood visivo potrebbero aggiungere appeal</td>
+            </tr>
+        </table>
+
+        <div class="weakness-box">
+            <h4>Aree di Miglioramento Visivo (Non Critiche)</h4>
+            <ul>
+                <li>Le <strong>carte frammento</strong> potrebbero avere iconografia distintiva per tipo</li>
+                <li>Considera <strong>watermark sottile</strong> con texture/pattern evocativo</li>
+                <li><strong>Illustrazioni custom</strong> aumenterebbero appeal (ma budget-dependent)</li>
+                <li><strong>PDF compilabili</strong> per schede (oltre a HTML) per alcuni utenti</li>
+            </ul>
+        </div>
+
+        <h3>8.3 Completezza del Prodotto</h3>
+
+        <div class="analysis-box">
+            <h4>✅ Cosa C'è (Prodotto Completo)</h4>
+            <ul>
+                <li>Manuale completo (~60 pagine equivalenti)</li>
+                <li>Quickstart funzionale (12-15 pagine)</li>
+                <li>Schede personaggio per tutti archetipi</li>
+                <li>36 carte frammento + template vuoti</li>
+                <li>3 scenari completi pronti all'uso</li>
+                <li>Strumenti per il Master</li>
+                <li>Guida sicurezza dettagliata</li>
+                <li>Tabelle riferimento rapido</li>
+                <li>Espansione soprannaturale (25-30 pagine)</li>
+                <li>Consigli di design per customizzazione</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Cosa Manca (Non Critico)</h4>
+            <ul>
+                <li>Modalità solitario (ma non essenziale per questo design)</li>
+                <li>Avventure aggiuntive oltre le 3 (ma sufficienti per lancio)</li>
+                <li>Schede compilabili PDF (considera per v2.0)</li>
+                <li>Audio/soundtrack consigliata (nice-to-have)</li>
+                <li>Comunità/forum dedicata (può essere aggiunta post-lancio)</li>
+            </ul>
+        </div>
+
+        <div class="strength-box">
+            <h4>Conclusione: Pronto per Pubblicazione</h4>
+            <p>
+                Il prodotto è <span class="highlight">completo e pubblicabile</span> nello stato attuale. 
+                Gli elementi mancanti sono "nice-to-have", non essenziali. Molti GDR commerciali lanciano 
+                con meno contenuti.
+            </p>
+        </div>
+
+        <!-- SEZIONE 9 -->
+        <h2 id="innovazione">9. Innovazione e Contributo al Medium</h2>
+
+        <h3>9.1 Cosa Anamnesia Fa di Nuovo</h3>
+
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>Narrativamente</h4>
+                <ul>
+                    <li><strong>Memoria frammentata</strong> come meccanica core (raro in GDR)</li>
+                    <li><strong>Verità emergente collettiva</strong> (non comune)</li>
+                    <li><strong>Trauma come risorsa</strong> meccanica (innovativo nel trattamento)</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Meccanicamente</h4>
+                <ul>
+                    <li><strong>Pool decrescente</strong> con Stress integrato elegantemente</li>
+                    <li><strong>Cicli strutturati</strong> che supportano arco emotivo</li>
+                    <li><strong>Frammenti come prompts</strong> sistematizzati</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Socialmente</h4>
+                <ul>
+                    <li><strong>Sicurezza integrata</strong> nel design, non aggiunta</li>
+                    <li><strong>Sessione Zero</strong> come parte del sistema</li>
+                    <li><strong>Strumenti multipli ridondanti</strong> per protezione</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="analysis-box">
+            <h4>Valutazione: Raffinamento Elegante</h4>
+            <p>
+                Anamnesia non reinventa la ruota, ma <strong>raffina ed elegantizza</strong> approcci esistenti. 
+                Questo è <span class="highlight">design maturo</span>, non necessariamente rivoluzionario ma 
+                eccellentemente eseguito.
+            </p>
+        </div>
+
+        <h3>9.2 Confronto con Altri GDR Narrativi</h3>
+
+        <table>
+            <tr>
+                <th>Gioco</th>
+                <th>Similarità</th>
+                <th>Differenze</th>
+                <th>Posizionamento Anamnesia</th>
+            </tr>
+            <tr>
+                <td><strong>Ten Candles<br>(Stephen Dewey)</strong></td>
+                <td>Horror, one-shot, memoria, tragedia</td>
+                <td>Ten Candles usa candele fisiche come meccanica centrale</td>
+                <td>Anamnesia più strutturato e meno minimalista</td>
+            </tr>
+            <tr>
+                <td><strong>Bluebeard's Bride<br>(Whitney Beltrán)</strong></td>
+                <td>Horror gotico, scoperta verità traumatiche</td>
+                <td>BB è femminista gotico, più poetico</td>
+                <td>Anamnesia più accessibile e universale</td>
+            </tr>
+            <tr>
+                <td><strong>Fiasco<br>(Jason Morningstar)</strong></td>
+                <td>Tragedia emergente, scene strutturate</td>
+                <td>Fiasco usa dadi come prompts, più caotico</td>
+                <td>Anamnesia più guidato e focalizzato</td>
+            </tr>
+            <tr>
+                <td><strong>Dread<br>(Epidiah Ravachol)</strong></td>
+                <td>Horror, tensione crescente</td>
+                <td>Dread usa Jenga, focus su suspense fisica</td>
+                <td>Anamnesia focus su trauma psicologico</td>
+            </tr>
+        </table>
+
+        <div class="strength-box">
+            <h4>Conclusione: Posizionamento Distintivo</h4>
+            <p>
+                Anamnesia si posiziona bene nel panorama indie narrativo <strong>italiano</strong>. Non è 
+                derivativo di nessuno dei giochi citati, ma attinge intelligentemente da tradizioni consolidate 
+                per creare qualcosa di coerente e personale.
+            </p>
+        </div>
+
+        <!-- SEZIONE 10 -->
+        <h2 id="adattabilita">10. Adattabilità e Longevità</h2>
+
+        <h3>10.1 Hack e Modding</h3>
+
+        <div class="strength-box">
+            <h4>⭐⭐⭐⭐⭐ Il Gioco È Altamente Modulare</h4>
+            <p>
+                Il capitolo <em>"Consigli di Design"</em> dimostra che hai pensato consapevolmente 
+                all'hackability. Questo è <span class="highlight">design generoso</span> - molti autori 
+                non facilitano il modding dei loro giochi.
+            </p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>Modalità Senza Master</h4>
+                <p>Procedura chiara fornita:</p>
+                <ul>
+                    <li>Ogni giocatore scrive verità segreta</li>
+                    <li>Frammenti da mazzo condiviso</li>
+                    <li>Disaccordi risolti con tiri</li>
+                    <li>Complicazioni da tabella random</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Modalità Campagna</h4>
+                <p>Sistema per 4-6 sessioni:</p>
+                <ul>
+                    <li>Traumi collegati a catena</li>
+                    <li>Stress/Echi persistenti tra sessioni</li>
+                    <li>Archetipi evolvono</li>
+                    <li>Rivelazione finale interconnessa</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Modalità Thriller Leggero</h4>
+                <p>Per gruppi meno intensi:</p>
+                <ul>
+                    <li>Stress max a 8 invece di 6</li>
+                    <li>Recupero automatico</li>
+                    <li>Breakdown temporanei</li>
+                    <li>Focus su misteri vs colpa</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>10.2 Sostenibilità del Sistema</h3>
+
+        <div class="analysis-box">
+            <h4>Può Sostenere Espansioni? SÌ, Moderatamente</h4>
+            
+            <p><strong>L'espansione "Echi dall'Abisso" dimostra che il sistema può incorporare:</strong></p>
+            <ul>
+                <li>✅ Nuovi archetipi con abilità speciali</li>
+                <li>✅ Nuove meccaniche (Velo della Realtà)</li>
+                <li>✅ Nuovi toni (cosmico vs psicologico)</li>
+                <li>✅ Nuove Entità e frammenti impossibili</li>
+            </ul>
+
+            <p style="margin-top: 20px;"><strong>Limite Naturale:</strong></p>
+            <p>
+                Il core loop (Frammenti → Stress → Breakdown) è fisso e centrale. Non c'è spazio per 
+                espansioni meccaniche <em>radicalmente</em> diverse. Ma per un gioco narrativo one-shot, 
+                questo è <strong>appropriato</strong> e non un difetto.
+            </p>
+        </div>
+
+        <h3>10.3 Potenziali Espansioni Future</h3>
+
+        <div class="analysis-box">
+            <h4>Suggerimenti per Espansioni</h4>
+            <ul>
+                <li><strong>"Anamnesia: Noir"</strong> - Ambientazione crime urbano anni '40</li>
+                <li><strong>"Anamnesia: Sci-Fi"</strong> - Esperimenti spaziali, memoria artificiale</li>
+                <li><strong>"Anamnesia: Storico"</strong> - Traumi collettivi (guerra, genocidi)</li>
+                <li><strong>"Toolkit del Master"</strong> - Generatori, tabelle aggiuntive</li>
+                <li><strong>"Campagne Interconnesse"</strong> - 6-8 scenari collegati</li>
+            </ul>
+        </div>
+
+        <!-- CONTINUA NELLE SEZIONI SUCCESSIVE -->
+        <!-- SEZIONE 11 -->
+        <h2 id="criticita">11. Criticità e Aree di Miglioramento</h2>
+
+        <h3>11.1 Problemi Significativi</h3>
+
+        <div class="critical-box">
+            <h4>❌ PROBLEMA 1: Spirale dello Stress Potenzialmente Troppo Veloce</h4>
+            
+            <p><strong>Descrizione del Problema:</strong></p>
+            <p>
+                Con pool che scende velocemente e poche uscite per lo Stress, i giocatori potrebbero 
+                raggiungere Breakdown prima della risoluzione emotiva naturale della storia.
+            </p>
+
+            <p style="margin-top: 15px;"><strong>Test Matematico Necessario:</strong></p>
+            <p>
+                Simula 4-6 cicli con 2-3 tiri per ciclo. Verifica se lo Stress medio arriva a 5-6 troppo 
+                presto rispetto all'arco narrativo previsto.
+            </p>
+
+            <p style="margin-top: 15px;"><strong>Soluzioni Possibili (scegline una):</strong></p>
+            <ol>
+                <li><strong>Pool minimo garantito:</strong> Anche con Stress alto, garantire almeno 2d6 
+                per evitare spirale inarrestabile</li>
+                <li><strong>Recupero passivo:</strong> -1 Stress automatico ogni 2 cicli per dare respiro</li>
+                <li><strong>Breakdown "soft":</strong> A Stress 6, Breakdown temporaneo ma poi recupero a 
+                Stress 4 invece di blocco totale fino a fine scena</li>
+                <li><strong>Più opportunità di catarsi:</strong> Codificare meccanicamente più situazioni 
+                che riducono Stress</li>
+            </ol>
+
+            <p style="margin-top: 15px;"><strong>Priorità:</strong> ALTA - Richiede playtesting focalizzato prima della pubblicazione</p>
+        </div>
+
+        <div class="critical-box">
+            <h4>❌ PROBLEMA 2: "Quando Tirare" Non Esplicitato</h4>
+            
+            <p><strong>Descrizione del Problema:</strong></p>
+            <p>
+                Il Quickstart dice "Solo se: rischioso, incerto, sotto pressione" ma non fornisce esempi 
+                concreti. I nuovi giocatori esiteranno e chiederanno continuamente "devo tirare per questo?"
+            </p>
+
+            <p style="margin-top: 15px;"><strong>Impatto:</strong></p>
+            <p>
+                Rallenta il gioco, crea frustrazione, impedisce flow narrativo. Questo è un errore comune 
+                nei GDR narrativi che il corso identifica esplicitamente (pag. 25-27).
+            </p>
+
+            <p style="margin-top: 15px;"><strong>Soluzione:</strong></p>
+            <p>
+                Aggiungi sezione dedicata "Quando Tirare e Quando No" con almeno 10 esempi concreti:
+            </p>
+            
+            <div style="background: white; padding: 20px; margin: 15px 0; border-radius: 5px;">
+                <p><strong>QUANDO TIRARE:</strong></p>
+                <ul>
+                    <li>✅ Cerchi di ricordare un dettaglio cruciale per la storia</li>
+                    <li>✅ Interpreti un frammento ambiguo e vuoi stabilire una verità</li>
+                    <li>✅ Resisti a un impulso emotivo forte (fuga, violenza, breakdown)</li>
+                    <li>✅ Aiuti attivamente un altro personaggio in difficoltà</li>
+                    <li>✅ Cerchi di mantenere il controllo durante rivelazione traumatica</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>QUANDO NON TIRARE:</strong></p>
+                <ul>
+                    <li>❌ Descrivi come ti senti emotivamente</li>
+                    <li>❌ Fai una domanda ad altri PG o al Master</li>
+                    <li>❌ Ricordi qualcosa di banale e non traumatico</li>
+                    <li>❌ Ti muovi fisicamente nello spazio</li>
+                    <li>❌ Interagisci socialmente senza conflitto</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 15px;"><strong>Priorità:</strong> ALTA - Aggiunta semplice ma critica per usabilità</p>
+        </div>
+
+        <div class="weakness-box">
+            <h4>⚠️ PROBLEMA 3: Esempi di Gioco Insufficienti</h4>
+            
+            <p><strong>Descrizione del Problema:</strong></p>
+            <p>
+                Per un sistema così narrativo e basato sull'improvvisazione guidata, servono più "trascritti" 
+                di gioco reale che mostrino come funziona al tavolo.
+            </p>
+
+            <p style="margin-top: 15px;"><strong>Soluzione:</strong></p>
+            <p>
+                Aggiungi appendice "Gioco Simulato: Un Ciclo Completo" con 10-15 minuti di dialogo trascritto 
+                che mostri:
+            </p>
+            <ul>
+                <li>Come il Master introduce il trigger</li>
+                <li>Come i giocatori pescano e interpretano frammenti</li>
+                <li>Come si risolvono disaccordi su interpretazioni</li>
+                <li>Quando si tirano i dadi e perché</li>
+                <li>Come si gestisce un fallimento interessante</li>
+                <li>Come si usa la X-Card in pratica</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Priorità:</strong> MEDIA-ALTA - Migliorerebbe significativamente onboarding</p>
+        </div>
+
+        <h3>11.2 Problemi Minori</h3>
+
+        <div class="weakness-box">
+            <h4>Miglioramenti Estetici/UX (Non Critici)</h4>
+            <ul>
+                <li><strong>Carte Frammento:</strong> Potrebbero avere iconografia per facilitare 
+                categorizzazione visiva (simbolo nebbia, connessione, rivelazione)</li>
+                <li><strong>Scheda Master:</strong> Spazio per mappa emotiva è presente ma piccolo, 
+                potrebbe essere più grande</li>
+                <li><strong>PDF Compilabili:</strong> Considerare versione PDF form-fillable oltre a HTML 
+                per alcuni utenti</li>
+                <li><strong>Cheat Sheet Ultra-Compatta:</strong> Una singola pagina A4 con tutto 
+                l'essenziale</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 12 -->
+        <h2 id="valutazione-finale">12. Valutazione Finale per Aree</h2>
+
+        <table>
+            <tr>
+                <th>Area di Design</th>
+                <th>Voto</th>
+                <th>Note Sintetiche</th>
+            </tr>
+            <tr>
+                <td><strong>Coerenza Concettuale</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">10/10</span></td>
+                <td>Perfetta. Ogni elemento serve il tema della memoria frammentata</td>
+            </tr>
+            <tr>
+                <td><strong>Meccaniche Core</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">9/10</span></td>
+                <td>Pool+Stress elegante. Possibile squilibrio velocità spirale</td>
+            </tr>
+            <tr>
+                <td><strong>Integrazione Tema-Meccaniche</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">10/10</span></td>
+                <td>Eccellenza ludonarrativa. Ogni regola ha significato emotivo</td>
+            </tr>
+            <tr>
+                <td><strong>Agency & Identità</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">10/10</span></td>
+                <td>Archetipi come schemi agenziali distintivi. Design maturo</td>
+            </tr>
+            <tr>
+                <td><strong>Onboarding</strong></td>
+                <td><span style="font-size: 1.3em; color: #ffc107;">7.5/10</span></td>
+                <td>Quickstart ottimo, ma servono più esempi concreti e trascritti</td>
+            </tr>
+            <tr>
+                <td><strong>Bilanciamento</strong></td>
+                <td><span style="font-size: 1.3em; color: #ffc107;">7/10</span></td>
+                <td>Stress economy da playtestare. Archetipi narrativamente equivalenti OK</td>
+            </tr>
+            <tr>
+                <td><strong>Sicurezza & Etica</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">10/10</span></td>
+                <td>Nuovo standard per GDR emotivamente intensi. Eccellente</td>
+            </tr>
+            <tr>
+                <td><strong>Presentazione</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">9/10</span></td>
+                <td>Professionale, completa, ben strutturata. Modulare e accessibile</td>
+            </tr>
+            <tr>
+                <td><strong>Innovazione</strong></td>
+                <td><span style="font-size: 1.3em; color: #667eea;">8/10</span></td>
+                <td>Raffina elegantemente approcci esistenti. Non rivoluzionario ma eccellente</td>
+            </tr>
+            <tr>
+                <td><strong>Completezza Prodotto</strong></td>
+                <td><span style="font-size: 1.3em; color: #28a745;">9/10</span></td>
+                <td>Pronto per pubblicazione. Tutti elementi essenziali presenti</td>
+            </tr>
+        </table>
+
+        <div class="executive-summary">
+            <h3>Valutazione Complessiva Finale</h3>
+            <div style="text-align: center; margin: 30px 0;">
+                <div style="font-size: 4em; font-weight: bold; color: #28a745;">8.9/10</div>
+                <p style="font-size: 1.2em; margin-top: 15px;">
+                    <strong>ECCELLENTE</strong> - Progetto maturo pronto per pubblicazione
+                </p>
+            </div>
+        </div>
+
+        <!-- SEZIONE 13 -->
+        <h2 id="raccomandazioni">13. Raccomandazioni Prioritarie</h2>
+
+        <h3>13.1 Prima della Pubblicazione (OBBLIGATORIO)</h3>
+
+        <div class="recommendation-box">
+            <h4>1️⃣ Playtesting Focalizzato sull'Economia dello Stress</h4>
+            <p><strong>Obiettivo:</strong> Verificare se la spirale dello Stress è bilanciata</p>
+            <p><strong>Metodo:</strong></p>
+            <ul>
+                <li>3-5 sessioni con gruppi diversi (novizi e esperti)</li>
+                <li>Traccia: quanti cicli prima del primo Breakdown</li>
+                <li>Traccia: stress medio del gruppo a metà partita</li>
+                <li>Raccogli feedback: "Ti sei sentito bloccato meccanicamente?"</li>
+            </ul>
+            <p><strong>Azione:</strong> Se Breakdown arriva prima di ciclo 4-5, implementa una delle soluzioni proposte</p>
+        </div>
+
+        <div class="recommendation-box">
+            <h4>2️⃣ Aggiungere Sezione "Quando Tirare / Quando No"</h4>
+            <p><strong>Dove:</strong> Nel Quickstart (pag 3-4) E nel Manuale (Cap 3)</p>
+            <p><strong>Contenuto:</strong></p>
+            <ul>
+                <li>10 esempi concreti di situazioni (5 "tira", 5 "non tirare")</li>
+                <li>Brevi (2-3 righe per esempio)</li>
+                <li>Con linguaggio diretto e inequivocabile</li>
+            </ul>
+            <p><strong>Tempo richiesto:</strong> 1-2 ore</p>
+        </div>
+
+        <div class="recommendation-box">
+            <h4>3️⃣ Appendice: Gioco Simulato</h4>
+            <p><strong>Obiettivo:</strong> Mostrare come funziona il gioco al tavolo reale</p>
+            <p><strong>Contenuto:</strong></p>
+            <ul>
+                <li>Trascritto 10-15 minuti di gioco reale (1 ciclo completo)</li>
+                <li>Includi: trigger, frammenti, interpretazioni, tiri, gestione Stress</li>
+                <li>Mostra come si risolve un disaccordo</li>
+                <li>Includi uso di almeno uno strumento di sicurezza</li>
+            </ul>
+            <p><strong>Tempo richiesto:</strong> 3-4 ore (gioca 1 ciclo + trascrivi + formatta)</p>
+        </div>
+
+        <h3>13.2 Per Migliorare (CONSIGLIATO)</h3>
+
+        <div class="analysis-box">
+            <h4>4️⃣ Iconografia per Carte Frammento</h4>
+            <ul>
+                <li>Simboli semplici per Nebbia (🌫️), Connessioni (🔗), Rivelazioni (💡)</li>
+                <li>Aiuta categorizzazione visiva rapida</li>
+                <li>Non essenziale ma migliora UX</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>5️⃣ Cheat Sheet Una Pagina</h4>
+            <ul>
+                <li>A4 singolo con tutte le regole essenziali</li>
+                <li>Formula tiro, scala risultati, quando tirare</li>
+                <li>Stampabile come reference rapido</li>
+            </ul>
+        </div>
+
+        <div class="analysis-box">
+            <h4>6️⃣ Versione PDF Compilabile</h4>
+            <ul>
+                <li>Schede personaggio form-fillable</li>
+                <li>Scheda Master compilabile</li>
+                <li>Alcuni utenti preferiscono PDF a HTML</li>
+            </ul>
+        </div>
+
+        <h3>13.3 Per Versione 2.0 (FUTURO)</h3>
+
+        <div class="analysis-box">
+            <h4>Espansioni e Contenuti Aggiuntivi</h4>
+            <ul>
+                <li><strong>7️⃣ Avventure Aggiuntive:</strong> 3-5 scenari in più con toni diversi</li>
+                <li><strong>8️⃣ Modalità Solitario:</strong> Oracle per decisioni, sistema per giocare da soli</li>
+                <li><strong>9️⃣ Campagna Estesa:</strong> Sistema per collegare 5-6 traumi in arco narrativo lungo</li>
+                <li><strong>🔟 Setting Pack:</strong> Anamnesia Noir, Sci-Fi, Storico con regole specifiche</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 14 -->
+        <h2 id="confronto">14. Confronto con Altri Tuoi Progetti</h2>
+
+        <h3>14.1 Rinascimento Oscuro</h3>
+
+        <table>
+            <tr>
+                <th>Aspetto</th>
+                <th>Rinascimento Oscuro</th>
+                <th>Anamnesia</th>
+            </tr>
+            <tr>
+                <td><strong>Priorità GNS</strong></td>
+                <td>40% Sim / 35% Game / 25% Narr</td>
+                <td>75% Narr / 15% Sim / 10% Game</td>
+            </tr>
+            <tr>
+                <td><strong>Struttura</strong></td>
+                <td>Tradizionale, sandbox</td>
+                <td>Moderno, strutturato in cicli</td>
+            </tr>
+            <tr>
+                <td><strong>Progressione</strong></td>
+                <td>Livelli, XP, crescita potere</td>
+                <td>Nessuna progressione, trasformazione emotiva</td>
+            </tr>
+            <tr>
+                <td><strong>Combattimento</strong></td>
+                <td>Sistema tattico dettagliato</td>
+                <td>Assente (conflitto solo narrativo)</td>
+            </tr>
+            <tr>
+                <td><strong>Durata</strong></td>
+                <td>Campagna lunga (mesi)</td>
+                <td>One-shot (2-3 ore)</td>
+            </tr>
+        </table>
+
+        <div class="analysis-box">
+            <h4>Evoluzione Evidente</h4>
+            <p>
+                Il passaggio da <strong>Rinascimento Oscuro</strong> ad <strong>Anamnesia</strong> mostra 
+                crescita verso design più coeso e maturo. RO aveva identità GNS ibrida (comune nei primi 
+                progetti), mentre Anamnesia ha identità chiara e non compromessa.
+            </p>
+        </div>
+
+        <h3>14.2 The Serpent Road</h3>
+
+        <table>
+            <tr>
+                <th>Aspetto</th>
+                <th>The Serpent Road</th>
+                <th>Anamnesia</th>
+            </tr>
+            <tr>
+                <td><strong>Focus</strong></td>
+                <td>Avventura OSR, exploration</td>
+                <td>Narrativo puro, emotion</td>
+            </tr>
+            <tr>
+                <td><strong>Risoluzione</strong></td>
+                <td>2d6 + abilità</td>
+                <td>Pool d6 variabile</td>
+            </tr>
+            <tr>
+                <td><strong>Risorse</strong></td>
+                <td>Rifornimenti, equipaggiamento</td>
+                <td>Stress, Pool Frammenti</td>
+            </tr>
+            <tr>
+                <td><strong>Tema</strong></td>
+                <td>Sopravvivenza fisica</td>
+                <td>Sopravvivenza psicologica</td>
+            </tr>
+        </table>
+
+        <div class="analysis-box">
+            <h4>Versatilità nel Design</h4>
+            <p>
+                Il fatto che tu possa progettare sia <strong>TSR</strong> (OSR tradizionale) che 
+                <strong>Anamnesia</strong> (narrativo contemporaneo) dimostra <strong>versatilità e 
+                comprensione profonda</strong> di design space diversi.
+            </p>
+        </div>
+
+        <div class="strength-box">
+            <h3>Conclusione: Progetto Più Maturo</h3>
+            <p>
+                Anamnesia rappresenta il tuo <span class="highlight">progetto più maturo</span> in termini di:
+            </p>
+            <ul>
+                <li>✅ Coerenza GNS (identità chiara)</li>
+                <li>✅ Integrazione ludonarrativa (ogni regola serve tema)</li>
+                <li>✅ Sicurezza (integrata nel sistema)</li>
+                <li>✅ Presentazione (professionale e completa)</li>
+                <li>✅ Accessibilità (Quickstart + materiali pronti)</li>
+            </ul>
+        </div>
+
+        <!-- SEZIONE 15 -->
+        <h2 id="mercato">15. Posizionamento di Mercato</h2>
+
+        <h3>15.1 Mercato Italiano</h3>
+
+        <div class="strength-box">
+            <h4>✅ Nicchia Undersaturata</h4>
+            <p>
+                I GDR narrativi italiani contemporanei sono <strong>relativamente pochi</strong> rispetto 
+                al mercato totale. Anamnesia ha opportunità di distinguersi.
+            </p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4>Punti di Forza</h4>
+                <ul>
+                    <li><strong>Tema universale:</strong> Trauma e memoria sono cross-culturali</li>
+                    <li><strong>Safety-forward:</strong> Sempre più richiesto</li>
+                    <li><strong>One-shot:</strong> Accessibile per giocatori occasionali</li>
+                    <li><strong>Prodotto completo:</strong> Non solo regole ma materiali pronti</li>
+                </ul>
+            </div>
+
+            <div class="comparison-card">
+                <h4>Competizione</h4>
+                <ul>
+                    <li><strong>Need Games:</strong> Più mainstream (Sine Requie, Not the End)</li>
+                    <li><strong>Fumble GdR:</strong> Più sperimentali</li>
+                    <li><strong>Pochi competitor diretti</strong> in narrative horror italiano</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>Pricing Suggerito per Mercato Italiano</h4>
+
+        <table>
+            <tr>
+                <th>Formato</th>
+                <th>Prezzo Consigliato</th>
+                <th>Benchmark</th>
+            </tr>
+            <tr>
+                <td><strong>PDF Completo</strong></td>
+                <td>€10-12</td>
+                <td>Allineato a indie narrativi italiani</td>
+            </tr>
+            <tr>
+                <td><strong>Print-on-Demand</strong></td>
+                <td>€20-25</td>
+                <td>Costo stampa + margine ragionevole</td>
+            </tr>
+            <tr>
+                <td><strong>Bundle (PDF + PoD)</strong></td>
+                <td>€22-28</td>
+                <td>Sconto 10-15% sul totale separato</td>
+            </tr>
+        </table>
+
+        <h3>15.2 Mercato Internazionale</h3>
+
+        <div class="recommendation-box">
+            <h3>🌍 Traduzione Inglese ALTAMENTE RACCOMANDATA</h3>
+            
+            <p><strong>Motivi:</strong></p>
+            <ol>
+                <li><strong>Tema universale:</strong> Trauma e memoria sono cross-culturali</li>
+                <li><strong>Meccaniche trasferibili:</strong> Nessun elemento culturalmente specifico</li>
+                <li><strong>Safety tools mainstream:</strong> Mercato anglofono valorizza questo</li>
+                <li><strong>Pubblico ampio:</strong> Itch.io / DriveThruRPG hanno audience per narrativi</li>
+            </ol>
+
+            <p style="margin-top: 20px;"><strong>Competitori Anglofoni:</strong></p>
+            <ul>
+                <li>Ten Candles ($10 PDF)</li>
+                <li>Bluebeard's Bride ($20 PDF)</li>
+                <li>Dread ($8 PDF)</li>
+            </ul>
+
+            <p style="margin-top: 20px;">
+                <strong>Anamnesia potrebbe posizionarsi a $10-12 PDF</strong>, competitivo ma non sottovalutato.
+            </p>
+        </div>
+
+        <h3>15.3 Canali di Distribuzione</h3>
+
+        <table>
+            <tr>
+                <th>Piattaforma</th>
+                <th>Pro</th>
+                <th>Contro</th>
+                <th>Raccomandazione</th>
+            </tr>
+            <tr>
+                <td><strong>Itch.io</strong></td>
+                <td>Pubblico indie, flessibile, fee basse</td>
+                <td>Discovery difficile</td>
+                <td>✅ SÌ - Primario</td>
+            </tr>
+            <tr>
+                <td><strong>DriveThruRPG</strong></td>
+                <td>Pubblico RPG tradizionale, PoD integrato</td>
+                <td>Fee alte (30%+)</td>
+                <td>✅ SÌ - Secondario</td>
+            </tr>
+            <tr>
+                <td><strong>Sito Proprio</strong></td>
+                <td>Controllo totale, margini massimi</td>
+                <td>Zero discovery, gestione tech</td>
+                <td>⚠️ Opzionale</td>
+            </tr>
+            <tr>
+                <td><strong>Kickstarter</strong></td>
+                <td>Funding, marketing, community</td>
+                <td>Impegno temporale alto</td>
+                <td>⚠️ Per v2.0 o edizione deluxe</td>
+            </tr>
+        </table>
+
+        <h3>15.4 Marketing e Promozione</h3>
+
+        <div class="analysis-box">
+            <h4>Strategie di Lancio</h4>
+            <ol>
+                <li><strong>Pre-lancio (1 mese prima):</strong>
+                    <ul>
+                        <li>Quickstart gratuito su Itch.io</li>
+                        <li>Post su Reddit (r/rpg, r/RPGdesign)</li>
+                        <li>Gruppo Facebook italiani GdR</li>
+                    </ul>
+                </li>
+                <li><strong>Lancio:</strong>
+                    <ul>
+                        <li>Release simultanea Itch + DriveThru</li>
+                        <li>Prezzo lancio scontato (20% per prima settimana)</li>
+                        <li>Press kit per recensori italiani</li>
+                    </ul>
+                </li>
+                <li><strong>Post-lancio:</strong>
+                    <ul>
+                        <li>Contatta podcast italiani (Locanda del Drago Rosso, GdR Italia)</li>
+                        <li>Session reports su blog/forum</li>
+                        <li>Community Discord/Forum</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- SEZIONE 16 -->
+        <h2 id="conclusioni">16. Conclusioni</h2>
+
+        <div class="executive-summary">
+            <h3>Sintesi Esecutiva Finale</h3>
+            
+            <p style="font-size: 1.2em;">
+                <strong>Anamnesia è un gioco di ruolo narrativo di altissima qualità</strong> che dimostra 
+                comprensione sofisticata dei principi di game design contemporanei.
+            </p>
+
+            <h4 style="margin-top: 30px;">Eccelle In:</h4>
+            <ul style="font-size: 1.05em;">
+                <li>✅ <strong>Coerenza ludonarrativa</strong> - Ogni meccanica serve la storia</li>
+                <li>✅ <strong>Integrazione sicurezza-design</strong> - Nuovo standard per il medium</li>
+                <li>✅ <strong>Agency come elemento centrale</strong> - Archetipi come schemi agenziali</li>
+                <li>✅ <strong>Presentazione professionale</strong> - Prodotto completo e modulare</li>
+            </ul>
+
+            <h4 style="margin-top: 30px;">Richiede Miglioramenti In:</h4>
+            <ul style="font-size: 1.05em;">
+                <li>⚠️ <strong>Velocità spirale Stress</strong> - Playtesting focalizzato necessario</li>
+                <li>⚠️ <strong>Esempi concreti</strong> - Aggiungere trascritti di gioco</li>
+                <li>⚠️ <strong>Chiarezza "quando tirare"</strong> - Sezione dedicata con esempi</li>
+            </ul>
+
+            <div style="margin-top: 40px; padding: 30px; background: white; border-radius: 10px;">
+                <p style="font-size: 1.3em; text-align: center; margin-bottom: 20px;">
+                    <strong>Ma il nucleo è solido e il prodotto è pubblicabile.</strong>
+                </p>
+                <div style="text-align: center;">
+                    <div class="rating-badge">Valutazione Finale: 8.9/10</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Risposta alla Domanda Originale</h3>
+
+        <blockquote style="font-size: 1.1em;">
+            <strong>"Valuta questo GDR alla luce del corso per GDR"</strong>
+        </blockquote>
+
+        <div class="strength-box">
+            <p style="font-size: 1.1em;">
+                Anamnesia <span class="highlight">supera brillantemente</span> quasi tutti i criteri del 
+                corso di game design:
+            </p>
+
+            <ol style="font-size: 1.05em; margin-top: 20px;">
+                <li>✅ <strong>Agency distintiva (Nguyen):</strong> Archetipi come schemi agenziali unici</li>
+                <li>✅ <strong>GNS coerente (Edwards):</strong> Narrativist puro senza compromessi</li>
+                <li>✅ <strong>Meccaniche significative (Costikyan):</strong> Pool/Stress servono la storia</li>
+                <li>✅ <strong>Fallimenti interessanti:</strong> Ogni risultato è narrativamente ricco</li>
+                <li>✅ <strong>Sicurezza integrata:</strong> Nuovo standard per il medium</li>
+                <li>⚠️ <strong>Esempi abbondanti:</strong> Buoni ma servono più trascritti</li>
+                <li>✅ <strong>Onboarding efficace:</strong> Quickstart eccellente</li>
+                <li>⚠️ <strong>Bilanciamento testato:</strong> Richiede playtesting focalizzato su Stress</li>
+            </ol>
+        </div>
+
+        <h3>Ultima Raccomandazione</h3>
+
+        <div class="recommendation-box" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; border-color: #28a745;">
+            <h3 style="color: white; text-align: center; font-size: 2em; margin-bottom: 20px;">
+                📢 PUBBLICA QUESTO GIOCO
+            </h3>
+            
+            <p style="font-size: 1.2em; text-align: center;">
+                Anamnesia colma un vuoto nel panorama italiano dei GDR narrativi.
+            </p>
+
+            <div style="background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; margin: 30px 0;">
+                <h4 style="color: white; margin-bottom: 15px;">Ha Tutto Ciò Che Serve:</h4>
+                <ul style="font-size: 1.1em;">
+                    <li>✅ Qualità professionale</li>
+                    <li>✅ Tema forte e universale</li>
+                    <li>✅ Design elegante e coerente</li>
+                    <li>✅ Etica solida e strumenti di sicurezza</li>
+                    <li>✅ Prodotto completo e pubblicabile</li>
+                </ul>
+            </div>
+
+            <h4 style="color: white; margin-top: 30px;">Piano d'Azione:</h4>
+            <ol style="font-size: 1.05em;">
+                <li>Fai <strong>3-5 playtest</strong> focalizzati sull'economia dello Stress</li>
+                <li>Aggiungi sezione <strong>"Quando Tirare/Non Tirare"</strong> con esempi</li>
+                <li>Aggiungi <strong>appendice con gioco simulato</strong> (1 ciclo trascritto)</li>
+                <li>Pubblica su <strong>Itch.io</strong> (italiano + inglese)</li>
+                <li>Distribuisci anche su <strong>DriveThruRPG</strong></li>
+                <li>Contatta <strong>recensori/podcast italiani</strong> (Locanda del Drago Rosso, GdR Italia)</li>
+            </ol>
+
+            <p style="font-size: 1.2em; text-align: center; margin-top: 30px; font-weight: bold;">
+                Questo gioco MERITA di essere giocato.
+            </p>
+        </div>
+
+        <footer>
+            <p style="font-size: 1.2em; color: #667eea;"><strong>Fine Valutazione Accademica</strong></p>
+            <p style="margin-top: 20px; font-size: 0.95em;">
+                Valutazione condotta secondo framework di:<br>
+                Caillois (Pulsioni Ludiche) • Nguyen (Agency) • Edwards (GNS) • Costikyan (Regole Significative)<br>
+                Huizinga (Cerchio Magico) • Wittgenstein (Natura delle Regole) • Bruner (Funzione Cognitiva)
+            </p>
+            <p style="margin-top: 30px; font-style: italic; color: #666;">
+                "La memoria è un bugiardo. Ma i giochi che creiamo possono dire verità profonde."
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #888;">
+                © 2025 - Valutazione Accademica Completa<br>
+                Generata per supportare pubblicazione e miglioramento del progetto
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Guida alla Sessione Zero</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #764ba2;
+            margin: 40px 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 30px 0 15px 0;
+        }
+        
+        .critical-box {
+            background: #ffe5e5;
+            border: 3px solid #ff4444;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .critical-box h3 {
+            color: #cc0000;
+            margin-top: 0;
+        }
+        
+        .safety-tool {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .safety-tool h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .checklist-box {
+            background: #f8f9fa;
+            border-left: 5px solid #764ba2;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .phase-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .example-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+        
+        .timeline-time {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Guida alla Sessione Zero</div>
+        </header>
+
+        <div class="critical-box">
+            <h3>⚠️ FONDAMENTALE</h3>
+            <p>
+                La Sessione Zero <strong>non è opzionale</strong> per Anamnesia. Questo gioco tratta temi 
+                emotivamente intensi che possono evocare disagio, ansia, o ricordi traumatici reali. Prima 
+                di giocare, è assolutamente necessario:
+            </p>
+            <ul style="margin-top: 15px;">
+                <li>Stabilire limiti chiari su quali contenuti sono accettabili</li>
+                <li>Implementare strumenti di sicurezza condivisi</li>
+                <li>Creare un ambiente di fiducia e rispetto reciproco</li>
+                <li>Permettere a chiunque di ritirarsi senza giudizio</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                <strong>Se qualcuno non si sente a proprio agio durante la Sessione Zero, il gioco non deve 
+                iniziare.</strong> Non ci sono eccezioni.
+            </p>
+        </div>
+
+        <h2>Cos'è la Sessione Zero?</h2>
+
+        <p>
+            La <strong>Sessione Zero</strong> è una sessione preliminare, separata dal gioco vero e proprio, 
+            in cui il gruppo:
+        </p>
+
+        <ul>
+            <li>Si conosce meglio e costruisce fiducia reciproca</li>
+            <li>Discute apertamente delle proprie sensibilità e limiti</li>
+            <li>Stabilisce quali temi sono accettabili e quali no</li>
+            <li>Implementa strumenti di sicurezza condivisi</li>
+            <li>Crea i personaggi insieme</li>
+            <li>Definisce il trauma centrale della storia</li>
+            <li>Calibra il tono desiderato (più thriller, più emotivo, etc.)</li>
+        </ul>
+
+        <p>
+            La Sessione Zero richiede tipicamente <strong>45-60 minuti</strong> e dovrebbe svolgersi almeno 
+            un giorno prima della sessione di gioco vera e propria, per dare a tutti il tempo di riflettere 
+            e, se necessario, ritirarsi senza pressione.
+        </p>
+
+        <h2>Struttura della Sessione Zero</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">0-10 min</div>
+                <div class="timeline-content">
+                    <strong>Introduzione e Riscaldamento</strong><br>
+                    Spiegare cos'è Anamnesia, i temi del gioco, e perché la sicurezza è prioritaria.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-time">10-25 min</div>
+                <div class="timeline-content">
+                    <strong>Lines & Veils + Strumenti di Sicurezza</strong><br>
+                    Discussione aperta sui limiti e implementazione degli strumenti.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-time">25-40 min</div>
+                <div class="timeline-content">
+                    <strong>Creazione Personaggi</strong><br>
+                    Ogni giocatore crea il proprio personaggio collaborando con gli altri.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-time">40-50 min</div>
+                <div class="timeline-content">
+                    <strong>Definizione del Trauma</strong><br>
+                    Il gruppo decide insieme quale evento traumatico è al centro della storia.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-time">50-60 min</div>
+                <div class="timeline-content">
+                    <strong>Calibrazione del Tono e Check Finale</strong><br>
+                    Decidere quanto intenso deve essere il gioco e confermare che tutti sono pronti.
+                </div>
+            </div>
+        </div>
+
+        <h2>Strumenti di Sicurezza</h2>
+
+        <p>
+            Gli strumenti di sicurezza sono meccanismi condivisi che permettono a chiunque al tavolo di 
+            segnalare disagio e modificare o interrompere il gioco quando necessario. Questi non sono 
+            "optional" ma parte integrante del sistema di gioco.
+        </p>
+
+        <div class="safety-tool">
+            <h3>🛑 X-Card</h3>
+            <p>
+                <strong>Come funziona:</strong> Chiunque può dire "X" o toccare una carta fisica con una X 
+                in qualsiasi momento per interrompere immediatamente la scena corrente.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Cosa succede dopo:</strong> Il Master passa immediatamente a una scena diversa o 
+                modifica ciò che sta accadendo. Nessuno chiede spiegazioni. Nessuno discute. Si prosegue.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Quando usarla:</strong> Quando un contenuto ti fa sentire a disagio, ansioso, o 
+                innesca ricordi dolorosi. Non devi spiegare perché.
+            </p>
+            <div class="example-box" style="margin-top: 15px;">
+                <p><strong>Esempio:</strong></p>
+                <p>Durante una scena, viene descritta violenza domestica. Sara dice "X". Il Master dice 
+                immediatamente "Saltiamo avanti. I personaggi sono ora fuori dall'edificio, al sicuro" 
+                e continua da lì. Nessuno chiede a Sara perché ha usato la X-Card.</p>
+            </div>
+        </div>
+
+        <div class="safety-tool">
+            <h3>📋 Lines & Veils</h3>
+            <p>
+                <strong>Lines (Linee):</strong> Contenuti che non devono mai apparire nel gioco. 
+                Completamente off-limits, nemmeno menzionati.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Veils (Veli):</strong> Contenuti che possono esistere nella storia ma che accadono 
+                "fuori scena" senza essere descritti in dettaglio.
+            </p>
+            
+            <h4 style="margin-top: 20px;">Come Definire Lines & Veils</h4>
+            <p>Durante la Sessione Zero, create insieme una lista. Alcuni esempi comuni:</p>
+            
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Categoria</th>
+                    <th>Esempi di Lines</th>
+                    <th>Esempi di Veils</th>
+                </tr>
+                <tr>
+                    <td><strong>Violenza</strong></td>
+                    <td>Violenza su minori, violenza sessuale</td>
+                    <td>Violenza fisica descritta genericamente</td>
+                </tr>
+                <tr>
+                    <td><strong>Salute Mentale</strong></td>
+                    <td>Autolesionismo grafico, descrizioni dettagliate di tentativi di suicidio</td>
+                    <td>Menzione di disturbi mentali senza entrare in dettagli clinici</td>
+                </tr>
+                <tr>
+                    <td><strong>Morte</strong></td>
+                    <td>Morte di animali domestici, morte per torture</td>
+                    <td>Morte accidentale menzionata ma non descritta graficamente</td>
+                </tr>
+                <tr>
+                    <td><strong>Discriminazione</strong></td>
+                    <td>Slur razziali, omofobia esplicita</td>
+                    <td>Temi di discriminazione sistemica senza linguaggio offensivo</td>
+                </tr>
+            </table>
+            
+            <p style="margin-top: 15px;">
+                <strong>Importante:</strong> Queste sono solo suggerimenti. Ogni gruppo deve creare la 
+                propria lista in base alle sensibilità dei suoi membri.
+            </p>
+        </div>
+
+        <div class="safety-tool">
+            <h3>✋ Pause di Check-in</h3>
+            <p>
+                <strong>Come funziona:</strong> Ogni 30-45 minuti, il Master chiama una breve pausa 
+                (2-3 minuti) per permettere a tutti di fare un check emotivo.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Domande durante il check-in:</strong>
+            </p>
+            <ul style="margin-top: 10px;">
+                <li>"Come vi state sentendo?"</li>
+                <li>"Qualcuno ha bisogno di rallentare o cambiare qualcosa?"</li>
+                <li>"C'è qualcosa che vi ha messo a disagio nell'ultima mezz'ora?"</li>
+            </ul>
+            <p style="margin-top: 10px;">
+                <strong>Importante:</strong> Non si gioca durante il check-in. È tempo fuori personaggio 
+                per assicurarsi che tutti stiano bene.
+            </p>
+        </div>
+
+        <div class="safety-tool">
+            <h3>👌 OK Check-in</h3>
+            <p>
+                <strong>Come funziona:</strong> Durante scene particolarmente intense, il Master può 
+                guardare un giocatore e fare il gesto "OK" (pollice e indice a cerchio). Il giocatore 
+                risponde:
+            </p>
+            <ul style="margin-top: 10px;">
+                <li><strong>👌 (OK):</strong> "Sto bene, puoi continuare"</li>
+                <li><strong>✋ (Mano aperta):</strong> "Rallenta un po'"</li>
+                <li><strong>👎 (Pollice giù):</strong> "Ferma questa scena"</li>
+            </ul>
+            <p style="margin-top: 10px;">
+                Questo strumento è discreto e può essere usato senza interrompere il flusso narrativo.
+            </p>
+        </div>
+
+        <h2>Questionario Pre-Partita</h2>
+
+        <p>
+            Prima della Sessione Zero, puoi inviare questo questionario ai giocatori perché lo compilino 
+            in privato. Questo permette a chi è più riservato di esprimere i propri limiti senza pressione 
+            sociale.
+        </p>
+
+        <div class="checklist-box">
+            <h3>Questionario per i Giocatori</h3>
+            <ol>
+                <li><strong>Hai esperienza con giochi di ruolo narrativi ed emotivamente intensi?</strong> 
+                (Sì / No / Un po')</li>
+                
+                <li><strong>Ci sono temi che non vuoi assolutamente vedere nel gioco?</strong> (Risposta aperta)</li>
+                
+                <li><strong>Ci sono temi che puoi tollerare se accennati ma non descritti in dettaglio?</strong> 
+                (Risposta aperta)</li>
+                
+                <li><strong>Hai vissuto personalmente esperienze traumatiche simili ai temi del gioco 
+                (perdita, colpa, incidenti, tradimenti)?</strong> (Preferisci non rispondere / Sì / No)<br>
+                <em style="font-size: 0.9em;">Nota: Non devi condividere dettagli. Questa domanda serve solo 
+                a valutare se il gioco è appropriato.</em></li>
+                
+                <li><strong>Quanto intenso vuoi che sia il gioco?</strong><br>
+                1 (Thriller leggero) - 2 - 3 (Equilibrato) - 4 - 5 (Horror psicologico intenso)</li>
+                
+                <li><strong>Preferisci che ci sia sempre una "speranza" nella storia o sei a tuo agio con 
+                finali tragici?</strong> (Sempre speranza / Tragedia va bene / Non ho preferenze)</li>
+                
+                <li><strong>C'è qualcos'altro che il Master dovrebbe sapere per rendere l'esperienza sicura 
+                per te?</strong> (Risposta aperta)</li>
+            </ol>
+        </div>
+
+        <h2>Calibrazione del Tono</h2>
+
+        <p>
+            Anamnesia può essere giocato su diversi livelli di intensità emotiva. Durante la Sessione Zero, 
+            decidete insieme dove posizionare il vostro gioco su questa scala:
+        </p>
+
+        <table>
+            <tr>
+                <th>Livello</th>
+                <th>Descrizione</th>
+                <th>Adatto per</th>
+            </tr>
+            <tr>
+                <td><strong>1-2<br>Leggero</strong></td>
+                <td>Thriller psicologico con focus sul mistero più che sul trauma. Le rivelazioni sono 
+                scomode ma non devastanti.</td>
+                <td>Giocatori nuovi al genere o a gruppi che vogliono un'esperienza meno intensa</td>
+            </tr>
+            <tr>
+                <td><strong>3-4<br>Medio</strong></td>
+                <td>Equilibrio tra mistero e esplorazione emotiva. I personaggi soffrono ma c'è spazio 
+                per redenzione e catarsi.</td>
+                <td>Gruppo standard, esperienza "tipica" di Anamnesia</td>
+            </tr>
+            <tr>
+                <td><strong>5<br>Intenso</strong></td>
+                <td>Horror psicologico completo. Nessuna garanzia di happy ending. Focus sull'impatto 
+                emotivo del trauma.</td>
+                <td>Giocatori esperti che cercano esperienze emotivamente profonde e sono preparati a 
+                gestirle</td>
+            </tr>
+        </table>
+
+        <div class="critical-box" style="background: #fff3cd; border-color: #ffc107;">
+            <h3 style="color: #856404;">💡 Consiglio del Designer</h3>
+            <p>
+                Anche se scegliete il livello 5 (Intenso), mantenetevi sempre aperti a scalare verso il 
+                basso durante il gioco. È facile aumentare l'intensità, molto più difficile ridurla una 
+                volta che la tensione è alta.
+            </p>
+        </div>
+
+        <h2>Definire il Trauma Centrale</h2>
+
+        <p>
+            Dopo aver stabilito i limiti di sicurezza, il gruppo deve decidere quale trauma è al centro 
+            della storia. Alcuni suggerimenti:
+        </p>
+
+        <div class="phase-box">
+            <h3 style="margin-top: 0;">Traumi Adatti per Diverse Sensibilità</h3>
+            
+            <h4 style="margin-top: 15px;">Intensità Bassa-Media:</h4>
+            <ul>
+                <li>Un incidente stradale senza vittime ma con gravi conseguenze</li>
+                <li>Un segreto professionale che ha rovinato carriere</li>
+                <li>Un tradimento tra amici che ha distrutto un gruppo</li>
+                <li>Un esperimento scientifico fallito senza vittime ma con perdite</li>
+            </ul>
+            
+            <h4 style="margin-top: 15px;">Intensità Alta:</h4>
+            <ul>
+                <li>Un incidente con vittima e omissione di soccorso (come "L'Incidente")</li>
+                <li>Un tradimento che porta a una morte (come "Il Tradimento")</li>
+                <li>Un esperimento con vittima inconsapevole (come "L'Esperimento")</li>
+                <li>Una decisione impossibile con conseguenze fatali</li>
+            </ul>
+        </div>
+
+        <h2>Checklist Finale</h2>
+
+        <p>
+            Prima di concludere la Sessione Zero, verificate che tutti questi punti siano stati coperti:
+        </p>
+
+        <div class="checklist-box">
+            <p><input type="checkbox"> <strong>Tutti hanno capito i temi del gioco</strong></p>
+            <p><input type="checkbox"> <strong>Lines & Veils sono stati definiti e registrati</strong></p>
+            <p><input type="checkbox"> <strong>Almeno due strumenti di sicurezza sono stati implementati</strong></p>
+            <p><input type="checkbox"> <strong>Ogni giocatore ha creato il proprio personaggio</strong></p>
+            <p><input type="checkbox"> <strong>Il trauma centrale è stato definito</strong></p>
+            <p><input type="checkbox"> <strong>Il livello di intensità è stato concordato</strong></p>
+            <p><input type="checkbox"> <strong>Tutti sanno che possono ritirarsi in qualsiasi momento</strong></p>
+            <p><input type="checkbox"> <strong>È stata programmata una data per la sessione di gioco</strong></p>
+            <p><input type="checkbox"> <strong>È stato pianificato un debrief post-sessione</strong></p>
+        </div>
+
+        <div class="critical-box">
+            <h3>🛡️ Ultima Verifica</h3>
+            <p>
+                Prima di concludere, il Master fa un giro di tavolo e chiede a ogni persona:
+            </p>
+            <p style="margin-top: 15px; font-size: 1.1em; font-style: italic;">
+                "Sei pronto a giocare con questi parametri? Ti senti al sicuro?"
+            </p>
+            <p style="margin-top: 15px;">
+                Se anche una sola persona esita o dice "no", il gioco non deve iniziare. Discutete cosa può 
+                essere modificato oppure considerate un gioco diverso.
+            </p>
+        </div>
+
+        <h2>Dopo la Sessione di Gioco: Il Debrief</h2>
+
+        <p>
+            Il debrief è obbligatorio quanto la Sessione Zero. Dedicate <strong>15-20 minuti</strong> dopo 
+            la fine del gioco per parlare, fuori personaggio, dell'esperienza:
+        </p>
+
+        <ol>
+            <li><strong>Come vi sentite ora?</strong> - Check emotivo generale</li>
+            <li><strong>Quali momenti vi hanno colpito di più?</strong> - Discussione aperta</li>
+            <li><strong>C'è stato qualcosa di troppo intenso?</strong> - Feedback per il futuro</li>
+            <li><strong>Come vi sentite riguardo ai vostri personaggi?</strong> - Chiusura emotiva</li>
+            <li><strong>Cosa porterete con voi di questa storia?</strong> - Riflessione finale</li>
+        </ol>
+
+        <div class="example-box">
+            <p><strong>Tecniche di Disconnessione dal Personaggio:</strong></p>
+            <ul style="margin-top: 10px;">
+                <li>Fare un gesto simbolico di "togliersi" il personaggio (es. togliersi un anello, 
+                chiudere la scheda)</li>
+                <li>Dire ad alta voce "Io sono [nome reale], non [nome personaggio]"</li>
+                <li>Condividere una cosa positiva della propria vita reale</li>
+                <li>Fare qualcosa di leggero insieme (guardare un video divertente, mangiare qualcosa)</li>
+            </ul>
+        </div>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #667eea;">
+            <p><strong>ANAMNESIA</strong> Guida alla Sessione Zero v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                "La sicurezza non è negoziabile. Non è debolezza prendersi cura l'uno dell'altro."
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Quickstart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 2em;
+            color: #764ba2;
+            margin: 40px 0 20px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin: 12px 0;
+        }
+        
+        .quickref {
+            background: #e7f3ff;
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .quickref h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .step-box {
+            background: #f8f9fa;
+            border-left: 5px solid #764ba2;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        ul, ol {
+            margin: 12px 0 12px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .scenario-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #764ba2;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        strong {
+            color: #764ba2;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Quickstart - Inizia a Giocare in 5 Minuti</div>
+        </header>
+
+        <div class="quickref">
+            <h3>⚡ In Breve</h3>
+            <p>
+                <strong>Genere:</strong> Horror psicologico narrativo<br>
+                <strong>Giocatori:</strong> 2-4 + Master (opzionale)<br>
+                <strong>Durata:</strong> 90-120 minuti<br>
+                <strong>Materiali:</strong> 6 dadi a sei facce per giocatore, carta e penna
+            </p>
+        </div>
+
+        <h2>Cos'è Anamnesia?</h2>
+
+        <p>
+            <strong>Anamnesia</strong> è un gioco in cui interpreti personaggi che hanno dimenticato un 
+            evento traumatico. Durante il gioco, recupererai frammenti di memoria e ricostruirai 
+            gradualmente la verità di ciò che è accaduto. Ma ogni ricordo ha un prezzo, e la verità 
+            potrebbe essere più terribile del dimenticare.
+        </p>
+
+        <div class="warning-box">
+            <strong>⚠️ Contenuti Sensibili:</strong> Questo gioco tratta temi di trauma, violenza 
+            psicologica e colpa. Assicurati che tutti i giocatori siano a proprio agio prima di iniziare. 
+            Usate la <strong>X-Card</strong>: chiunque può dire "X" per interrompere se si sente a disagio.
+        </div>
+
+        <h2>Setup Rapido (5 minuti)</h2>
+
+        <div class="step-box">
+            <p>
+                <span class="step-number">1</span>
+                <strong>Scegliete il Trauma Condiviso</strong>
+            </p>
+            <p>
+                Decidete insieme quale evento traumatico i personaggi hanno dimenticato. Alcuni esempi:
+            </p>
+            <ul style="margin-left: 50px;">
+                <li><strong>L'Incidente:</strong> Qualcuno è morto in un incidente di cui siete responsabili</li>
+                <li><strong>Il Tradimento:</strong> Avete tradito qualcuno che si fidava di voi</li>
+                <li><strong>L'Esperimento:</strong> Avete partecipato a qualcosa che è andato terribilmente storto</li>
+            </ul>
+        </div>
+
+        <div class="step-box">
+            <p>
+                <span class="step-number">2</span>
+                <strong>Create i Personaggi (2 minuti ciascuno)</strong>
+            </p>
+            <p>
+                Ogni giocatore sceglie un <strong>Archetipo</strong> e risponde a tre domande:
+            </p>
+            
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Archetipo</th>
+                    <th>Domanda Guida</th>
+                </tr>
+                <tr>
+                    <td><strong>Il Sopravvissuto</strong></td>
+                    <td>"Perché io e non loro?"</td>
+                </tr>
+                <tr>
+                    <td><strong>Il Protettore</strong></td>
+                    <td>"Come ho potuto deluderli?"</td>
+                </tr>
+                <tr>
+                    <td><strong>Il Testimone</strong></td>
+                    <td>"Cosa ho visto che non dovevo vedere?"</td>
+                </tr>
+                <tr>
+                    <td><strong>Il Catalizzatore</strong></td>
+                    <td>"Cosa ho fatto?"</td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 15px;">
+                <strong>Le Tre Domande:</strong>
+            </p>
+            <ol style="margin-left: 50px;">
+                <li>Chi eri prima? (professione, ruolo)</li>
+                <li>Cosa ricordi con certezza? (un dettaglio sensoriale)</li>
+                <li>Qual è il tuo difetto? (un tratto problematico)</li>
+            </ol>
+        </div>
+
+        <div class="step-box">
+            <p>
+                <span class="step-number">3</span>
+                <strong>Preparate i Materiali</strong>
+            </p>
+            <ul style="margin-left: 50px;">
+                <li>Ogni giocatore prende <strong>6 dadi a sei facce</strong></li>
+                <li>Scrivete "<strong>Stress: 0</strong>" sulla vostra scheda</li>
+                <li>Preparate un foglio per annotare i frammenti di memoria</li>
+            </ul>
+        </div>
+
+        <h2>Regole Essenziali</h2>
+
+        <h3>🎲 Quando Tirare i Dadi</h3>
+
+        <p>Tira i dadi quando:</p>
+        <ul>
+            <li>Cerchi di recuperare un ricordo</li>
+            <li>Interpreti un frammento ambiguo</li>
+            <li>Resisti a una rivelazione traumatica</li>
+            <li>Aiuti un altro personaggio</li>
+        </ul>
+
+        <div class="quickref">
+            <h3>Come Funziona un Tiro</h3>
+            <ol>
+                <li><strong>Calcola il tuo pool:</strong> 6 dadi - il tuo Stress corrente</li>
+                <li><strong>Tira tutti i dadi</strong></li>
+                <li><strong>Conta i successi:</strong> ogni 4, 5 o 6 è un successo</li>
+            </ol>
+            
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Successi</th>
+                    <th>Risultato</th>
+                </tr>
+                <tr>
+                    <td><strong>0</strong></td>
+                    <td>Fallimento: +1 Stress, il Master complica le cose</td>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Successo Parziale: riesci ma guadagni +1 Stress</td>
+                </tr>
+                <tr>
+                    <td><strong>2-3</strong></td>
+                    <td>Successo: ottieni ciò che volevi</td>
+                </tr>
+                <tr>
+                    <td><strong>4+</strong></td>
+                    <td>Successo Critico: bonus extra o colleghi frammenti</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>😰 Stress</h3>
+
+        <p>
+            Lo <strong>Stress</strong> rappresenta il peso emotivo del ricordare. Ogni punto di Stress 
+            riduce di 1 il numero di dadi che puoi tirare.
+        </p>
+
+        <p><strong>Guadagni Stress quando:</strong></p>
+        <ul>
+            <li>Fallisci un tiro</li>
+            <li>Ottieni un Successo Parziale</li>
+            <li>Scopri una verità particolarmente traumatica</li>
+            <li>Aiuti un altro personaggio</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>⚠️ Breakdown:</strong> Se il tuo Stress raggiunge 6, non puoi più tirare dadi. 
+            Il personaggio entra in crisi e deve essere aiutato dagli altri o ritirarsi dalla scena.
+        </div>
+
+        <h2>Come Si Gioca</h2>
+
+        <h3>Struttura della Sessione</h3>
+
+        <p>Il gioco si svolge in <strong>4-6 cicli</strong> di circa 15 minuti ciascuno:</p>
+
+        <div class="step-box">
+            <p><strong>Ciclo 1-2: NEBBIA</strong></p>
+            <p>
+                I frammenti sono vaghi e sensoriali. Odori, suoni, sensazioni. Non sapete ancora 
+                cosa significano.
+            </p>
+            <p style="margin-top: 10px;">
+                <em>Esempi: "Mani che tremano", "Odore di bruciato", "Il suono di vetri rotti"</em>
+            </p>
+        </div>
+
+        <div class="step-box">
+            <p><strong>Ciclo 3-4: CONNESSIONI</strong></p>
+            <p>
+                I frammenti rivelano dettagli concreti. Luoghi, persone, azioni. Iniziate a 
+                ricostruire la cronologia.
+            </p>
+            <p style="margin-top: 10px;">
+                <em>Esempi: "Una strada bagnata", "Il volto di una bambina", "Qualcuno grida 'Fermati!'"</em>
+            </p>
+        </div>
+
+        <div class="step-box">
+            <p><strong>Ciclo 5-6: RIVELAZIONI</strong></p>
+            <p>
+                I frammenti finali svelano la verità più dolorosa. Chi era responsabile, cosa è 
+                davvero successo, quale segreto si nascondeva.
+            </p>
+            <p style="margin-top: 10px;">
+                <em>Esempi: "Eri tu che guidavi", "Non è stato un incidente", "Sapevi cosa sarebbe successo"</em>
+            </p>
+        </div>
+
+        <h3>All'Interno di Ogni Ciclo</h3>
+
+        <ol>
+            <li><strong>Trigger:</strong> Il Master descrive qualcosa che innesca un ricordo 
+            (un suono, un odore, un oggetto)</li>
+            <li><strong>Frammento:</strong> Ogni giocatore descrive un breve ricordo legato al trigger</li>
+            <li><strong>Interpretazione:</strong> Il gruppo discute i frammenti e cerca di connetterli</li>
+            <li><strong>Conseguenze:</strong> Chi ha fallito tiri guadagna Stress; chi ha scoperto 
+            verità traumatiche potrebbe guadagnarne anche di più</li>
+        </ol>
+
+        <h3>Concludere il Gioco</h3>
+
+        <p>Il gioco termina quando:</p>
+        <ul>
+            <li>Avete ricostruito abbastanza della verità per una conclusione soddisfacente</li>
+            <li>Lo Stress di tutti i personaggi è troppo alto per continuare</li>
+            <li>Raggiungete un momento drammatico naturale per chiudere</li>
+        </ul>
+
+        <p>
+            Dedicate gli ultimi 10-15 minuti a una <strong>Scena Finale</strong> in cui i personaggi 
+            confrontano la verità scoperta e decidono cosa fare.
+        </p>
+
+        <h2>Scenario Pronto: "L'Incidente"</h2>
+
+        <div class="scenario-box">
+            <h3 style="margin-top: 0;">Setup</h3>
+            <p>
+                I personaggi si risvegliano in una stanza d'ospedale. Ognuno ha piccole ferite, 
+                lividi, bende. L'ultima cosa che ricordano con chiarezza è essere saliti in macchina 
+                quella sera. Tutto il resto è vuoto.
+            </p>
+
+            <h4 style="margin-top: 20px;">Verità Nascosta (solo per il Master)</h4>
+            <p>
+                Quella sera, i personaggi erano in macchina insieme per andare a una festa. Il 
+                Catalizzatore guidava. Il Protettore aveva insistito per prendere una scorciatoia. 
+                Il Testimone aveva visto qualcosa sulla strada ma non ha parlato in tempo. Una bambina 
+                di 6 anni è stata investita. Il Sopravvissuto è l'unico che non era in macchina in quel 
+                momento, ma ha scelto di aiutare gli altri a nascondere l'accaduto invece di chiamare 
+                i soccorsi. La bambina è morta.
+            </p>
+
+            <h4 style="margin-top: 20px;">Frammenti Suggeriti per Ciclo</h4>
+            
+            <p><strong>Nebbia (Ciclo 1-2):</strong></p>
+            <ul>
+                <li>"L'odore di gomma bruciata"</li>
+                <li>"Il suono di frenate"</li>
+                <li>"Una sensazione di peso sul petto"</li>
+                <li>"Mani che lavano via qualcosa"</li>
+            </ul>
+
+            <p><strong>Connessioni (Ciclo 3-4):</strong></p>
+            <ul>
+                <li>"Una strada di campagna al buio"</li>
+                <li>"Il riflesso di una bicicletta rosa sotto i fari"</li>
+                <li>"Qualcuno urla 'Che cosa abbiamo fatto?!'"</li>
+                <li>"Un cellulare che vibra, ignorato"</li>
+            </ul>
+
+            <p><strong>Rivelazioni (Ciclo 5-6):</strong></p>
+            <ul>
+                <li>"Hai visto la bambina sulla strada ma non hai parlato"</li>
+                <li>"Tu guidavi. Tu hai investito quella bambina"</li>
+                <li>"Hai convinto gli altri a scappare, a non chiamare aiuto"</li>
+                <li>"Se aveste chiamato subito, forse sarebbe sopravvissuta"</li>
+            </ul>
+
+            <h4 style="margin-top: 20px;">Domande Guida per il Master</h4>
+            <ul>
+                <li>Chi ha visto la bambina per primo?</li>
+                <li>Chi ha proposto di scappare?</li>
+                <li>Qualcuno ha provato a opporsi?</li>
+                <li>Dove hanno nascosto l'auto dopo?</li>
+                <li>Come si sentono adesso che ricordano?</li>
+            </ul>
+        </div>
+
+        <h2>Consigli per il Master</h2>
+
+        <ul>
+            <li><strong>Non avere tutte le risposte:</strong> Lascia che siano i giocatori a 
+            riempire i dettagli con le loro interpretazioni</li>
+            <li><strong>Alza la tensione gradualmente:</strong> I primi frammenti sono ambigui, 
+            gli ultimi sono brutalmente chiari</li>
+            <li><strong>Fai domande:</strong> "Come ti fa sentire questo ricordo?" "Cosa pensi sia 
+            successo dopo?"</li>
+            <li><strong>Usa il silenzio:</strong> Dopo una rivelazione pesante, lascia spazio alla 
+            reazione emotiva</li>
+            <li><strong>Rispetta i limiti:</strong> Se qualcuno usa la X-Card, fermatevi e 
+            modificate la scena senza discutere</li>
+        </ul>
+
+        <h2>Dopo la Prima Partita</h2>
+
+        <p>
+            Se il gioco vi è piaciuto, il <strong>Manuale Completo</strong> offre:
+        </p>
+        <ul>
+            <li>Sistema di Approcci per personalizzare i personaggi</li>
+            <li>Meccaniche avanzate di Stress ed Echi Emotivi</li>
+            <li>Sistema completo delle Carte Frammento</li>
+            <li>Scenari aggiuntivi e strumenti per crearne di propri</li>
+            <li>Espansione soprannaturale "Echi dall'Abisso"</li>
+            <li>Sessione Zero dettagliata con strumenti di sicurezza approfonditi</li>
+        </ul>
+
+        <div class="warning-box">
+            <strong>💬 Debrief Finale:</strong> Dopo ogni partita, dedicate 10-15 minuti a parlare 
+            <em>fuori personaggio</em> dell'esperienza. Cosa avete trovato più coinvolgente? Ci sono 
+            state scene particolarmente intense? Come vi sentite ora? Questo è essenziale per elaborare 
+            emotivamente il gioco.
+        </div>
+
+        <footer style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 2px solid #ddd;">
+            <p><strong>ANAMNESIA</strong> Quickstart v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                "La memoria è un bugiardo. Cosa resta quando anche le bugie svaniscono?"
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

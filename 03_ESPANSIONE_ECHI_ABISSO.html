@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Espansione: Echi dall'Abisso</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #f5f5f5;
+            padding: 50px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #4a00e0;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%);
+            color: white;
+            padding: 40px 20px;
+            margin: -50px -50px 40px -50px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.4em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #4a00e0;
+            margin: 50px 0 25px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #8e2de2;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #8e2de2;
+            margin: 35px 0 20px 0;
+        }
+        
+        h4 {
+            font-size: 1.3em;
+            color: #555;
+            margin: 25px 0 15px 0;
+        }
+        
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .cosmic-quote {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #a8dadc;
+            border-left: 5px solid #4a00e0;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            box-shadow: inset 0 0 20px rgba(74,0,224,0.2);
+        }
+        
+        .mechanics-box {
+            background: #e0e7ff;
+            border: 2px solid #4a00e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .mechanics-box h4 {
+            color: #4a00e0;
+            margin-top: 0;
+        }
+        
+        .warning {
+            background: #1a1a2e;
+            border: 3px solid #ff006e;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            color: #f5f5f5;
+        }
+        
+        .warning h4 {
+            color: #ff006e;
+            margin-top: 0;
+        }
+        
+        .entity-card {
+            background: linear-gradient(135deg, #8e2de215 0%, #4a00e015 100%);
+            border: 2px solid #4a00e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(74,0,224,0.2);
+        }
+        
+        .entity-title {
+            font-size: 1.6em;
+            color: #4a00e0;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .entity-subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #4a00e0;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 40px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        .veil-tracker {
+            background: linear-gradient(to right, #1a1a2e, #4a00e0, #1a1a2e);
+            padding: 3px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .veil-inner {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            header {
+                background: #4a00e0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ECHI DALL'ABISSO</h1>
+            <div class="subtitle">Espansione Soprannaturale per Anamnesia</div>
+            <p style="margin-top: 20px; font-size: 0.95em;">
+                Quando la realtà non è affidabile,<br>
+                cosa succede se la realtà stessa non è... naturale?
+            </p>
+        </header>
+
+        <div class="cosmic-quote">
+            "Alcuni traumi non appartengono al mondo che conosciamo. Alcune memorie provengono da 
+            luoghi dove la mente umana non dovrebbe andare. E quando le ricordi... qualcosa ricorda 
+            anche te."
+        </div>
+
+        <h2>Introduzione all'Espansione</h2>
+
+        <p>
+            <strong>Echi dall'Abisso</strong> porta Anamnesia oltre i confini dell'horror psicologico 
+            per addentrarsi nel territorio del <strong>cosmico</strong> e del <strong>soprannaturale</strong>. 
+            In questa versione del gioco, il trauma che i personaggi hanno dimenticato non è solo 
+            personale: è un varco verso verità che l'umanità non dovrebbe conoscere.
+        </p>
+
+        <p>
+            Questa espansione introduce:
+        </p>
+        <ul>
+            <li><strong>Nuovi Archetipi:</strong> personaggi toccati dal soprannaturale</li>
+            <li><strong>Il Velo della Realtà:</strong> una nuova meccanica per rappresentare la 
+            frattura tra realtà e impossibile</li>
+            <li><strong>Entità Cosmiche:</strong> presenze che esistono oltre la comprensione umana</li>
+            <li><strong>Frammenti Impossibili:</strong> ricordi di cose che non possono essere reali... 
+            eppure lo sono</li>
+        </ul>
+
+        <div class="warning">
+            <h4>⚠️ Avvertenza Aggiuntiva</h4>
+            <p>
+                Questa espansione intensifica ulteriormente i temi già pesanti del gioco base, 
+                aggiungendo elementi di <strong>perdita di controllo</strong>, 
+                <strong>rottura della realtà</strong> e <strong>insignificanza cosmica</strong>. 
+                È fondamentale condurre una Sessione Zero ancora più attenta e stabilire chiaramente 
+                quali temi soprannaturali sono accettabili per il gruppo.
+            </p>
+        </div>
+
+        <h2>Il Velo della Realtà</h2>
+
+        <h3>Cos'è il Velo?</h3>
+
+        <p>
+            Il <strong>Velo della Realtà</strong> rappresenta la barriera sottile tra il mondo 
+            ordinario e le verità cosmiche che si nascondono oltre. Nel gioco base di Anamnesia, 
+            i personaggi ricostruiscono una verità traumatica ma fondamentalmente umana. Con il 
+            Velo, scoprono che quella verità è solo la superficie.
+        </p>
+
+        <p>
+            Il Velo è rappresentato da un <strong>tracciato da 0 a 10</strong>, condiviso da tutto 
+            il gruppo:
+        </p>
+
+        <div class="veil-tracker">
+            <div class="veil-inner">
+                <h4 style="text-align: center; color: #4a00e0;">Tracciato del Velo</h4>
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <th>Livello</th>
+                        <th>Stato della Realtà</th>
+                    </tr>
+                    <tr>
+                        <td><strong>0-2</strong></td>
+                        <td>Intatto: La realtà è stabile, i fenomeni sono spiegabili</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3-5</strong></td>
+                        <td>Crepe: Piccole impossibilità, dubbi sulla percezione</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6-8</strong></td>
+                        <td>Fratturato: L'impossibile diventa innegabile</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9-10</strong></td>
+                        <td>Dissolto: La realtà è solo un'illusione fragile</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h3>Come Si Altera il Velo</h3>
+
+        <p>Il Velo si lacera quando:</p>
+
+        <ul>
+            <li>Un personaggio recupera un <strong>Frammento Impossibile</strong> (+1)</li>
+            <li>Il gruppo scopre prove di fenomeni soprannaturali (+1)</li>
+            <li>Un personaggio subisce un <strong>Breakdown Cosmico</strong> (+2)</li>
+            <li>Un'Entità manifesta la sua presenza (+2)</li>
+            <li>Il gruppo esegue rituali o contatta l'Altrove (+1 per tentativo)</li>
+        </ul>
+
+        <div class="mechanics-box">
+            <h4>Effetti del Velo Lacerato</h4>
+            <p>
+                Quando il Velo raggiunge determinati livelli, si verificano conseguenze narrative 
+                e meccaniche:
+            </p>
+            
+            <p><strong>Velo 3:</strong> I personaggi iniziano a vedere <em>echi</em> - eventi 
+            impossibili ai margini della percezione (ombre che si muovono contro la luce, sussurri 
+            in lingue morte).</p>
+            
+            <p><strong>Velo 5:</strong> La realtà inizia a <em>slittare</em>. Oggetti cambiano 
+            posizione, il tempo sembra distorcersi, alcuni ricordi sembrano appartenere a vite 
+            diverse.</p>
+            
+            <p><strong>Velo 7:</strong> L'impossibile diventa <em>tangibile</em>. I personaggi 
+            possono toccare, sentire, interagire con fenomeni che contraddicono la fisica.</p>
+            
+            <p><strong>Velo 9:</strong> Il confine tra realtà e Altrove <em>collassa</em>. Le 
+            Entità possono manifestarsi liberamente. Il mondo ordinario sembra irreale.</p>
+            
+            <p><strong>Velo 10:</strong> <em>Rivelazione Totale</em>. I personaggi vedono la verità 
+            ultima. Il gioco si avvia rapidamente verso la conclusione.</p>
+        </div>
+
+        <h2>Nuovi Archetipi Cosmici</h2>
+
+        <p>
+            Questi archetipi sostituiscono o si affiancano a quelli del gioco base quando si gioca 
+            con l'espansione soprannaturale:
+        </p>
+
+        <div class="entity-card">
+            <div class="entity-title">L'Illuminato</div>
+            <div class="entity-subtitle">"Ho visto oltre. Non posso dimenticare."</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi ha intravisto la verità cosmica e la sua 
+                mente l'ha rifiutata, seppellendola nell'amnesia.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Cosa ho visto che ha distrutto la mia certezza 
+                sulla realtà?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> L'Illuminato sa, a livello inconscio, che tutto 
+                ciò che credeva vero è una menzogna. Ogni frammento recuperato lo avvicina a una 
+                comprensione che potrebbe annientare la sua sanità mentale. Eppure, non può smettere 
+                di cercare.
+            </p>
+            <p>
+                <strong>Abilità Speciale:</strong> <em>Visione oltre il Velo</em> - Una volta per 
+                ciclo, può vedere la verità nascosta dietro un frammento ambiguo, ma guadagna +2 Stress.
+            </p>
+        </div>
+
+        <div class="entity-card">
+            <div class="entity-title">Il Posseduto</div>
+            <div class="entity-subtitle">"Qualcosa vive dentro di me."</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi è stato toccato da un'Entità e ne porta 
+                un frammento dentro di sé.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Queste azioni erano davvero mie?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Posseduto ha fatto cose terribili durante il 
+                trauma, ma non era completamente lui. Un'influenza esterna ha guidato le sue mani, 
+                sussurrato ai suoi pensieri. Ma questo lo rende più o meno colpevole?
+            </p>
+            <p>
+                <strong>Abilità Speciale:</strong> <em>Sussurri dell'Entità</em> - Può chiedere 
+                all'Entità dentro di sé una risposta a una domanda. L'Entità risponde sempre, ma 
+                le sue risposte sono criptiche e aumentano il Velo di +1.
+            </p>
+        </div>
+
+        <div class="entity-card">
+            <div class="entity-title">L'Araldo</div>
+            <div class="entity-subtitle">"Ho aperto la porta. È entrato qualcosa."</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi ha innescato l'evento soprannaturale, 
+                volontariamente o per ignoranza.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Cosa ho risvegliato?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> L'Araldo ha eseguito un rituale, aperto un libro, 
+                pronunciato parole in una lingua morta. Ha squarciato il Velo e qualcosa è passato 
+                dall'altra parte. Ora deve scoprire se può rimediare... o se è già troppo tardi.
+            </p>
+            <p>
+                <strong>Abilità Speciale:</strong> <em>Ricordo Rituale</em> - Può tentare di 
+                ricordare frammenti di rituali o conoscenze occulte. Tira 3d6: con 2+ successi, 
+                ottiene una conoscenza utile ma il Velo aumenta di +1.
+            </p>
+        </div>
+
+        <div class="entity-card">
+            <div class="entity-title">Il Sacrificato</div>
+            <div class="entity-subtitle">"Sono morto. Perché sono ancora qui?"</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi doveva morire come parte di un rituale o 
+                evento cosmico, ma qualcosa è andato storto.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Sono ancora umano?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Sacrificato non dovrebbe essere vivo. La sua 
+                morte era necessaria per qualcosa di più grande. Il fatto che respiri ancora è 
+                un'anomalia cosmica, e può sentire che la realtà cerca di "correggere" l'errore.
+            </p>
+            <p>
+                <strong>Abilità Speciale:</strong> <em>Morto-Vivente</em> - Immune agli effetti 
+                dello Stress fino a livello 4. Oltre quel punto, lo Stress rappresenta non solo 
+                trauma emotivo ma la realtà che cerca di reclamare ciò che le appartiene.
+            </p>
+        </div>
+
+        <h2>Entità Cosmiche</h2>
+
+        <p>
+            Le Entità sono presenze che esistono oltre la comprensione umana. Non sono necessariamente 
+            malvagie - sono semplicemente <em>aliene</em> a ogni categoria morale o logica che 
+            l'umanità possa concepire.
+        </p>
+
+        <h3>Natura delle Entità</h3>
+
+        <p>Ogni Entità è definita da tre aspetti:</p>
+
+        <ol>
+            <li><strong>Manifestazione:</strong> Come appare o si fa sentire quando il Velo è sottile</li>
+            <li><strong>Desiderio:</strong> Cosa cerca di ottenere (spesso incomprensibile)</li>
+            <li><strong>Marchio:</strong> L'effetto permanente che lascia su chi la incontra</li>
+        </ol>
+
+        <h3>Esempi di Entità</h3>
+
+        <div class="entity-card">
+            <div class="entity-title">Il Divoratore di Nomi</div>
+            <p>
+                <strong>Manifestazione:</strong> Un'assenza, un vuoto a forma di persona. Dove si 
+                manifesta, le persone dimenticano i nomi - prima dei luoghi, poi delle persone, 
+                infine il proprio.
+            </p>
+            <p>
+                <strong>Desiderio:</strong> Cancellare l'identità, ridurre tutto all'anonimato primordiale.
+            </p>
+            <p>
+                <strong>Marchio:</strong> Chi lo incontra perde progressivamente la capacità di 
+                ricordare nomi propri. Prima quelli lontani, poi quelli vicini, infine il proprio.
+            </p>
+        </div>
+
+        <div class="entity-card">
+            <div class="entity-title">L'Architetto di Possibilità</div>
+            <p>
+                <strong>Manifestazione:</strong> Geometrie impossibili che si piegano oltre le tre 
+                dimensioni. Spazi che contengono più luoghi contemporaneamente.
+            </p>
+            <p>
+                <strong>Desiderio:</strong> Riorganizzare la realtà secondo principi geometrici 
+                incomprensibili alla mente euclidea.
+            </p>
+            <p>
+                <strong>Marchio:</strong> La percezione spaziale dei personaggi si distorce. 
+                Faticano a giudicare distanze, direzioni. A volte vedono angoli che non dovrebbero 
+                esistere.
+            </p>
+        </div>
+
+        <div class="entity-card">
+            <div class="entity-title">Il Narratore Infinito</div>
+            <p>
+                <strong>Manifestazione:</strong> Una voce che racconta storie. Chi la ascolta 
+                realizza che sta raccontando la loro vita... incluso il futuro.
+            </p>
+            <p>
+                <strong>Desiderio:</strong> Trasformare l'esistenza in narrazione. Ogni vita diventa 
+                una storia che l'Entità può leggere e riscrivere.
+            </p>
+            <p>
+                <strong>Marchio:</strong> I personaggi sentono la propria vita come una storia 
+                raccontata da qualcun altro. Momenti di déjà vu intensi. Sensazione di essere 
+                controllati da una trama più grande.
+            </p>
+        </div>
+
+        <h2>Frammenti Impossibili</h2>
+
+        <p>
+            I <strong>Frammenti Impossibili</strong> sono ricordi che contraddicono la realtà. 
+            Non possono essere veri... eppure lo sono. Quando un personaggio recupera un Frammento 
+            Impossibile, deve scegliere:
+        </p>
+
+        <div class="mechanics-box">
+            <h4>Gestire un Frammento Impossibile</h4>
+            <ol>
+                <li><strong>Negare:</strong> Rifiutare il frammento come falso. Non guadagni 
+                informazioni ma mantieni il controllo. Il Velo non aumenta.</li>
+                <li><strong>Razionalizzare:</strong> Cercare una spiegazione logica. Tira dadi: 
+                con successo, il frammento diventa comprensibile; con fallimento, guadagni +2 Stress 
+                e il Velo aumenta di +1.</li>
+                <li><strong>Accettare:</strong> Abbracciare l'impossibile come reale. Guadagni tutte 
+                le informazioni del frammento, ma il Velo aumenta di +1 e guadagni +1 Stress.</li>
+            </ol>
+        </div>
+
+        <h3>Esempi di Frammenti Impossibili</h3>
+
+        <table>
+            <tr>
+                <th>Frammento</th>
+                <th>Verità Nascosta</th>
+            </tr>
+            <tr>
+                <td>"Ricordo di essere stato in due luoghi contemporaneamente"</td>
+                <td>La realtà si è divisa in quel momento; entrambe le versioni esistono</td>
+            </tr>
+            <tr>
+                <td>"Ho visto me stesso morire, ma sono ancora qui"</td>
+                <td>Sei morto. Questo è un'eco, un residuo che non sa di essere finito</td>
+            </tr>
+            <tr>
+                <td>"Il sangue scorreva verso l'alto"</td>
+                <td>Le leggi fisiche si sono invertite per un momento durante il trauma</td>
+            </tr>
+            <tr>
+                <td>"Ho guardato nel cielo e ho visto gli occhi"</td>
+                <td>Qualcosa di vasto oltre ogni immaginazione ti stava osservando</td>
+            </tr>
+            <tr>
+                <td>"Ricordo eventi che non sono ancora accaduti"</td>
+                <td>Il tempo si è piegato; hai visto un futuro che potrebbe o meno realizzarsi</td>
+            </tr>
+        </table>
+
+        <h2>Scenari Cosmici</h2>
+
+        <h3>Scenario: "L'Esperimento di Dunwich"</h3>
+
+        <div class="scenario-box" style="background: #e0e7ff; border: 2px solid #4a00e0; border-radius: 10px; padding: 25px; margin: 30px 0;">
+            <h4 style="margin-top: 0; color: #4a00e0;">Setup</h4>
+            <p>
+                I personaggi si risvegliano in un laboratorio universitario abbandonato. Sono 
+                ricercatori di fisica quantistica che lavoravano su un esperimento che avrebbe 
+                dovuto "osservare stati sovrapposti della realtà". L'esperimento è andato 
+                terribilmente storto.
+            </p>
+
+            <h4 style="margin-top: 20px; color: #4a00e0;">Verità Cosmica</h4>
+            <p>
+                L'esperimento è riuscito. Hanno osservato stati sovrapposti - inclusi stati in 
+                cui alcuni di loro erano morti e altri vivi. Il problema è che l'osservazione 
+                ha collassato tutte le possibilità simultaneamente. Ora esistono in una 
+                sovrapposizione: sono sia morti che vivi, e il <strong>Narratore Infinito</strong> 
+                ha notato l'anomalia e sta cercando di "correggere" la storia.
+            </p>
+
+            <h4 style="margin-top: 20px; color: #4a00e0;">Frammenti Chiave</h4>
+            <p><strong>Nebbia:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>"Due versioni dello stesso oggetto, sovrapposte"</li>
+                <li>"Una voce che racconta cosa stai per fare"</li>
+                <li>"Il tuo riflesso si muove indipendentemente"</li>
+            </ul>
+
+            <p><strong>Connessioni:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>"Hai visto il tuo cadavere ancora attaccato ai sensori"</li>
+                <li>"L'equazione alla lavagna non dovrebbe essere matematicamente possibile"</li>
+                <li>"Qualcuno grida che l'osservazione ha aperto qualcosa"</li>
+            </ul>
+
+            <p><strong>Rivelazioni:</strong></p>
+            <ul style="margin-left: 20px;">
+                <li>"Non sei sopravvissuto. Questa è l'eco di una possibilità"</li>
+                <li>"Ogni scelta che fai crea una nuova linea temporale, e tutte esistono"</li>
+                <li>"Il Narratore sta cercando di collassarti in una singola storia"</li>
+            </ul>
+
+            <h4 style="margin-top: 20px; color: #4a00e0;">Obiettivo</h4>
+            <p>
+                I personaggi devono scegliere: lasciarsi collassare in una singola realtà 
+                (accettando quale versione di loro sopravvive) o resistere, esistendo per 
+                sempre in questa sovrapposizione impossibile?
+            </p>
+        </div>
+
+        <h2>Regole Aggiuntive</h2>
+
+        <h3>Breakdown Cosmico</h3>
+
+        <p>
+            Quando un personaggio raggiunge Stress 6 con l'espansione attiva, invece di un 
+            normale Breakdown, sperimenta un <strong>Breakdown Cosmico</strong>:
+        </p>
+
+        <div class="mechanics-box">
+            <h4>Effetti del Breakdown Cosmico</h4>
+            <p>Il personaggio vede oltre il Velo senza filtri. Il Master tira 1d6:</p>
+            <table style="margin-top: 15px;">
+                <tr>
+                    <th>Risultato</th>
+                    <th>Effetto</th>
+                </tr>
+                <tr>
+                    <td><strong>1-2</strong></td>
+                    <td><strong>Dissoluzione:</strong> Il personaggio inizia a sbiadire fisicamente. 
+                    Sta diventando parte dell'Altrove.</td>
+                </tr>
+                <tr>
+                    <td><strong>3-4</strong></td>
+                    <td><strong>Possessione:</strong> Un'Entità prende temporaneamente il controllo. 
+                    Il Master gioca il personaggio per una scena.</td>
+                </tr>
+                <tr>
+                    <td><strong>5-6</strong></td>
+                    <td><strong>Illuminazione:</strong> Il personaggio vede tutta la verità 
+                    simultaneamente. Recupera tutti i Frammenti rimasti ma il Velo aumenta di +3.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>Rituali e Contrattazioni</h3>
+
+        <p>
+            I personaggi possono tentare di comunicare o contrattare con le Entità attraverso rituali. 
+            Ogni tentativo richiede:
+        </p>
+
+        <ol>
+            <li>Conoscenza del rituale (da un frammento o libro occulto)</li>
+            <li>Un sacrificio (tempo, sangue, ricordi, sanità mentale)</li>
+            <li>Un tiro di dadi (difficoltà variabile)</li>
+        </ol>
+
+        <p>
+            <strong>Successo:</strong> L'Entità appare o comunica. Può offrire informazioni o potere, 
+            ma sempre a un prezzo.<br>
+            <strong>Fallimento:</strong> L'Entità fraintende l'invocazione... o la capisce troppo bene. 
+            Effetti imprevedibili e spesso terrificanti.
+        </p>
+
+        <h2>Conclusioni e Finali Cosmici</h2>
+
+        <p>
+            Le partite con l'espansione possono terminare in modi radicalmente diversi dal gioco base:
+        </p>
+
+        <ul>
+            <li><strong>Sigillo del Velo:</strong> I personaggi trovano un modo per riparare la 
+            frattura, ma al costo di dimenticare di nuovo - questa volta per sempre.</li>
+            <li><strong>Accettazione Cosmica:</strong> I personaggi abbracciano la verità impossibile 
+            e diventano parte dell'Altrove, perdendo la loro umanità ma guadagnando prospettiva infinita.</li>
+            <li><strong>Sacrificio Finale:</strong> Uno o più personaggi si sacrificano per sigillare 
+            l'Entità, riportando la realtà alla normalità per gli altri.</li>
+            <li><strong>Fuga nella Follia:</strong> I personaggi scelgono deliberatamente di perdere 
+            la sanità piuttosto che confrontare la verità.</li>
+            <li><strong>Trasformazione:</strong> I personaggi diventano qualcosa di nuovo - né umani 
+            né Entità, ma un ponte tra i mondi.</li>
+        </ul>
+
+        <div class="warning">
+            <h4>🌀 Nota Finale per il Master</h4>
+            <p>
+                L'espansione soprannaturale amplifica l'intensità emotiva e può creare situazioni 
+                di profondo disagio. È ancora più critico utilizzare strumenti di sicurezza, fare 
+                check-in frequenti, e ricordare che <strong>il gioco deve rimanere divertente per 
+                tutti</strong>. L'horror cosmico è potente, ma non deve mai travalicare il benessere 
+                reale dei giocatori.
+            </p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #4a00e0;">
+            <p style="color: #4a00e0;"><strong>ECHI DALL'ABISSO</strong></p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                Espansione per ANAMNESIA v1.0 © 2025<br>
+                "Alcune verità non dovrebbero essere ricordate."
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

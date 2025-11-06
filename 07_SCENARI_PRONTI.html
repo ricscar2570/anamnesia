@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Scenari Pronti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 25px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 2.3em;
+            color: #764ba2;
+            margin: 50px 0 25px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            page-break-before: always;
+        }
+        
+        h3 {
+            font-size: 1.6em;
+            color: #667eea;
+            margin: 30px 0 15px 0;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0 10px 0;
+        }
+        
+        .scenario-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .secret-box {
+            background: #1a1a2e;
+            color: #f5f5f5;
+            border: 3px solid #ff006e;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .secret-box h4 {
+            color: #ff006e;
+            margin-top: 0;
+        }
+        
+        .fragments-list {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .npc-card {
+            background: white;
+            border: 2px solid #764ba2;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .npc-name {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .intro-box {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            h2 {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Scenari Pronti all'Uso</div>
+        </header>
+
+        <div class="intro-box">
+            <h3 style="margin-top: 0;">Come Utilizzare Questi Scenari</h3>
+            <p>
+                Ogni scenario in questa raccolta è completo e pronto per essere giocato. Include:
+            </p>
+            <ul style="margin-top: 10px;">
+                <li><strong>Setup:</strong> La situazione iniziale in cui i personaggi si trovano</li>
+                <li><strong>Verità Nascosta:</strong> Ciò che è realmente accaduto (solo per il Master)</li>
+                <li><strong>Frammenti Suggeriti:</strong> 18 frammenti divisi per fase (6 per Nebbia, 6 per Connessioni, 6 per Rivelazioni)</li>
+                <li><strong>PNG:</strong> Personaggi non giocanti rilevanti per la storia</li>
+                <li><strong>Timeline:</strong> La cronologia reale degli eventi</li>
+                <li><strong>Domande Guida:</strong> Spunti per il Master durante il gioco</li>
+            </ul>
+            <p style="margin-top: 15px;">
+                Puoi utilizzare questi scenari così come sono oppure modificarli per adattarli al tuo gruppo.
+            </p>
+        </div>
+
+        <!-- SCENARIO 1 -->
+        <h2>Scenario 1: "L'Incidente"</h2>
+
+        <div class="scenario-box">
+            <h3 style="margin-top: 0;">Setup Iniziale</h3>
+            <p>
+                I personaggi si risvegliano in una stanza d'ospedale. Ognuno ha piccole ferite: lividi, 
+                graffi, bende. La luce è fredda, asettica. Fuori dalla finestra, è mattina presto. L'ultima 
+                cosa che ricordano con chiarezza è essere saliti in macchina la sera prima per andare a una 
+                festa. Tutto il resto è vuoto nero.
+            </p>
+            <p style="margin-top: 15px;">
+                Un infermiere entra brevemente, li guarda con un'espressione difficile da decifrare - pietà? 
+                paura? - e se ne va senza dire nulla. Sul tavolo c'è un quotidiano locale con un titolo che 
+                leggono solo parzialmente: "INCIDENTE MORTALE SULLA STRADA..."
+            </p>
+        </div>
+
+        <div class="secret-box">
+            <h4>🔒 Verità Nascosta (Solo per il Master)</h4>
+            <p>
+                La sera prima, quattro amici sono partiti per una festa a 30 km dalla città. Il Catalizzatore 
+                guidava nonostante avesse bevuto. Il Protettore aveva insistito per prendere una scorciatoia 
+                buia per arrivare prima. Il Testimone, sul sedile posteriore, ha visto per primo la bambina 
+                sulla strada - una bambina di 6 anni con la sua bicicletta rosa - ma ha esitato troppo prima 
+                di gridare. Il Sopravvissuto non era in macchina in quel momento: si era fermato a comprare 
+                sigarette.
+            </p>
+            <p style="margin-top: 15px;">
+                L'impatto è stato violento. La bambina è morta sul colpo. Invece di chiamare i soccorsi 
+                immediatamente, il gruppo è entrato in panico. Il Sopravvissuto li ha raggiunti e, vedendo 
+                la scena, ha convinto gli altri a spostarla sul ciglio della strada e scappare, sostenendo 
+                che era ormai troppo tardi per salvarla e che chiamare avrebbe solo rovinato le loro vite. 
+                Hanno chiamato l'ambulanza da un telefono pubblico 15 minuti dopo, anonimamente.
+            </p>
+            <p style="margin-top: 15px;">
+                La bambina si chiamava Emma Rossi. Aveva sei anni e mezzo. Se avessero chiamato subito, 
+                forse - solo forse - sarebbe sopravvissuta.
+            </p>
+        </div>
+
+        <h3>PNG Chiave</h3>
+
+        <div class="npc-card">
+            <div class="npc-name">Emma Rossi</div>
+            <p><strong>Età:</strong> 6 anni • <strong>Descrizione:</strong> Capelli biondi, vestita di rosa, amava le farfalle</p>
+            <p><strong>Ruolo:</strong> La vittima. Ogni frammento gradualmente rivela chi era, cosa stava facendo quella notte, 
+            e l'innocenza che le è stata strappata.</p>
+        </div>
+
+        <div class="npc-card">
+            <div class="npc-name">Dott.ssa Martelli</div>
+            <p><strong>Età:</strong> 45 anni • <strong>Descrizione:</strong> Medico del pronto soccorso, occhi stanchi</p>
+            <p><strong>Ruolo:</strong> Ha curato i personaggi quella notte. Sa che le loro ferite sono lievi rispetto a... 
+            qualcos'altro. Potrebbe fare domande scomode.</p>
+        </div>
+
+        <div class="npc-card">
+            <div class="npc-name">Ispettore Caruso</div>
+            <p><strong>Età:</strong> 52 anni • <strong>Descrizione:</strong> Detective consumato, intuitivo</p>
+            <p><strong>Ruolo:</strong> Sta indagando sull'incidente. Non crede alla versione ufficiale. Potrebbe comparire 
+            durante le Rivelazioni per mettere pressione.</p>
+        </div>
+
+        <h3>Frammenti Suggeriti</h3>
+
+        <div class="fragments-list">
+            <h4>Fase Nebbia (Cicli 1-2)</h4>
+            <ol>
+                <li>"L'odore di gomma bruciata che si attacca alle narici"</li>
+                <li>"Il suono di frenate disperate che strillano nella notte"</li>
+                <li>"Una sensazione di peso sul petto, come se non riuscissi a respirare"</li>
+                <li>"Mani che lavano via qualcosa sotto l'acqua fredda"</li>
+                <li>"Bianco. Un bagliore bianco che diventa rosso"</li>
+                <li>"Qualcuno che singhiozza in modo incontrollato"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Connessioni (Cicli 3-4)</h4>
+            <ol>
+                <li>"Una strada di campagna buia, senza lampioni"</li>
+                <li>"Il riflesso di una bicicletta rosa sotto i fari, per un attimo"</li>
+                <li>"Qualcuno urla: 'Che cosa abbiamo fatto?!'"</li>
+                <li>"Un cellulare che vibra nella tasca, ignorato per lunghi minuti"</li>
+                <li>"Quattro persone ferme sul ciglio della strada, paralizzate"</li>
+                <li>"La scritta 'Zona Scuola' su un cartello stradale"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Rivelazioni (Cicli 5-6)</h4>
+            <ol>
+                <li>"Eri tu che guidavi. Le tue mani sul volante."</li>
+                <li>"Hai visto la bambina sulla strada ma hai esitato prima di gridare"</li>
+                <li>"Tu hai convinto gli altri a scappare, a non chiamare subito"</li>
+                <li>"Se aveste chiamato immediatamente, forse... forse sarebbe sopravvissuta"</li>
+                <li>"La bambina si chiamava Emma. Aveva sei anni e mezzo."</li>
+                <li>"Uno di voi non era nemmeno in macchina quella notte. Ma ha scelto di aiutare a coprire."</li>
+            </ol>
+        </div>
+
+        <h3>Timeline Reale</h3>
+
+        <table>
+            <tr>
+                <th>Orario</th>
+                <th>Evento</th>
+            </tr>
+            <tr>
+                <td>21:30</td>
+                <td>Il gruppo parte per la festa. Il Catalizzatore ha già bevuto.</td>
+            </tr>
+            <tr>
+                <td>21:45</td>
+                <td>Il Sopravvissuto si ferma a comprare sigarette, resta indietro.</td>
+            </tr>
+            <tr>
+                <td>22:10</td>
+                <td>L'auto prende la scorciatoia buia consigliata dal Protettore.</td>
+            </tr>
+            <tr>
+                <td>22:17</td>
+                <td>Emma Rossi attraversa la strada con la sua bicicletta.</td>
+            </tr>
+            <tr>
+                <td>22:17</td>
+                <td>Il Testimone la vede ma esita. Il Catalizzatore frena troppo tardi. Impatto.</td>
+            </tr>
+            <tr>
+                <td>22:18-22:30</td>
+                <td>Panico. Paralisi. Nessuno sa cosa fare.</td>
+            </tr>
+            <tr>
+                <td>22:35</td>
+                <td>Il Sopravvissuto arriva sulla scena. Prende il controllo.</td>
+            </tr>
+            <tr>
+                <td>22:40</td>
+                <td>Spostano il corpo di Emma sul ciglio. Fuggono.</td>
+            </tr>
+            <tr>
+                <td>22:55</td>
+                <td>Chiamata anonima all'ambulanza da una cabina telefonica.</td>
+            </tr>
+            <tr>
+                <td>23:12</td>
+                <td>I soccorsi arrivano. Emma viene dichiarata morta sul posto.</td>
+            </tr>
+        </table>
+
+        <h3>Domande Guida per il Master</h3>
+
+        <ul>
+            <li>Qual è la prima cosa che i personaggi ricordano quando si svegliano?</li>
+            <li>Come reagiscono quando vedono le proprie ferite?</li>
+            <li>Chi tra loro ha più bisogno di credere che sia stato davvero un incidente?</li>
+            <li>Cosa succede se l'Ispettore Caruso li interroga?</li>
+            <li>I genitori di Emma sono nel corridoio. I personaggi li vedono?</li>
+            <li>Possono perdonarsi? Possono dirsi la verità?</li>
+        </ul>
+
+        <!-- SCENARIO 2 -->
+        <h2>Scenario 2: "Il Tradimento"</h2>
+
+        <div class="scenario-box">
+            <h3 style="margin-top: 0;">Setup Iniziale</h3>
+            <p>
+                I personaggi si trovano in un appartamento vuoto che riconoscono vagamente. È l'alba. Sulla 
+                tavola ci sono i resti di una cena: bottiglie di vino, piatti sporchi, bicchieri rovesciati. 
+                Nell'aria c'è un'atmosfera di fine di qualcosa - come se una festa fosse finita male, molto male.
+            </p>
+            <p style="margin-top: 15px;">
+                Sul pavimento, vicino al divano, c'è una macchia scura che potrebbe essere vino rosso. O forse no. 
+                I personaggi hanno tutti un vago senso di colpa che non riescono a localizzare: chi hanno tradito? 
+                O chi li ha traditi?
+            </p>
+        </div>
+
+        <div class="secret-box">
+            <h4>🔒 Verità Nascosta (Solo per il Master)</h4>
+            <p>
+                L'appartamento appartiene a Marco Santini, il miglior amico del Catalizzatore. Quella sera, 
+                Marco aveva organizzato una cena per annunciare il suo imminente matrimonio con Sofia, la donna 
+                che amava da cinque anni. Ma Sofia e il Catalizzatore hanno avuto una relazione segreta per 
+                mesi. Durante la cena, ubriachi, si sono baciati. Marco li ha visti.
+            </p>
+            <p style="margin-top: 15px;">
+                Quello che è successo dopo dipende dagli archetipi presenti: il Protettore ha cercato di mediare 
+                ma ha peggiorato le cose. Il Testimone ha visto tutto ma non è intervenuto. Il Sopravvissuto... 
+                beh, il Sopravvissuto ha fatto una scelta che ha cambiato tutto.
+            </p>
+            <p style="margin-top: 15px;">
+                Marco è morto quella notte. La "macchia" sul pavimento è sangue. Non è chiaro se sia stato un 
+                incidente (è caduto battendo la testa durante una colluttazione) o qualcosa di più deliberato. 
+                Quello che è chiaro è che tutti hanno deciso di nascondere il corpo e fingere che Marco sia 
+                semplicemente scomparso.
+            </p>
+        </div>
+
+        <h3>PNG Chiave</h3>
+
+        <div class="npc-card">
+            <div class="npc-name">Marco Santini</div>
+            <p><strong>Età:</strong> 28 anni • <strong>Descrizione:</strong> Ottimista, leale, tradito</p>
+            <p><strong>Ruolo:</strong> La vittima del tradimento e, forse, dell'omicidio. Nei frammenti appare 
+            sempre più disperato e poi... assente.</p>
+        </div>
+
+        <div class="npc-card">
+            <div class="npc-name">Sofia Marchetti</div>
+            <p><strong>Età:</strong> 26 anni • <strong>Descrizione:</strong> Bella, manipolatrice, spaventata</p>
+            <p><strong>Ruolo:</strong> L'amante del Catalizzatore. Dov'è ora? Cosa sa? È complice o vittima?</p>
+        </div>
+
+        <h3>Frammenti Suggeriti</h3>
+
+        <div class="fragments-list">
+            <h4>Fase Nebbia (Cicli 1-2)</h4>
+            <ol>
+                <li>"Il sapore di vino rosso che diventa amaro"</li>
+                <li>"Risate che diventano urla"</li>
+                <li>"Qualcosa che si rompe - vetro? O ossa?"</li>
+                <li>"Il profumo di un abito elegante"</li>
+                <li>"Silenzio improvviso dopo il caos"</li>
+                <li>"Mani che tremano mentre compongono un numero di telefono"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Connessioni (Cicli 3-4)</h4>
+            <ol>
+                <li>"Un bacio rubato nell'ombra del corridoio"</li>
+                <li>"Marco che fissa con occhi increduli"</li>
+                <li>"Qualcuno che grida: 'Era il mio migliore amico!'"</li>
+                <li>"Un corpo immobile sul pavimento"</li>
+                <li>"Quattro persone che sollevano qualcosa di pesante"</li>
+                <li>"L'interno di un bagagliaio di auto"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Rivelazioni (Cicli 5-6)</h4>
+            <ol>
+                <li>"Tu e Sofia vi vedevate di nascosto da mesi"</li>
+                <li>"Marco è caduto durante la colluttazione. O l'hai spinto?"</li>
+                <li>"Tutti voi avete deciso di nascondere il corpo"</li>
+                <li>"Sofia è scappata. Non risponde al telefono."</li>
+                <li>"La polizia ha trovato la macchina di Marco abbandonata al porto"</li>
+                <li>"Uno di voi ha pulito le impronte. Uno di voi sapeva esattamente cosa fare."</li>
+            </ol>
+        </div>
+
+        <!-- SCENARIO 3 -->
+        <h2>Scenario 3: "L'Esperimento"</h2>
+
+        <div class="scenario-box">
+            <h3 style="margin-top: 0;">Setup Iniziale</h3>
+            <p>
+                I personaggi si risvegliano in un laboratorio universitario. È notte. Tutti indossano camici 
+                bianchi macchiati di... qualcosa. L'aria sa di ozono e bruciato. Le apparecchiature sono spente, 
+                alcuni schermi sono rotti. Sul tavolo centrale c'è un dispositivo che non riconoscono - o forse sì, 
+                ma non vogliono ricordare.
+            </p>
+            <p style="margin-top: 15px;">
+                Sono tutti studenti di dottorato o ricercatori. Stavano lavorando su qualcosa. Qualcosa che non 
+                avrebbero dovuto fare. E ora uno di loro manca.
+            </p>
+        </div>
+
+        <div class="secret-box">
+            <h4>🔒 Verità Nascosta (Solo per il Master)</h4>
+            <p>
+                I personaggi facevano parte di un progetto di ricerca non autorizzato sulla stimolazione cerebrale 
+                profonda. Stavano testando un dispositivo che avrebbe dovuto "resettare" traumi psicologici 
+                cancellando memorie specifiche. Il soggetto test era un volontario - o così credevano.
+            </p>
+            <p style="margin-top: 15px;">
+                In realtà, il Catalizzatore aveva reclutato qualcuno vulnerabile senza informarlo pienamente dei 
+                rischi. Durante l'esperimento, qualcosa è andato storto. Il soggetto ha avuto convulsioni, poi 
+                si è fermato. Hanno tentato la rianimazione ma... non c'è stata risposta.
+            </p>
+            <p style="margin-top: 15px;">
+                Il corpo è ancora nel laboratorio, nascosto in un armadio refrigerato. Hanno cancellato i log 
+                dell'esperimento. E poi, in preda al panico, hanno usato il dispositivo su se stessi, cercando 
+                di cancellare la memoria di quella notte. Ma il dispositivo era danneggiato. Ha funzionato solo 
+                parzialmente.
+            </p>
+            <p style="margin-top: 15px;">
+                Il soggetto si chiamava Luca Ferri. Aveva 19 anni. Nessuno sa che è morto lì.
+            </p>
+        </div>
+
+        <h3>PNG Chiave</h3>
+
+        <div class="npc-card">
+            <div class="npc-name">Luca Ferri</div>
+            <p><strong>Età:</strong> 19 anni • <strong>Descrizione:</strong> Studente del primo anno, vulnerabile, 
+            cercava soldi facili</p>
+            <p><strong>Ruolo:</strong> La vittima dell'esperimento. I frammenti rivelano gradualmente chi era e 
+            perché ha accettato.</p>
+        </div>
+
+        <div class="npc-card">
+            <div class="npc-name">Prof. Moretti</div>
+            <p><strong>Età:</strong> 58 anni • <strong>Descrizione:</strong> Supervisore del laboratorio, all'oscuro 
+            di tutto</p>
+            <p><strong>Ruolo:</strong> Arriverà al laboratorio domattina. Cosa troverà?</p>
+        </div>
+
+        <h3>Frammenti Suggeriti</h3>
+
+        <div class="fragments-list">
+            <h4>Fase Nebbia (Cicli 1-2)</h4>
+            <ol>
+                <li>"Un ronzio continuo, sempre più forte"</li>
+                <li>"Schermi che mostrano onde cerebrali impazzite"</li>
+                <li>"L'odore acre di circuiti bruciati"</li>
+                <li>"Qualcuno che urla di spegnere tutto"</li>
+                <li>"Un corpo che convulsa sul lettino"</li>
+                <li>"Il suono di un monitor che emette un tono continuo"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Connessioni (Cicli 3-4)</h4>
+            <ol>
+                <li>"Un modulo di consenso firmato con grafia incerta"</li>
+                <li>"Qualcuno che dice: 'Prometteva che era sicuro'"</li>
+                <li>"Tentativi di rianimazione che falliscono"</li>
+                <li>"Un ragazzo giovane, troppo giovane"</li>
+                <li>"File cancellati da un computer"</li>
+                <li>"Il dispositivo viene girato verso di voi"</li>
+            </ol>
+        </div>
+
+        <div class="fragments-list">
+            <h4>Fase Rivelazioni (Cicli 5-6)</h4>
+            <ol>
+                <li>"Tu lo hai reclutato. Gli hai detto che era sicuro."</li>
+                <li>"Il ragazzo è morto alle 23:47. Nessuno ha chiamato aiuto."</li>
+                <li>"Avete usato il dispositivo su voi stessi per dimenticare"</li>
+                <li>"Il corpo è ancora qui. Nell'armadio refrigerato."</li>
+                <li>"Luca aveva 19 anni. Aveva bisogno di soldi per l'affitto."</li>
+                <li>"Domani il professor Moretti aprirà quel laboratorio."</li>
+            </ol>
+        </div>
+
+        <h3>Domande Finali</h3>
+
+        <div class="warning">
+            <p><strong>Per ogni scenario, considera:</strong></p>
+            <ul style="margin-top: 10px;">
+                <li>Come reagiscono i personaggi quando scoprono la verità completa?</li>
+                <li>Si consegnano alla giustizia o cercano di continuare a nascondere?</li>
+                <li>Possono perdonarsi? Possono vivere con questa conoscenza?</li>
+                <li>Qual è il prezzo del ricordare?</li>
+            </ul>
+        </div>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #667eea;">
+            <p><strong>ANAMNESIA</strong> Scenari Pronti v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                "Ogni verità ha un prezzo. Siete pronti a pagarlo?"
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

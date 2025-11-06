@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Scheda del Master</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .master-sheet {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 4px solid #764ba2;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            margin: -40px -40px 30px -40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #764ba2;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #667eea;
+            margin: 20px 0 10px 0;
+        }
+        
+        .section-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .tracker-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .tracker-box {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 15px 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .tracker-label {
+            font-size: 0.8em;
+            color: #666;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .tracker-value {
+            font-size: 1.5em;
+            color: #764ba2;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .notes-area {
+            width: 100%;
+            min-height: 100px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Georgia', serif;
+            margin: 10px 0;
+        }
+        
+        .quick-ref {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        ul {
+            margin: 10px 0 10px 25px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .master-sheet {
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="master-sheet">
+        <div class="header">
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Scheda del Master</div>
+        </div>
+
+        <div class="section-box">
+            <h3 style="margin-top: 0;">⚠️ Ruolo del Master</h3>
+            <p>
+                Come Master, non sei il narratore onnisciente della storia. Sei piuttosto l'<strong>Architetto 
+                dell'Incertezza</strong>, colui che pone domande, introduce complicazioni, e aiuta i giocatori 
+                a scoprire la loro verità. La storia emerge dalla collaborazione, non dalla tua pianificazione.
+            </p>
+        </div>
+
+        <h2>Tracciamento della Sessione</h2>
+
+        <h3>📅 Informazioni Base</h3>
+        <div class="two-column">
+            <div>
+                <p><strong>Data Sessione:</strong> <input type="text" style="width: 200px; border: none; border-bottom: 2px solid #667eea; padding: 5px;"></p>
+                <p style="margin-top: 10px;"><strong>Numero Giocatori:</strong> <input type="text" style="width: 80px; border: none; border-bottom: 2px solid #667eea; padding: 5px;"></p>
+            </div>
+            <div>
+                <p><strong>Trauma Scelto:</strong> <input type="text" style="width: 100%; border: none; border-bottom: 2px solid #667eea; padding: 5px;"></p>
+                <p style="margin-top: 10px;"><strong>Durata Prevista:</strong> <input type="text" style="width: 150px; border: none; border-bottom: 2px solid #667eea; padding: 5px;"></p>
+            </div>
+        </div>
+
+        <h3>🎭 Personaggi al Tavolo</h3>
+        <table>
+            <tr>
+                <th>Giocatore</th>
+                <th>Personaggio</th>
+                <th>Archetipo</th>
+                <th>Stress</th>
+                <th>Pool</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 40px; border: none; text-align: center;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+        </table>
+
+        <h3>🔄 Tracciamento Cicli</h3>
+        <div class="tracker-grid">
+            <div class="tracker-box" style="border-color: #95a5a6;">
+                <div class="tracker-label">Ciclo 1</div>
+                <div class="tracker-value" style="color: #95a5a6;">Nebbia</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+            <div class="tracker-box" style="border-color: #95a5a6;">
+                <div class="tracker-label">Ciclo 2</div>
+                <div class="tracker-value" style="color: #95a5a6;">Nebbia</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+            <div class="tracker-box" style="border-color: #667eea;">
+                <div class="tracker-label">Ciclo 3</div>
+                <div class="tracker-value" style="color: #667eea;">Connessioni</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+            <div class="tracker-box" style="border-color: #667eea;">
+                <div class="tracker-label">Ciclo 4</div>
+                <div class="tracker-value" style="color: #667eea;">Connessioni</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+            <div class="tracker-box" style="border-color: #ff006e;">
+                <div class="tracker-label">Ciclo 5</div>
+                <div class="tracker-value" style="color: #ff006e;">Rivelazioni</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+            <div class="tracker-box" style="border-color: #ff006e;">
+                <div class="tracker-label">Ciclo 6</div>
+                <div class="tracker-value" style="color: #ff006e;">Rivelazioni</div>
+                <input type="checkbox" style="margin-top: 10px;">
+            </div>
+        </div>
+
+        <h2>Generatore di Complicazioni</h2>
+        
+        <div class="quick-ref">
+            <p><strong>Usa questa tabella quando:</strong> Un giocatore fallisce un tiro, la narrazione ristagna, o vuoi aumentare la tensione.</p>
+        </div>
+
+        <table>
+            <tr>
+                <th style="width: 80px;">Tira 1d6</th>
+                <th>Complicazione</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>1</strong></td>
+                <td><strong>Contraddizione:</strong> Un frammento precedente viene messo in discussione da una nuova informazione</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>2</strong></td>
+                <td><strong>Testimone Esterno:</strong> Qualcuno che non dovrebbe sapere, sa. E ti sta cercando.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>3</strong></td>
+                <td><strong>Prova Fisica:</strong> Compare un oggetto che contraddice la ricostruzione corrente</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>4</strong></td>
+                <td><strong>Escalation Emotiva:</strong> Uno dei personaggi ha un breakdown parziale o flashback incontrollato</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>5</strong></td>
+                <td><strong>Tempo che Stringe:</strong> Qualcuno sta arrivando, o qualcosa sta per accadere se non agite</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>6</strong></td>
+                <td><strong>Legame Inatteso:</strong> Due personaggi scoprono di avere una connessione che non ricordavano</td>
+            </tr>
+        </table>
+
+        <h2>Domande Guida per il Master</h2>
+
+        <div class="section-box">
+            <h3 style="margin-top: 0;">Durante la Preparazione</h3>
+            <ul>
+                <li>Quale verità traumatica i personaggi hanno dimenticato?</li>
+                <li>Chi è morto, o cosa di terribile è accaduto?</li>
+                <li>Quali sono le bugie che si sono raccontati per dormire la notte?</li>
+                <li>Quale personaggio ha la maggiore responsabilità? E quale la minore?</li>
+                <li>C'è qualcosa che nessuno di loro sa ancora?</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3 style="margin-top: 0;">Durante i Cicli di Nebbia</h3>
+            <ul>
+                <li>Quali sensazioni dominano i ricordi?</li>
+                <li>Cosa sentono fisicamente quando cercano di ricordare?</li>
+                <li>Quali sono i dettagli che non riescono a mettere a fuoco?</li>
+                <li>Come reagiscono emotivamente a questi frammenti vaghi?</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3 style="margin-top: 0;">Durante i Cicli di Connessioni</h3>
+            <ul>
+                <li>Chi c'era quella notte/quel giorno?</li>
+                <li>In che ordine sono successi gli eventi?</li>
+                <li>Quali decisioni cruciali sono state prese?</li>
+                <li>Cosa hanno visto gli altri personaggi che questo non ha visto?</li>
+                <li>Dove sono ora le prove di ciò che è accaduto?</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <h3 style="margin-top: 0;">Durante i Cicli di Rivelazioni</h3>
+            <ul>
+                <li>Chi era veramente responsabile?</li>
+                <li>Quale segreto nessuno ha ancora rivelato?</li>
+                <li>Cosa è successo nei momenti immediatamente dopo?</li>
+                <li>Come hanno coperto le loro tracce?</li>
+                <li>Possono perdonarsi l'un l'altro? Possono perdonare se stessi?</li>
+            </ul>
+        </div>
+
+        <h2>Mappa Emotiva</h2>
+
+        <p style="margin-bottom: 15px;">
+            Usa questo spazio per tracciare le connessioni emotive tra i personaggi che emergono durante il gioco.
+        </p>
+
+        <div style="border: 2px solid #667eea; min-height: 300px; padding: 20px; background: #f8f9fa;">
+            <p style="text-align: center; color: #999; font-style: italic;">
+                Disegna linee tra i personaggi annotando: fiducia, conflitto, protezione, colpa, dipendenza, ecc.
+            </p>
+        </div>
+
+        <h2>Timeline degli Eventi</h2>
+
+        <p style="margin-bottom: 15px;">
+            Ricostruisci la cronologia reale degli eventi man mano che i frammenti vengono scoperti.
+        </p>
+
+        <table>
+            <tr>
+                <th style="width: 100px;">Orario/Momento</th>
+                <th>Evento</th>
+                <th>Chi era presente</th>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+            <tr>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+                <td><input type="text" style="width: 100%; border: none;"></td>
+            </tr>
+        </table>
+
+        <h2>Riferimenti Rapidi</h2>
+
+        <div class="two-column">
+            <div class="quick-ref">
+                <h3 style="margin-top: 0; font-size: 1.1em;">Scala Successi</h3>
+                <ul style="margin-left: 20px; font-size: 0.9em;">
+                    <li><strong>0:</strong> Fallimento + Stress</li>
+                    <li><strong>1:</strong> Successo Parziale</li>
+                    <li><strong>2-3:</strong> Successo</li>
+                    <li><strong>4+:</strong> Successo Critico</li>
+                </ul>
+            </div>
+            
+            <div class="quick-ref">
+                <h3 style="margin-top: 0; font-size: 1.1em;">Quando Dare Stress</h3>
+                <ul style="margin-left: 20px; font-size: 0.9em;">
+                    <li>Fallimento di un tiro</li>
+                    <li>Successo parziale</li>
+                    <li>Rivelazione traumatica</li>
+                    <li>Aiutare un altro PG</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <h3 style="margin-top: 0;">🛡️ Strumenti di Sicurezza Attivi</h3>
+            <p style="margin: 10px 0;">Segna quali strumenti il gruppo ha accettato di usare nella Sessione Zero:</p>
+            <p>
+                <input type="checkbox"> <strong>X-Card</strong> - Chiunque può dire "X" per interrompere<br>
+                <input type="checkbox"> <strong>Lines & Veils</strong> - Temi da evitare completamente / da lasciare fuori scena<br>
+                <input type="checkbox"> <strong>Pause di Check-in</strong> - Ogni 30-45 minuti<br>
+                <input type="checkbox"> <strong>OK Check-in</strong> - "Stai bene?" durante scene intense
+            </p>
+        </div>
+
+        <h2>Note della Sessione</h2>
+        <textarea class="notes-area" style="min-height: 200px;" placeholder="Annotazioni libere durante il gioco: decisioni importanti, momenti emotivamente intensi, idee per la prossima sessione, feedback dei giocatori..."></textarea>
+
+        <h2>Checklist Post-Sessione</h2>
+        
+        <div class="section-box">
+            <p><input type="checkbox"> <strong>Debrief completato</strong> - Discussione fuori personaggio sull'esperienza</p>
+            <p><input type="checkbox"> <strong>Check emotivo</strong> - Tutti i giocatori stanno bene</p>
+            <p><input type="checkbox"> <strong>Feedback raccolto</strong> - Cosa ha funzionato, cosa migliorare</p>
+            <p><input type="checkbox"> <strong>Materiali riordinati</strong> - Schede e carte al sicuro per la prossima volta</p>
+            <p><input type="checkbox"> <strong>Appunti archiviati</strong> - Salvaguardia di timeline, connessioni, rivelazioni</p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #667eea;">
+            <p><strong>ANAMNESIA</strong> Scheda del Master v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                "Sei l'architetto dell'incertezza. Guida, non controllare."
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

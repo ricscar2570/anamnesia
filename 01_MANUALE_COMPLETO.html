@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Manuale Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        .cover {
+            text-align: center;
+            padding: 80px 0;
+            border-bottom: 3px solid #667eea;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: 4em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-size: 1.5em;
+            color: #764ba2;
+            font-style: italic;
+            margin: 30px 0;
+        }
+        
+        .version-info {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #764ba2;
+            margin: 60px 0 30px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            page-break-before: always;
+        }
+        
+        h3 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin: 40px 0 20px 0;
+        }
+        
+        h4 {
+            font-size: 1.3em;
+            color: #555;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .quote {
+            background: #f8f9fa;
+            border-left: 5px solid #764ba2;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .mechanics-box {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .mechanics-box h4 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .example {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            font-size: 0.95em;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .warning {
+            background: #ffe5e5;
+            border: 2px solid #ff4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .warning h4 {
+            color: #cc0000;
+            margin-top: 0;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 40px;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .archetype-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .archetype-title {
+            font-size: 1.5em;
+            color: #764ba2;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .archetype-subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .page-number {
+            text-align: center;
+            color: #888;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                max-width: 100%;
+                box-shadow: none;
+                padding: 40px;
+            }
+            
+            h2 {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- COPERTINA -->
+        <div class="cover">
+            <h1>ANAMNESIA</h1>
+            <div class="tagline">
+                Un gioco di ruolo di horror psicologico
+            </div>
+            <p style="font-size: 1.2em; margin-top: 40px; font-style: italic;">
+                "La memoria è un bugiardo.<br>
+                Cosa resta quando anche le bugie svaniscono?"
+            </p>
+            <div class="version-info">
+                <p><strong>Manuale Completo</strong></p>
+                <p>Versione 1.0 • Ottobre 2025</p>
+                <p>Per 2-4 giocatori + 1 Master (opzionale)</p>
+                <p>Durata: 90-150 minuti</p>
+            </div>
+        </div>
+
+        <!-- INTRODUZIONE -->
+        <h2>Introduzione</h2>
+        
+        <div class="quote">
+            "Non ricordo. Non ricordo cosa sia successo, non ricordo perché siamo qui, non ricordo chi sei. 
+            Ma so che dovrei ricordare. E so che quando ricorderò, tutto cambierà."
+        </div>
+
+        <h3>Cos'è Anamnesia?</h3>
+        
+        <p>
+            <strong>Anamnesia</strong> è un gioco di ruolo narrativo che esplora i temi della memoria frammentata, 
+            del trauma condiviso e della ricostruzione della verità. In una partita di Anamnesia, i giocatori 
+            interpretano personaggi che hanno dimenticato un evento traumatico del loro passato comune. 
+            Attraverso frammenti di memoria che riemergono gradualmente, i personaggi dovranno ricostruire 
+            cosa è realmente accaduto.
+        </p>
+
+        <p>
+            Il gioco si svolge attraverso <strong>cicli narrativi</strong> in cui i personaggi riscoprono pezzi 
+            della loro storia, ma ogni ricordo può essere interpretato in modi diversi. La verità non è fissa: 
+            è fluida, soggettiva, e spesso più terribile di quanto si possa immaginare.
+        </p>
+
+        <h3>Perché Giocare ad Anamnesia?</h3>
+
+        <p>Anamnesia offre un'esperienza unica per diversi motivi:</p>
+
+        <ul>
+            <li><strong>Narrazione emergente:</strong> La storia non è scritta in anticipo ma emerge dalle 
+            scelte e interpretazioni dei giocatori.</li>
+            <li><strong>Tensione psicologica:</strong> L'incertezza sulla verità crea un'atmosfera di suspense 
+            costante.</li>
+            <li><strong>Esplorazione emotiva:</strong> I temi profondi permettono di esplorare aspetti della 
+            psiche umana raramente toccati in altri giochi.</li>
+            <li><strong>Collaborazione creativa:</strong> Tutti i giocatori contribuiscono attivamente alla 
+            costruzione della storia.</li>
+            <li><strong>Flessibilità:</strong> Il sistema è adattabile a diversi toni, da thriller psicologico 
+            a horror cosmico.</li>
+        </ul>
+
+        <h3>Di Cosa Hai Bisogno?</h3>
+
+        <p>Per giocare ad Anamnesia ti servono:</p>
+
+        <ul>
+            <li><strong>2-4 giocatori</strong> che interpretano i personaggi</li>
+            <li><strong>1 Master</strong> (opzionale) che facilita la narrazione</li>
+            <li><strong>Dadi a sei facce (d6)</strong> - almeno 6 per giocatore</li>
+            <li><strong>Schede personaggio</strong> - una per ogni giocatore</li>
+            <li><strong>Carte Frammento</strong> - circa 60 carte (o un mazzo personalizzato)</li>
+            <li><strong>Fogli e penne</strong> per prendere appunti</li>
+            <li><strong>Un timer</strong> (opzionale) per scandire i cicli</li>
+            <li><strong>2-3 ore di tempo</strong> per una sessione completa</li>
+        </ul>
+
+        <div class="warning">
+            <h4>⚠️ Avvertenza sui Contenuti</h4>
+            <p>
+                Anamnesia tratta temi emotivamente intensi tra cui trauma psicologico, morte, violenza, 
+                colpa e disturbi mentali. Prima di giocare, è <strong>fondamentale</strong> condurre una 
+                Sessione Zero (vedi Capitolo 8) per stabilire limiti e strumenti di sicurezza. Se tu o 
+                qualcuno al tavolo ha vissuto esperienze traumatiche simili a quelle del gioco, valuta 
+                attentamente se giocare sia appropriato.
+            </p>
+            <p style="margin-top: 10px;">
+                <strong>Utilizza sempre gli strumenti di sicurezza forniti in questo manuale.</strong>
+            </p>
+        </div>
+
+        <h3>Come Leggere Questo Manuale</h3>
+
+        <p>Il manuale è organizzato nei seguenti capitoli:</p>
+
+        <ol>
+            <li><strong>Concetti Base:</strong> I principi fondamentali del gioco</li>
+            <li><strong>Creazione dei Personaggi:</strong> Come creare i protagonisti</li>
+            <li><strong>Sistema di Gioco:</strong> Le meccaniche core</li>
+            <li><strong>Cicli Narrativi:</strong> La struttura delle sessioni</li>
+            <li><strong>Frammenti di Memoria:</strong> Il cuore del gioco</li>
+            <li><strong>Stress ed Echi Emotivi:</strong> Gestire il trauma</li>
+            <li><strong>Guida per il Master:</strong> Strumenti per facilitare il gioco</li>
+            <li><strong>Sessione Zero e Sicurezza:</strong> Strumenti essenziali</li>
+            <li><strong>Esempi di Gioco:</strong> Partite simulate</li>
+            <li><strong>Scenari Introduttivi:</strong> Situazioni pronte all'uso</li>
+        </ol>
+
+        <p>
+            Se è la tua prima volta, ti consigliamo di leggere i capitoli 1-6 prima di giocare, mentre 
+            il capitolo 7 è specifico per chi assume il ruolo di Master.
+        </p>
+
+        <!-- CAPITOLO 1: CONCETTI BASE -->
+        <h2>Capitolo 1: Concetti Base</h2>
+
+        <h3>La Premessa</h3>
+
+        <p>
+            In Anamnesia, i personaggi si risvegliano in un luogo neutro - spesso un rifugio sicuro come 
+            una stanza, un parco, o un luogo familiare - senza ricordi di un evento traumatico recente. 
+            Sanno che qualcosa di terribile è accaduto, possono percepire tracce emotive di quell'evento, 
+            ma i dettagli sono avvolti nella nebbia dell'amnesia.
+        </p>
+
+        <p>
+            Durante il gioco, i personaggi recuperano gradualmente <strong>Frammenti di Memoria</strong>: 
+            immagini sensoriali, emozioni, impressioni che ricostruiscono lentamente il quadro completo. 
+            Ma questi frammenti sono ambigui, contraddittori, e spesso portano a interpretazioni diverse 
+            della stessa scena.
+        </p>
+
+        <div class="quote">
+            "Ricordo le mani. Erano coperte di sangue. Ma non so se erano le mie mani, o le tue. 
+            Non so se il sangue era nostro, o di qualcun altro. Non so nemmeno se era sangue."
+        </div>
+
+        <h3>I Pilastri del Gioco</h3>
+
+        <p>Anamnesia si fonda su quattro pilastri fondamentali:</p>
+
+        <div class="mechanics-box">
+            <h4>1. Memoria Frammentata</h4>
+            <p>
+                I personaggi non hanno accesso diretto alla "verità". Ricevono solo pezzi sconnessi di 
+                informazioni che devono interpretare e connettere tra loro. Questo crea naturalmente 
+                incertezza e tensione.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>2. Verità Soggettiva</h4>
+            <p>
+                Non esiste una versione "corretta" degli eventi finché il gruppo non la stabilisce 
+                attraverso il gioco. Ogni frammento può essere interpretato in modi diversi, e le 
+                interpretazioni dei giocatori plasmano la realtà della storia.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>3. Trauma e Conseguenze</h4>
+            <p>
+                Il processo di ricordare non è neutro: ogni rivelazione porta peso emotivo attraverso 
+                <strong>Stress</strong> e lascia segni permanenti sotto forma di <strong>Echi Emotivi</strong>. 
+                I personaggi cambiano mentre ricordano.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>4. Narrazione Collettiva</h4>
+            <p>
+                Tutti i giocatori contribuiscono attivamente alla storia. Non c'è un narratore onnisciente 
+                che conosce "la verità": questa emerge dal tavolo attraverso la collaborazione creativa.
+            </p>
+        </div>
+
+        <h3>Tono e Atmosfera</h3>
+
+        <p>
+            Anamnesia è progettato per creare un'atmosfera di <strong>horror psicologico</strong> piuttosto 
+            che di horror visceral. La paura non viene da mostri o pericoli fisici, ma dall'incertezza, 
+            dalla scoperta graduale di verità scomode, e dal realizzare che i personaggi potrebbero essere 
+            complici o vittime di eventi terribili.
+        </p>
+
+        <p>Il tono del gioco può variare tra:</p>
+
+        <ul>
+            <li><strong>Thriller Psicologico:</strong> Tensione, sospetto, paranoia crescente</li>
+            <li><strong>Drama Emotivo:</strong> Esplorazione di colpa, perdono, redenzione</li>
+            <li><strong>Horror Cosmico:</strong> Verità che superano la comprensione umana (con l'espansione)</li>
+            <li><strong>Noir:</strong> Corruzione morale, scelte impossibili, ambiguità etica</li>
+        </ul>
+
+        <p>
+            Il gruppo dovrebbe decidere insieme quale tono preferisce durante la Sessione Zero, anche se 
+            il tono può evolversi naturalmente durante il gioco.
+        </p>
+
+        <h3>Struttura di una Sessione</h3>
+
+        <p>Una sessione tipica di Anamnesia si articola in tre fasi principali:</p>
+
+        <div class="mechanics-box">
+            <h4>Fase 1: Sessione Zero (30-45 minuti)</h4>
+            <p>
+                Prima sessione dedicata a creare i personaggi, stabilire i limiti di sicurezza, 
+                definire il trauma centrale e calibrare il tono desiderato. Questa fase è <strong>obbligatoria</strong> 
+                e non può essere saltata.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Fase 2: Cicli Narrativi (90-120 minuti)</h4>
+            <p>
+                Il cuore del gioco, composto da 4-6 cicli in cui i personaggi scoprono gradualmente frammenti 
+                di memoria, li interpretano, e ricostruiscono la verità. Ogni ciclo dura circa 15-20 minuti.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Fase 3: Risoluzione e Debrief (20-30 minuti)</h4>
+            <p>
+                Quando la verità è sufficientemente ricostruita (o quando lo Stress diventa insostenibile), 
+                il gioco si conclude con una scena finale di risoluzione seguita da un debrief fuori personaggio 
+                per elaborare emotivamente l'esperienza.
+            </p>
+        </div>
+
+        <!-- CAPITOLO 2: CREAZIONE PERSONAGGI -->
+        <h2>Capitolo 2: Creazione dei Personaggi</h2>
+
+        <h3>Chi Sono i Dimenticati?</h3>
+
+        <p>
+            I personaggi in Anamnesia sono definiti più da ciò che <em>hanno dimenticato</em> che da ciò 
+            che ricordano. Non sono eroi o antieroi nel senso tradizionale: sono persone ordinarie che 
+            hanno vissuto qualcosa di straordinariamente traumatico.
+        </p>
+
+        <p>
+            La creazione del personaggio è volutamente essenziale. Invece di statistiche e abilità, 
+            ogni personaggio è definito da tre elementi chiave:
+        </p>
+
+        <ol>
+            <li><strong>Archetipo:</strong> Il ruolo narrativo nel trauma</li>
+            <li><strong>Approcci:</strong> Come affronta le situazioni</li>
+            <li><strong>Tracce:</strong> Frammenti di identità pre-trauma</li>
+        </ol>
+
+        <h3>Gli Archetipi</h3>
+
+        <p>
+            L'archetipo rappresenta la posizione del personaggio rispetto al trauma dimenticato. 
+            Non è una classe nel senso tradizionale, ma una lente attraverso cui interpretare i frammenti 
+            di memoria.
+        </p>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Il Sopravvissuto</div>
+            <div class="archetype-subtitle">"Perché io e non loro?"</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi doveva morire ma non è morto. Chi porta il peso 
+                della colpa del sopravvissuto.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Cosa ho fatto per sopravvivere quando gli altri no?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Sopravvissuto è lacerato tra la gratitudine di essere 
+                vivo e la colpa di esserlo al posto di qualcun altro. Ogni frammento che scopre lo avvicina 
+                alla verità su quale prezzo ha pagato (o fatto pagare) per la sua sopravvivenza.
+            </p>
+            <p>
+                <strong>Approcci Tipici:</strong> Cauto, Protettivo, Ossessivo
+            </p>
+        </div>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Il Protettore</div>
+            <div class="archetype-subtitle">"Come ho potuto deluderli?"</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi doveva salvare qualcuno ma ha fallito nel momento cruciale.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Chi ho lasciato morire?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Protettore era responsabile della sicurezza di qualcuno 
+                - un figlio, un amico, un paziente - e quella persona è morta (o è accaduto qualcosa di 
+                terribile) mentre era sotto la sua custodia. Il trauma è radicato nel fallimento della 
+                propria identità fondamentale.
+            </p>
+            <p>
+                <strong>Approcci Tipici:</strong> Protettivo, Razionale, Impulsivo
+            </p>
+        </div>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Il Testimone</div>
+            <div class="archetype-subtitle">"Cosa ho visto che non dovevo vedere?"</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi ha visto tutto accadere. Chi sa qualcosa che gli 
+                altri ignorano.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Perché non ho fatto nulla?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Testimone ha osservato l'evento traumatico svolgersi 
+                davanti ai suoi occhi senza intervenire - per paura, shock, o paralisi. Oppure ha visto 
+                qualcosa che rivela una verità più grande e terribile di quanto gli altri possano immaginare.
+            </p>
+            <p>
+                <strong>Approcci Tipici:</strong> Analitico, Cauto, Ossessivo
+            </p>
+        </div>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Il Catalizzatore</div>
+            <div class="archetype-subtitle">"Cosa ho fatto?"</div>
+            <p>
+                <strong>Ruolo nel Trauma:</strong> Chi ha innescato gli eventi. Chi ha preso la decisione 
+                fatale.
+            </p>
+            <p>
+                <strong>Domanda Guida:</strong> "Come potevo sapere che sarebbe finita così?"
+            </p>
+            <p>
+                <strong>Tensione Core:</strong> Il Catalizzatore ha fatto qualcosa - una scelta, un'azione, 
+                una parola - che ha messo in moto la catena di eventi che ha portato al trauma. Non era 
+                necessariamente malintenzionato, ma le conseguenze delle sue azioni sono state devastanti.
+            </p>
+            <p>
+                <strong>Approcci Tipici:</strong> Impulsivo, Razionale, Cauto (nel ricordo)</li>
+        </div>
+
+        <h3>Gli Approcci</h3>
+
+        <p>
+            Gli Approcci rappresentano il modo in cui il personaggio reagisce alle situazioni quando 
+            cerca di recuperare ricordi o di affrontare le conseguenze di ciò che scopre. Ogni personaggio 
+            ha accesso a tre Approcci, valutati da +2 (molto efficace) a -1 (problematico).
+        </p>
+
+        <table>
+            <tr>
+                <th>Approccio</th>
+                <th>Descrizione</th>
+                <th>Quando si Usa</th>
+            </tr>
+            <tr>
+                <td><strong>Cauto</strong></td>
+                <td>Procedere con attenzione, analizzare prima di agire, evitare rischi</td>
+                <td>Per resistere a impulsi pericolosi, per notare dettagli sottili</td>
+            </tr>
+            <tr>
+                <td><strong>Impulsivo</strong></td>
+                <td>Agire d'istinto, seguire le emozioni, non pensarci troppo</td>
+                <td>Per superare blocchi mentali, per agire quando il tempo stringe</td>
+            </tr>
+            <tr>
+                <td><strong>Razionale</strong></td>
+                <td>Usare la logica, connettere informazioni, mantenere il controllo</td>
+                <td>Per analizzare frammenti, per resistere al panico</td>
+            </tr>
+            <tr>
+                <td><strong>Protettivo</strong></td>
+                <td>Mettere gli altri al primo posto, assumersi responsabilità</td>
+                <td>Per aiutare altri personaggi, per sacrificarsi</td>
+            </tr>
+            <tr>
+                <td><strong>Analitico</strong></td>
+                <td>Osservare, dedurre, mantenere distanza emotiva</td>
+                <td>Per connettere frammenti disparati, per rimanere obiettivi</td>
+            </tr>
+            <tr>
+                <td><strong>Ossessivo</strong></td>
+                <td>Concentrarsi intensamente, non mollare, ignorare i limiti</td>
+                <td>Per trovare dettagli nascosti, per spingere oltre il proprio limite</td>
+            </tr>
+        </table>
+
+        <div class="mechanics-box">
+            <h4>Distribuzione degli Approcci</h4>
+            <p>Ogni personaggio distribuisce i seguenti valori tra i suoi tre Approcci scelti:</p>
+            <ul>
+                <li><strong>+2:</strong> L'Approccio primario, quello più naturale</li>
+                <li><strong>+1:</strong> Un Approccio secondario, efficace ma non istintivo</li>
+                <li><strong>0:</strong> Un Approccio meno sviluppato o conflittuale</li>
+            </ul>
+        </div>
+
+        <div class="example">
+            <div class="example-title">Esempio: Costruzione Approcci</div>
+            <p>
+                Marco gioca un <strong>Testimone</strong>. Sceglie i seguenti Approcci:<br>
+                • <strong>Analitico +2</strong> - il suo modo principale di processare informazioni<br>
+                • <strong>Cauto +1</strong> - tende a essere prudente dopo il trauma<br>
+                • <strong>Ossessivo 0</strong> - può diventare ossessivo ma gli costa fatica
+            </p>
+        </div>
+
+        <h3>Le Tracce</h3>
+
+        <p>
+            Le <strong>Tracce</strong> sono frammenti di identità che il personaggio conserva da prima 
+            del trauma: dettagli biografici minimi che aiutano a radicare il personaggio nella realtà. 
+            Non sono meccanicamente rilevanti, ma forniscono spunti narrativi.
+        </p>
+
+        <p>Ogni personaggio definisce tre Tracce rispondendo alle seguenti domande:</p>
+
+        <ol>
+            <li><strong>Chi eri prima?</strong> (professione, ruolo sociale, passione principale)</li>
+            <li><strong>Cosa ricordi con certezza?</strong> (un dettaglio sensoriale: odore, suono, immagine)</li>
+            <li><strong>Qual è il tuo difetto?</strong> (un tratto caratteriale problematico: arroganza, 
+            codardia, ingenuità, rabbia)</li>
+        </ol>
+
+        <div class="example">
+            <div class="example-title">Esempio: Tracce Complete</div>
+            <p>
+                Lucia crea un <strong>Protettore</strong> con queste Tracce:<br>
+                • <strong>Chi eri prima:</strong> Madre single, infermiera pediatrica<br>
+                • <strong>Cosa ricordi:</strong> L'odore di disinfettante ospedaliero<br>
+                • <strong>Difetto:</strong> Tendi a incolparti di tutto
+            </p>
+        </div>
+
+        <h3>Procedura di Creazione</h3>
+
+        <p>Segui questi passi per creare il tuo personaggio:</p>
+
+        <ol>
+            <li><strong>Scegli un Archetipo</strong> tra i quattro disponibili</li>
+            <li><strong>Seleziona tre Approcci</strong> dalla lista e assegna +2, +1, 0</li>
+            <li><strong>Definisci le tre Tracce</strong> rispondendo alle domande</li>
+            <li><strong>Scegli un nome</strong> - l'unica cosa di cui sei certo</li>
+            <li><strong>Determina il Pool iniziale:</strong> parti con 6d6 nel tuo Pool di Frammenti</li>
+            <li><strong>Inizia con Stress 0</strong> e nessun Eco Emotivo</li>
+        </ol>
+
+        <p>
+            La creazione completa richiede circa 10-15 minuti per giocatore. È importante che tutti i 
+            giocatori creino i personaggi insieme, così da poter coordinare archetipi e creare relazioni 
+            interessanti.
+        </p>
+
+        <!-- CAPITOLO 3: SISTEMA DI GIOCO -->
+        <h2>Capitolo 3: Sistema di Gioco</h2>
+
+        <h3>Meccaniche Core</h3>
+
+        <p>
+            Anamnesia utilizza un sistema basato su <strong>pool di dadi a sei facce (d6)</strong>. 
+            Ogni personaggio ha un Pool di Frammenti che rappresenta la sua capacità di recuperare e 
+            processare ricordi. Questo pool viene utilizzato quando il personaggio tenta azioni 
+            significative o cerca di interpretare frammenti di memoria.
+        </p>
+
+        <div class="mechanics-box">
+            <h4>Pool di Frammenti</h4>
+            <p>
+                Il <strong>Pool di Frammenti</strong> è il numero di d6 che il personaggio può tirare 
+                quando cerca di recuperare o interpretare una memoria. Tutti i personaggi iniziano con 
+                <strong>6d6</strong>.
+            </p>
+            <p>
+                Il Pool si riduce quando il personaggio accumula <strong>Stress</strong> o quando spende 
+                dadi per potenziare azioni. Si ricarica parzialmente alla fine di ogni Ciclo Narrativo.
+            </p>
+        </div>
+
+        <h3>Quando Tirare i Dadi</h3>
+
+        <p>I dadi si tirano nelle seguenti situazioni:</p>
+
+        <ul>
+            <li><strong>Recuperare un Frammento:</strong> Quando il personaggio cerca attivamente di 
+            ricordare qualcosa</li>
+            <li><strong>Interpretare un Frammento:</strong> Quando cerca di dare senso a un ricordo ambiguo</li>
+            <li><strong>Resistere allo Stress:</strong> Quando cerca di mantenere il controllo di fronte 
+            a una rivelazione traumatica</li>
+            <li><strong>Aiutare un altro personaggio:</strong> Quando supporta attivamente un compagno</li>
+        </ul>
+
+        <p>
+            <strong>Non si tirano dadi</strong> per azioni narrative semplici, conversazioni, o quando si 
+            descrivono emozioni e reazioni. I dadi servono solo per momenti di incertezza meccanica.
+        </p>
+
+        <h3>Come Funziona un Tiro</h3>
+
+        <p>Quando un giocatore tira i dadi, segue questa procedura:</p>
+
+        <div class="mechanics-box">
+            <h4>Procedura di Tiro</h4>
+            <ol>
+                <li><strong>Dichiara l'azione</strong> e quale Approccio stai usando</li>
+                <li><strong>Determina il pool:</strong> Pool base - Stress corrente</li>
+                <li><strong>Applica il modificatore dell'Approccio:</strong> aggiungi o sottrai dadi</li>
+                <li><strong>Tira tutti i dadi</strong> contemporaneamente</li>
+                <li><strong>Conta i successi:</strong> ogni dado che mostra 4, 5 o 6 è un successo</li>
+                <li><strong>Interpreta il risultato</strong> in base al numero di successi</li>
+            </ol>
+        </div>
+
+        <h4>Scala dei Risultati</h4>
+
+        <table>
+            <tr>
+                <th>Successi</th>
+                <th>Risultato</th>
+                <th>Effetto</th>
+            </tr>
+            <tr>
+                <td><strong>0</strong></td>
+                <td>Fallimento Totale</td>
+                <td>Il personaggio non riesce. Guadagna +1 Stress. Il Master introduce una complicazione.</td>
+            </tr>
+            <tr>
+                <td><strong>1</strong></td>
+                <td>Successo Parziale</td>
+                <td>Riesci, ma con un costo: guadagni +1 Stress oppure il ricordo è distorto/incompleto.</td>
+            </tr>
+            <tr>
+                <td><strong>2-3</strong></td>
+                <td>Successo</td>
+                <td>Riesci in ciò che volevi fare. Il frammento è chiaro (ma può essere ambiguo).</td>
+            </tr>
+            <tr>
+                <td><strong>4+</strong></td>
+                <td>Successo Critico</td>
+                <td>Riesci brillantemente. Ottieni un vantaggio aggiuntivo o puoi connettere frammenti.</td>
+            </tr>
+        </table>
+
+        <div class="example">
+            <div class="example-title">Esempio di Tiro</div>
+            <p>
+                Marco (Testimone, Analitico +2) cerca di interpretare un frammento di memoria che mostra 
+                mani insanguinate. Ha Pool 6d6 e Stress 2, quindi può tirare 4d6. Con Analitico +2, 
+                guadagna +2d6, arrivando a 6d6 totali.
+            </p>
+            <p>
+                Tira e ottiene: 2, 3, 5, 5, 6, 6 = 4 successi (Successo Critico!)<br>
+                Marco realizza che il sangue non appartiene a una persona, ma a un animale. Inoltre, 
+                collega questo frammento a un altro precedente: il suono di un abbaiare disperato.
+            </p>
+        </div>
+
+        <h3>Collaborazione tra Personaggi</h3>
+
+        <p>
+            I personaggi possono aiutarsi a vicenda quando cercano di interpretare frammenti o resistere 
+            allo Stress. La collaborazione si risolve in due modi:
+        </p>
+
+        <div class="mechanics-box">
+            <h4>Aiutare un Altro Personaggio</h4>
+            <p>
+                Prima che un personaggio tiri i dadi, un altro può dichiarare di volerlo aiutare. 
+                Il personaggio che aiuta descrive come contribuisce e poi tira metà del suo Pool 
+                (arrotondato per difetto). Ogni successo ottenuto garantisce +1d6 al tiro del 
+                personaggio aiutato.
+            </p>
+            <p>
+                <strong>Costo:</strong> Chi aiuta guadagna +1 Stress dopo il tiro.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Condividere la Memoria</h4>
+            <p>
+                Dopo che un personaggio ha recuperato un frammento, può scegliere di "condividerlo" 
+                con gli altri descrivendo la sua interpretazione. Altri giocatori possono accettare 
+                o proporre interpretazioni alternative. In caso di disaccordo, si può tirare per 
+                determinare quale versione diventa "canonica" per il momento.
+            </p>
+        </div>
+
+        <h3>Spendere Dadi per Effetti Speciali</h3>
+
+        <p>
+            Prima di tirare, un giocatore può scegliere di <strong>spendere</strong> dadi dal suo pool 
+            per attivare effetti speciali invece di tirarli:
+        </p>
+
+        <table>
+            <tr>
+                <th>Costo</th>
+                <th>Effetto</th>
+            </tr>
+            <tr>
+                <td><strong>1d6</strong></td>
+                <td>Fai una domanda specifica al Master che deve rispondere onestamente</td>
+            </tr>
+            <tr>
+                <td><strong>2d6</strong></td>
+                <td>Connetti due frammenti apparentemente scollegati</td>
+            </tr>
+            <tr>
+                <td><strong>3d6</strong></td>
+                <td>Recupera un frammento specifico che hai in mente, invece di pescarlo casualmente</td>
+            </tr>
+        </table>
+
+        <p>
+            I dadi spesi in questo modo sono persi fino alla fine del Ciclo, riducendo temporaneamente 
+            il Pool disponibile.
+        </p>
+
+        <div class="warning">
+            <h4>Attenzione al Pool Basso</h4>
+            <p>
+                Se il tuo Pool scende a 0 dadi, il personaggio entra in <strong>Breakdown</strong> 
+                (vedi Capitolo 6). Gestisci saggiamente le risorse mentali del tuo personaggio.
+            </p>
+        </div>
+
+        <!-- CONTINUA NEI FILE SUCCESSIVI -->
+
+        <h2>Capitolo 4: Cicli Narrativi</h2>
+
+        <h3>La Struttura del Gioco</h3>
+
+        <p>
+            Anamnesia si svolge attraverso <strong>Cicli Narrativi</strong>, ciascuno della durata di 
+            circa 15-20 minuti. Ogni ciclo rappresenta una fase di recupero della memoria in cui i 
+            personaggi scoprono nuovi frammenti e li collegano a quelli precedenti.
+        </p>
+
+        <p>
+            Una sessione completa comprende tipicamente <strong>4-6 cicli</strong>, per una durata 
+            totale di 90-120 minuti. Il numero esatto dipende da quanto velocemente il gruppo ricostruisce 
+            la verità o da quanto lo Stress diventa insostenibile.
+        </p>
+
+        <h3>Anatomia di un Ciclo</h3>
+
+        <p>Ogni Ciclo Narrativo è strutturato in quattro fasi:</p>
+
+        <div class="mechanics-box">
+            <h4>Fase 1: Manifestazione (5 minuti)</h4>
+            <p>
+                I personaggi si trovano nello spazio neutro (il rifugio) e percepiscono qualcosa che 
+                innesca un ricordo: un suono, un odore, una sensazione, un oggetto che compare 
+                misteriosamente. Il Master (o i giocatori collettivamente) descrive questo trigger.
+            </p>
+            <p>
+                <strong>Obiettivo:</strong> Creare l'aggancio narrativo per il frammento che verrà pescato.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Fase 2: Immersione (5-8 minuti)</h4>
+            <p>
+                Ogni personaggio pesca una Carta Frammento dal mazzo corrispondente alla fase del gioco 
+                (Nebbia, Connessioni, o Rivelazioni). La carta contiene un'immagine o descrizione sensoriale 
+                ambigua che il giocatore interpreta attraverso le lenti del suo archetipo.
+            </p>
+            <p>
+                <strong>Obiettivo:</strong> Scoprire nuove informazioni e iniziare a interpretarle.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Fase 3: Elaborazione (5-8 minuti)</h4>
+            <p>
+                I personaggi discutono tra loro i frammenti appena scoperti, cercando di connetterli a 
+                quelli precedenti e di costruire una narrativa coerente. Possono sorgere disaccordi, 
+                contraddizioni, o illuminazioni improvvise.
+            </p>
+            <p>
+                <strong>Obiettivo:</strong> Creare collegamenti narrativi e avanzare verso la verità.
+            </p>
+        </div>
+
+        <div class="mechanics-box">
+            <h4>Fase 4: Consolidamento (2-3 minuti)</h4>
+            <p>
+                Il ciclo si chiude. I personaggi recuperano parzialmente il loro Pool (metà dei dadi 
+                spesi), annotano i nuovi Echi Emotivi se ne hanno acquisiti, e registrano le connessioni 
+                fatte. Il Master valuta se aumentare la pressione narrativa per il prossimo ciclo.
+            </p>
+            <p>
+                <strong>Obiettivo:</strong> Reset meccanico e preparazione per il prossimo ciclo.
+            </p>
+        </div>
+
+        <h3>Le Tre Fasi del Gioco</h3>
+
+        <p>
+            I Cicli Narrativi non sono tutti uguali. Il gioco progredisce attraverso tre fasi distinte, 
+            ciascuna con un mazzo di Carte Frammento dedicato e una crescente intensità emotiva.
+        </p>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Fase 1: Nebbia</div>
+            <div class="archetype-subtitle">Cicli 1-2</div>
+            <p>
+                I frammenti sono vaghi, sensoriali, privi di contesto chiaro. Impressioni più che ricordi. 
+                I personaggi non sanno ancora cosa è successo, ma sentono che qualcosa non va.
+            </p>
+            <p>
+                <strong>Esempi di Frammenti:</strong> "Un odore metallico nell'aria", "Mani che tremano", 
+                "Il suono di vetri rotti", "Una sensazione di caduta".
+            </p>
+        </div>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Fase 2: Connessioni</div>
+            <div class="archetype-subtitle">Cicli 3-4</div>
+            <p>
+                I frammenti iniziano a rivelare dettagli concreti: luoghi, persone, azioni. I personaggi 
+                cominciano a ricostruire la cronologia degli eventi, ma il quadro è ancora incompleto e 
+                contraddittorio.
+            </p>
+            <p>
+                <strong>Esempi di Frammenti:</strong> "Il volto di una bambina che piange", "Una strada 
+                bagnata di pioggia", "Qualcuno che grida 'Fermati!'", "Una chiave insanguinata".
+            </p>
+        </div>
+
+        <div class="archetype-card">
+            <div class="archetype-title">Fase 3: Rivelazioni</div>
+            <div class="archetype-subtitle">Cicli 5-6</div>
+            <p>
+                I frammenti finali rivelano la verità più dolorosa: chi era responsabile, cosa è realmente 
+                accaduto, quale segreto stava alla base del trauma. Le rivelazioni possono ribaltare 
+                completamente interpretazioni precedenti.
+            </p>
+            <p>
+                <strong>Esempi di Frammenti:</strong> "Eri tu che guidavi quella notte", "Il bambino era 
+                già morto quando sei arrivato", "Non è stato un incidente", "Sapevi cosa sarebbe successo".
+            </p>
+        </div>
+
+        <h3>Quando Concludere</h3>
+
+        <p>Il gioco termina quando si verifica una delle seguenti condizioni:</p>
+
+        <ol>
+            <li><strong>Verità Ricostruita:</strong> Il gruppo sente di aver scoperto abbastanza della 
+            verità per una risoluzione significativa</li>
+            <li><strong>Stress Critico:</strong> Tutti i personaggi hanno raggiunto livelli di Stress 
+            che impediscono di continuare (vicini o in Breakdown)</li>
+            <li><strong>Risoluzione Narrativa:</strong> Si raggiunge un momento drammatico naturale per 
+            concludere la storia</li>
+            <li><strong>Tempo Scaduto:</strong> La sessione ha raggiunto il suo limite temporale (di solito 
+            2-3 ore)</li>
+        </ol>
+
+        <p>
+            Quando il gioco si avvia verso la conclusione, dedicate l'ultimo ciclo alla 
+            <strong>Scena Finale</strong>, in cui i personaggi confrontano direttamente la verità 
+            ricostruita e decidono cosa fare con questa conoscenza.
+        </p>
+
+        <!-- NOTA: Il manuale continua con i capitoli successivi -->
+        <div style="text-align: center; margin: 60px 0; padding: 40px; background: #f8f9fa; border: 2px dashed #667eea;">
+            <p style="font-size: 1.2em; color: #764ba2;">
+                <strong>Questo è un estratto del Manuale Completo</strong>
+            </p>
+            <p style="margin-top: 15px;">
+                I capitoli completi includono:<br>
+                • Cap. 5: Frammenti di Memoria (sistema delle carte)<br>
+                • Cap. 6: Stress ed Echi Emotivi (conseguenze psicologiche)<br>
+                • Cap. 7: Guida per il Master (gestione della sessione)<br>
+                • Cap. 8: Sessione Zero e Sicurezza (strumenti essenziali)<br>
+                • Cap. 9: Esempi di Gioco (partite simulate)<br>
+                • Cap. 10: Scenari Introduttivi (situazioni pronte all'uso)
+            </p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #ddd;">
+            <p><strong>ANAMNESIA</strong> © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                Manuale Completo v1.0 • Ottobre 2025<br>
+                Per informazioni: [inserisci contatto]
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

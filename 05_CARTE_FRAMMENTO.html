@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Carte Frammento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .intro-page {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            width: 100%;
+            aspect-ratio: 2.5/3.5;
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            padding: 15px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            page-break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card-nebbia {
+            border-color: #95a5a6;
+            background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+        }
+        
+        .card-connessioni {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+        }
+        
+        .card-rivelazioni {
+            border-color: #ff006e;
+            background: linear-gradient(135deg, #ffebf4 0%, #ffd6e8 100%);
+        }
+        
+        .card-header {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid currentColor;
+            margin-bottom: 15px;
+        }
+        
+        .card-type {
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .card-nebbia .card-type {
+            color: #7f8c8d;
+        }
+        
+        .card-connessioni .card-type {
+            color: #667eea;
+        }
+        
+        .card-rivelazioni .card-type {
+            color: #ff006e;
+        }
+        
+        .card-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #2c3e50;
+        }
+        
+        .card-footer {
+            font-size: 0.75em;
+            text-align: center;
+            color: #666;
+            padding-top: 10px;
+            border-top: 1px solid currentColor;
+        }
+        
+        .phase-title {
+            text-align: center;
+            font-size: 2em;
+            color: #667eea;
+            margin: 40px 0 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 10px;
+            }
+            .intro-page {
+                page-break-after: always;
+            }
+            .phase-title {
+                page-break-before: always;
+                page-break-after: avoid;
+            }
+            .cards-grid {
+                gap: 10px;
+            }
+            .card {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro-page">
+        <h1>ANAMNESIA</h1>
+        <div class="subtitle">Carte Frammento</div>
+        
+        <div class="instructions">
+            <h3 style="margin-bottom: 15px; color: #667eea;">Come Utilizzare Queste Carte</h3>
+            <ol style="margin-left: 20px; line-height: 1.8;">
+                <li><strong>Stampa:</strong> Stampa questo documento su cartoncino (consigliato 200-250 g/m²)</li>
+                <li><strong>Ritaglio:</strong> Ritaglia ogni carta seguendo i bordi esterni</li>
+                <li><strong>Organizzazione:</strong> Separa le carte in tre mazzi secondo il tipo:
+                    <ul style="margin-left: 20px; margin-top: 5px;">
+                        <li><strong>NEBBIA</strong> (grigio) - Cicli 1-2</li>
+                        <li><strong>CONNESSIONI</strong> (blu) - Cicli 3-4</li>
+                        <li><strong>RIVELAZIONI</strong> (rosa/rosso) - Cicli 5-6</li>
+                    </ul>
+                </li>
+                <li><strong>Utilizzo:</strong> Durante ogni ciclo, ogni giocatore pesca una carta dal mazzo 
+                corrispondente alla fase corrente e la interpreta attraverso le lenti del suo archetipo</li>
+                <li><strong>Personalizzazione:</strong> Puoi creare carte aggiuntive seguendo il template e 
+                adattandole al tuo scenario specifico</li>
+            </ol>
+        </div>
+
+        <div class="instructions" style="border-color: #ffc107; background: #fff3cd;">
+            <h3 style="margin-bottom: 15px; color: #856404;">💡 Suggerimento per il Master</h3>
+            <p>
+                I frammenti sono volutamente ambigui. La stessa carta può essere interpretata in modi 
+                radicalmente diversi a seconda dell'archetipo del personaggio e del contesto della storia. 
+                Incoraggia i giocatori a dare la loro interpretazione prima di guidarli verso una specifica.
+            </p>
+        </div>
+    </div>
+
+    <!-- FASE 1: NEBBIA -->
+    <div class="phase-title" style="border-left: 5px solid #95a5a6;">
+        FASE 1: NEBBIA<br>
+        <span style="font-size: 0.5em; color: #666;">Cicli 1-2 • Impressioni Sensoriali</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Un odore metallico nell'aria</strong></p>
+            </div>
+            <div class="card-footer">
+                Sangue? Ruggine? Qualcosa di bruciato?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Mani che tremano incontrollabilmente</strong></p>
+            </div>
+            <div class="card-footer">
+                Paura? Freddo? Shock?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il suono di vetri che si infrangono</strong></p>
+            </div>
+            <div class="card-footer">
+                Lontano o vicino? Ripetuto?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una sensazione di caduta, di vuoto</strong></p>
+            </div>
+            <div class="card-footer">
+                Fisica o emotiva?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Luci blu intermittenti che pulsano</strong></p>
+            </div>
+            <div class="card-footer">
+                Ambulanza? Polizia? Qualcos'altro?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il sapore di sale e ferro</strong></p>
+            </div>
+            <div class="card-footer">
+                Lacrime? Sangue? Mare?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Qualcosa di bagnato sotto le dita</strong></p>
+            </div>
+            <div class="card-footer">
+                Acqua? Altro?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Un grido soffocato, interrotto</strong></p>
+            </div>
+            <div class="card-footer">
+                Maschile? Femminile? Bambino?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il freddo penetrante nelle ossa</strong></p>
+            </div>
+            <div class="card-footer">
+                Temperatura o emozione?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>L'odore acre di fumo</strong></p>
+            </div>
+            <div class="card-footer">
+                Incendio? Sigaretta? Gomma bruciata?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una porta che sbatte ripetutamente</strong></p>
+            </div>
+            <div class="card-footer">
+                Vento? Qualcuno che cerca di entrare?
+            </div>
+        </div>
+
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Bianco. Solo bianco abbagliante.</strong></p>
+            </div>
+            <div class="card-footer">
+                Nebbia? Luce? Vuoto?
+            </div>
+        </div>
+    </div>
+
+    <!-- FASE 2: CONNESSIONI -->
+    <div class="phase-title" style="border-left: 5px solid #667eea;">
+        FASE 2: CONNESSIONI<br>
+        <span style="font-size: 0.5em; color: #666;">Cicli 3-4 • Dettagli Concreti</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il volto di una bambina che piange</strong></p>
+            </div>
+            <div class="card-footer">
+                La conosci? Perché piange?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una strada bagnata di pioggia, di notte</strong></p>
+            </div>
+            <div class="card-footer">
+                Dove porta? Chi c'era con te?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Qualcuno grida: "Fermati!"</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi grida? A chi?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una chiave insanguinata sul pavimento</strong></p>
+            </div>
+            <div class="card-footer">
+                Di chi è? Cosa apre?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il riflesso di una bicicletta rosa sotto i fari</strong></p>
+            </div>
+            <div class="card-footer">
+                Di chi era quella bicicletta?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Un cellulare che vibra insistentemente, ignorato</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi chiamava? Perché non hai risposto?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Tre sagome in controluce</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi sono? Cosa stanno facendo?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una foto strappata a metà</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi è nell'altra metà?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>L'interno di un'ambulanza in movimento</strong></p>
+            </div>
+            <div class="card-footer">
+                Sei dentro o fuori? Chi viene trasportato?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una mano che afferra un braccio, disperata</strong></p>
+            </div>
+            <div class="card-footer">
+                Di chi sono quelle mani?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>L'orologio segna le 23:47</strong></p>
+            </div>
+            <div class="card-footer">
+                Quando è successo? Dove eri?
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Una bottiglia vuota rotola via</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi beveva? Cosa conteneva?
+            </div>
+        </div>
+    </div>
+
+    <!-- FASE 3: RIVELAZIONI -->
+    <div class="phase-title" style="border-left: 5px solid #ff006e;">
+        FASE 3: RIVELAZIONI<br>
+        <span style="font-size: 0.5em; color: #666;">Cicli 5-6 • La Verità Emerge</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Eri tu che guidavi quella notte</strong></p>
+            </div>
+            <div class="card-footer">
+                Cosa hai investito?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Il bambino era già morto quando sei arrivato</strong></p>
+            </div>
+            <div class="card-footer">
+                E tu cosa hai fatto?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Non è stato un incidente</strong></p>
+            </div>
+            <div class="card-footer">
+                Cosa è stato, allora?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Sapevi cosa sarebbe successo</strong></p>
+            </div>
+            <div class="card-footer">
+                Perché non hai fatto nulla?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Hai mentito alla polizia</strong></p>
+            </div>
+            <div class="card-footer">
+                Cosa hai nascosto?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Se aveste chiamato subito, forse sarebbe sopravvissuta</strong></p>
+            </div>
+            <div class="card-footer">
+                Perché avete aspettato?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Tu hai convinto gli altri a scappare</strong></p>
+            </div>
+            <div class="card-footer">
+                Cosa li hai detto?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Era tua figlia sulla strada</strong></p>
+            </div>
+            <div class="card-footer">
+                Come non l'hai riconosciuta?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>L'autopsia ha rivelato altro sangue nell'auto</strong></p>
+            </div>
+            <div class="card-footer">
+                Di chi?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Uno di voi non si è mai risvegliato dall'incidente</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>Avevi bevuto. Molto.</strong></p>
+            </div>
+            <div class="card-footer">
+                Chi ti ha lasciato guidare?
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p><strong>L'incidente è successo due anni fa. Ma tu sei qui solo da ieri.</strong></p>
+            </div>
+            <div class="card-footer">
+                Dove sei stato?
+            </div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE VUOTO -->
+    <div class="phase-title" style="border-left: 5px solid #667eea;">
+        TEMPLATE CARTE VUOTE<br>
+        <span style="font-size: 0.5em; color: #666;">Per creare le tue carte personalizzate</span>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card card-nebbia">
+            <div class="card-header">
+                <div class="card-type">Nebbia</div>
+            </div>
+            <div class="card-content">
+                <p style="color: #ccc;">[Descrizione sensoriale vaga]</p>
+            </div>
+            <div class="card-footer">
+                [Domanda ambigua]
+            </div>
+        </div>
+
+        <div class="card card-connessioni">
+            <div class="card-header">
+                <div class="card-type">Connessioni</div>
+            </div>
+            <div class="card-content">
+                <p style="color: #ccc;">[Dettaglio concreto ma interpretabile]</p>
+            </div>
+            <div class="card-footer">
+                [Domanda sul contesto]
+            </div>
+        </div>
+
+        <div class="card card-rivelazioni">
+            <div class="card-header">
+                <div class="card-type">Rivelazioni</div>
+            </div>
+            <div class="card-content">
+                <p style="color: #ccc;">[Verità dolorosa e diretta]</p>
+            </div>
+            <div class="card-footer">
+                [Domanda sulle conseguenze]
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; margin-top: 40px; background: white;">
+        <p><strong>ANAMNESIA</strong> Carte Frammento v1.0 © 2025</p>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+            Questo set include 36 carte di esempio (12 per fase). Per una partita completa,<br>
+            si consiglia di avere almeno 20 carte per fase (60 totali).
+        </p>
+        <p style="margin-top: 15px; font-style: italic; color: #666;">
+            "La memoria è un bugiardo. Questi sono i suoi frammenti di verità."
+        </p>
+    </footer>
+
+</body>
+</html>

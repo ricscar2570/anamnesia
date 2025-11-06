@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAMNESIA - Tabelle di Riferimento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #764ba2;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #764ba2;
+            margin: 35px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: #667eea;
+            margin: 25px 0 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .quick-ref {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .quick-ref h3 {
+            margin-top: 0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .ref-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .dice-formula {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px solid #667eea;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #764ba2;
+            margin: 15px 0;
+        }
+        
+        ul {
+            margin: 10px 0 10px 25px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            h2 {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ANAMNESIA</h1>
+            <div class="subtitle">Tabelle di Riferimento Rapido</div>
+        </header>
+
+        <div class="quick-ref">
+            <p style="font-size: 1.1em; text-align: center;">
+                <strong>Queste tabelle sono pensate per essere consultate rapidamente durante il gioco.</strong><br>
+                Stampale e tienile a portata di mano per riferimenti veloci.
+            </p>
+        </div>
+
+        <!-- SEZIONE CORE -->
+        <h2>Meccaniche Core</h2>
+
+        <h3>Formula Base per i Tiri</h3>
+        <div class="dice-formula">
+            Pool Disponibile = Pool Base (6d6) - Stress + Modificatore Approccio
+        </div>
+
+        <table>
+            <tr>
+                <th>Elemento</th>
+                <th>Valore</th>
+            </tr>
+            <tr>
+                <td><strong>Pool Base Iniziale</strong></td>
+                <td>6d6 per tutti i personaggi</td>
+            </tr>
+            <tr>
+                <td><strong>Successo su un dado</strong></td>
+                <td>4, 5, o 6</td>
+            </tr>
+            <tr>
+                <td><strong>Stress Massimo</strong></td>
+                <td>6 (a 6 Stress = Breakdown)</td>
+            </tr>
+            <tr>
+                <td><strong>Ricarica Pool</strong></td>
+                <td>Metà dei dadi spesi alla fine di ogni Ciclo (arrotonda per difetto)</td>
+            </tr>
+        </table>
+
+        <h3>Scala dei Risultati</h3>
+        <table>
+            <tr>
+                <th>Successi</th>
+                <th>Risultato</th>
+                <th>Conseguenze</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>0</strong></td>
+                <td><strong>Fallimento</strong></td>
+                <td>Non riesci + Guadagni +1 Stress + Complicazione dal Master</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>1</strong></td>
+                <td><strong>Successo Parziale</strong></td>
+                <td>Riesci MA guadagni +1 Stress OPPURE il frammento è distorto/incompleto</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>2-3</strong></td>
+                <td><strong>Successo</strong></td>
+                <td>Riesci in ciò che volevi fare. Nessuna conseguenza negativa.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>4+</strong></td>
+                <td><strong>Successo Critico</strong></td>
+                <td>Riesci brillantemente + Vantaggio extra (connetti frammenti, ottieni info bonus, riduci Stress di 1)</td>
+            </tr>
+        </table>
+
+        <!-- APPROCCI -->
+        <h2>Approcci</h2>
+
+        <table>
+            <tr>
+                <th>Approccio</th>
+                <th>Descrizione</th>
+                <th>Quando Usarlo</th>
+            </tr>
+            <tr>
+                <td><strong>Cauto</strong></td>
+                <td>Procedere con attenzione, analizzare prima di agire</td>
+                <td>Resistere a impulsi, notare dettagli sottili, evitare rischi</td>
+            </tr>
+            <tr>
+                <td><strong>Impulsivo</strong></td>
+                <td>Agire d'istinto, seguire le emozioni</td>
+                <td>Superare blocchi mentali, agire rapidamente, seguire l'intuito</td>
+            </tr>
+            <tr>
+                <td><strong>Razionale</strong></td>
+                <td>Usare la logica, connettere informazioni</td>
+                <td>Analizzare frammenti, mantenere il controllo, dedurre</td>
+            </tr>
+            <tr>
+                <td><strong>Protettivo</strong></td>
+                <td>Mettere gli altri al primo posto</td>
+                <td>Aiutare altri PG, sacrificarsi, difendere qualcuno</td>
+            </tr>
+            <tr>
+                <td><strong>Analitico</strong></td>
+                <td>Osservare, dedurre, distanza emotiva</td>
+                <td>Connettere frammenti disparati, rimanere obiettivi</td>
+            </tr>
+            <tr>
+                <td><strong>Ossessivo</strong></td>
+                <td>Concentrarsi intensamente, non mollare</td>
+                <td>Trovare dettagli nascosti, spingere oltre i propri limiti</td>
+            </tr>
+        </table>
+
+        <div class="ref-box">
+            <strong>Distribuzione Valori Approcci:</strong><br>
+            • Un Approccio a <strong>+2</strong> (primario)<br>
+            • Un Approccio a <strong>+1</strong> (secondario)<br>
+            • Un Approccio a <strong>0</strong> (conflittuale)
+        </div>
+
+        <!-- STRESS -->
+        <h2>Gestione dello Stress</h2>
+
+        <h3>Quando si Guadagna Stress</h3>
+        <table>
+            <tr>
+                <th>Situazione</th>
+                <th>Stress Guadagnato</th>
+            </tr>
+            <tr>
+                <td>Fallimento di un tiro (0 successi)</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>Successo Parziale (1 successo)</td>
+                <td>+1 (se si sceglie questa conseguenza)</td>
+            </tr>
+            <tr>
+                <td>Rivelazione particolarmente traumatica</td>
+                <td>+1 o +2 (decisione del Master)</td>
+            </tr>
+            <tr>
+                <td>Aiutare un altro personaggio</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>Spingere oltre i propri limiti emotivi</td>
+                <td>+1</td>
+            </tr>
+        </table>
+
+        <h3>Effetti dello Stress</h3>
+        <table>
+            <tr>
+                <th>Livello Stress</th>
+                <th>Pool Disponibile</th>
+                <th>Effetto Narrativo</th>
+            </tr>
+            <tr>
+                <td><strong>0-1</strong></td>
+                <td>6d6 o 5d6</td>
+                <td>Controllo totale. Leggera tensione.</td>
+            </tr>
+            <tr>
+                <td><strong>2-3</strong></td>
+                <td>4d6 o 3d6</td>
+                <td>Ansia crescente. Difficoltà a concentrarsi.</td>
+            </tr>
+            <tr>
+                <td><strong>4-5</strong></td>
+                <td>2d6 o 1d6</td>
+                <td>Panico. Emozioni travolgenti. Vicino al collasso.</td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td>0d6</td>
+                <td><strong>BREAKDOWN</strong> - Impossibile agire. Crisi totale.</td>
+            </tr>
+        </table>
+
+        <h3>Recuperare Stress</h3>
+        <div class="ref-box">
+            <strong>Durante il Gioco:</strong>
+            <ul>
+                <li>Successo Critico (4+ successi): -1 Stress</li>
+                <li>Momento di catarsi emotiva positiva: -1 Stress (decisione del Master)</li>
+                <li>Supporto efficace da un altro PG: -1 Stress</li>
+            </ul>
+        </div>
+
+        <!-- COLLABORAZIONE -->
+        <h2>Azioni di Collaborazione</h2>
+
+        <h3>Aiutare un Altro Personaggio</h3>
+        <div class="ref-box">
+            <strong>Procedura:</strong><br>
+            1. Dichiara come aiuti narrativamente<br>
+            2. Tira metà del tuo Pool (arrotonda per difetto)<br>
+            3. Ogni tuo successo garantisce +1d6 al tiro del personaggio aiutato<br>
+            4. Guadagni +1 Stress dopo il tiro
+        </div>
+
+        <h3>Spendere Dadi per Effetti Speciali</h3>
+        <table>
+            <tr>
+                <th>Costo</th>
+                <th>Effetto</th>
+            </tr>
+            <tr>
+                <td><strong>1d6</strong></td>
+                <td>Fai una domanda specifica al Master (deve rispondere onestamente)</td>
+            </tr>
+            <tr>
+                <td><strong>2d6</strong></td>
+                <td>Connetti due frammenti apparentemente scollegati</td>
+            </tr>
+            <tr>
+                <td><strong>3d6</strong></td>
+                <td>Recupera un frammento specifico che hai in mente invece di pescarlo casualmente</td>
+            </tr>
+        </table>
+
+        <!-- CICLI E FASI -->
+        <h2>Cicli Narrativi</h2>
+
+        <h3>Struttura di un Ciclo (15-20 minuti)</h3>
+        <table>
+            <tr>
+                <th>Fase</th>
+                <th>Durata</th>
+                <th>Attività</th>
+            </tr>
+            <tr>
+                <td><strong>1. Manifestazione</strong></td>
+                <td>~5 min</td>
+                <td>Trigger sensoriale innesca il ricordo</td>
+            </tr>
+            <tr>
+                <td><strong>2. Immersione</strong></td>
+                <td>~5-8 min</td>
+                <td>Ogni PG pesca e interpreta un Frammento</td>
+            </tr>
+            <tr>
+                <td><strong>3. Elaborazione</strong></td>
+                <td>~5-8 min</td>
+                <td>Discussione e connessione dei frammenti</td>
+            </tr>
+            <tr>
+                <td><strong>4. Consolidamento</strong></td>
+                <td>~2-3 min</td>
+                <td>Recupero Pool, annotazione Echi, reset</td>
+            </tr>
+        </table>
+
+        <h3>Le Tre Fasi del Gioco</h3>
+        <table>
+            <tr>
+                <th>Fase</th>
+                <th>Cicli</th>
+                <th>Tipo di Frammenti</th>
+            </tr>
+            <tr>
+                <td><strong>NEBBIA</strong></td>
+                <td>1-2</td>
+                <td>Impressioni sensoriali vaghe, senza contesto</td>
+            </tr>
+            <tr>
+                <td><strong>CONNESSIONI</strong></td>
+                <td>3-4</td>
+                <td>Dettagli concreti: luoghi, persone, azioni</td>
+            </tr>
+            <tr>
+                <td><strong>RIVELAZIONI</strong></td>
+                <td>5-6</td>
+                <td>Verità dolorose e dirette</td>
+            </tr>
+        </table>
+
+        <!-- TABELLE PER IL MASTER -->
+        <h2>Tabelle per il Master</h2>
+
+        <h3>Generatore di Complicazioni (1d6)</h3>
+        <table>
+            <tr>
+                <th>Risultato</th>
+                <th>Complicazione</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>1</strong></td>
+                <td><strong>Contraddizione:</strong> Un frammento precedente viene messo in dubbio</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>2</strong></td>
+                <td><strong>Testimone Esterno:</strong> Qualcuno che non dovrebbe sapere, sa</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>3</strong></td>
+                <td><strong>Prova Fisica:</strong> Compare un oggetto che contraddice la ricostruzione</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>4</strong></td>
+                <td><strong>Escalation Emotiva:</strong> Un PG ha un breakdown parziale o flashback</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>5</strong></td>
+                <td><strong>Tempo che Stringe:</strong> Qualcosa sta per accadere se non agite</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>6</strong></td>
+                <td><strong>Legame Inatteso:</strong> Due PG scoprono una connessione dimenticata</td>
+            </tr>
+        </table>
+
+        <h3>Generatore di Trigger Sensoriali (1d6)</h3>
+        <table>
+            <tr>
+                <th>Risultato</th>
+                <th>Trigger</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>1</strong></td>
+                <td><strong>Odore:</strong> Fumo, sangue, profumo, cibo, disinfettante</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>2</strong></td>
+                <td><strong>Suono:</strong> Sirene, vetri, pianto, musica, silenzio improvviso</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>3</strong></td>
+                <td><strong>Visivo:</strong> Luci, ombre, colore specifico, volto, oggetto</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>4</strong></td>
+                <td><strong>Tattile:</strong> Freddo, bagnato, viscoso, ruvido, dolore</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>5</strong></td>
+                <td><strong>Gusto:</strong> Metallico, amaro, salato, bruciato</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><strong>6</strong></td>
+                <td><strong>Emotivo:</strong> Paura improvvisa, senso di colpa, vergogna, vuoto</td>
+            </tr>
+        </table>
+
+        <h3>Intensità delle Rivelazioni</h3>
+        <table>
+            <tr>
+                <th>Livello</th>
+                <th>Esempio</th>
+                <th>Stress Inflitto</th>
+            </tr>
+            <tr>
+                <td><strong>Bassa</strong></td>
+                <td>"Eri presente quella notte"</td>
+                <td>Nessuno (già implicito)</td>
+            </tr>
+            <tr>
+                <td><strong>Media</strong></td>
+                <td>"Hai visto ma non hai fatto nulla"</td>
+                <td>+1 Stress</td>
+            </tr>
+            <tr>
+                <td><strong>Alta</strong></td>
+                <td>"Sei stato tu a causare l'incidente"</td>
+                <td>+2 Stress</td>
+            </tr>
+            <tr>
+                <td><strong>Devastante</strong></td>
+                <td>"Sapevi che sarebbe successo e non hai avvertito nessuno"</td>
+                <td>+2 Stress + Possibile Breakdown</td>
+            </tr>
+        </table>
+
+        <!-- BREAKDOWN -->
+        <h2>Breakdown</h2>
+
+        <div class="ref-box" style="border-color: #ff4444;">
+            <strong>Quando si Verifica:</strong> Stress raggiunge 6<br>
+            <strong>Effetto Meccanico:</strong> Pool = 0d6, non puoi tirare dadi<br>
+            <strong>Durata:</strong> Fino alla fine della scena corrente o fino a supporto efficace da altri PG
+        </div>
+
+        <h3>Tipi di Breakdown (Scelta del Giocatore o 1d6)</h3>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Descrizione</th>
+            </tr>
+            <tr>
+                <td><strong>Paralisi</strong></td>
+                <td>Il PG si blocca completamente, incapace di parlare o muoversi</td>
+            </tr>
+            <tr>
+                <td><strong>Fuga</strong></td>
+                <td>Il PG scappa fisicamente o emotivamente dalla situazione</td>
+            </tr>
+            <tr>
+                <td><strong>Crisi</strong></td>
+                <td>Pianto incontrollato, urla, disperazione manifesta</td>
+            </tr>
+            <tr>
+                <td><strong>Negazione</strong></td>
+                <td>Rifiuto totale della realtà, ricaduta nell'amnesia protettiva</td>
+            </tr>
+            <tr>
+                <td><strong>Aggressione</strong></td>
+                <td>Rabbia diretta verso sé o gli altri (mai fisica verso giocatori reali)</td>
+            </tr>
+            <tr>
+                <td><strong>Dissociazione</strong></td>
+                <td>Il PG si distacca emotivamente, parla in terza persona</td>
+            </tr>
+        </table>
+
+        <h3>Recupero da Breakdown</h3>
+        <div class="ref-box">
+            <strong>Opzioni:</strong><br>
+            • Altro PG interviene con successo (tiro su Protettivo o Empatico): Stress ridotto a 4<br>
+            • Fine della scena stressante: Stress ridotto a 5<br>
+            • Scena di catarsi o rivelazione positiva: Stress ridotto a 3
+        </div>
+
+        <!-- RIFERIMENTI VELOCI -->
+        <h2>Cheat Sheet Ultra-Rapida</h2>
+
+        <div class="two-column">
+            <div class="quick-ref">
+                <h3>Formula Tiro</h3>
+                <p><strong>(6 - Stress + Approccio)d6</strong></p>
+                <p>4-5-6 = Successo</p>
+            </div>
+            
+            <div class="quick-ref">
+                <h3>Risultati</h3>
+                <p>0 = Fail + Stress</p>
+                <p>1 = Parziale</p>
+                <p>2-3 = Successo</p>
+                <p>4+ = Critico</p>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div class="quick-ref">
+                <h3>Stress</h3>
+                <p>Fail = +1</p>
+                <p>Aiutare = +1</p>
+                <p>Trauma = +1/+2</p>
+                <p>Max = 6 (Breakdown)</p>
+            </div>
+            
+            <div class="quick-ref">
+                <h3>Collaborazione</h3>
+                <p>Aiutare = Tira metà Pool</p>
+                <p>1 successo = +1d6 all'aiutato</p>
+                <p>Costo = +1 Stress</p>
+            </div>
+        </div>
+
+        <footer style="text-align: center; margin-top: 60px; padding-top: 30px; border-top: 2px solid #667eea;">
+            <p><strong>ANAMNESIA</strong> Tabelle di Riferimento v1.0 © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em; color: #888;">
+                Stampa questa pagina e tienila sempre a portata di mano durante il gioco.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
