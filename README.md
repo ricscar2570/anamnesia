@@ -85,8 +85,8 @@ bash scripts/build-pdf.sh
 
 ## Licenza
 
-Game Design e Testi: **Riccardo Cangini**
+Game Design e Testi: **Riccardo Scaringi**
 
-YouTube: ilgiocointavolo · Rivista: ioGioco
+YouTube: ilgiocointavolo
 
-© 2026 Riccardo Cangini. Tutti i diritti riservati. Versione Quickstart 1.3
+© 2026 Riccardo Scaringi. Tutti i diritti riservati. Versione Quickstart 1.3
