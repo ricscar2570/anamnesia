@@ -38,6 +38,7 @@ python3 "$SCRIPT_DIR/render_materials.py" cards  > "$TMP_DIR/cards.html"
 # === 3. Assembla template ===
 echo "   Assemblaggio HTML finale..."
 cp "$SCRIPT_DIR/pdf-template.html" "$TMP_DIR/full.html"
+cp "$SCRIPT_DIR/pdf-style.css" "$TMP_DIR/pdf-style.css"
 cp -r "$ROOT_DIR/assets" "$TMP_DIR/assets" 2>/dev/null || true
 
 python3 << PYEOF
@@ -67,7 +68,7 @@ html = html.replace('<!-- TOC_PLACEHOLDER -->', toc_html)
 html = html.replace('<!-- RULES_PLACEHOLDER -->', rules_final)
 html = html.replace('<!-- SHEETS_PLACEHOLDER -->', sheets)
 html = html.replace('<!-- CARDS_PLACEHOLDER -->', cards)
-html = html.replace('CSSPATH', "$SCRIPT_DIR/pdf-style.css")
+html = html.replace('CSSPATH', "$TMP_DIR/pdf-style.css")
 
 pathlib.Path("$TMP_DIR/full.html").write_text(html)
 PYEOF
