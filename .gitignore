@@ -1,11 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.bundle/
-vendor/
 output/
-Gemfile.lock
-*.swp
-*.swo
+node_modules/
+*.pyc
+__pycache__/
 .DS_Store

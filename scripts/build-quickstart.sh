@@ -1,6 +1,6 @@
 #!/bin/bash
-# build-pdf.sh — Genera il PDF completo di AnamnesiA
-# Legge i dati da _data/*.yml tramite render_materials.py
+# build-quickstart.sh — Genera il PDF Quickstart (gratuito, 12-16 pagine)
+# Estrae un sottoinsieme dalla stessa repository del manuale completo
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -10,16 +10,20 @@ TMP_DIR=$(mktemp -d)
 trap "rm -rf $TMP_DIR" EXIT
 
 mkdir -p "$OUTPUT_DIR"
-echo "📖 Assemblaggio documento completo..."
+echo "📖 Assemblaggio Quickstart..."
 
-# === 1. Regole: Markdown → HTML ===
+# === 1. Solo le pagine essenziali ===
 PAGES=(
-  index.md pilastri.md come-si-gioca.md il-sistema.md stress-ed-echi.md
-  archetipi.md archetipi/il-sopravvissuto.md archetipi/il-testimone.md
-  archetipi/il-protettore.md archetipi/il-catalizzatore.md
-  sessione-zero.md guida-custode.md avvio-primo-ciclo.md esempio-di-gioco.md
-  scenario-incidente.md scenario-tradimento.md
-  riferimento-rapido.md varianti.md changelog.md
+  index.md
+  il-sistema.md
+  stress-ed-echi.md
+  archetipi.md
+  archetipi/il-sopravvissuto.md
+  archetipi/il-testimone.md
+  archetipi/il-protettore.md
+  archetipi/il-catalizzatore.md
+  scenario-incidente.md
+  riferimento-rapido.md
 )
 RULES_MD="$TMP_DIR/rules.md"
 > "$RULES_MD"
@@ -30,14 +34,14 @@ done
 echo "   Markdown → HTML..."
 pandoc "$RULES_MD" -f markdown -t html5 --toc --toc-depth=2 --metadata title="" -o "$TMP_DIR/rules-body.html"
 
-# === 2. Render materiali da YAML ===
+# === 2. Render materiali da YAML (schede + carte) ===
 echo "   YAML → Schede + Carte..."
 python3 "$SCRIPT_DIR/render_materials.py" sheets > "$TMP_DIR/sheets.html"
 python3 "$SCRIPT_DIR/render_materials.py" cards  > "$TMP_DIR/cards.html"
 
-# === 3. Assembla template ===
+# === 3. Assembla template quickstart ===
 echo "   Assemblaggio HTML finale..."
-cp "$SCRIPT_DIR/pdf-template.html" "$TMP_DIR/full.html"
+cp "$SCRIPT_DIR/pdf-template-quickstart.html" "$TMP_DIR/full.html"
 cp -r "$ROOT_DIR/assets" "$TMP_DIR/assets" 2>/dev/null || true
 
 python3 << PYEOF
@@ -52,8 +56,7 @@ toc = re.search(r'<nav[^>]*id="TOC".*?</nav>', rules_raw, re.DOTALL)
 toc_html = toc.group(0) if toc else ''
 rules_html = re.sub(r'<nav[^>]*id="TOC".*?</nav>', '', rules_raw, flags=re.DOTALL)
 
-# Split at each <h1 to create separate <section class="rules"> per chapter
-# This ensures page breaks work in WeasyPrint's multi-column layout
+# Split at each <h1 for page breaks
 parts = re.split(r'(?=<h1[ >])', rules_html)
 sections = []
 for i, part in enumerate(parts):
@@ -74,6 +77,6 @@ PYEOF
 
 # === 4. PDF ===
 echo "🎨 WeasyPrint..."
-weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/anamnesia-zine.pdf" 2>&1 | grep -v "WARNING" || true
+weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/anamnesia-quickstart-free.pdf" 2>&1 | grep -v "WARNING" || true
 
-echo "✅ PDF: $OUTPUT_DIR/anamnesia-zine.pdf"
+echo "✅ Quickstart: $OUTPUT_DIR/anamnesia-quickstart-free.pdf"

@@ -3,8 +3,8 @@ name: Genera PDF
 on:
   push:
     tags:
-      - 'v*'  # Si attiva quando crei un tag tipo v1.3, v1.4, ecc.
-  workflow_dispatch:  # Permette di lanciarlo manualmente
+      - 'v*'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,28 +22,35 @@ jobs:
           sudo apt-get install -y pandoc fonts-dejavu python3-pip
           pip install weasyprint pyyaml --break-system-packages
 
-      - name: Genera PDF
+      - name: Genera PDF Completo (Zine)
         run: bash scripts/build-pdf.sh
 
-      - name: Upload PDF come artifact
+      - name: Genera PDF Quickstart (Gratuito)
+        run: bash scripts/build-quickstart.sh
+
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: anamnesia-quickstart
-          path: output/anamnesia-quickstart.pdf
+          name: anamnesia-pdfs
+          path: |
+            output/anamnesia-zine.pdf
+            output/anamnesia-quickstart-free.pdf
 
-      - name: Crea Release con PDF allegato
+      - name: Crea Release con entrambi i PDF
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: output/anamnesia-quickstart.pdf
+          files: |
+            output/anamnesia-zine.pdf
+            output/anamnesia-quickstart-free.pdf
           generate_release_notes: true
 
-      - name: Upload su itch.io
+      - name: Setup butler per itch.io
         if: startsWith(github.ref, 'refs/tags/')
         uses: remarkablegames/setup-butler@v2
 
-      - name: Push PDF su itch.io
+      - name: Push Quickstart gratuito su itch.io
         if: startsWith(github.ref, 'refs/tags/')
-        run: butler push output/anamnesia-quickstart.pdf ${{ vars.ITCHIO_USER }}/anamnesia:pdf --userversion ${GITHUB_REF#refs/tags/v}
+        run: butler push output/anamnesia-quickstart-free.pdf ${{ vars.ITCHIO_USER }}/anamnesia:pdf --userversion ${GITHUB_REF#refs/tags/v}
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
