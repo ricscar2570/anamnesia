@@ -1,0 +1,96 @@
+---
+layout: null
+title: Schede Personaggio
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>AnamnesiA — Schede Personaggio</title>
+<style>
+:root{--bg:#0f0e13;--surface:#1a1820;--border:#2a2530;--text:#e8e2d8;--dim:#8a8078;--accent:#c4736e;--accent2:#8b5a50}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Alegreya',Georgia,serif;background:var(--bg);color:var(--text);padding:20px}
+h1{font-family:'Alegreya SC',serif;text-align:center;font-size:1.8em;color:var(--accent);margin:20px 0 10px;letter-spacing:.06em}
+.subtitle{text-align:center;color:var(--dim);font-style:italic;margin-bottom:30px}
+.sheets{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:24px;max-width:1000px;margin:0 auto}
+.sheet{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;position:relative}
+.sh-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--accent2);padding-bottom:8px;margin-bottom:10px}
+.sh-name{font-family:'Alegreya SC',serif;font-size:1.4em;color:var(--text)}
+.sh-label{font-size:.75em;color:var(--accent);font-style:italic}
+.sh-pool{font-family:'Alegreya SC',serif;font-size:.8em;background:var(--accent2);color:#fff;padding:3px 10px;border-radius:3px}
+.sh-fields{display:flex;gap:12px;margin-bottom:8px}
+.sh-field{flex:1;border-bottom:1px solid #444;padding-bottom:8px}
+.sh-field-label{font-family:'Alegreya SC',serif;font-size:.65em;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.sh-quote{font-style:italic;color:var(--accent);text-align:center;font-size:.9em;margin:8px 0}
+.sh-sec{font-family:'Alegreya SC',serif;font-size:.8em;color:var(--text);border-bottom:1px solid #333;padding-bottom:2px;margin:8px 0 4px}
+.approach{font-size:.85em;margin-bottom:2px;line-height:1.4}
+.approach .cost{font-family:'Alegreya SC',serif;font-size:.75em;color:var(--accent);display:inline-block;min-width:52px}
+.approach strong{color:var(--text)}
+.approach .desc{color:var(--dim);font-size:.9em}
+.ability{background:#1e1c24;border:1px solid #2a2530;border-left:3px solid var(--accent2);padding:6px 10px;font-size:.85em;margin:4px 0;border-radius:2px}
+.vuln{border-left:3px solid #6b3a30;background:#1c1a20;padding:6px 10px;font-size:.85em;margin:4px 0}
+.vuln em{color:var(--dim);font-size:.85em;display:block;margin-top:3px}
+.trackers{display:flex;gap:8px;margin:8px 0}
+.tracker{flex:1;border:1px solid #333;padding:6px 8px;border-radius:4px}
+.tracker-title{font-family:'Alegreya SC',serif;font-size:.7em;color:var(--text);margin-bottom:4px}
+.circles{display:flex;gap:4px;flex-wrap:wrap}
+.circle{width:22px;height:22px;border:2px solid #555;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.6em;color:#666;cursor:pointer;transition:all .2s}
+.circle.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.tracker-note{font-size:.6em;color:#666;margin-top:3px;font-style:italic}
+.pool-calc{text-align:center;font-size:.8em;color:var(--dim);margin:6px 0;padding:4px;border:1px solid #333;border-radius:3px}
+.pool-calc strong{color:var(--text)}
+.notes{border:1px solid #333;padding:6px 8px;min-height:50px;border-radius:3px;margin-top:6px}
+.sh-footer{text-align:center;font-size:.55em;color:#555;margin-top:8px}
+.no-print{text-align:center;margin:20px 0}
+.no-print button{font-family:'Alegreya SC',serif;background:var(--accent2);color:#fff;border:none;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:.9em;margin:0 4px}
+.mr{display:inline-block;transform:scaleX(-1)}
+@media print{
+  body{background:#fff;color:#1a1a1a;padding:0}
+  .no-print{display:none}
+  .sheets{display:block}
+  .sheet{border:1.5pt solid #2c1810;page-break-after:always;break-inside:avoid;border-radius:0}
+  .sh-head{border-color:#8b5a50}.sh-name,.pool-calc strong,.approach strong{color:#2c1810}
+  .sh-quote,.sh-label,.approach .cost{color:#8b5a50}
+  .sh-pool{background:#2c1810}
+  .ability{background:#f0ebe4;border-color:#d4c4b4;border-left-color:#8b5a50}
+  .vuln{background:#f7f4f0;border-left-color:#6b3a30}
+  .circle{border-color:#aaa;color:#aaa}
+  @page{size:A5;margin:8mm}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Schede Personaggio</h1>
+<p class="subtitle">Clicca sui cerchi per segnare Stress ed Echi · Stampa con Ctrl+P</p>
+<div class="no-print"><button onclick="window.print()">🖨️ Stampa</button></div>
+<div class="sheets">
+{% for a in site.data.archetipi %}
+<div class="sheet">
+  <div class="sh-head">
+    <div><div class="sh-name">{{ a.nome }}</div><div class="sh-label">Archetipo</div></div>
+    <div class="sh-pool">Pool Base: {{ a.pool }}</div>
+  </div>
+  <div class="sh-fields"><div class="sh-field"><div class="sh-field-label">Nome</div></div><div class="sh-field"><div class="sh-field-label">Scenario</div></div></div>
+  <div class="sh-quote">{{ a.citazione }}</div>
+  <div class="sh-sec">Approcci</div>
+  {% for ap in a.approcci %}
+  <div class="approach"><span class="cost">{{ ap.costo }}</span><strong>{{ ap.nome }}</strong> — <span class="desc">{{ ap.desc }}</span></div>
+  {% endfor %}
+  {% for ab in a.abilita %}
+  <div class="ability"><strong>{{ ab.nome }}:</strong> {{ ab.desc }}</div>
+  {% endfor %}
+  <div class="vuln"><strong>Vulnerabilità:</strong> {{ a.vulnerabilita.trigger }} {{ a.vulnerabilita.effetto }}<em>{{ a.vulnerabilita.domanda }}</em></div>
+  <div class="trackers">
+    <div class="tracker"><div class="tracker-title">Stress</div><div class="circles">{% for i in (1..5) %}<span class="circle" onclick="this.classList.toggle('active')">{{ i }}</span>{% endfor %}</div><div class="tracker-note">4 = Breakdown Parziale · 5 = Breakdown Finale</div></div>
+    <div class="tracker"><div class="tracker-title">Echi Traumatici</div><div class="circles">{% for i in (1..9) %}<span class="circle" onclick="this.classList.toggle('active')">{{ i }}</span>{% endfor %}<span class="circle" onclick="this.classList.toggle('active')">+</span></div><div class="tracker-note">0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: fuori gioco</div></div>
+  </div>
+  <div class="pool-calc"><strong>Pool Attuale =</strong> {{ a.pool }} − Stress − Penalità Echi (min 1) · Ciclo: ①  ②  ③  ④  ⑤</div>
+  <div class="notes"><div class="sh-sec">Ricordi e Note</div></div>
+  <div class="sh-footer">Anamn<span class="mr">e</span>siA Quickstart v1.3 — © 2026 Riccardo Cangini</div>
+</div>
+{% endfor %}
+</div>
+</body>
+</html>

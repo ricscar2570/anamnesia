@@ -1,0 +1,841 @@
+/* =====================================================
+   ANAMNESIA — Professional Zine PDF
+   A5 · Two-column · Horror-literary aesthetic
+   For WeasyPrint
+   ===================================================== */
+
+/* Google Fonts: loaded locally from assets/fonts/ */
+@font-face { font-family: 'Cinzel'; font-weight: 400; font-style: normal; src: url('assets/fonts/cinzel-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cinzel'; font-weight: 700; font-style: normal; src: url('assets/fonts/cinzel-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cinzel'; font-weight: 800; font-style: normal; src: url('assets/fonts/cinzel-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cinzel'; font-weight: 900; font-style: normal; src: url('assets/fonts/cinzel-latin-900-normal.woff2') format('woff2'); }
+
+@font-face { font-family: 'Alegreya'; font-weight: 400; font-style: normal; src: url('assets/fonts/alegreya-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 500; font-style: normal; src: url('assets/fonts/alegreya-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 600; font-style: normal; src: url('assets/fonts/alegreya-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 700; font-style: normal; src: url('assets/fonts/alegreya-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 800; font-style: normal; src: url('assets/fonts/alegreya-latin-800-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 400; font-style: italic; src: url('assets/fonts/alegreya-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 500; font-style: italic; src: url('assets/fonts/alegreya-latin-500-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya'; font-weight: 700; font-style: italic; src: url('assets/fonts/alegreya-latin-700-italic.woff2') format('woff2'); }
+
+@font-face { font-family: 'Alegreya SC'; font-weight: 400; font-style: normal; src: url('assets/fonts/alegreya-sc-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya SC'; font-weight: 700; font-style: normal; src: url('assets/fonts/alegreya-sc-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Alegreya SC'; font-weight: 800; font-style: normal; src: url('assets/fonts/alegreya-sc-latin-800-normal.woff2') format('woff2'); }
+
+/* === PAGE SETUP === */
+
+/* Mirror letters for AnamnesiA logo */
+.mr { display: inline-block; transform: scaleX(-1); }
+@page {
+  size: 148mm 210mm; /* A5 */
+  margin: 14mm 12mm 16mm 12mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: 'Alegreya SC', serif;
+    font-size: 8pt;
+    color: #8b7b6b;
+    letter-spacing: 0.1em;
+  }
+}
+@page :first {
+  margin: 0;
+  @bottom-center { content: none; }
+}
+@page cover {
+  margin: 0;
+  @bottom-center { content: none; }
+}
+@page toc-page {
+  @bottom-center { content: none; }
+}
+@page colophon-page {
+  @bottom-center { content: none; }
+}
+@page card-page {
+  margin: 8mm 7mm 10mm 7mm;
+}
+@page sheet-page {
+  margin: 8mm 8mm 10mm 8mm;
+}
+
+/* === BODY === */
+body {
+  font-family: 'Alegreya', Georgia, 'Times New Roman', serif;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  color: #1c1814;
+  orphans: 3;
+  widows: 3;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* =====================================================
+   COPERTINA
+   ===================================================== */
+.cover {
+  page: cover;
+  page-break-after: always;
+  background: #0a0910;
+  height: 210mm;
+  width: 148mm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+/* Texture overlay */
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 30% 20%, rgba(140,80,70,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(80,60,100,0.06) 0%, transparent 50%);
+}
+/* Border frame */
+.cover::after {
+  content: '';
+  position: absolute;
+  top: 8mm;
+  left: 8mm;
+  right: 8mm;
+  bottom: 8mm;
+  border: 0.4pt solid rgba(196,115,110,0.25);
+}
+
+.cover-inner {
+  position: relative;
+  z-index: 2;
+  padding: 20mm 15mm;
+}
+.cover-skull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
+}
+.cover-ornament-top,
+.cover-ornament-bottom {
+  color: #6b4a45;
+  font-size: 11pt;
+  letter-spacing: 0.6em;
+  margin: 6pt 0;
+}
+.cover-title {
+  font-family: 'Cinzel', serif;
+  font-size: 42pt;
+  font-weight: 800;
+  color: #e8e0d4;
+  letter-spacing: 0.12em;
+  margin: 10pt 0 0;
+  border: none;
+  text-shadow: 0 0 40pt rgba(196,115,110,0.15);
+}
+.cover-rule {
+  width: 40%;
+  height: 1.2pt;
+  background: linear-gradient(90deg, transparent, #8b5a50, transparent);
+  margin: 10pt auto;
+}
+.cover-subtitle {
+  font-family: 'Alegreya SC', serif;
+  font-size: 10pt;
+  color: #a09488;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.cover-tagline {
+  font-style: italic;
+  font-size: 11pt;
+  color: #c4736e;
+  margin: 20pt 0 0;
+  line-height: 1.5;
+}
+.cover-bottom {
+  position: absolute;
+  bottom: 14mm;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.cover-version {
+  font-family: 'Alegreya SC', serif;
+  font-size: 7.5pt;
+  color: #5a5048;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.cover-author {
+  font-size: 8pt;
+  color: #5a5048;
+  margin-top: 3pt;
+}
+
+/* =====================================================
+   INNER TITLE PAGE (verso della copertina)
+   ===================================================== */
+.inner-title {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.inner-title .rorschach-top {
+  width: 70%;
+  margin: 0 auto 8pt;
+  display: block;
+  opacity: 0.85;
+}
+.inner-title .rorschach-bottom {
+  width: 70%;
+  margin: 8pt auto 0;
+  display: block;
+  opacity: 0.85;
+  transform: scaleY(-1);
+}
+.inner-title h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 14pt;
+  color: #2c1810;
+  border: none;
+  margin-bottom: 4pt;
+}
+.inner-title .it-sub {
+  font-style: italic;
+  font-size: 9.5pt;
+  color: #8b7b6b;
+}
+.inner-title .it-quote {
+  font-style: italic;
+  font-size: 10pt;
+  color: #8b5a50;
+  margin-top: 16pt;
+  line-height: 1.5;
+}
+.inner-title .it-credits {
+  margin-top: 28pt;
+  font-size: 8pt;
+  color: #8b7b6b;
+  line-height: 1.7;
+}
+
+/* =====================================================
+   INDICE
+   ===================================================== */
+.toc {
+  page: toc-page;
+  page-break-after: always;
+}
+.toc h1 {
+  font-family: 'Alegreya SC', serif;
+  font-size: 16pt;
+  color: #2c1810;
+  text-align: center;
+  margin-bottom: 12pt;
+  letter-spacing: 0.06em;
+  page-break-before: avoid;
+}
+.toc h1::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 0.6pt;
+  background: #8b5a50;
+  margin: 6pt auto 0;
+}
+.toc nav ul {
+  list-style: none;
+  padding: 0;
+}
+.toc nav > ul > li {
+  margin: 5pt 0;
+  font-size: 10pt;
+  font-weight: 600;
+  color: #2c1810;
+  border-bottom: 0.3pt dotted #d4ccc4;
+  padding-bottom: 3pt;
+}
+.toc nav > ul > li > ul {
+  padding-left: 12pt;
+}
+.toc nav > ul > li > ul > li {
+  font-size: 9pt;
+  font-weight: 400;
+  color: #5a4a3a;
+  border: none;
+  margin: 2pt 0;
+}
+.toc nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =====================================================
+   RULES CONTENT — TWO-COLUMN LAYOUT
+   ===================================================== */
+/* Each .rules section = one chapter, starts on new page */
+.rules {
+  column-count: 2;
+  column-gap: 6mm;
+  column-rule: 0.3pt solid #e0d8d0;
+  break-before: page;
+  page-break-before: always;
+}
+.rules:first-of-type {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* H1 = section openers — full width */
+.rules h1 {
+  column-span: all;
+  font-family: 'Alegreya SC', serif;
+  font-size: 17pt;
+  font-weight: 800;
+  color: #2c1810;
+  letter-spacing: 0.04em;
+  margin: 0 0 6pt 0;
+  padding: 0 0 4pt 0;
+  border-bottom: 1.2pt solid #8b5a50;
+  page-break-after: avoid;
+}
+/* Decorative ornament after h1 */
+.rules h1::after {
+  content: '· · ·';
+  display: block;
+  text-align: center;
+  font-size: 8pt;
+  color: #c4a89a;
+  margin-top: 4pt;
+  letter-spacing: 0.4em;
+}
+
+.rules h2 {
+  font-family: 'Alegreya SC', serif;
+  font-size: 11.5pt;
+  font-weight: 700;
+  color: #6b3a30;
+  margin: 10pt 0 3pt;
+  padding-bottom: 2pt;
+  border-bottom: 0.4pt solid #d8ccc0;
+  page-break-after: avoid;
+}
+
+.rules h3 {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #2c1810;
+  margin: 8pt 0 2pt;
+  page-break-after: avoid;
+}
+
+.rules p {
+  margin: 0 0 5pt;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.rules strong {
+  color: #2c1810;
+  font-weight: 700;
+}
+
+.rules em {
+  color: #4a3a2a;
+}
+
+.rules a {
+  color: #8b5a50;
+  text-decoration: none;
+}
+
+/* Horizontal rules as ornamental breaks */
+.rules hr {
+  column-span: all;
+  border: none;
+  text-align: center;
+  margin: 8pt 0;
+  height: auto;
+}
+.rules hr::before {
+  content: '✧';
+  font-size: 9pt;
+  color: #c4a89a;
+  letter-spacing: 0.8em;
+}
+
+/* Blockquotes = callout boxes */
+.rules blockquote {
+  background: #f0ebe4;
+  border: 0.5pt solid #d4c4b4;
+  border-left: 2.5pt solid #8b5a50;
+  margin: 6pt 0;
+  padding: 6pt 8pt;
+  border-radius: 1.5pt;
+  font-size: 9pt;
+  break-inside: avoid;
+}
+.rules blockquote p {
+  margin: 0 0 3pt;
+  text-align: left;
+}
+.rules blockquote p:last-child { margin-bottom: 0; }
+
+/* Tables */
+.rules table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 6pt 0;
+  font-size: 8.5pt;
+  break-inside: avoid;
+}
+.rules th {
+  background: #2c1810;
+  color: #f0ebe4;
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  text-align: left;
+  padding: 3.5pt 5pt;
+  font-size: 8pt;
+  letter-spacing: 0.04em;
+}
+.rules td {
+  padding: 3pt 5pt;
+  border-bottom: 0.3pt solid #d8d0c8;
+  vertical-align: top;
+}
+.rules tr:nth-child(even) td {
+  background: #f7f4f0;
+}
+
+/* Lists */
+.rules ul, .rules ol {
+  margin: 3pt 0 6pt 14pt;
+  padding: 0;
+}
+.rules li {
+  margin-bottom: 2pt;
+}
+
+/* =====================================================
+   SECTION DIVIDER (between major parts)
+   ===================================================== */
+.section-divider {
+  page-break-before: always;
+  text-align: center;
+  padding-top: 30%;
+  page-break-after: always;
+}
+.section-divider h1 {
+  font-family: 'Alegreya SC', serif;
+  font-size: 22pt;
+  font-weight: 800;
+  color: #2c1810;
+  letter-spacing: 0.08em;
+  margin: 0;
+  border: none;
+}
+.section-divider h1::after { content: none; }
+.section-divider .sd-rule {
+  width: 25%;
+  height: 0.8pt;
+  background: linear-gradient(90deg, transparent, #8b5a50, transparent);
+  margin: 8pt auto;
+}
+.section-divider .sd-sub {
+  font-style: italic;
+  font-size: 10pt;
+  color: #8b7b6b;
+}
+
+/* =====================================================
+   CHARACTER SHEETS
+   ===================================================== */
+.sheet-page {
+  page: sheet-page;
+}
+.char-sheet {
+  border: 1.2pt solid #2c1810;
+  padding: 7mm 6mm;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+}
+/* Corner ornaments */
+.char-sheet::before {
+  content: '◆';
+  position: absolute;
+  top: 3mm;
+  left: 3mm;
+  font-size: 5pt;
+  color: #8b5a50;
+}
+.char-sheet::after {
+  content: '◆';
+  position: absolute;
+  bottom: 3mm;
+  right: 3mm;
+  font-size: 5pt;
+  color: #8b5a50;
+}
+
+.cs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1.5pt solid #8b5a50;
+  padding-bottom: 5pt;
+  margin-bottom: 6pt;
+}
+.cs-archetype-name {
+  font-family: 'Alegreya SC', serif;
+  font-size: 16pt;
+  font-weight: 800;
+  color: #2c1810;
+  letter-spacing: 0.03em;
+}
+.cs-archetype-label {
+  font-size: 7.5pt;
+  color: #8b5a50;
+  font-style: italic;
+  margin-top: 1pt;
+}
+.cs-pool-badge {
+  font-family: 'Alegreya SC', serif;
+  font-size: 8.5pt;
+  background: #2c1810;
+  color: #f0ebe4;
+  padding: 3pt 8pt;
+  letter-spacing: 0.04em;
+}
+
+.cs-fields {
+  display: flex;
+  gap: 10pt;
+  margin-bottom: 5pt;
+}
+.cs-field {
+  flex: 1;
+  border-bottom: 0.4pt solid #a09488;
+  padding-bottom: 10pt;
+}
+.cs-field-label {
+  font-family: 'Alegreya SC', serif;
+  font-size: 6.5pt;
+  color: #8b7b6b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cs-quote {
+  font-style: italic;
+  color: #8b5a50;
+  text-align: center;
+  font-size: 9pt;
+  margin: 4pt 0 6pt;
+  line-height: 1.4;
+}
+
+.cs-section-head {
+  font-family: 'Alegreya SC', serif;
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: #2c1810;
+  letter-spacing: 0.04em;
+  border-bottom: 0.4pt solid #d8ccc0;
+  padding-bottom: 1.5pt;
+  margin: 5pt 0 3pt;
+}
+
+.cs-approach {
+  font-size: 8.5pt;
+  margin-bottom: 1.5pt;
+  line-height: 1.4;
+}
+.cs-approach-cost {
+  font-family: 'Alegreya SC', serif;
+  font-size: 7pt;
+  color: #8b5a50;
+  display: inline-block;
+  min-width: 38pt;
+}
+.cs-approach strong { color: #2c1810; }
+.cs-approach span.desc { color: #5a4a3a; font-size: 8pt; }
+
+.cs-ability-box {
+  background: #f0ebe4;
+  border: 0.4pt solid #d4c4b4;
+  border-left: 2pt solid #8b5a50;
+  padding: 4pt 6pt;
+  font-size: 8.5pt;
+  margin: 3pt 0;
+  line-height: 1.4;
+  border-radius: 1pt;
+}
+.cs-ability-box strong { color: #2c1810; }
+
+.cs-vuln-box {
+  background: #f7f4f0;
+  border-left: 2pt solid #6b3a30;
+  padding: 4pt 6pt;
+  font-size: 8.5pt;
+  margin: 3pt 0;
+  line-height: 1.4;
+}
+.cs-vuln-box em {
+  color: #8b7b6b;
+  font-size: 8pt;
+  display: block;
+  margin-top: 2pt;
+}
+
+.cs-trackers {
+  display: flex;
+  gap: 6pt;
+  margin: 5pt 0;
+}
+.cs-tracker-box {
+  flex: 1;
+  border: 0.4pt solid #c4b8a8;
+  padding: 3pt 5pt;
+  border-radius: 1.5pt;
+}
+.cs-tracker-title {
+  font-family: 'Alegreya SC', serif;
+  font-size: 7pt;
+  color: #2c1810;
+  letter-spacing: 0.04em;
+  margin-bottom: 2pt;
+}
+.cs-circles {
+  display: flex;
+  gap: 2.5pt;
+}
+.cs-circle {
+  width: 15pt;
+  height: 15pt;
+  border: 1.2pt solid #a09488;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6pt;
+  color: #a09488;
+}
+.cs-tracker-note {
+  font-size: 6pt;
+  color: #a09488;
+  margin-top: 2pt;
+  font-style: italic;
+}
+
+.cs-pool-calc {
+  text-align: center;
+  font-size: 8pt;
+  color: #5a4a3a;
+  margin: 4pt 0;
+  padding: 3pt;
+  border: 0.3pt solid #d8ccc0;
+  border-radius: 1.5pt;
+}
+.cs-pool-calc strong { color: #2c1810; }
+
+.cs-notes {
+  border: 0.3pt solid #c4b8a8;
+  border-radius: 1.5pt;
+  padding: 3pt 5pt;
+  min-height: 42pt;
+  margin-top: 4pt;
+}
+
+.cs-footer {
+  text-align: center;
+  font-size: 6pt;
+  color: #a09488;
+  margin-top: 4pt;
+  letter-spacing: 0.04em;
+}
+
+/* =====================================================
+   FRAGMENT CARDS
+   ===================================================== */
+.cards-page {
+  page: card-page;
+}
+
+.cards-intro {
+  text-align: center;
+  margin-bottom: 6pt;
+}
+.cards-intro-text {
+  font-style: italic;
+  font-size: 8pt;
+  color: #8b7b6b;
+}
+
+.act-header {
+  font-family: 'Alegreya SC', serif;
+  font-size: 11pt;
+  font-weight: 700;
+  text-align: center;
+  padding: 3pt 0;
+  margin: 4pt 0 5pt;
+  letter-spacing: 0.06em;
+  page-break-after: avoid;
+}
+.act-header.act1 { color: #2a5a6a; border-bottom: 0.8pt solid #5a8a9a; }
+.act-header.act2 { color: #5a4a20; border-bottom: 0.8pt solid #8a7a4a; }
+.act-header.act3 { color: #5a1a1a; border-bottom: 0.8pt solid #8a3a3a; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4pt;
+}
+
+.fcard {
+  border-radius: 3pt;
+  padding: 5pt 6pt;
+  min-height: 82pt;
+  display: flex;
+  flex-direction: column;
+  break-inside: avoid;
+  position: relative;
+}
+/* Cut guide corners */
+.fcard::before {
+  content: '';
+  position: absolute;
+  top: -1pt;
+  left: -1pt;
+  width: 4pt;
+  height: 4pt;
+  border-top: 0.3pt solid #999;
+  border-left: 0.3pt solid #999;
+}
+.fcard::after {
+  content: '';
+  position: absolute;
+  bottom: -1pt;
+  right: -1pt;
+  width: 4pt;
+  height: 4pt;
+  border-bottom: 0.3pt solid #999;
+  border-right: 0.3pt solid #999;
+}
+
+.fcard.act1 { background: #edf3f5; border: 0.6pt solid #7a9aaa; }
+.fcard.act2 { background: #f5f3ed; border: 0.6pt solid #aa9a6a; }
+.fcard.act3 { background: #f5eded; border: 0.6pt solid #aa5a5a; }
+
+.fc-badge {
+  font-family: 'Alegreya SC', serif;
+  font-size: 5.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1pt;
+}
+.fcard.act1 .fc-badge { color: #5a8a9a; }
+.fcard.act2 .fc-badge { color: #8a7a4a; }
+.fcard.act3 .fc-badge { color: #8a3a3a; }
+
+.fc-title {
+  font-family: 'Alegreya SC', serif;
+  font-size: 10pt;
+  font-weight: 700;
+  margin-bottom: 2pt;
+  line-height: 1.2;
+}
+.fcard.act1 .fc-title { color: #1a4a5a; }
+.fcard.act2 .fc-title { color: #4a3a1a; }
+.fcard.act3 .fc-title { color: #4a1010; }
+
+.fc-flavor {
+  font-style: italic;
+  font-size: 7pt;
+  color: #777;
+  line-height: 1.3;
+  margin-bottom: 3pt;
+}
+
+.fc-body {
+  font-size: 7.5pt;
+  color: #2a2420;
+  line-height: 1.35;
+  flex: 1;
+}
+.fc-body strong { color: #0a0a08; }
+
+.fc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3pt;
+  padding-top: 2pt;
+  border-top: 0.3pt solid rgba(0,0,0,0.08);
+}
+.fc-cost {
+  font-family: 'Alegreya SC', serif;
+  font-size: 6.5pt;
+  font-weight: 700;
+  padding: 1pt 4pt;
+  border: 0.4pt solid;
+  border-radius: 1.5pt;
+}
+.fcard.act1 .fc-cost { color: #2a5a6a; border-color: #7a9aaa; }
+.fcard.act2 .fc-cost { color: #5a4a20; border-color: #aa9a6a; }
+.fcard.act3 .fc-cost { color: #5a1a1a; border-color: #aa5a5a; }
+
+.fc-type {
+  font-size: 6pt;
+  color: #999;
+  font-style: italic;
+}
+
+/* =====================================================
+   COLOPHON
+   ===================================================== */
+.colophon {
+  page: colophon-page;
+  page-break-before: always;
+  text-align: center;
+  padding-top: 28%;
+}
+.colophon p {
+  margin: 3pt 0;
+  font-size: 9pt;
+  color: #5a4a3a;
+}
+.colophon strong {
+  font-family: 'Alegreya SC', serif;
+  color: #2c1810;
+  letter-spacing: 0.03em;
+}
+.colophon .col-ornament {
+  font-size: 10pt;
+  color: #c4a89a;
+  margin: 8pt 0;
+  letter-spacing: 0.6em;
+}
+.colophon .col-quote {
+  font-style: italic;
+  color: #8b5a50;
+  font-size: 10pt;
+  margin: 12pt 0;
+}
+.colophon .col-small {
+  font-size: 7.5pt;
+  color: #8b7b6b;
+}

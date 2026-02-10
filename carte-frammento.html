@@ -1,0 +1,104 @@
+---
+layout: null
+title: Carte Frammento
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>AnamnesiA — Carte Frammento: L'Incidente</title>
+<style>
+:root{--bg:#0f0e13;--surface:#1a1820;--text:#e8e2d8;--dim:#8a8078;--accent:#c4736e;
+  --act1:#5a7a8a;--act1-bg:#1a2a30;--act1-border:#3a5a6a;
+  --act2:#8a7a4a;--act2-bg:#2a2618;--act2-border:#6a5a3a;
+  --act3:#8a3a3a;--act3-bg:#2a1818;--act3-border:#6a2a2a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Alegreya',Georgia,serif;background:var(--bg);color:var(--text);padding:20px}
+h1{font-family:'Alegreya SC',serif;text-align:center;font-size:1.8em;color:var(--accent);margin:20px 0 6px;letter-spacing:.06em}
+.subtitle{text-align:center;color:var(--dim);font-style:italic;margin-bottom:10px}
+.filters{text-align:center;margin:10px 0 20px}
+.filters button{font-family:'Alegreya SC',serif;background:transparent;color:var(--dim);border:1px solid #333;padding:5px 14px;border-radius:3px;cursor:pointer;margin:0 3px;font-size:.85em;transition:all .2s}
+.filters button.active{color:var(--text);border-color:var(--accent)}
+.act-header{font-family:'Alegreya SC',serif;text-align:center;font-size:1.1em;padding:4px 0;margin:16px 0 8px;letter-spacing:.06em}
+.act-header.act1{color:var(--act1);border-bottom:1px solid var(--act1-border)}
+.act-header.act2{color:var(--act2);border-bottom:1px solid var(--act2-border)}
+.act-header.act3{color:var(--act3);border-bottom:1px solid var(--act3-border)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;max-width:1000px;margin:0 auto}
+.fcard{border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;min-height:140px}
+.fcard.act1{background:var(--act1-bg);border:1px solid var(--act1-border)}
+.fcard.act2{background:var(--act2-bg);border:1px solid var(--act2-border)}
+.fcard.act3{background:var(--act3-bg);border:1px solid var(--act3-border)}
+.fc-badge{font-family:'Alegreya SC',serif;font-size:.6em;text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.fcard.act1 .fc-badge{color:var(--act1)}.fcard.act2 .fc-badge{color:var(--act2)}.fcard.act3 .fc-badge{color:var(--act3)}
+.fc-title{font-family:'Alegreya SC',serif;font-size:1.15em;margin-bottom:4px}
+.fcard.act1 .fc-title{color:#8ab0c0}.fcard.act2 .fc-title{color:#c0b080}.fcard.act3 .fc-title{color:#c07070}
+.fc-flavor{font-style:italic;font-size:.8em;color:var(--dim);margin-bottom:6px;line-height:1.3}
+.fc-body{font-size:.85em;color:var(--text);line-height:1.4;flex:1}
+.fc-body strong{color:#fff}
+.fc-footer{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:6px;border-top:1px solid rgba(255,255,255,.06)}
+.fc-cost{font-family:'Alegreya SC',serif;font-size:.7em;font-weight:700;padding:2px 6px;border:1px solid;border-radius:3px}
+.fcard.act1 .fc-cost{color:var(--act1);border-color:var(--act1-border)}
+.fcard.act2 .fc-cost{color:var(--act2);border-color:var(--act2-border)}
+.fcard.act3 .fc-cost{color:var(--act3);border-color:var(--act3-border)}
+.fc-type{font-size:.65em;color:var(--dim);font-style:italic}
+.no-print{text-align:center;margin:20px 0}
+.no-print button{font-family:'Alegreya SC',serif;background:#8b5a50;color:#fff;border:none;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:.9em}
+.mr{display:inline-block;transform:scaleX(-1)}
+@media print{
+  body{background:#fff;color:#1a1a1a;padding:0}
+  .no-print,.filters{display:none}
+  .card-grid{grid-template-columns:1fr 1fr;gap:5pt}
+  .fcard.act1{background:#edf3f5;border-color:#7a9aaa}
+  .fcard.act2{background:#f5f3ed;border-color:#aa9a6a}
+  .fcard.act3{background:#f5eded;border-color:#aa5a5a}
+  .fcard.act1 .fc-title{color:#1a4a5a}.fcard.act2 .fc-title{color:#4a3a1a}.fcard.act3 .fc-title{color:#4a1010}
+  .fcard.act1 .fc-badge{color:#5a8a9a}.fcard.act2 .fc-badge{color:#8a7a4a}.fcard.act3 .fc-badge{color:#8a3a3a}
+  .fc-body,.fc-flavor{color:#333}.fc-body strong{color:#111}
+  .act-header.act1{color:#2a5a6a}.act-header.act2{color:#5a4a20}.act-header.act3{color:#5a1a1a}
+  @page{size:A4;margin:8mm}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Carte Frammento: L'Incidente</h1>
+<p class="subtitle">24 carte · 3 atti · Stampa e ritaglia</p>
+<div class="filters">
+  <button class="active" onclick="filter('all',this)">Tutte</button>
+  <button onclick="filter('act1',this)">Atto I</button>
+  <button onclick="filter('act2',this)">Atto II</button>
+  <button onclick="filter('act3',this)">Atto III</button>
+</div>
+<div class="no-print"><button onclick="window.print()">🖨️ Stampa</button></div>
+
+{% for atto in site.data.carte_frammento.atti %}
+<div class="act-section" data-act="{{ atto.colore }}">
+  <div class="act-header {{ atto.colore }}">{{ atto.nome }} — {{ atto.tema }}</div>
+  <div class="card-grid">
+  {% for c in atto.carte %}
+    <div class="fcard {{ atto.colore }}">
+      <div class="fc-badge">{{ atto.nome }} · {{ atto.tema }}</div>
+      <div class="fc-title">{{ c.titolo }}</div>
+      <div class="fc-flavor">{{ c.flavor }}</div>
+      <div class="fc-body">{{ c.corpo }}</div>
+      <div class="fc-footer">
+        <span class="fc-cost">{{ c.costo }}</span>
+        <span class="fc-type">{{ c.tipo }}</span>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endfor %}
+
+<script>
+function filter(act, btn) {
+  document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.act-section').forEach(s => {
+    s.style.display = (act === 'all' || s.dataset.act === act) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

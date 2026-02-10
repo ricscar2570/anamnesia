@@ -1,0 +1,132 @@
+---
+layout: null
+title: Generatore Personaggio
+---
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>AnamnesiA — Generatore di Personaggio</title>
+<style>
+:root{--bg:#0f0e13;--surface:#1a1820;--border:#2a2530;--text:#e8e2d8;--dim:#8a8078;--accent:#c4736e;--accent2:#8b5a50}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Alegreya',Georgia,serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;align-items:center;padding:30px 20px;min-height:100vh}
+h1{font-family:'Alegreya SC',serif;font-size:1.8em;color:var(--accent);margin-bottom:6px;letter-spacing:.06em}
+.subtitle{color:var(--dim);font-style:italic;margin-bottom:24px}
+.btn{font-family:'Alegreya SC',serif;background:var(--accent2);color:#fff;border:none;padding:10px 28px;border-radius:4px;cursor:pointer;font-size:1em;letter-spacing:.04em;transition:all .2s;margin:0 4px}
+.btn:hover{background:var(--accent)}
+.btn-row{margin:16px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:24px;max-width:500px;width:100%;margin-top:20px;display:none}
+.card.visible{display:block}
+.card-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--accent2);padding-bottom:8px;margin-bottom:12px}
+.card-archetype{font-family:'Alegreya SC',serif;font-size:1.3em}
+.card-pool{font-family:'Alegreya SC',serif;font-size:.8em;background:var(--accent2);color:#fff;padding:3px 10px;border-radius:3px}
+.card-name{font-size:1.5em;font-weight:700;margin-bottom:2px}
+.card-detail{color:var(--dim);font-size:.9em;margin:3px 0;line-height:1.4}
+.card-detail strong{color:var(--text)}
+.card-section{font-family:'Alegreya SC',serif;font-size:.8em;color:var(--text);border-bottom:1px solid #333;padding-bottom:2px;margin:12px 0 6px}
+.approach{font-size:.85em;margin-bottom:2px;line-height:1.4}
+.approach .cost{font-family:'Alegreya SC',serif;font-size:.75em;color:var(--accent);display:inline-block;min-width:52px}
+.approach .desc{color:var(--dim);font-size:.9em}
+.ability{background:#1e1c24;border:1px solid #2a2530;border-left:3px solid var(--accent2);padding:6px 10px;font-size:.85em;margin:4px 0;border-radius:2px}
+.dice-area{text-align:center;margin:16px 0}
+.dice{display:inline-block;width:36px;height:36px;border:2px solid var(--accent);border-radius:6px;margin:0 3px;font-size:1.1em;line-height:36px;text-align:center;font-weight:700}
+.dice.success{background:var(--accent);color:#fff}
+.dice.fail{background:#333;color:#666;border-color:#555}
+.fragment-box{background:#1c1a20;border-left:3px solid var(--accent);padding:8px 12px;font-style:italic;font-size:.9em;margin:6px 0;border-radius:2px}
+.mr{display:inline-block;transform:scaleX(-1)}
+@media print{
+  body{background:#fff;color:#1a1a1a}
+  .btn-row{display:none}
+  .card{background:#fff;border:1.5pt solid #2c1810}
+  .card-head{border-color:#8b5a50}
+  .card-archetype,.card-name,.approach strong{color:#2c1810}
+  .ability{background:#f0ebe4;border-color:#d4c4b4;border-left-color:#8b5a50}
+  .card-pool{background:#2c1810}
+  @page{size:A5;margin:10mm}
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Generatore di Personaggio</h1>
+<p class="subtitle">Creazione casuale con un click</p>
+<div class="btn-row">
+  <button class="btn" onclick="generate()">⚄ Genera Personaggio</button>
+  <button class="btn" onclick="window.print()" style="background:#333">🖨️ Stampa</button>
+</div>
+<div class="card" id="card"></div>
+
+<script>
+// Dati iniettati da Jekyll da _data/
+const ARCHETIPI = [
+{% for a in site.data.archetipi %}
+  {
+    nome: {{ a.nome | jsonify }},
+    pool: {{ a.pool }},
+    citazione: {{ a.citazione | jsonify }},
+    approcci: [
+      {% for ap in a.approcci %}{ costo: {{ ap.costo | jsonify }}, nome: {{ ap.nome | jsonify }}, desc: {{ ap.desc | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    abilita: [
+      {% for ab in a.abilita %}{ nome: {{ ab.nome | jsonify }}, desc: {{ ab.desc | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ],
+    vulnerabilita: {
+      trigger: {{ a.vulnerabilita.trigger | jsonify }},
+      effetto: {{ a.vulnerabilita.effetto | jsonify }},
+      domanda: {{ a.vulnerabilita.domanda | jsonify }}
+    }
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+];
+
+const NOMI = {{ site.data.carte_frammento.generatore.nomi | jsonify }};
+const ASPETTI = {{ site.data.carte_frammento.generatore.aspetti | jsonify }};
+const TIC = {{ site.data.carte_frammento.generatore.tic | jsonify }};
+const FRAMMENTI = {{ site.data.carte_frammento.generatore.frammenti | jsonify }};
+
+function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function roll(n) { return Array.from({length:n}, () => Math.floor(Math.random()*6)+1); }
+
+function generate() {
+  const a = pick(ARCHETIPI);
+  const nome = pick(NOMI);
+  const aspetto = pick(ASPETTI);
+  const tic = pick(TIC);
+  const frammento = pick(FRAMMENTI);
+  const dice = roll(a.pool);
+
+  const diceHtml = dice.map(d =>
+    `<span class="dice ${d >= 4 ? 'success' : 'fail'}">${d}</span>`
+  ).join('');
+
+  const approachHtml = a.approcci.map(ap =>
+    `<div class="approach"><span class="cost">${ap.costo}</span><strong>${ap.nome}</strong> — <span class="desc">${ap.desc}</span></div>`
+  ).join('');
+
+  const abilityHtml = a.abilita.map(ab =>
+    `<div class="ability"><strong>${ab.nome}:</strong> ${ab.desc}</div>`
+  ).join('');
+
+  const card = document.getElementById('card');
+  card.classList.add('visible');
+  card.innerHTML = `
+    <div class="card-head">
+      <div><div class="card-archetype">${a.nome}</div></div>
+      <div class="card-pool">Pool: ${a.pool}</div>
+    </div>
+    <div class="card-name">${nome}</div>
+    <div class="card-detail"><strong>Aspetto:</strong> ${aspetto}</div>
+    <div class="card-detail"><strong>Tic nervoso:</strong> ${tic}</div>
+    <div class="card-section">Primo Tiro</div>
+    <div class="dice-area">${diceHtml}</div>
+    <div class="card-section">Approcci</div>
+    ${approachHtml}
+    ${abilityHtml}
+    <div class="card-section">Primo Frammento di Memoria</div>
+    <div class="fragment-box">${frammento}</div>
+  `;
+}
+</script>
+</body>
+</html>

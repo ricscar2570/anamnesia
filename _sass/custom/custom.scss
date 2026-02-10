@@ -1,0 +1,142 @@
+// Typography - Alegreya for a literary, unsettling feel
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@400;700&display=swap');
+
+body {
+  font-family: 'Alegreya', Georgia, serif;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya SC', 'Alegreya', serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h1 { border-bottom: 1px solid #2a2836; padding-bottom: 0.4rem; }
+
+// Sidebar nav
+.side-bar {
+  font-family: 'Alegreya', Georgia, serif;
+  border-right: 1px solid #1e1c28;
+}
+
+.site-title {
+  font-family: 'Alegreya SC', serif !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 0.05em;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  font-size: 1.1rem;
+}
+
+// Blockquotes - italic memories style
+blockquote {
+  border-left: 3px solid #c4736e;
+  background: rgba(196, 115, 110, 0.05);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #d4cfc6;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+
+th {
+  background-color: #1a1922;
+  color: #c4736e;
+  font-family: 'Alegreya SC', serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2a2836;
+}
+
+tr:nth-child(even) td {
+  background-color: #13121a;
+}
+
+tr:nth-child(odd) td {
+  background-color: #0f0e13;
+}
+
+// Callout boxes (using custom classes)
+.callout {
+  border: 1px solid #2a2836;
+  border-left: 4px solid #c4736e;
+  background: #13121a;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.callout-title {
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  color: #c4736e;
+  margin-bottom: 0.4rem;
+}
+
+// Golden rule / important boxes
+.regola-oro {
+  border: 2px solid #c4736e;
+  background: rgba(196, 115, 110, 0.08);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+}
+
+// Note boxes
+.nota {
+  border: 1px solid #3a3650;
+  border-left: 4px solid #7a6fa0;
+  background: rgba(122, 111, 160, 0.06);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.nota strong:first-child {
+  color: #9a8fc0;
+}
+
+// Links
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Subtle separator
+hr {
+  border: none;
+  border-top: 1px solid #2a2836;
+  margin: 2rem 0;
+}
+
+// Back to top
+.back-to-top {
+  font-family: 'Alegreya SC', serif;
+}
+
+// Responsive images
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+}

@@ -1,0 +1,210 @@
+atti:
+  - id: act1
+    nome: "Atto I"
+    tema: "Nebbia"
+    colore: "act1"
+    carte:
+      - titolo: "Odore Chimico"
+        flavor: "«Non è disinfettante. È qualcos'altro.»"
+        corpo: "Descrivi l'odore. Tira: con almeno 1 Chiaro, associ l'odore a un luogo della tua vita. Con 0 Chiari, nausea violenta e un flash di <strong>mani guantate</strong>."
+        costo: "1 Fram."
+        tipo: "Sensoriale"
+      - titolo: "Luce Intermittente"
+        flavor: "«Il neon pulsa. Come un battito che non è il tuo.»"
+        corpo: "Fissa la luce. Tira: con almeno 1 Chiaro, noti qualcosa scritto sul neon — un codice. Con 0 Chiari, la luce si spegne e quando torna <strong>qualcosa è cambiato</strong>."
+        costo: "1 Fram."
+        tipo: "Sensoriale"
+      - titolo: "Sedia Vuota"
+        flavor: "«C'è una sedia in più. Per chi era?»"
+        corpo: "Tira: con 2+ Chiari, senti il profumo di <strong>qualcuno che manca</strong>. Con 1, il cuscino è caldo. Con 0, un ricordo violento: <strong>+1 Stress</strong>."
+        costo: "1 Fram."
+        tipo: "Ambientale"
+      - titolo: "Nome sul Polso"
+        flavor: "«Qualcosa scritto sulla tua pelle. La tua calligrafia.»"
+        corpo: "Tira: con almeno 1 Chiaro, il nome è familiare. Con 0, lo pronunci e qualcuno <strong>reagisce</strong>. Il giocatore alla tua sinistra decide chi."
+        costo: "2 Fram."
+        tipo: "Personale"
+      - titolo: "Ronzio Lontano"
+        flavor: "«Sotto il silenzio c'è un suono. Costante.»"
+        corpo: "Segui il suono. Tira: con almeno 1 Chiaro, viene da <strong>sotto il pavimento</strong>. Con 0, diventa un urlo — nessun altro lo sente."
+        costo: "1 Fram."
+        tipo: "Sensoriale"
+      - titolo: "Segno sulla Mano"
+        flavor: "«Un cerotto. Un livido. Un punto di iniezione.»"
+        corpo: "Tira: con almeno 1 Chiaro, ricordi <strong>freddo nelle vene</strong>. Con 0, sotto c'è un numero a penna. Il tuo numero di letto."
+        costo: "1 Fram."
+        tipo: "Personale"
+      - titolo: "Specchio Incrinato"
+        flavor: "«Qualcuno l'ha colpito con forza.»"
+        corpo: "Guardati. Tira: con almeno 1 Chiaro, il riflesso sembra <strong>sbagliato</strong> — è passato più tempo. Con 0, vedi un altro volto dietro il tuo."
+        costo: "1 Fram."
+        tipo: "Sensoriale"
+      - titolo: "Corridoio Chiuso"
+        flavor: "«La porta è chiusa. Una fessura. Odore dolce.»"
+        corpo: "Tira: con almeno 1 Chiaro, vedi <strong>piedi immobili</strong>. Con 0, qualcuno batte un colpo. <strong>Tutti +1 Stress.</strong>"
+        costo: "2 Fram."
+        tipo: "Ambientale"
+
+  - id: act2
+    nome: "Atto II"
+    tema: "Connessioni"
+    colore: "act2"
+    carte:
+      - titolo: "Il Modulo di Consenso"
+        flavor: "«Un foglio accartocciato. La tua firma.»"
+        corpo: "Tira: con 2+ Chiari, firmato <strong>volontariamente</strong> ma sotto pressione. Con 1, non ricordi. Con 0, procedura inaccettabile. <strong>+1 Stress.</strong>"
+        costo: "2 Fram."
+        tipo: "Documento"
+      - titolo: "La Voce Registrata"
+        flavor: "«Un registratore sotto un materasso.»"
+        corpo: "Tira: con 2+ Chiari, è <strong>la tua voce</strong> in terza persona. Con 1, singhiozzi. Con 0, dice un nome. <strong>Il giocatore a destra decide chi.</strong>"
+        costo: "2 Fram."
+        tipo: "Scoperta"
+      - titolo: "La Fotografia"
+        flavor: "«Una foto. Siete tutti lì. E una persona in più.»"
+        corpo: "Tira: con almeno 1 Chiaro, il luogo <strong>non è questa clinica</strong>. Con 0, volto cancellato. <strong>Ogni giocatore descrive un dettaglio.</strong>"
+        costo: "2 Fram."
+        tipo: "Relazionale"
+      - titolo: "Il Quinto Letto"
+        flavor: "«Rifatto con troppa cura.»"
+        corpo: "Tira: con 2+ Chiari, trovi un <strong>braccialetto identico</strong>. Con 1, usato di recente. Con 0, sotto il cuscino una lettera. <strong>Il Custode la legge.</strong>"
+        costo: "2 Fram."
+        tipo: "Ambientale"
+      - titolo: "Cicatrici Gemelle"
+        flavor: "«Lo stesso segno. Nello stesso punto.»"
+        corpo: "Tira: con almeno 1 Chiaro, ricordi una <strong>stanza con più lettini</strong>. Con 0, flashback condiviso: l'altro vede, tu senti."
+        costo: "1 Fram."
+        tipo: "Relazionale"
+      - titolo: "L'Interfono"
+        flavor: "«Gracchia. Una voce meccanica dice un numero.»"
+        corpo: "Tira: con 2+ Chiari, il numero è <strong>una data, un codice</strong>. Con 1, voce familiare. Con 0, dice il tuo nome. <strong>+1 Stress.</strong>"
+        costo: "1 Fram."
+        tipo: "Scoperta"
+      - titolo: "La Cartella Clinica"
+        flavor: "«In un cassetto. Il tuo nome sulla copertina.»"
+        corpo: "Tira: con 2+ Chiari, diagnosi <strong>diversa</strong>. Con 1, pagine strappate. Con 0, foto di te che non ricordi. <strong>+1 Stress.</strong>"
+        costo: "2 Fram."
+        tipo: "Documento"
+      - titolo: "Il Ricordo Conteso"
+        flavor: "«Due di voi ricordano lo stesso momento. Diversamente.»"
+        corpo: "<strong>Nessun tiro.</strong> Il Custode sceglie 2 giocatori. Ognuno descrive lo stesso momento. Si contraddicono. Gli altri decidono quale <strong>sentono</strong> vera."
+        costo: "0 Fram."
+        tipo: "Narrativa"
+
+  - id: act3
+    nome: "Atto III"
+    tema: "Rivelazioni"
+    colore: "act3"
+    carte:
+      - titolo: "Il Video della Procedura"
+        flavor: "«Un tablet. Non vuoi premere Play.»"
+        corpo: "Tira: con 2+ Chiari, siete <strong>osservatori, non pazienti</strong>. Con 1, video parziale. Con 0, stai sorridendo. <strong>+2 Stress. Tutti +1.</strong>"
+        costo: "3 Fram."
+        tipo: "Rivelazione"
+      - titolo: "La Stanza Sotto"
+        flavor: "«La porta nel pavimento. Scale nel buio.»"
+        corpo: "Tira: con 2+ Chiari, stanza identica, <strong>letti occupati</strong>. Con 1, scritte sui muri. Con 0, nello specchio <strong>non siete soli</strong>. Tutti +1 Stress."
+        costo: "3 Fram."
+        tipo: "Ambientale"
+      - titolo: "Il Partecipante Mancante"
+        flavor: "«Lo trovate. Non dove vi aspettavate.»"
+        corpo: "Tira: con 2+ Chiari, <strong>siete voi</strong>. Con 1, non ti riconosce. Con 0: <strong>«Non dovevi tornare.»</strong> +2 Stress."
+        costo: "3 Fram."
+        tipo: "Rivelazione"
+      - titolo: "La Confessione"
+        flavor: "«Qualcuno sa. Da sempre.»"
+        corpo: "<strong>Nessun tiro.</strong> «Cosa hai fatto la notte prima?» Ogni risposta ha un segreto. L'ultimo: <strong>«Perché non l'hai detto prima?»</strong>"
+        costo: "0 Fram."
+        tipo: "Narrativa"
+      - titolo: "Il Diario del Dottore"
+        flavor: "«In un camice. Ultime pagine scritte di fretta.»"
+        corpo: "Tira: con 2+ Chiari, <strong>ha funzionato troppo bene</strong>. Con 1, «Non possono sapere.» Con 0, indirizzato <strong>a te</strong>. +2 Stress."
+        costo: "2 Fram."
+        tipo: "Documento"
+      - titolo: "La Porta Aperta"
+        flavor: "«La porta è aperta. Lo è sempre stata.»"
+        corpo: "Tira: con 2+ Chiari, capisci perché <strong>nessuno è uscito</strong>. Con 0, ti ritrovi nella stessa stanza. <strong>Se Ciclo 5, fine partita.</strong>"
+        costo: "2 Fram."
+        tipo: "Finale"
+      - titolo: "La Scelta"
+        flavor: "«Per dimenticare.»"
+        corpo: "<strong>Carta Finale.</strong> «Se potessi dimenticare di nuovo, lo faresti?» Chi dimentica perde gli Echi. Chi ricorda tiene tutto. <strong>La partita finisce.</strong>"
+        costo: "0 Fram."
+        tipo: "Epilogo"
+      - titolo: "Echi dalla Stanza 0"
+        flavor: "«Il ronzio si ferma. Silenzio.»"
+        corpo: "Tira <strong>tutti</strong> i Frammenti. 3+: memoria completa. 1–2: il giocatore a destra riempie i vuoti. 0: <strong>è peggio</strong>. +2 Stress. Breakdown."
+        costo: "Tutti"
+        tipo: "Rivelazione"
+
+generatore:
+  nomi:
+    - Elena
+    - Marco
+    - Sara
+    - Luca
+    - Chiara
+    - Andrea
+    - Giulia
+    - Matteo
+    - Valentina
+    - Davide
+    - Francesca
+    - Simone
+    - Anna
+    - Lorenzo
+    - Marta
+    - Tommaso
+    - Silvia
+    - Alessandro
+    - Beatrice
+    - Filippo
+    - Irene
+    - Gabriele
+    - Clara
+    - Nicola
+    - Elisa
+    - Stefano
+    - Viola
+    - Pietro
+    - Noemi
+    - Federico
+  aspetti:
+    - "Occhiaie profonde, sguardo sfuggente"
+    - "Capelli rasati da poco, cicatrice sulla tempia"
+    - "Mani che tremano impercettibilmente"
+    - "Occhi chiari, espressione assente"
+    - "Postura rigida, mascella serrata"
+    - "Viso scavato, unghie mangiate"
+    - "Sguardo vigile, mai rilassato"
+    - "Capelli grigi prematuri, voce bassa"
+    - "Lineamenti delicati, dita che tamburellano"
+    - "Cicatrici vecchie sulle nocche"
+    - "Pallore innaturale, labbra screpolate"
+    - "Sguardo distante, come se guardasse oltre"
+  tic:
+    - "Si tocca il polso dove c'è il braccialetto"
+    - "Mormora numeri sottovoce quando è nervoso"
+    - "Chiude gli occhi brevemente prima di parlare"
+    - "Si guarda le mani come se non le riconoscesse"
+    - "Sobbalza ai rumori improvvisi"
+    - "Conta le uscite appena entra in una stanza"
+    - "Strofina un punto preciso sul braccio"
+    - "Trattiene il respiro quando qualcuno alza la voce"
+    - "Ripete l'ultima parola che ha sentito, sottovoce"
+    - "Si morde l'interno della guancia quando pensa"
+    - "Fissa le luci al neon con sospetto"
+    - "Controlla se gli altri dormono prima di muoversi"
+  frammenti:
+    - "Il sapore metallico di una medicina"
+    - "Una voce gentile che dice «Andrà tutto bene»"
+    - "Le mani legate con fascette morbide"
+    - "Un corridoio lunghissimo, luci bianche"
+    - "Qualcuno che piange nella stanza accanto"
+    - "Un modulo firmato con mano tremante"
+    - "L'odore del disinfettante mescolato a qualcos'altro"
+    - "Una porta che si chiude con un clic definitivo"
+    - "Il volto di qualcuno che non dovresti conoscere"
+    - "Un numero tatuato sul polso — il tuo numero"
+    - "La sensazione di cadere, poi il nulla"
+    - "Una risata inappropriata nel momento peggiore"
