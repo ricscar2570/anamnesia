@@ -70,6 +70,8 @@ body {
   widows: 3;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+  margin: 0;
+  padding: 0; 
 }
 
 /* =====================================================
@@ -88,7 +90,9 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-}
+  margin: 0;
+  padding: 0;
+   }
 /* Texture overlay */
 .cover::before {
   content: '';
