@@ -16,11 +16,13 @@ Man mano che i cicli avanzano, i ricordi diventano più nitidi e dolorosi:
 
 **Fase 2: Connessioni (Cicli 3–4)** — I dettagli emergono: nomi, luoghi, relazioni. I ricordi iniziano a collegarsi. Carte Atto I + II.
 
-**Fase 3: Rivelazioni (Ciclo 5)** — La verità cruda. Cosa è realmente accaduto. Carte Atto II + III.
+**Fase 3: Rivelazioni (Ciclo 5)** — La verità cruda. Cosa è realmente accaduto. Carte Atto II + III. In questa fase, la verità emerge sempre — anche quando vorreste che non lo facesse (vedi *La Verità Emerge Sempre*).
 
 ## Distribuzione delle Carte Frammento
 
 All'inizio di ogni ciclo, il Custode della Memoria mescola il mazzo corrispondente alla fase attuale e pesca un numero di carte pari al **numero dei giocatori più uno**. Le carte vengono disposte scoperte al centro del tavolo. Durante la fase di Esplorazione, qualsiasi giocatore può scegliere di interagire con una carta visibile, seguendone le indicazioni e spendendo i Frammenti richiesti. Una volta che una carta è stata esplorata, viene scartata. Le carte non utilizzate alla fine del ciclo vengono rimesse nel mazzo.
+
+*Se non avete le Carte Frammento stampate, potete usare le Tabelle Frammenti Universali (cap. 14).*
 
 ## Il Custode della Memoria
 

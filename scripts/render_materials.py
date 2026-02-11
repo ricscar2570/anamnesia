@@ -37,7 +37,7 @@ def render_sheets(archetipi):
     <div><div class="cs-archetype-name">{a["nome"]}</div><div class="cs-archetype-label">Archetipo</div></div>
     <div class="cs-pool-badge">Pool Base: {a["pool"]}</div>
   </div>
-  <div class="cs-fields"><div class="cs-field"><div class="cs-field-label">Nome</div></div><div class="cs-field"><div class="cs-field-label">Scenario</div></div></div>
+  <div class="cs-fields"><div class="cs-field"><div class="cs-field-label">Nome</div></div><div class="cs-field"><div class="cs-field-label">Scenario</div></div><div class="cs-field"><div class="cs-field-label">Ancora</div></div></div>
   <div class="cs-quote">{a["citazione"]}</div>
   <div class="cs-section-head">Approcci</div>
 {approaches_html}
@@ -48,8 +48,9 @@ def render_sheets(archetipi):
     <div class="cs-tracker-box"><div class="cs-tracker-title">Echi Traumatici</div><div class="cs-circles">{"".join(f'<span class="cs-circle">{i}</span>' for i in range(1,10))}<span class="cs-circle">+</span></div><div class="cs-tracker-note">0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: fuori gioco</div></div>
   </div>
   <div class="cs-pool-calc"><strong>Pool Attuale =</strong> {a["pool"]} − Stress − Penalità Echi (min 1) · Ciclo: ①  ②  ③  ④  ⑤</div>
+  <div class="cs-pool-calc"><strong>Ancora usata:</strong> ☐ · <strong>Ultimo Ricordo usato:</strong> ☐</div>
   <div class="cs-notes"><div class="cs-section-head">Ricordi e Note</div></div>
-  <div class="cs-footer">Anamn<span class="mr">e</span>siA · Quickstart v1.3 · © 2026 Riccardo Cangini</div>
+  <div class="cs-footer">Anamn<span class="mr">e</span>siA · v2.0 · © 2026 Riccardo Cangini</div>
 </div>''')
     return '\n\n'.join(html)
 

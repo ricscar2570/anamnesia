@@ -6,33 +6,39 @@ nav_order: 16
 
 # Changelog & E Poi?
 
+## Versione 2.0 — Meccaniche Affinate
+
+Quattro nuove meccaniche integrate nel sistema base, tutte progettate per dare più agenzia ai giocatori e garantire una conclusione narrativa soddisfacente:
+
+**Forzare il Ricordo** — Dopo un tiro fallito, migliora il risultato di un livello pagando +1 Stress. Aggiunge una scelta significativa senza rompere la spirale del deterioramento.
+
+**L'Ancora** — Oggetto personale scelto in creazione. Invocarlo (1/partita) riduce Stress e restituisce un Frammento. Una valvola di sfogo tattica.
+
+**Ultimo Ricordo** — Quando il Pool scende a 1 dado, tira 3d6 una volta per partita. L'ultima scintilla della mente, con un prezzo.
+
+**La Verità Emerge Sempre** — Nel Ciclo 5, i Collassi rivelano comunque il ricordo a costo doppio. La storia ha sempre un finale.
+
+**Tabelle di Complicazioni per Fase** — Tre generatori d6 specifici (Nebbia/Connessioni/Rivelazioni) sostituiscono la tabella unica, dando al Custode inneschi più appropriati alla fase corrente.
+
+**Frammenti Universali** — Tabelle 2d6 per giocare senza carte stampate o con scenari improvvisati. Tre tabelle (una per Atto) che coprono l'intera partita.
+
+**Rete di sicurezza per la Regola d'Oro** — Tre opzioni concrete per quando il giocatore interprete è in difficoltà.
+
 ## Versione 1.4 — Contenuti dal Manuale Completo
 
-Nuovi contenuti integrati dal Manuale Definitivo, adattati al sistema del Quickstart:
-
-**Guida al Custode** — Pagina dedicata al ruolo del Custode della Memoria: cosa fare, cosa non fare, gestione del silenzio e della pressione emotiva, l'arte della domanda, gestione dei cicli. Include il Generatore di Complicazioni (1d6) e la Scheda del Custode stampabile.
-
-**Scenario: Il Tradimento** — Secondo scenario completo con Verità Nascosta, 3 PNG (Marco, Sofia, il Vicino), timeline dettagliata (19:30–05:30), guida fase per fase, e 18 frammenti suggeriti divisi per atto.
-
-**Sessione Zero espansa** — Struttura completa 30–45 minuti, tabella Lines & Veils con esempi per categoria, OK Check-in con gesti, calibrazione del tono su 3 livelli, checklist finale e guida al debrief post-partita.
-
-**Riferimento Rapido espanso** — Aggiunta tabella Generatore di Complicazioni (1d6), Generatore di Trigger Sensoriali (1d6), scala Intensità delle Rivelazioni (4 livelli con Stress).
-
-**Varianti di Gioco** — Tre modalità alternative: Senza Custode (con regola della Sedia Vuota), Campagna (3–5 sessioni con Stress ridotto e Echi persistenti), Thriller Leggero (Stress max 7, recupero automatico, focus sul mistero).
-
-**Scenario L'Incidente espanso** — Aggiunta Verità Nascosta completa, 3 PNG (Dott. Fassini, Partecipante Mancante, Infermiera), timeline reale, domande guida per ogni fase.
+Guida al Custode · Sessione Zero espansa · Scenario: Il Tradimento · Varianti di Gioco · Riferimento Rapido espanso.
 
 ## Versione 1.3 — PDF Professionale e Architettura Unificata
 
-Pipeline PDF professionale con layout A5 a due colonne, schede personaggio e carte frammento. Architettura dati unificata: `_data/archetipi.yml` e `_data/carte_frammento.yml` alimentano sia il sito (Liquid) che il PDF (Python).
+Pipeline PDF professionale con layout A5 a due colonne, schede personaggio e carte frammento.
 
 ## Versione 1.2 — Materiali Interattivi
 
-Generatore di Personaggio casuale, Schede Personaggio interattive con tracker cliccabili, 24 Carte Frammento stampabili divise per atto.
+Generatore di Personaggio casuale, Schede Personaggio interattive, 24 Carte Frammento stampabili.
 
 ## Versione 1.1 — Sito Web
 
-Repository Jekyll con tema horror personalizzato, navigazione completa, deploy automatico su GitHub Pages.
+Repository Jekyll con tema horror personalizzato, deploy automatico su GitHub Pages.
 
 ## Versione 1.0 — Prima Release
 
