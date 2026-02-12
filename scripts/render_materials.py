@@ -50,7 +50,7 @@ def render_sheets(archetipi):
   <div class="cs-pool-calc"><strong>Pool Attuale =</strong> {a["pool"]} − Stress − Penalità Echi (min 1) · Ciclo: ①  ②  ③  ④  ⑤</div>
   <div class="cs-pool-calc"><strong>Ancora usata:</strong> ☐ · <strong>Ultimo Ricordo usato:</strong> ☐</div>
   <div class="cs-notes"><div class="cs-section-head">Ricordi e Note</div></div>
-  <div class="cs-footer">Anamn<span class="mr">e</span>siA · v2.0 · © 2026 Riccardo Scaringi</div>
+  <div class="cs-footer">Anamn<span class="mr">e</span>siA · v2.0 · © 2026 Riccardo Cangini</div>
 </div>''')
     return '\n\n'.join(html)
 
