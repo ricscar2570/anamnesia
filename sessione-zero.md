@@ -16,7 +16,7 @@ Se qualcuno non si sente a proprio agio durante la Sessione Zero, il gioco non i
 |:------|:-----|:---------|
 | 0–10 min | Introduzione | Spiegate cos'è AnamnesiA, i temi, perché la sicurezza è prioritaria |
 | 10–20 min | Lines & Veils | Discussione sui limiti e implementazione strumenti |
-| 20–30 min | Creazione PG | Ogni giocatore sceglie Archetipo e compila la scheda |
+| 20–30 min | Creazione PG | Ogni giocatore sceglie Archetipo, Ancora e compila la scheda |
 | 30–40 min | Calibrazione | Tono, intensità, e conferma che tutti sono pronti |
 
 ## Strumenti di Sicurezza
@@ -58,7 +58,7 @@ Discutete insieme il livello di intensità. Non serve un questionario formale �
 
 Prima di iniziare, verificate:
 
-☐ Tutti hanno capito i temi del gioco · ☐ Lines & Veils definiti e registrati · ☐ Almeno due strumenti di sicurezza implementati (X-Card + uno a scelta) · ☐ Ogni giocatore ha scelto un Archetipo · ☐ Il livello di intensità è stato concordato · ☐ Tutti sanno che possono ritirarsi in qualsiasi momento
+☐ Tutti hanno capito i temi del gioco · ☐ Lines & Veils definiti e registrati · ☐ Almeno due strumenti di sicurezza implementati (X-Card + uno a scelta) · ☐ Ogni giocatore ha scelto un Archetipo e un'Ancora · ☐ Il livello di intensità è stato concordato · ☐ Tutti sanno che possono ritirarsi in qualsiasi momento
 
 ## Debrief Post-Partita
 

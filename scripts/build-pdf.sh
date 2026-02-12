@@ -19,7 +19,7 @@ PAGES=(
   archetipi/il-protettore.md archetipi/il-catalizzatore.md
   sessione-zero.md guida-custode.md avvio-primo-ciclo.md esempio-di-gioco.md
   scenario-incidente.md scenario-tradimento.md
-  riferimento-rapido.md varianti.md changelog.md
+  frammenti-universali.md riferimento-rapido.md varianti.md changelog.md
 )
 RULES_MD="$TMP_DIR/rules.md"
 > "$RULES_MD"

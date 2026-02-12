@@ -37,12 +37,31 @@ Dopo il tiro, classifica ogni dado:
 | **Collasso del Ricordo** | 0 Chiari | Il ricordo ti travolge. +1 Stress. Conseguenze narrative. |
 
 {: .nota }
-> *Nota di design: il Successo Pieno (3+ Chiari) è intenzionalmente raro. I risultati più comuni sono i Successi Parziali e le Verità Dolorose. Questo non è un difetto: il gioco è progettato perché ogni tentativo di ricordare abbia un costo.*
+> *Nota: il Successo Pieno (3+ Chiari) è intenzionalmente raro. I risultati più comuni sono i Successi Parziali e le Verità Dolorose. Questo non è un difetto: il gioco è progettato perché ogni tentativo di ricordare abbia un costo.*
 
 ## Regola d'Oro
 
 {: .regola-oro }
 > **Il giocatore alla tua destra interpreta il risultato del tuo tiro, non tu.** Questo garantisce che i ricordi emergano in modi inaspettati e che nessuno controlli la propria narrativa.
+
+**Se la Regola d'Oro stalla:** Il giocatore che deve interpretare può fare una di queste cose:
+
+**1.** **Chiedere un senso** al giocatore attivo: *«Dimmi un senso — vista, suono, odore — e parto da lì.»*
+
+**2.** **Usare il Generatore di Trigger Sensoriali** (1d6, vedi Riferimento Rapido) come innesco.
+
+**3.** **Passare la parola** al giocatore successivo. Non è una vergogna — l'improvvisazione non viene sempre a tutti.
+
+## Forzare il Ricordo *(Novità v2.0)*
+
+Dopo un tiro che risulta in **Verità Dolorosa** (1 Chiaro) o **Collasso del Ricordo** (0 Chiari), puoi scegliere di Forzare il Ricordo. Il risultato migliora di un livello:
+
+- Collasso del Ricordo → diventa Verità Dolorosa
+- Verità Dolorosa → diventa Successo Parziale
+
+Il prezzo: guadagni immediatamente **+1 Stress**. Non puoi Forzare un Successo Parziale.
+
+*Stringi i denti e costringi la memoria a emergere, anche se il prezzo è il deterioramento mentale. Ogni volta che Forzi, il Breakdown si avvicina.*
 
 ## Pool di Frammenti
 

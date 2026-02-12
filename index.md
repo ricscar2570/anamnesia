@@ -23,7 +23,7 @@ Un gioco di ruolo narrativo di horror psicologico
 
 ## Materiali Necessari
 
-3–6 dadi a sei facce (d6) per ogni giocatore • Schede Personaggio (una per giocatore, incluse in questa zine) • Carte Frammento (incluse: stampare e ritagliare) • Gettoni per Stress ed Echi (monete, biglie, qualsiasi cosa) • Un timer visibile a tutti (anche un telefono) • Carta e penna per appunti.
+3–6 dadi a sei facce (d6) per ogni giocatore • Schede Personaggio (una per giocatore, incluse in questa zine) • Carte Frammento (incluse: stampare e ritagliare) oppure le Tabelle Frammenti Universali (vedi cap. 14) • Gettoni per Stress ed Echi (monete, biglie, qualsiasi cosa) • Un timer visibile a tutti (anche un telefono) • Carta e penna per appunti.
 
 ---
 
@@ -31,8 +31,8 @@ Un gioco di ruolo narrativo di horror psicologico
 
 ---
 
-**ZineQuest 2026** · Versione Quickstart 1.3
+**ZineQuest 2026** · Edizione Completa v2.0
 
-Game Design e Testi: Riccardo Cangini
+Game Design e Testi: Riccardo Scaringi
 
 YouTube: ilgiocointavolo · Rivista: ioGioco

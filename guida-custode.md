@@ -62,18 +62,42 @@ Se un ciclo si esaurisce in fretta, non allungarlo artificialmente. Se un ciclo 
 
 **Timer consigliato:** 15 minuti per ciclo. Quando il timer suona, concludi la scena corrente e passa al consolidamento (recupero Pool, annotazione Echi).
 
-## Generatore di Complicazioni
+## Generatori di Complicazioni per Fase *(Novità v2.0)*
 
-Quando il gioco ristagna o dopo un Collasso del Ricordo (0 Chiari), tira 1d6:
+Da usare quando il gioco ristagna, dopo un Collasso del Ricordo (0 Chiari), o quando il Custode ha bisogno di un innesco rapido. Tira 1d6 sulla tabella della fase corrente.
+
+### Fase Nebbia (Cicli 1–2) — Complicazioni Sensoriali
 
 | d6 | Complicazione |
 |:---|:--------------|
-| **1** | **Contraddizione:** un frammento precedente viene messo in dubbio. Due ricordi non possono essere entrambi veri. |
-| **2** | **Testimone esterno:** qualcuno che non dovrebbe sapere, sa. Un PNG compare con un'informazione inquietante. |
-| **3** | **Prova fisica:** compare un oggetto che contraddice la ricostruzione. Una chiave, una foto, un messaggio. |
-| **4** | **Escalation:** un personaggio ha un flashback improvviso. Il giocatore alla tua destra descrive cosa vedi. |
-| **5** | **Il tempo stringe:** qualcosa sta per accadere. Passi nel corridoio, un telefono che squilla, un countdown. |
-| **6** | **Legame inatteso:** due personaggi scoprono una connessione che non ricordavano. Definiscila insieme a loro. |
+| **1** | Un suono che non dovrebbe esserci: un campanello, un respiro, un ticchettio. |
+| **2** | La temperatura cambia bruscamente in un punto preciso della stanza. |
+| **3** | Un odore penetrante e fugace che nessun altro sembra percepire. |
+| **4** | Un oggetto si è spostato da dove lo ricordavate. O forse no? |
+| **5** | Una scritta su una superficie — ma quando la indichi agli altri, non la vedono. |
+| **6** | Un déjà vu condiviso: due personaggi hanno la stessa sensazione nello stesso istante. |
+
+### Fase Connessioni (Cicli 3–4) — Complicazioni Relazionali
+
+| d6 | Complicazione |
+|:---|:--------------|
+| **1** | Due frammenti emersi finora si contraddicono. Uno dei due è falso. Quale? |
+| **2** | Qualcuno che non dovrebbe sapere, sa. Un PNG compare con un'informazione inquietante. |
+| **3** | Un oggetto personale di un PG viene trovato dove non dovrebbe essere. |
+| **4** | Un PG ha un flashback improvviso. Il giocatore alla sua destra descrive cosa vede. |
+| **5** | Qualcosa sta per accadere. Passi nel corridoio, un telefono che squilla, un countdown. |
+| **6** | Due personaggi scoprono una connessione che non ricordavano. Definitela insieme. |
+
+### Fase Rivelazioni (Ciclo 5) — Complicazioni Traumatiche
+
+| d6 | Complicazione |
+|:---|:--------------|
+| **1** | Un ricordo che emerge adesso contraddice TUTTO ciò che avete ricostruito finora. |
+| **2** | Un PG ricorda il momento esatto del trauma. Il giocatore alla sua destra lo descrive. |
+| **3** | La prova definitiva è qui — ma accettarla significa ammettere una colpa personale. |
+| **4** | Qualcuno che credevate vittima era complice. O viceversa. |
+| **5** | Il tempo è scaduto: la conseguenza esterna arriva (polizia, medici, familiari). Cosa fate? |
+| **6** | La verità è peggio di quanto chiunque immaginasse. Ogni PG dice una cosa che avrebbe preferito non ricordare. |
 
 ## Scheda del Custode
 
@@ -81,12 +105,12 @@ Stampa questa pagina e usala per tenere traccia della sessione.
 
 **Scenario:** _________________ **Data:** _________________ **Giocatori:** _____
 
-| Giocatore | Personaggio | Archetipo | Stress | Echi | Note |
-|:----------|:------------|:----------|:-------|:-----|:-----|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Giocatore | Personaggio | Archetipo | Ancora | Stress | Echi | Note |
+|:----------|:------------|:----------|:-------|:-------|:-----|:-----|
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
 
 **Cicli:** ① Nebbia ☐ · ② Nebbia ☐ · ③ Connessioni ☐ · ④ Connessioni ☐ · ⑤ Rivelazioni ☐
 

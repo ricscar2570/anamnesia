@@ -6,7 +6,7 @@ nav_order: 14
 
 # Riferimento Rapido
 
-Tutto ciò che serve durante la partita, in una pagina. Stampate e tenete al centro del tavolo.
+Tutto ciò che serve durante la partita. Stampate e tenete al centro del tavolo.
 
 ## Formula del Tiro
 
@@ -25,7 +25,11 @@ Tutto ciò che serve durante la partita, in una pagina. Stampate e tenete al cen
 | **3+** | Successo Pieno | Ricordo vivido e utile. Nessuna conseguenza. |
 | **2** | Successo Parziale | Ricordo incompleto o con un costo emotivo. |
 | **1** | Verità Dolorosa | Ricordo reale ma doloroso. Possibile Stress. |
-| **0** | Collasso | Il ricordo ti travolge. +1 Stress. Complicazione. |
+| **0** | Collasso del Ricordo | Il ricordo ti travolge. +1 Stress. Complicazione. |
+
+## Forzare il Ricordo *(v2.0)*
+
+Dopo Verità Dolorosa o Collasso: migliora il risultato di 1 livello. Costo: +1 Stress. Non puoi Forzare un Successo Parziale.
 
 ## Pool Attuale
 
@@ -42,7 +46,13 @@ Pool Base (4 o 5) − Stress − Penalità Echi = Dadi disponibili (minimo 1)
 | 4 | **Breakdown Parziale.** Emozioni travolgenti. |
 | 5 | **Breakdown Finale.** Il personaggio entra in crisi. |
 
-**Recuperare Stress:** Interpretare la Vulnerabilità dell'Archetipo (−1 Stress, max 1/ciclo) · Connessione Umana a fine ciclo
+**Recuperare Stress:** Interpretare la Vulnerabilità dell'Archetipo (−1 Stress, max 1/ciclo) · Connessione Umana a fine ciclo · Invocare l'Ancora (1/partita, richiede Stress 2+)
+
+## Meccaniche Speciali *(v2.0)*
+
+**Ultimo Ricordo (1/partita):** Con Pool a 1 dado, tira 3d6 ignorando penalità. Poi +1 Stress.
+
+**La Verità Emerge Sempre (solo Ciclo 5):** Un Collasso rivela comunque il ricordo, ma costa +2 Stress.
 
 ## Fasi del Gioco
 
@@ -56,22 +66,9 @@ Pool Base (4 o 5) − Stress − Penalità Echi = Dadi disponibili (minimo 1)
 
 > Il giocatore alla tua **destra** interpreta il risultato del tuo tiro, non tu.
 
-## Generatore di Complicazioni (1d6)
-
-Da usare dopo un Collasso (0 Chiari) o quando il gioco ristagna.
-
-| d6 | Complicazione |
-|:---|:--------------|
-| **1** | **Contraddizione:** un frammento precedente viene messo in dubbio |
-| **2** | **Testimone esterno:** un PNG sa qualcosa che non dovrebbe |
-| **3** | **Prova fisica:** un oggetto contraddice la ricostruzione |
-| **4** | **Flashback:** il giocatore alla tua destra descrive cosa vedi |
-| **5** | **Il tempo stringe:** passi nel corridoio, un telefono, un countdown |
-| **6** | **Legame inatteso:** due PG scoprono una connessione dimenticata |
+*Se stalli: chiedi un senso, tira sul Generatore Sensoriale, o passa la parola.*
 
 ## Generatore di Trigger Sensoriali (1d6)
-
-Per il Custode, quando serve un innesco rapido all'inizio di un ciclo.
 
 | d6 | Senso | Esempi |
 |:---|:------|:-------|

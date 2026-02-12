@@ -53,4 +53,4 @@ Settings → Secrets: `BUTLER_API_KEY` · Settings → Variables: `ITCHIO_USER`
 
 ## Licenza
 
-© 2026 Riccardo Cangini. Tutti i diritti riservati.
+© 2026 Riccardo Scaringi. Tutti i diritti riservati.

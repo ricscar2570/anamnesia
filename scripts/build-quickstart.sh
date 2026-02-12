@@ -1,5 +1,5 @@
 #!/bin/bash
-# build-quickstart.sh — Genera il PDF Quickstart (gratuito, 12-16 pagine)
+# build-quickstart.sh — Genera il PDF Quickstart (gratuito, ~28 pagine)
 # Estrae un sottoinsieme dalla stessa repository del manuale completo
 set -e
 
@@ -15,6 +15,8 @@ echo "📖 Assemblaggio Quickstart..."
 # === 1. Solo le pagine essenziali ===
 PAGES=(
   index.md
+  pilastri.md
+  come-si-gioca.md
   il-sistema.md
   stress-ed-echi.md
   archetipi.md
@@ -22,7 +24,11 @@ PAGES=(
   archetipi/il-testimone.md
   archetipi/il-protettore.md
   archetipi/il-catalizzatore.md
+  sessione-zero.md
+  avvio-primo-ciclo.md
+  esempio-di-gioco.md
   scenario-incidente.md
+  frammenti-universali.md
   riferimento-rapido.md
 )
 RULES_MD="$TMP_DIR/rules.md"
