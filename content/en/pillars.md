@@ -25,5 +25,5 @@ The story is not written in advance. It emerges from the cards, the dice rolls, 
 There is no winning and no losing. The only measure of success is the story you created together and the emotions you explored.
 
 <div style="column-span: all; text-align: center; margin-top: 12pt;">
-<img src="assets/cranio_clean_whitebg.png" style="width: 65%; max-height: 320pt; object-fit: contain;">
+<img src="assets/cranio_clean_whitebg.png" style="width: 45%; max-height: 180pt; object-fit: contain;">
 </div>
