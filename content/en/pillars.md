@@ -24,4 +24,4 @@ The story is not written in advance. It emerges from the cards, the dice rolls, 
 
 There is no winning and no losing. The only measure of success is the story you created together and the emotions you explored.
 
-<img src="assets/cranio_rorschach" class="illustration-full" alt="">
+<img src="assets/cranio_rorschach.png" class="illustration-full" alt="">
