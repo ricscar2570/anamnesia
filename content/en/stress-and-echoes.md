@@ -35,13 +35,13 @@ When Stress reaches 4, you suffer a **Partial Breakdown:** choose how your chara
 
 *A Breakdown is not elimination. It is the dramatic climax of your narrative arc.*
 
-**The Circle of Witness:** every other player recounts a shared memory with the one who suffered the Breakdown, creating a powerful, collective moment.
+**The Circle of Witnessing:** every other player recounts a shared memory with the one who suffered the Breakdown, creating a powerful, collective moment.
 
 ## The Anchor *(New in v2.0)*
 
 During character creation, each player chooses an **Anchor**: a physical object the character possesses — a broken watch, a photograph, a key, a ring. The Anchor is your last link to reality.
 
-**Invoking the Anchor (once per game):** When you have at least 2 Stress, you can narrate an intimate moment tied to your Anchor. The player to your right describes the associated memory (Golden Rule). Reduce your Stress by 1 and recover 1 Fragment.
+**Invoking the Anchor (once per game):** When you have at least 2 Stress, you can narrate an intimate moment tied to your Anchor. The player to your right describes the associated memory (Right-Hand Rule). Reduce your Stress by 1 and recover 1 Fragment.
 
 *The Anchor is a tactical choice: use it early to stabilize, or save it for a critical moment?*
 

@@ -30,6 +30,6 @@ Each session is a different trauma, but the characters are the same.
 
 For groups that want the mystery without the full emotional weight.
 
-**Changes:** Maximum Stress is 7 instead of 5. Characters automatically recover 1 Stress at the end of each cycle. The Breakdown is temporary: it lasts one scene, then Stress returns to 3. The Golden Rule (the player to your right interprets) is optional — each player can choose whether to apply it or interpret on their own.
+**Changes:** Maximum Stress is 7 instead of 5. Characters automatically recover 1 Stress at the end of each cycle. The Breakdown is temporary: it lasts one scene, then Stress returns to 3. The Right-Hand Rule (the player to your right interprets) is optional — each player can choose whether to apply it or interpret on their own.
 
 **Tone:** The focus shifts from guilt to mystery. The question is not *"What did we do?"* but *"What happened?"*. Characters are more investigators than survivors. Fragments can be less emotional and more factual.

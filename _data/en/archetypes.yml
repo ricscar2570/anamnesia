@@ -4,7 +4,7 @@
   citazione: '"I''m alive when others are not."'
   approcci:
     - costo: "Free"
-      nome: "Flight Instinct"
+      nome: "Escape Instinct"
       desc: "Sense danger, spot exits, read the warning signs."
     - costo: "+1 Frag."
       nome: "Protective Paranoia"
@@ -32,8 +32,8 @@
       nome: "Empathic Connection"
       desc: "Feel what others feel, sense lies."
     - costo: "+2 Frag."
-      nome: "Complete Vision"
-      desc: "Connect all the pieces in a moment of terrible clarity."
+      nome: "Terrible Clarity"
+      desc: "See the full picture, connect all the pieces in a single, devastating moment of understanding."
   abilita:
     - nome: "Collective Memory"
       desc: "Observing another's roll, spend 1 Fragment + gain 1 Echo to record the results. Anyone can use them. Max 2/cycle."
@@ -48,7 +48,7 @@
   citazione: '"It was my responsibility to keep you safe. I failed."'
   approcci:
     - costo: "Free"
-      nome: "Authoritative Control"
+      nome: "Take Command"
       desc: "Organize, command, make the hard decisions."
     - costo: "+1 Frag."
       nome: "Calculated Sacrifice"
@@ -76,12 +76,12 @@
       nome: "Subtle Manipulation"
       desc: "Influence the group's dynamics without being discovered."
     - costo: "+2 Frag."
-      nome: "Crucial Moment"
+      nome: "Pivotal Moment"
       desc: "Remember the exact moment when everything changed."
   abilita:
     - nome: "Domino Effect"
       desc: "When you get a Collapse (0 successes), others gain +1 temporary Fragment. You gain 1 Echo."
-    - nome: "Guilt (1×/game)"
+    - nome: "Burden of Guilt (1×/game)"
       desc: "Confess your responsibility to another character. Gain 3 Fragments. No cascading Stress."
   vulnerabilita:
     trigger: "Being pushed to lead or choose."

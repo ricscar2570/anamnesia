@@ -20,6 +20,6 @@ Something terrible happened to all of you. You don't know what. Every fragment o
 
 The story is not written in advance. It emerges from the cards, the dice rolls, and the players' interpretations. No one knows how it will end. When a scenario includes a Hidden Truth, it is a direction, not a destination.
 
-## 4. No Winner
+## 4. No Winners, No Losers
 
 There is no winning and no losing. The only measure of success is the story you created together and the emotions you explored.

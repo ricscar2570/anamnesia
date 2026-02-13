@@ -17,13 +17,13 @@ You set off the chain of events. Not with malice, but with a choice, a word, a g
 
 - **Social Invisibility** (free) — Stay in the background, avoid attention, observe without being seen.
 - **Subtle Manipulation** (+1) — Influence the group's dynamics without being discovered.
-- **Crucial Moment** (+2) — Remember the exact moment when everything changed.
+- **Pivotal Moment** (+2) — Remember the exact moment when everything changed.
 
 ## Ability: Domino Effect
 
 When your roll results in a Memory Collapse (0 successes), the other involved players gain +1 Fragment (for this cycle only). You gain 1 Echo. Your actions always have a chain reaction.
 
-## Special Ability: Guilt
+## Special Ability: Burden of Guilt
 
 Once per game, the Catalyst can confess their responsibility to another character. Gain 3 Fragments immediately. This does not cause cascading Stress.
 
