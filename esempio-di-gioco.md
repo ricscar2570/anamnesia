@@ -39,3 +39,5 @@ Sara tira 2 dadi: **2** e **3**. Zero Frammenti Chiari. Esito: **Collasso del Ri
 > *Anna: «Sara, pronunci il nome sul braccialetto e il mondo si capovolge. Vedi un flash: una sala, delle mani che ti tengono ferma, la tua voce che urla quel nome. Ma non sai se stavi chiedendo aiuto o chiedendo perdono.»*
 
 Sara guadagna 1 Eco dal dado che ha mostrato 2. Segna il Collasso, 1 punto di Stress, e 1 Eco aggiuntivo dall'Effetto Domino (perché il tiro è un Collasso). Anna e Marco guadagnano +1 Frammento temporaneo.
+
+<img src="assets/persone-tavolo.png" class="scene-image" alt="">

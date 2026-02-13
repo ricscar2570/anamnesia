@@ -33,3 +33,5 @@ Osservando il tiro di un altro giocatore, puoi spendere 1 Frammento e guadagnare
 Decisioni immediate forzate (recuperi 1 Frammento E riduci il tuo Stress di 1 se interpretata. Max 1 volta per ciclo).
 
 *Domanda Chiave: «Quale dettaglio cruciale ho notato ma ho troppa paura di rivelare?»*
+
+<img src="assets/portrait-testimone.png" class="archetype-portrait" alt="">

@@ -37,3 +37,5 @@ Essere spinto a guidare o scegliere (recuperi 1 Frammento E riduci il tuo Stress
 ## Abilità Speciale: Senso di Colpa
 
 Una volta per partita, il Catalizzatore può confessare la propria responsabilità a un altro personaggio. Guadagna immediatamente 3 Frammenti. Questo non causa Stress a cascata.
+
+<img src="assets/portrait-catalizzatore.png" class="archetype-portrait" alt="">

@@ -30,3 +30,5 @@ Quando eviti un pericolo fisico, puoi ri-tirare tutti i dadi che mostrano 1–2.
 Sentirsi un peso per gli altri (recuperi 1 Frammento E riduci il tuo Stress di 1 se interpretata. Max 1 volta per ciclo).
 
 *Domanda Chiave: «Chi sto deludendo, essendo ancora vivo?»*
+
+<img src="assets/portrait-sopravvissuto.png" class="archetype-portrait" alt="">

@@ -33,3 +33,5 @@ Quando un altro giocatore ottiene un Collasso del Ricordo (0 successi), puoi sac
 Altri in pericolo senza poter aiutare (recuperi 1 Frammento E riduci il tuo Stress di 1 se interpretata. Max 1 volta per ciclo).
 
 *Domanda Chiave: «Quale minaccia sto ignorando e chi non riesco a proteggere ora?»*
+
+<img src="assets/portrait-protettore.png" class="archetype-portrait" alt="">
