@@ -61,3 +61,7 @@ After the game, dedicate 10–15 minutes to talking out of character. Simple but
 Questions: *How do you feel now? What moments struck you most? Was anything too intense? What will you take away from this story?*
 
 If the game was particularly heavy, do something light together — a funny video, grab a snack, talk about something else. It helps to disconnect from the character and return to the real world.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/4.png" style="width: 100%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>
