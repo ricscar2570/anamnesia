@@ -875,8 +875,8 @@ body {
 /* Illustrazione a tutta larghezza colonna (per scene, corridoi) */
 .illustration-full {
   display: block;
-  width: 100%;
-  max-height: 280pt;
+  width: 80%;
+  max-height: 200pt;
   margin: 16pt auto;
   opacity: 0.80;
   object-fit: contain;
