@@ -55,3 +55,7 @@ Questions to ask: *Who told you about the program? Did you know the fifth partic
 **Cycle 5 (Revelations).** The truth emerges. Players discover the missing participant. Discover what they wanted to forget. And discover that maybe it would have been better not to remember. Use Act II + III Cards.
 
 Questions to ask: *Now that you remember, what do you do? Can you forgive yourselves? If you could forget again, would you?*
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/5.png" style="width: 80%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>
