@@ -1,8 +1,9 @@
 #!/bin/bash
-# build-quickstart.sh — Genera il PDF Quickstart (gratuito, ~28 pagine)
-# Estrae un sottoinsieme dalla stessa repository del manuale completo
+# build-quickstart.sh — Build the free Quickstart PDF of AnamnesiA
+# Usage: LANG=en ./build-quickstart.sh   or   LANG=it ./build-quickstart.sh (default: it)
 set -e
 
+LANG_CODE="${LANG:-it}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 OUTPUT_DIR="$ROOT_DIR/output"
@@ -10,44 +11,64 @@ TMP_DIR=$(mktemp -d)
 trap "rm -rf $TMP_DIR" EXIT
 
 mkdir -p "$OUTPUT_DIR"
-echo "📖 Assemblaggio Quickstart..."
 
-# === 1. Solo le pagine essenziali ===
-PAGES=(
-  index.md
-  pilastri.md
-  come-si-gioca.md
-  il-sistema.md
-  stress-ed-echi.md
-  archetipi.md
-  archetipi/il-sopravvissuto.md
-  archetipi/il-testimone.md
-  archetipi/il-protettore.md
-  archetipi/il-catalizzatore.md
-  sessione-zero.md
-  avvio-primo-ciclo.md
-  esempio-di-gioco.md
-  scenario-incidente.md
-  frammenti-universali.md
-  riferimento-rapido.md
-)
+# === Language configuration ===
+CONTENT_DIR="$ROOT_DIR/content/$LANG_CODE"
+DATA_DIR="$ROOT_DIR/_data/$LANG_CODE"
+TEMPLATE_DIR="$SCRIPT_DIR/templates/$LANG_CODE"
+
+if [ ! -d "$CONTENT_DIR" ]; then
+  echo "❌ Content directory not found: $CONTENT_DIR"; exit 1
+fi
+
+if [ "$LANG_CODE" = "en" ]; then
+  echo "📖 Assembling Quickstart (English)..."
+  PAGES=(
+    index.md pillars.md how-to-play.md the-system.md stress-and-echoes.md
+    archetypes.md archetypes/the-survivor.md archetypes/the-witness.md
+    archetypes/the-protector.md archetypes/the-catalyst.md
+    session-zero.md starting-first-cycle.md gameplay-example.md
+    scenario-the-incident.md
+    universal-fragments.md quick-reference.md
+  )
+  YAML_ARCH="archetypes.yml"
+  YAML_CARDS="fragment_cards.yml"
+  OUTPUT_FILE="anamnesia-quickstart-en.pdf"
+else
+  echo "📖 Assemblaggio Quickstart (Italiano)..."
+  PAGES=(
+    index.md pilastri.md come-si-gioca.md il-sistema.md stress-ed-echi.md
+    archetipi.md archetipi/il-sopravvissuto.md archetipi/il-testimone.md
+    archetipi/il-protettore.md archetipi/il-catalizzatore.md
+    sessione-zero.md avvio-primo-ciclo.md esempio-di-gioco.md
+    scenario-incidente.md
+    frammenti-universali.md riferimento-rapido.md
+  )
+  YAML_ARCH="archetipi.yml"
+  YAML_CARDS="carte_frammento.yml"
+  OUTPUT_FILE="anamnesia-quickstart-free.pdf"
+fi
+
+# === 1. Rules: Markdown → HTML ===
 RULES_MD="$TMP_DIR/rules.md"
 > "$RULES_MD"
 for page in "${PAGES[@]}"; do
-  f="$ROOT_DIR/$page"
+  f="$CONTENT_DIR/$page"
   [ -f "$f" ] && sed '1{/^---$/!q;};1,/^---$/d' "$f" | sed 's/{:.*}//g' >> "$RULES_MD" && echo -e "\n\n" >> "$RULES_MD"
 done
 echo "   Markdown → HTML..."
 pandoc "$RULES_MD" -f markdown -t html5 --toc --toc-depth=2 --metadata title="" -o "$TMP_DIR/rules-body.html"
 
-# === 2. Render materiali da YAML (schede + carte) ===
-echo "   YAML → Schede + Carte..."
-python3 "$SCRIPT_DIR/render_materials.py" sheets > "$TMP_DIR/sheets.html"
-python3 "$SCRIPT_DIR/render_materials.py" cards  > "$TMP_DIR/cards.html"
+# === 2. Render materials from YAML ===
+echo "   YAML → Sheets + Cards..."
+ANAMNESIA_DATA_DIR="$DATA_DIR" ANAMNESIA_LANG="$LANG_CODE" \
+  python3 "$SCRIPT_DIR/render_materials.py" sheets "$YAML_ARCH" > "$TMP_DIR/sheets.html"
+ANAMNESIA_DATA_DIR="$DATA_DIR" ANAMNESIA_LANG="$LANG_CODE" \
+  python3 "$SCRIPT_DIR/render_materials.py" cards "$YAML_CARDS" > "$TMP_DIR/cards.html"
 
-# === 3. Assembla template quickstart ===
-echo "   Assemblaggio HTML finale..."
-cp "$SCRIPT_DIR/pdf-template-quickstart.html" "$TMP_DIR/full.html"
+# === 3. Assemble template ===
+echo "   Assembling final HTML..."
+cp "$TEMPLATE_DIR/quickstart.html" "$TMP_DIR/full.html"
 cp "$SCRIPT_DIR/pdf-style.css" "$TMP_DIR/pdf-style.css"
 cp -r "$ROOT_DIR/assets" "$TMP_DIR/assets" 2>/dev/null || true
 
@@ -63,7 +84,6 @@ toc = re.search(r'<nav[^>]*id="TOC".*?</nav>', rules_raw, re.DOTALL)
 toc_html = toc.group(0) if toc else ''
 rules_html = re.sub(r'<nav[^>]*id="TOC".*?</nav>', '', rules_raw, flags=re.DOTALL)
 
-# Split at each <h1 for page breaks
 parts = re.split(r'(?=<h1[ >])', rules_html)
 sections = []
 for i, part in enumerate(parts):
@@ -84,6 +104,6 @@ PYEOF
 
 # === 4. PDF ===
 echo "🎨 WeasyPrint..."
-weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/anamnesia-quickstart-free.pdf" 2>&1 | grep -v "WARNING" || true
+weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/$OUTPUT_FILE" 2>&1 | grep -v "WARNING" || true
 
-echo "✅ Quickstart: $OUTPUT_DIR/anamnesia-quickstart-free.pdf"
+echo "✅ Quickstart: $OUTPUT_DIR/$OUTPUT_FILE"

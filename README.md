@@ -1,56 +1,71 @@
 # AnamnesiA
 
-**Repository privata** — Gioco di ruolo narrativo di horror psicologico per 2–4 giocatori.
+**Horror Psicologico · Gioco di Ruolo Narrativo**  
+**Psychological Horror · Narrative Tabletop RPG**
 
-## Struttura
+> *"Cosa resta quando anche le bugie svaniscono?"*  
+> *"What remains when even the lies fade away?"*
+
+A GM-less narrative RPG for 2–4 players. ZineQuest 2026.
+
+---
+
+## Repository Structure
 
 ```
-*.md                   ← contenuti Markdown (18 file)
-_data/                 ← sorgente unica YAML
-  archetipi.yml            4 Archetipi (Pool, Approcci, abilità)
-  carte_frammento.yml      24 carte (Nebbia/Connessioni/Rivelazioni)
-scripts/               ← pipeline di build
-  build-pdf.sh             → anamnesia-zine.pdf (50 pag)
-  build-quickstart.sh      → anamnesia-quickstart-free.pdf (28 pag)
-  pdf-template.html        template Zine
-  pdf-template-quickstart.html  template Quickstart
-  pdf-style.css            stile condiviso (Cinzel + Alegreya)
-  render_materials.py      YAML → schede + carte HTML
-assets/                ← immagini e font
-  cover-skull.png          copertina
-  rorschach.png            pagina interna
-  fonts/                   Cinzel, Alegreya, Alegreya SC (woff2)
+content/
+  it/          ← Italian markdown (rules, scenarios, archetypes)
+  en/          ← English markdown
+_data/
+  it/          ← Italian YAML (character sheets, fragment cards)
+  en/          ← English YAML
+scripts/
+  templates/
+    it/        ← Italian HTML templates (cover, colophon)
+    en/        ← English HTML templates
+  build-pdf.sh          ← Build zine (LANG=it|en)
+  build-quickstart.sh   ← Build quickstart (LANG=it|en)
+  build-all.sh          ← Build all 4 PDFs
+  render_materials.py   ← YAML → HTML renderer
+  pdf-style.css         ← Shared stylesheet
+assets/                 ← Images, fonts (shared by both languages)
+output/                 ← Generated PDFs
 ```
 
-## Build
+## Building PDFs
 
-Richiede: `pandoc`, `python3`, `weasyprint`, `pyyaml`
-
+### All 4 PDFs at once
 ```bash
-bash scripts/build-pdf.sh          # Zine completa (50 pag)
-bash scripts/build-quickstart.sh   # Quickstart gratuito (28 pag)
+bash scripts/build-all.sh
 ```
 
-## Automazione
-
+### Single PDF
 ```bash
-git tag v1.5 && git push --tags
+LANG=it bash scripts/build-pdf.sh        # Zine Italiano
+LANG=it bash scripts/build-quickstart.sh  # Quickstart Italiano
+LANG=en bash scripts/build-pdf.sh        # Zine English
+LANG=en bash scripts/build-quickstart.sh  # Quickstart English
 ```
 
-→ GitHub Actions builda entrambi i PDF → Release su GitHub → Quickstart su itch.io
+### Dependencies
+- `pandoc` (markdown → HTML)
+- `weasyprint` (HTML → PDF)
+- `pyyaml` (YAML parsing)
 
-### Setup itch.io (una tantum)
+### GitHub Actions
+Push a tag (`git tag v2.1 && git push origin v2.1`) to auto-build all PDFs and create a GitHub Release. Manual trigger also available via Actions → "Build PDFs" → Run workflow.
 
-Settings → Secrets: `BUTLER_API_KEY` · Settings → Variables: `ITCHIO_USER`
+## Output
 
-## Due prodotti, una sorgente
+| File | Language | Content |
+|------|----------|---------|
+| `anamnesia-zine.pdf` | 🇮🇹 Italian | Complete edition (2 scenarios, keeper guide, variants) |
+| `anamnesia-quickstart-free.pdf` | 🇮🇹 Italian | Free quickstart (1 scenario, full rules) |
+| `anamnesia-zine-en.pdf` | 🇬🇧 English | Complete edition |
+| `anamnesia-quickstart-en.pdf` | 🇬🇧 English | Free quickstart |
 
-| | Quickstart | Zine |
-|:--|:--|:--|
-| Pagine | 28 | 50 |
-| Dove | itch.io (gratis) | Kickstarter (a pagamento) |
-| Contenuto | Sistema, Archetipi, 1 scenario, carte, schede | + Sessione Zero, Guida Custode, 2° scenario, Varianti |
+---
 
-## Licenza
-
-© 2026 Riccardo Scaringi. Tutti i diritti riservati.
+Game Design & Writing: **Riccardo Scaringi**  
+YouTube: ilgiocointavolo · Magazine: ioGioco  
+© 2026 Riccardo Scaringi. All rights reserved.

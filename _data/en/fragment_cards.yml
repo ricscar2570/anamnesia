@@ -1,0 +1,210 @@
+atti:
+  - id: act1
+    nome: "Act I"
+    tema: "Fog"
+    colore: "act1"
+    carte:
+      - titolo: "Chemical Smell"
+        flavor: '"Not disinfectant. Something else."'
+        corpo: "Describe the smell. Roll: with at least 1 Clear, you associate the smell with a place from your life. With 0 Clear, violent nausea and a flash of <strong>gloved hands</strong>."
+        costo: "1 Frag."
+        tipo: "Sensory"
+      - titolo: "Flickering Light"
+        flavor: '"The fluorescent pulses. Like a heartbeat that isn''t yours."'
+        corpo: "Stare at the light. Roll: with at least 1 Clear, you notice something written on the fixture — a code. With 0 Clear, the light goes out and when it returns <strong>something has changed</strong>."
+        costo: "1 Frag."
+        tipo: "Sensory"
+      - titolo: "Empty Chair"
+        flavor: '"There''s one extra chair. Who was it for?"'
+        corpo: "Roll: with 2+ Clear, you catch the scent of <strong>someone who is missing</strong>. With 1, the cushion is warm. With 0, a violent memory: <strong>+1 Stress</strong>."
+        costo: "1 Frag."
+        tipo: "Environmental"
+      - titolo: "Name on the Wrist"
+        flavor: '"Something written on your skin. Your handwriting."'
+        corpo: "Roll: with at least 1 Clear, the name is familiar. With 0, you say it aloud and someone <strong>reacts</strong>. The player to your left decides who."
+        costo: "2 Frag."
+        tipo: "Personal"
+      - titolo: "Distant Hum"
+        flavor: '"Beneath the silence there''s a sound. Constant."'
+        corpo: "Follow the sound. Roll: with at least 1 Clear, it comes from <strong>under the floor</strong>. With 0, it becomes a scream — no one else hears it."
+        costo: "1 Frag."
+        tipo: "Sensory"
+      - titolo: "Mark on the Hand"
+        flavor: '"A bandage. A bruise. An injection site."'
+        corpo: "Roll: with at least 1 Clear, you remember <strong>cold in your veins</strong>. With 0, underneath there's a number in pen. Your bed number."
+        costo: "1 Frag."
+        tipo: "Personal"
+      - titolo: "Cracked Mirror"
+        flavor: '"Someone hit it hard."'
+        corpo: "Look at yourself. Roll: with at least 1 Clear, the reflection looks <strong>wrong</strong> — more time has passed. With 0, you see another face behind yours."
+        costo: "1 Frag."
+        tipo: "Sensory"
+      - titolo: "Sealed Corridor"
+        flavor: '"The door is locked. A gap. Sweet smell."'
+        corpo: "Roll: with at least 1 Clear, you see <strong>motionless feet</strong>. With 0, someone knocks once. <strong>Everyone +1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Environmental"
+
+  - id: act2
+    nome: "Act II"
+    tema: "Connections"
+    colore: "act2"
+    carte:
+      - titolo: "The Consent Form"
+        flavor: '"A crumpled sheet. Your signature."'
+        corpo: "Roll: with 2+ Clear, signed <strong>voluntarily</strong> but under pressure. With 1, you don't remember. With 0, unacceptable procedure. <strong>+1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Document"
+      - titolo: "The Recorded Voice"
+        flavor: '"A recorder under a mattress."'
+        corpo: "Roll: with 2+ Clear, it's <strong>your voice</strong> in third person. With 1, sobbing. With 0, it says a name. <strong>The player to the right decides who.</strong>"
+        costo: "2 Frag."
+        tipo: "Discovery"
+      - titolo: "The Photograph"
+        flavor: '"A photo. You''re all there. And one extra person."'
+        corpo: "Roll: with at least 1 Clear, the place <strong>isn't this clinic</strong>. With 0, a face scratched out. <strong>Every player describes one detail.</strong>"
+        costo: "2 Frag."
+        tipo: "Relational"
+      - titolo: "The Fifth Bed"
+        flavor: '"Made up with too much care."'
+        corpo: "Roll: with 2+ Clear, you find an <strong>identical bracelet</strong>. With 1, recently used. With 0, a letter under the pillow. <strong>The Memory Keeper reads it.</strong>"
+        costo: "2 Frag."
+        tipo: "Environmental"
+      - titolo: "Twin Scars"
+        flavor: '"The same mark. In the same spot."'
+        corpo: "Roll: with at least 1 Clear, you remember a <strong>room with multiple cots</strong>. With 0, a shared flashback: the other sees, you feel."
+        costo: "1 Frag."
+        tipo: "Relational"
+      - titolo: "The Intercom"
+        flavor: '"It crackles. A mechanical voice says a number."'
+        corpo: "Roll: with 2+ Clear, the number is <strong>a date, a code</strong>. With 1, a familiar voice. With 0, it says your name. <strong>+1 Stress.</strong>"
+        costo: "1 Frag."
+        tipo: "Discovery"
+      - titolo: "The Clinical File"
+        flavor: '"In a drawer. Your name on the cover."'
+        corpo: "Roll: with 2+ Clear, a <strong>different</strong> diagnosis. With 1, torn pages. With 0, a photo of you that you don't remember. <strong>+1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Document"
+      - titolo: "The Contested Memory"
+        flavor: '"Two of you remember the same moment. Differently."'
+        corpo: "<strong>No roll.</strong> The Memory Keeper picks 2 players. Each describes the same moment. They contradict each other. The others decide which one <strong>feels</strong> true."
+        costo: "0 Frag."
+        tipo: "Narrative"
+
+  - id: act3
+    nome: "Act III"
+    tema: "Revelations"
+    colore: "act3"
+    carte:
+      - titolo: "The Procedure Video"
+        flavor: '"A tablet. You don''t want to press Play."'
+        corpo: "Roll: with 2+ Clear, you're <strong>observers, not patients</strong>. With 1, partial video. With 0, you're smiling. <strong>+2 Stress. Everyone +1.</strong>"
+        costo: "3 Frag."
+        tipo: "Revelation"
+      - titolo: "The Room Below"
+        flavor: '"A door in the floor. Stairs into darkness."'
+        corpo: "Roll: with 2+ Clear, an identical room, <strong>occupied beds</strong>. With 1, writing on the walls. With 0, in the mirror <strong>you're not alone</strong>. Everyone +1 Stress."
+        costo: "3 Frag."
+        tipo: "Environmental"
+      - titolo: "The Missing Participant"
+        flavor: '"You find them. Not where you expected."'
+        corpo: "Roll: with 2+ Clear, <strong>it's you</strong>. With 1, they don't recognize you. With 0: <strong>&laquo;You weren't supposed to come back.&raquo;</strong> +2 Stress."
+        costo: "3 Frag."
+        tipo: "Revelation"
+      - titolo: "The Confession"
+        flavor: '"Someone knows. Always has."'
+        corpo: '<strong>No roll.</strong> "What did you do the night before?" Each answer holds a secret. The last: <strong>"Why didn''t you say so before?"</strong>'
+        costo: "0 Frag."
+        tipo: "Narrative"
+      - titolo: "The Doctor's Journal"
+        flavor: '"In a lab coat. Last pages written in haste."'
+        corpo: "Roll: with 2+ Clear, <strong>it worked too well</strong>. With 1, 'They must not know.' With 0, addressed <strong>to you</strong>. +2 Stress."
+        costo: "2 Frag."
+        tipo: "Document"
+      - titolo: "The Open Door"
+        flavor: '"The door is open. It always was."'
+        corpo: "Roll: with 2+ Clear, you understand why <strong>nobody left</strong>. With 0, you find yourself in the same room. <strong>If Cycle 5, game ends.</strong>"
+        costo: "2 Frag."
+        tipo: "Final"
+      - titolo: "The Choice"
+        flavor: '"To forget."'
+        corpo: '<strong>Final Card.</strong> "If you could forget again, would you?" Those who forget lose their Echoes. Those who remember keep everything. <strong>The game ends.</strong>'
+        costo: "0 Frag."
+        tipo: "Epilogue"
+      - titolo: "Echoes from Room 0"
+        flavor: '"The hum stops. Silence."'
+        corpo: "Roll <strong>all</strong> Fragments. 3+: complete memory. 1–2: the player to the right fills the gaps. 0: <strong>it's worse</strong>. +2 Stress. Breakdown."
+        costo: "All"
+        tipo: "Revelation"
+
+generatore:
+  nomi:
+    - Elena
+    - Marco
+    - Sara
+    - Luca
+    - Chiara
+    - Andrea
+    - Julia
+    - Matt
+    - Val
+    - David
+    - Frances
+    - Simon
+    - Anna
+    - Lorenzo
+    - Martha
+    - Thomas
+    - Sylvia
+    - Alex
+    - Bea
+    - Phil
+    - Irene
+    - Gabriel
+    - Clara
+    - Nick
+    - Elisa
+    - Stefan
+    - Viola
+    - Peter
+    - Naomi
+    - Fred
+  aspetti:
+    - "Deep dark circles, evasive gaze"
+    - "Recently shaved head, scar on the temple"
+    - "Hands trembling imperceptibly"
+    - "Light eyes, absent expression"
+    - "Rigid posture, clenched jaw"
+    - "Gaunt face, bitten nails"
+    - "Watchful gaze, never relaxed"
+    - "Prematurely grey hair, low voice"
+    - "Delicate features, fingers drumming"
+    - "Old scars on the knuckles"
+    - "Unnatural pallor, chapped lips"
+    - "Distant gaze, as if looking beyond"
+  tic:
+    - "Touches the wrist where the bracelet is"
+    - "Mutters numbers under their breath when nervous"
+    - "Closes their eyes briefly before speaking"
+    - "Looks at their hands as if they don't recognize them"
+    - "Flinches at sudden sounds"
+    - "Counts exits as soon as they enter a room"
+    - "Rubs a specific spot on their arm"
+    - "Holds their breath when someone raises their voice"
+    - "Repeats the last word they heard, under their breath"
+    - "Bites the inside of their cheek when thinking"
+    - "Stares at fluorescent lights with suspicion"
+    - "Checks if others are sleeping before moving"
+  frammenti:
+    - "The metallic taste of medicine"
+    - "A gentle voice saying 'Everything will be fine'"
+    - "Hands bound with soft restraints"
+    - "An endless corridor, white lights"
+    - "Someone crying in the next room"
+    - "A form signed with a trembling hand"
+    - "The smell of disinfectant mixed with something else"
+    - "A door closing with a final click"
+    - "The face of someone you shouldn't know"
+    - "A number tattooed on the wrist — your number"
+    - "The sensation of falling, then nothing"
+    - "An inappropriate laugh at the worst moment"

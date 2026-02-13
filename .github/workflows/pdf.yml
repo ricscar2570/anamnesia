@@ -1,4 +1,4 @@
-name: Genera PDF
+name: Build PDFs
 
 on:
   push:
@@ -16,17 +16,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Installa dipendenze
+      - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc fonts-dejavu python3-pip
           pip install weasyprint pyyaml --break-system-packages
 
-      - name: Genera PDF Completo (Zine)
-        run: bash scripts/build-pdf.sh
+      - name: Build Italian Zine
+        run: LANG=it bash scripts/build-pdf.sh
 
-      - name: Genera PDF Quickstart (Gratuito)
-        run: bash scripts/build-quickstart.sh
+      - name: Build Italian Quickstart
+        run: LANG=it bash scripts/build-quickstart.sh
+
+      - name: Build English Zine
+        run: LANG=en bash scripts/build-pdf.sh
+
+      - name: Build English Quickstart
+        run: LANG=en bash scripts/build-quickstart.sh
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -35,22 +41,32 @@ jobs:
           path: |
             output/anamnesia-zine.pdf
             output/anamnesia-quickstart-free.pdf
+            output/anamnesia-zine-en.pdf
+            output/anamnesia-quickstart-en.pdf
 
-      - name: Crea Release con entrambi i PDF
+      - name: Create Release with all PDFs
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           files: |
             output/anamnesia-zine.pdf
             output/anamnesia-quickstart-free.pdf
+            output/anamnesia-zine-en.pdf
+            output/anamnesia-quickstart-en.pdf
           generate_release_notes: true
 
-      - name: Setup butler per itch.io
+      - name: Setup butler for itch.io
         if: startsWith(github.ref, 'refs/tags/')
         uses: remarkablegames/setup-butler@v2
 
-      - name: Push Quickstart gratuito su itch.io
+      - name: Push Italian Quickstart to itch.io
         if: startsWith(github.ref, 'refs/tags/')
-        run: butler push output/anamnesia-quickstart-free.pdf ${{ vars.ITCHIO_USER }}/anamnesia:pdf --userversion ${GITHUB_REF#refs/tags/v}
+        run: butler push output/anamnesia-quickstart-free.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-it --userversion ${GITHUB_REF#refs/tags/v}
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+
+      - name: Push English Quickstart to itch.io
+        if: startsWith(github.ref, 'refs/tags/')
+        run: butler push output/anamnesia-quickstart-en.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-en --userversion ${GITHUB_REF#refs/tags/v}
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}

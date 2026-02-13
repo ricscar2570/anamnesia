@@ -1,0 +1,89 @@
+- id: sopravvissuto
+  nome: Il Sopravvissuto
+  pool: 5
+  citazione: "«Sono vivo quando altri non lo sono.»"
+  approcci:
+    - costo: "Gratuito"
+      nome: "Istinto di Fuga"
+      desc: "Percepire pericoli, individuare uscite, leggere i segnali d'allarme."
+    - costo: "+1 Fram."
+      nome: "Paranoia Protettiva"
+      desc: "Anticipare il tradimento, prepararsi al peggio."
+    - costo: "+2 Fram."
+      nome: "Memoria del Dolore"
+      desc: "Ricordare come sei sopravvissuto prima. Il dolore come guida."
+  abilita:
+    - nome: "Riflessi di Sopravvivenza"
+      desc: "Quando eviti un pericolo fisico, ri-tira tutti i dadi 1–2. Se escono di nuovo 1–2, descrivi chi non sei riuscito a salvare."
+  vulnerabilita:
+    trigger: "Sentirsi un peso per gli altri."
+    effetto: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    domanda: "«Chi sto deludendo, essendo ancora vivo?»"
+
+- id: testimone
+  nome: Il Testimone
+  pool: 5
+  citazione: "«Ho visto tutto. Ma ogni volta che cerco di ricordare, la mia mente si chiude.»"
+  approcci:
+    - costo: "Gratuito"
+      nome: "Osservazione Distaccata"
+      desc: "Notare dettagli, leggere emozioni, restare in disparte."
+    - costo: "+1 Fram."
+      nome: "Connessione Empatica"
+      desc: "Sentire cosa provano gli altri, intuire bugie."
+    - costo: "+2 Fram."
+      nome: "Visione Completa"
+      desc: "Connettere tutti i pezzi in un momento di terribile chiarezza."
+  abilita:
+    - nome: "Memoria Collettiva"
+      desc: "Osservando il tiro altrui, spendi 1 Frammento + guadagni 1 Eco per registrare i risultati. Chiunque può usarli. Max 2/ciclo."
+  vulnerabilita:
+    trigger: "Decisioni immediate forzate."
+    effetto: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    domanda: "«Quale dettaglio cruciale ho notato ma ho troppa paura di rivelare?»"
+
+- id: protettore
+  nome: Il Protettore
+  pool: 4
+  citazione: "«È stata mia responsabilità tenervi al sicuro. Ho fallito.»"
+  approcci:
+    - costo: "Gratuito"
+      nome: "Controllo Autoritario"
+      desc: "Organizzare, comandare, prendere decisioni difficili."
+    - costo: "+1 Fram."
+      nome: "Sacrificio Calcolato"
+      desc: "Metterti in pericolo per salvare altri."
+    - costo: "+2 Fram."
+      nome: "Peso del Comando"
+      desc: "Attingere all'esperienza dolorosa dei tuoi fallimenti."
+  abilita:
+    - nome: "Scudo Vivente"
+      desc: "Quando un altro ottiene Collasso (0 successi), sacrifica fino a 3 Frammenti per darglieli. Ogni 2 Frammenti sacrificati = 1 Eco."
+  vulnerabilita:
+    trigger: "Altri in pericolo senza poter aiutare."
+    effetto: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    domanda: "«Quale minaccia sto ignorando e chi non riesco a proteggere ora?»"
+
+- id: catalizzatore
+  nome: Il Catalizzatore
+  pool: 4
+  citazione: "«È iniziato tutto per colpa mia.»"
+  approcci:
+    - costo: "Gratuito"
+      nome: "Invisibilità Sociale"
+      desc: "Restare in secondo piano, osservare senza essere visto."
+    - costo: "+1 Fram."
+      nome: "Manipolazione Sottile"
+      desc: "Influenzare le dinamiche del gruppo senza essere scoperto."
+    - costo: "+2 Fram."
+      nome: "Momento Cruciale"
+      desc: "Ricordare il momento esatto in cui tutto è cambiato."
+  abilita:
+    - nome: "Effetto Domino"
+      desc: "Quando ottieni Collasso (0 successi), gli altri guadagnano +1 Frammento temporaneo. Tu guadagni 1 Eco."
+    - nome: "Senso di Colpa (1×/partita)"
+      desc: "Confessa la tua responsabilità a un altro personaggio. Guadagna 3 Frammenti. Nessuno Stress a cascata."
+  vulnerabilita:
+    trigger: "Essere spinto a guidare o scegliere."
+    effetto: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    domanda: "«Quale mia azione potrebbe far crollare di nuovo tutto?»"

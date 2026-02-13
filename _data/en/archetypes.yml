@@ -1,0 +1,89 @@
+- id: survivor
+  nome: The Survivor
+  pool: 5
+  citazione: '"I''m alive when others are not."'
+  approcci:
+    - costo: "Free"
+      nome: "Flight Instinct"
+      desc: "Sense danger, spot exits, read the warning signs."
+    - costo: "+1 Frag."
+      nome: "Protective Paranoia"
+      desc: "Anticipate betrayal, prepare for the worst."
+    - costo: "+2 Frag."
+      nome: "Memory of Pain"
+      desc: "Remember how you survived before. Pain as a guide."
+  abilita:
+    - nome: "Survival Reflexes"
+      desc: "When avoiding physical danger, reroll all dice showing 1–2. If they come up 1–2 again, describe who you failed to save."
+  vulnerabilita:
+    trigger: "Feeling like a burden to others."
+    effetto: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    domanda: '"Who am I failing by still being alive?"'
+
+- id: witness
+  nome: The Witness
+  pool: 5
+  citazione: '"I saw everything. But every time I try to remember, my mind shuts down."'
+  approcci:
+    - costo: "Free"
+      nome: "Detached Observation"
+      desc: "Notice details, read emotions, stand apart."
+    - costo: "+1 Frag."
+      nome: "Empathic Connection"
+      desc: "Feel what others feel, sense lies."
+    - costo: "+2 Frag."
+      nome: "Complete Vision"
+      desc: "Connect all the pieces in a moment of terrible clarity."
+  abilita:
+    - nome: "Collective Memory"
+      desc: "Observing another's roll, spend 1 Fragment + gain 1 Echo to record the results. Anyone can use them. Max 2/cycle."
+  vulnerabilita:
+    trigger: "Being forced into immediate decisions."
+    effetto: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    domanda: '"What crucial detail did I notice but am too afraid to reveal?"'
+
+- id: protector
+  nome: The Protector
+  pool: 4
+  citazione: '"It was my responsibility to keep you safe. I failed."'
+  approcci:
+    - costo: "Free"
+      nome: "Authoritative Control"
+      desc: "Organize, command, make the hard decisions."
+    - costo: "+1 Frag."
+      nome: "Calculated Sacrifice"
+      desc: "Put yourself in danger to save others."
+    - costo: "+2 Frag."
+      nome: "Weight of Command"
+      desc: "Draw from the painful experience of your failures."
+  abilita:
+    - nome: "Living Shield"
+      desc: "When another gets a Collapse (0 successes), sacrifice up to 3 Fragments to give them. Every 2 Fragments sacrificed = 1 Echo."
+  vulnerabilita:
+    trigger: "Others in danger without being able to help."
+    effetto: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    domanda: '"What threat am I ignoring and who can''t I protect right now?"'
+
+- id: catalyst
+  nome: The Catalyst
+  pool: 4
+  citazione: '"It all started because of me."'
+  approcci:
+    - costo: "Free"
+      nome: "Social Invisibility"
+      desc: "Stay in the background, observe without being seen."
+    - costo: "+1 Frag."
+      nome: "Subtle Manipulation"
+      desc: "Influence the group's dynamics without being discovered."
+    - costo: "+2 Frag."
+      nome: "Crucial Moment"
+      desc: "Remember the exact moment when everything changed."
+  abilita:
+    - nome: "Domino Effect"
+      desc: "When you get a Collapse (0 successes), others gain +1 temporary Fragment. You gain 1 Echo."
+    - nome: "Guilt (1×/game)"
+      desc: "Confess your responsibility to another character. Gain 3 Fragments. No cascading Stress."
+  vulnerabilita:
+    trigger: "Being pushed to lead or choose."
+    effetto: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    domanda: '"Which of my actions could make everything collapse again?"'

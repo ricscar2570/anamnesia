@@ -1,8 +1,9 @@
 #!/bin/bash
-# build-pdf.sh — Genera il PDF completo di AnamnesiA
-# Legge i dati da _data/*.yml tramite render_materials.py
+# build-pdf.sh — Build the complete AnamnesiA PDF (Zine edition)
+# Usage: LANG=en ./build-pdf.sh   or   LANG=it ./build-pdf.sh (default: it)
 set -e
 
+LANG_CODE="${LANG:-it}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 OUTPUT_DIR="$ROOT_DIR/output"
@@ -10,34 +11,64 @@ TMP_DIR=$(mktemp -d)
 trap "rm -rf $TMP_DIR" EXIT
 
 mkdir -p "$OUTPUT_DIR"
-echo "📖 Assemblaggio documento completo..."
 
-# === 1. Regole: Markdown → HTML ===
-PAGES=(
-  index.md pilastri.md come-si-gioca.md il-sistema.md stress-ed-echi.md
-  archetipi.md archetipi/il-sopravvissuto.md archetipi/il-testimone.md
-  archetipi/il-protettore.md archetipi/il-catalizzatore.md
-  sessione-zero.md guida-custode.md avvio-primo-ciclo.md esempio-di-gioco.md
-  scenario-incidente.md scenario-tradimento.md
-  frammenti-universali.md riferimento-rapido.md varianti.md changelog.md
-)
+# === Language configuration ===
+CONTENT_DIR="$ROOT_DIR/content/$LANG_CODE"
+DATA_DIR="$ROOT_DIR/_data/$LANG_CODE"
+TEMPLATE_DIR="$SCRIPT_DIR/templates/$LANG_CODE"
+
+if [ ! -d "$CONTENT_DIR" ]; then
+  echo "❌ Content directory not found: $CONTENT_DIR"; exit 1
+fi
+
+if [ "$LANG_CODE" = "en" ]; then
+  echo "📖 Assembling Complete Edition (English)..."
+  PAGES=(
+    index.md pillars.md how-to-play.md the-system.md stress-and-echoes.md
+    archetypes.md archetypes/the-survivor.md archetypes/the-witness.md
+    archetypes/the-protector.md archetypes/the-catalyst.md
+    session-zero.md memory-keeper-guide.md starting-first-cycle.md gameplay-example.md
+    scenario-the-incident.md scenario-the-betrayal.md
+    universal-fragments.md quick-reference.md variants.md changelog.md
+  )
+  YAML_ARCH="archetypes.yml"
+  YAML_CARDS="fragment_cards.yml"
+  OUTPUT_FILE="anamnesia-zine-en.pdf"
+else
+  echo "📖 Assemblaggio Edizione Completa (Italiano)..."
+  PAGES=(
+    index.md pilastri.md come-si-gioca.md il-sistema.md stress-ed-echi.md
+    archetipi.md archetipi/il-sopravvissuto.md archetipi/il-testimone.md
+    archetipi/il-protettore.md archetipi/il-catalizzatore.md
+    sessione-zero.md guida-custode.md avvio-primo-ciclo.md esempio-di-gioco.md
+    scenario-incidente.md scenario-tradimento.md
+    frammenti-universali.md riferimento-rapido.md varianti.md changelog.md
+  )
+  YAML_ARCH="archetipi.yml"
+  YAML_CARDS="carte_frammento.yml"
+  OUTPUT_FILE="anamnesia-zine.pdf"
+fi
+
+# === 1. Rules: Markdown → HTML ===
 RULES_MD="$TMP_DIR/rules.md"
 > "$RULES_MD"
 for page in "${PAGES[@]}"; do
-  f="$ROOT_DIR/$page"
+  f="$CONTENT_DIR/$page"
   [ -f "$f" ] && sed '1{/^---$/!q;};1,/^---$/d' "$f" | sed 's/{:.*}//g' >> "$RULES_MD" && echo -e "\n\n" >> "$RULES_MD"
 done
 echo "   Markdown → HTML..."
 pandoc "$RULES_MD" -f markdown -t html5 --toc --toc-depth=2 --metadata title="" -o "$TMP_DIR/rules-body.html"
 
-# === 2. Render materiali da YAML ===
-echo "   YAML → Schede + Carte..."
-python3 "$SCRIPT_DIR/render_materials.py" sheets > "$TMP_DIR/sheets.html"
-python3 "$SCRIPT_DIR/render_materials.py" cards  > "$TMP_DIR/cards.html"
+# === 2. Render materials from YAML ===
+echo "   YAML → Sheets + Cards..."
+ANAMNESIA_DATA_DIR="$DATA_DIR" ANAMNESIA_LANG="$LANG_CODE" \
+  python3 "$SCRIPT_DIR/render_materials.py" sheets "$YAML_ARCH" > "$TMP_DIR/sheets.html"
+ANAMNESIA_DATA_DIR="$DATA_DIR" ANAMNESIA_LANG="$LANG_CODE" \
+  python3 "$SCRIPT_DIR/render_materials.py" cards "$YAML_CARDS" > "$TMP_DIR/cards.html"
 
-# === 3. Assembla template ===
-echo "   Assemblaggio HTML finale..."
-cp "$SCRIPT_DIR/pdf-template.html" "$TMP_DIR/full.html"
+# === 3. Assemble template ===
+echo "   Assembling final HTML..."
+cp "$TEMPLATE_DIR/zine.html" "$TMP_DIR/full.html"
 cp "$SCRIPT_DIR/pdf-style.css" "$TMP_DIR/pdf-style.css"
 cp -r "$ROOT_DIR/assets" "$TMP_DIR/assets" 2>/dev/null || true
 
@@ -53,8 +84,6 @@ toc = re.search(r'<nav[^>]*id="TOC".*?</nav>', rules_raw, re.DOTALL)
 toc_html = toc.group(0) if toc else ''
 rules_html = re.sub(r'<nav[^>]*id="TOC".*?</nav>', '', rules_raw, flags=re.DOTALL)
 
-# Split at each <h1 to create separate <section class="rules"> per chapter
-# This ensures page breaks work in WeasyPrint's multi-column layout
 parts = re.split(r'(?=<h1[ >])', rules_html)
 sections = []
 for i, part in enumerate(parts):
@@ -75,6 +104,6 @@ PYEOF
 
 # === 4. PDF ===
 echo "🎨 WeasyPrint..."
-weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/anamnesia-zine.pdf" 2>&1 | grep -v "WARNING" || true
+weasyprint "$TMP_DIR/full.html" "$OUTPUT_DIR/$OUTPUT_FILE" 2>&1 | grep -v "WARNING" || true
 
-echo "✅ PDF: $OUTPUT_DIR/anamnesia-zine.pdf"
+echo "✅ PDF: $OUTPUT_DIR/$OUTPUT_FILE"
