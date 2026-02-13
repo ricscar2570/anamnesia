@@ -851,8 +851,8 @@ body {
 /* Archetype portrait: white-faded Rorschach, centered in column */
 .archetype-portrait {
   display: block;
-  width: 70%;
-  max-height: 160pt;
+  width: 90%;
+  max-height: 220pt;
   margin: 8pt auto 4pt;
   opacity: 0.85;
   object-fit: contain;
