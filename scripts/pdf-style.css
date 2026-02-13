@@ -880,6 +880,7 @@ body {
   margin: 16pt auto;
   opacity: 0.80;
   object-fit: contain;
+  column-span: all;
 }
 
 /* Illustrazione media, centrata (per cervelli, diagrammi) */
