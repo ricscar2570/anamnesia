@@ -25,3 +25,8 @@ If this is your first tabletop RPG experience, keep these three things in mind:
 2. **Human Connection in Cycles 1–4:** if no one had a Breakdown, you can seek a moment of connection with another character to reduce Stress by 1. Always do this when you can.
 
 3. **You don't need to understand everything right away.** Memories come in pieces. Trust the process. If you don't know what to do, describe what your character feels. It's always valid.
+
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/3.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>
