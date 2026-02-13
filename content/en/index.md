@@ -31,4 +31,3 @@ A narrative tabletop RPG of psychological horror
 
 Game Design & Writing: Riccardo Scaringi
 
-YouTube: ilgiocointavolo · Magazine: ioGioco
