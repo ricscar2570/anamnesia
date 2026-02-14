@@ -12,7 +12,7 @@ AnamnesiA's system is designed to be flexible. These three variants modify the g
 
 No one guides. Narrative responsibility is shared.
 
-**How it works:** Each player secretly writes down one detail of the Hidden Truth on a folded slip of paper. The slips are shuffled and revealed one at a time during the Revelations Phase. If two truths contradict, the group rolls: whoever gets more Clear results establishes the canonical version. Complications are generated with the Complication Generator (1d6) instead of the Memory Keeper.
+**How it works:** Each player secretly writes down one detail of the Truth Beneath on a folded slip of paper. The slips are shuffled and revealed one at a time during he Revelations Phase. If two truths contradict, the group rolls: whoever gets more Clear results establishes the canonical version. Complications are generated with the Complication Generator (1d6) instead of the Memory Keeper.
 
 **The Empty Chair Rule:** In place of the Memory Keeper, place an empty chair at the table. When a player gets a Collapse (0 Clear), the interpreting player can turn to the empty chair and ask: *"What was in that room?"*. The player to their left answers as if they were the place itself.
 
