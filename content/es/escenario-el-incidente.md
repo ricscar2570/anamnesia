@@ -16,7 +16,7 @@ nav_order: 11
 
 *(Reservada a los Guardianes de la Memoria — no leer a los jugadores.)*
 
-Los personajes se sometieron voluntariamente a un programa experimental de cancelación selectiva de la memoria en la clínica del Dr. Fassini. Cada uno tenía un motivo diferente para querer olvidar, pero todos comparten la misma culpa: estaban involucrados en un evento que causó la muerte de alguien.
+Los personajes se sometieron voluntariamente a un programa experimental de borrado selectivo de la memoria en la clínica del Dr. Fassini. Cada uno tenía un motivo diferente para querer olvidar, pero todos comparten la misma culpa: estaban involucrados en un evento que causó la muerte de alguien.
 
 El procedimiento no funcionó como estaba previsto. Los recuerdos están regresando, fragmentados y distorsionados. Peor: el procedimiento mismo ha causado daños. La quinta cama — aquella vacía, hecha con demasiado cuidado — pertenecía a otro participante. Alguien que no lo logró. No está claro si el procedimiento lo mató o si recordó demasiado.
 
@@ -38,7 +38,7 @@ Los personajes estaban involucrados en un accidente de tráfico. El Catalizador 
 |:--------|:-------|
 | Día 1, mañana | Los participantes llegan a la clínica. Firman los formularios. |
 | Día 1, noche | Entrevistas individuales con el Dr. Fassini. Cada uno revela lo que quiere olvidar. |
-| Día 2 | El procedimiento. Sedación, estimulación, cancelación. |
+| Día 2 | El procedimiento. Sedación, estimulación, borrado. |
 | Día 2, noche | El quinto participante tiene una crisis. Es aislado. |
 | Día 3, mañana | Los jugadores despiertan. La quinta cama está vacía. Los recuerdos regresan. |
 

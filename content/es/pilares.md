@@ -18,7 +18,7 @@ Algo terrible os ha ocurrido a todos. No sabéis qué. Cada fragmento de memoria
 
 ## 3. Verdad Emergente
 
-La historia no está escrita de antemano. Emerge de las cartas, de las tiradas de dados y de las interpretaciones de los jugadores. Nadie sabe cómo terminará. Cuando un escenario incluye una La Verdad Oculta, esta es una dirección, no un destino. Todos los jugadores la conocen — sus personajes no. Esta ironía dramática hace el juego más intenso, no menos.
+La historia no está escrita de antemano. Emerge de las cartas, de las tiradas de dados y de las interpretaciones de los jugadores. Nadie sabe cómo terminará. Cuando un escenario incluye una Verdad Oculta, esta es una dirección, no un destino. Todos los jugadores la conocen — sus personajes no. Esta ironía dramática hace el juego más intenso, no menos.
 
 ## 4. Sin Ganadores
 

@@ -25,7 +25,7 @@ Si alguien no se siente cómodo durante la Sesión Cero, el juego no comienza. N
 
 ### Tarjeta X
 
-Colocad una carta con una X en el centro de la mesa. Cualquiera puede tocarla — o decir «X» — en cualquier momento para señalar que un contenido le incomoda. Sin explicación requerida. La escena cambia inmediatamente. El Guardián pasa a una escena diferente o modifica lo que está ocurriendo. Nadie pregunta por qué. Se continúa.
+Colocad una tarjeta con una X en el centro de la mesa. Cualquiera puede tocarla — o decir «X» — en cualquier momento para señalar que un contenido le incomoda. Sin explicación requerida. La escena cambia inmediatamente. El Guardián pasa a una escena diferente o modifica lo que está ocurriendo. Nadie pregunta por qué. Se continúa.
 
 ### Líneas y Velos
 

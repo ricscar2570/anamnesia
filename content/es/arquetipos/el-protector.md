@@ -16,7 +16,7 @@ Eras responsable de la seguridad de los demás. En el momento crucial fallaste �
 
 - **Control Autoritario** (gratuito) — Organizar, comandar, tomar decisiones difíciles para el grupo.
 - **Sacrificio Calculado** (+1 Frag.) — Ponerte en peligro para salvar a otros, absorber el daño.
-- **Peso del Mando** (+2 Frag.) — Recordar todas las veces que fallaste. Extraer de esa experiencia dolorosa.
+- **Peso del Mando** (+2 Frag.) — Recordar todas las veces que fallaste. Recurrir a esa experiencia dolorosa.
 
 ## Habilidad: Escudo Viviente
 

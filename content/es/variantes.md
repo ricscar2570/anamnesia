@@ -12,7 +12,7 @@ El sistema de AnamnesiA está pensado para ser flexible. Estas tres variantes mo
 
 Nadie guía. La responsabilidad narrativa se distribuye.
 
-**Cómo funciona:** Cada jugador escribe en secreto un detalle de la Verdad Oculta en un papel doblado. Los papeles se mezclan y se revelan uno a la vez durante la Fase de Revelaciones. En caso de contradicción entre dos verdades, el grupo tira: quien obtenga más Claros establece la versión canónica. Las complicaciones se generan con el Generador de Complicaciones (1d6) en lugar del Guardián.
+**Cómo funciona:** Cada jugador escribe en secreto un detalle de la Verdad Oculta en un papel doblado. Los papeles se mezclan y se revelan de uno en uno durante la Fase de Revelaciones. En caso de contradicción entre dos verdades, el grupo tira: quien obtenga más Claros establece la versión canónica. Las complicaciones se generan con el Generador de Complicaciones (1d6) en lugar del Guardián.
 
 **Regla de la Silla Vacía:** En lugar del Guardián, colocad una silla vacía en la mesa. Cuando un jugador tiene un Colapso (0 Claros), el jugador que interpreta el resultado puede dirigirse a la silla vacía y preguntar: *«¿Qué había en esa habitación?»*. El jugador a su izquierda responde como si fuera el propio lugar.
 

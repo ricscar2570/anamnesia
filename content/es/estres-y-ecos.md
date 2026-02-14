@@ -8,9 +8,9 @@ nav_order: 5
 
 ## El Estrés: el Peso de Recordar
 
-El Estrés representa el deterioro mental causado por el proceso de recordar. Cada punto de Estrés os quita un dado de la Reserva. El Estrés es difícil de reducir: las únicas vías son interpretar la Vulnerabilidad de vuestro Arquetipo, la Conexión Humana al final del ciclo, o invocar el Ancla (ver más abajo). Una vez ganado, permanece con vosotros como un peso persistente.
+El Estrés representa el deterioro mental causado por el proceso de recordar. Cada punto de Estrés os quita un dado de la Reserva. El Estrés es difícil de reducir: las únicas vías son interpretar la Vulnerabilidad de vuestro Arquetipo, la Conexión Humana al final del ciclo, o invocar el Ancla (ver más abajo). Una vez acumulado, permanece con vosotros como un peso persistente.
 
-**Ganáis Estrés cuando:** descubrís un trauma, una tirada tiene consecuencias emocionales, el Colapso de un compañero os afecta, ciertas Cartas de Memoria tienen disparadores explícitos, Forzáis el Recuerdo.
+**Acumuláis Estrés cuando:** descubrís un trauma, una tirada tiene consecuencias emocionales, el Colapso de un compañero os afecta, ciertas Cartas de Fragmento tienen disparadores explícitos, Forzáis el Recuerdo.
 
 ## Recuperar el Aliento
 
@@ -32,7 +32,7 @@ Cuando el Estrés alcanza 4, sufrís un **Colapso Parcial:** elegid cómo vuestr
 
 El Colapso no es eliminación. Es el clímax dramático de vuestro arco narrativo.
 
-**El Círculo de Testimonio:** cada otro jugador narra un recuerdo compartido con quien ha sufrido el Colapso, creando un momento poderoso y colectivo.
+**El Círculo de Testimonio:** los demás jugadores narran un recuerdo compartido con quien ha sufrido el Colapso, creando un momento poderoso y colectivo.
 
 ## El Ancla
 

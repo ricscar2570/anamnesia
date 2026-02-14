@@ -55,7 +55,7 @@
       desc: "Ponerte en peligro para salvar a otros."
     - costo: "+2 Frag."
       nome: "Peso del Mando"
-      desc: "Extraer de la experiencia dolorosa de tus fracasos."
+      desc: "Recurrir a la experiencia dolorosa de tus fracasos."
   abilita:
     - nome: "Escudo Viviente"
       desc: "Cuando otro obtiene Colapso (0 éxitos), sacrifica hasta 3 Fragmentos para dárselos. Cada 2 Fragmentos sacrificados = 1 Eco."

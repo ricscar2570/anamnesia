@@ -29,7 +29,7 @@ Todo lo necesario durante la partida. Imprimir y colocar en el centro de la mesa
 
 ## Forzar el Recuerdo *(v2.0)*
 
-Después de una Verdad Dolorosa o Colapso: mejora el resultado en 1 nivel. Coste: +1 Estrés (en adición al resultado). No puedes Forzar un Éxito Parcial.
+Después de una Verdad Dolorosa o Colapso: mejora el resultado en 1 nivel. Coste: +1 Estrés (además del resultado). No puedes Forzar un Éxito Parcial.
 
 ## Reserva Actual
 

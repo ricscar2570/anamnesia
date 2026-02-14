@@ -8,7 +8,7 @@ nav_order: 9
 
 El primer ciclo puede ser el momento más difícil, especialmente si el grupo no tiene experiencia con juegos sin Director. Aquí tenéis una guía para romper el hielo.
 
-El primer Guardián de la Memoria lee en voz alta el texto introductorio del escenario, luego inicia el temporizador de la fase de Despertar y formula estas preguntas, una a la vez:
+El primer Guardián de la Memoria lee en voz alta el texto introductorio del escenario, luego inicia el temporizador de la fase de Despertar y formula estas preguntas, una por una:
 
 **1.** ¿Quién despierta primero? Describid cómo os sentís físicamente.
 

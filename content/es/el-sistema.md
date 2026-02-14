@@ -43,7 +43,7 @@ Después de la tirada, clasifica cada dado:
 
 1. **Pedir un sentido** al jugador activo: *«Dime un sentido — vista, sonido, olor — y parto de ahí.»*
 2. **Usar el Generador de Disparadores Sensoriales** (1d6, ver Referencia Rápida) como detonante.
-3. **Pasar la palabra** al siguiente jugador. No es una vergüenza — la improvisación no siempre sale a todos.
+3. **Pasar la palabra** al siguiente jugador. No pasa nada — la improvisación no siempre le sale a todos.
 
 ## Forzar el Recuerdo
 
@@ -52,7 +52,7 @@ Después de una tirada que resulte en **Verdad Dolorosa** (1 Claro) o **Colapso 
 - Colapso del Recuerdo → se convierte en Verdad Dolorosa
 - Verdad Dolorosa → se convierte en Éxito Parcial
 
-El precio: ganas inmediatamente **+1 Estrés**, en adición al resultado. No puedes Forzar un Éxito Parcial.
+El precio: recibes inmediatamente **+1 Estrés**, además del resultado. No puedes Forzar un Éxito Parcial.
 
 *Aprietas los dientes y obligas a la memoria a emerger, aunque el precio sea el deterioro mental. Cada vez que Fuerzas, el Colapso se acerca.*
 

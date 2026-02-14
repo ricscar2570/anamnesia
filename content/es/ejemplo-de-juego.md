@@ -8,7 +8,7 @@ nav_order: 10
 
 *Este ejemplo muestra la mitad de un ciclo con tres jugadores para ilustrar el flujo de una partida típica.*
 
-## Setup
+## Preparación
 
 Tres jugadores: Anna (Superviviente, Reserva 5), Marco (Testigo, Reserva 5) y Sara (Catalizadora, Reserva 4). Es el Ciclo 2, fase Niebla. Marco es el Guardián de la Memoria.
 
@@ -34,7 +34,7 @@ Anna tira 2 dados: 4 y 6. Un Fragmento Claro, un Fragmento Confuso. Resultado: V
 
 Sara tira 2 dados: 2 y 3. Cero Fragmentos Claros. Resultado: Colapso del Recuerdo. Anna interpreta:
 
-**Anna:** *«Sara, pronuncias el nombre del brazalete y el mundo se voltea. Ves un destello: una sala, unas manos que te sujetan, tu voz gritando ese nombre. Pero no sabes si estabas pidiendo ayuda o pidiendo perdón.»*
+**Anna:** *«Sara, pronuncias el nombre del brazalete y el mundo se da la vuelta. Ves un destello: una sala, unas manos que te sujetan, tu voz gritando ese nombre. Pero no sabes si estabas pidiendo ayuda o pidiendo perdón.»*
 
 Sara gana 1 Eco del dado que mostró 2. Marca el Colapso, 1 punto de Estrés, y 1 Eco adicional del Efecto Dominó (porque la tirada es un Colapso). Anna y Marco ganan +1 Fragmento temporal.
 
