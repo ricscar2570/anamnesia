@@ -4,7 +4,7 @@ title: Universal Fragments
 nav_order: 13
 ---
 
-# Universal Fragments *(New in v2.0)*
+# Universal Fragments 
 
 If you don't have printed Fragment Cards — or if you're playing an improvised scenario — use these tables. Roll 2d6: the first die indicates the row, the second the column. If you get a fragment already used, roll again.
 
