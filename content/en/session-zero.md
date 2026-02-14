@@ -23,11 +23,15 @@ If anyone doesn't feel comfortable during Session Zero, the game doesn't start. 
 
 ## Safety Tools
 
-**X-Card.** Place a card with an X at the center of the table. Anyone can touch it — or say "X" — at any time to signal that content is making them uncomfortable. No explanation required. The scene changes immediately.
+### X-Card
 
-**Lines & Veils.** Lines = themes you don't want in the game, ever. Veils = themes that can exist in the story but happen "offscreen," without explicit detail. Go around the table. Write Lines and Veils on a sheet visible to everyone.
+Place a card with an X at the center of the table. Anyone can touch it — or say "X" — at any time to signal that content is making them uncomfortable. No explanation required. The scene changes immediately. The Memory Keeper moves to a different scene or modifies what's happening. No one asks why. You continue.
 
-Here are the categories to discuss — you don't need to cover them all, but at least review them:
+### Lines & Veils
+
+**Lines** = themes you don't want in the game, ever, in any form. **Veils** = themes that can exist in the story but happen "offscreen," without explicit detail.
+
+Go around the table. Write Lines and Veils on a sheet visible to everyone. Here are the categories to discuss — you don't need to cover them all, but at least review them:
 
 | Category | Line Examples | Veil Examples |
 |:---------|:-------------|:-------------|
@@ -36,7 +40,11 @@ Here are the categories to discuss — you don't need to cover them all, but at 
 | Death | Animal death, detailed child death | Accidental death without description |
 | Relationships | Explicit domestic abuse | Betrayal mentioned without scenes |
 
-**Emotional Check-in.** Every 30–45 minutes, the Memory Keeper calls a short break (2–3 minutes). Questions: *"How is everyone doing? Does anyone need to slow down? Is there anything you'd like to adjust?"*
+### Emotional Check-in
+
+Every 30–45 minutes, the Memory Keeper calls a short break (2–3 minutes). Questions: *"How is everyone doing? Does anyone need to slow down? Is there anything you'd like to adjust?"*
+
+For particularly intense scenes, the Memory Keeper can do a silent **OK Check-in** by looking at a player and making the "OK?" gesture. Responses: 👌 I'm fine · ✋ slow down · 👎 stop this scene.
 
 ## Tone Calibration
 

@@ -40,7 +40,7 @@ jobs:
           name: anamnesia-pdfs
           path: |
             output/anamnesia-zine.pdf
-            output/anamnesia-quickstart-free.pdf
+            output/anamnesia-quickstart-it.pdf
             output/anamnesia-zine-en.pdf
             output/anamnesia-quickstart-en.pdf
 
@@ -50,7 +50,7 @@ jobs:
         with:
           files: |
             output/anamnesia-zine.pdf
-            output/anamnesia-quickstart-free.pdf
+            output/anamnesia-quickstart-it.pdf
             output/anamnesia-zine-en.pdf
             output/anamnesia-quickstart-en.pdf
           generate_release_notes: true
@@ -61,7 +61,7 @@ jobs:
 
       - name: Push Italian Quickstart to itch.io
         if: startsWith(github.ref, 'refs/tags/')
-        run: butler push output/anamnesia-quickstart-free.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-it --userversion ${GITHUB_REF#refs/tags/v}
+        run: butler push output/anamnesia-quickstart-it.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-it --userversion ${GITHUB_REF#refs/tags/v}
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
