@@ -6,6 +6,18 @@ nav_order: 16
 
 # Changelog & What's Next
 
+## Version 2.1 — Clarifications & Consistency
+
+**Push the Memory clarified** — The Stress from Pushing (+1) is cumulative with any Stress from the original outcome. It does not replace it.
+
+**Hidden Truth → The Truth Beneath** — Scenario truth sections are now read by all players. Characters don't know — but players do. Dramatic irony makes the game more intense, not less.
+
+**Integrated illustrations** — Rorschach-style illustrations added across 6 sections.
+
+**Quick dice reminder** — Dice legend and Golden Rule reminder on the Archetypes page.
+
+**Archetypes cleaned up** — Removed historical v1.3 notes, unified approach formatting.
+
 ## Version 2.0 — Refined Mechanics
 
 Four new mechanics integrated into the core system, all designed to give players more agency and guarantee a satisfying narrative conclusion:

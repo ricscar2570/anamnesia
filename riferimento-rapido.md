@@ -29,7 +29,7 @@ Tutto ciò che serve durante la partita. Stampate e tenete al centro del tavolo.
 
 ## Forzare il Ricordo *(v2.0)*
 
-Dopo Verità Dolorosa o Collasso: migliora il risultato di 1 livello. Costo: +1 Stress. Non puoi Forzare un Successo Parziale.
+Dopo Verità Dolorosa o Collasso: migliora il risultato di 1 livello. Costo: +1 Stress (in aggiunta allo Stress dell'esito). Non puoi Forzare un Successo Parziale.
 
 ## Pool Attuale
 

@@ -30,3 +30,7 @@ Il primo Custode della Memoria legge ad alta voce il testo introduttivo dello sc
 > **2. Connessione Umana nei cicli 1–4:** se nessuno ha avuto un Breakdown, potete cercare un momento di connessione con un altro personaggio per ridurre lo Stress di 1. Fatelo sempre quando potete.
 >
 > **3. Non dovete capire tutto subito.** I ricordi arrivano a pezzi. Fidatevi del processo. Se non sapete cosa fare, descrivete cosa sente il vostro personaggio. È sempre valido.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/3.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

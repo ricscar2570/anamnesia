@@ -16,7 +16,7 @@ Poni domande. Introduci complicazioni quando il ritmo rallenta. Gestisci il temp
 
 Non decidi cosa è «realmente» accaduto prima che i giocatori lo scoprano. Non forzi interpretazioni specifiche dei frammenti. Non punisci i giocatori per le loro scelte narrative. Non dici mai «No, non è così» — piuttosto: «Come lo spieghi?»
 
-La verità nascosta nello scenario è un **suggerimento**, non un copione. Se i giocatori costruiscono qualcosa di più interessante, seguili.
+La Verità Sotto nello scenario è un **suggerimento**, non un copione. Tutti i giocatori la conoscono — i loro personaggi no. Questa ironia drammatica rende il gioco più intenso, non meno. Se i giocatori costruiscono qualcosa di più interessante, seguili.
 
 ## Gestire il Silenzio
 

@@ -100,7 +100,7 @@ def render_sheets(archetipi):
   <div class="cs-pool-calc"><strong>{L["pool_calc"]} =</strong> {a["pool"]} − {L["stress"]} − {L["pool_note"]} · {L["cycle"]}: ①  ②  ③  ④  ⑤</div>
   <div class="cs-pool-calc"><strong>{L["anchor_used"]}:</strong> ☐ · <strong>{L["last_memory"]}:</strong> ☐</div>
   <div class="cs-notes"><div class="cs-section-head">{L["notes"]}</div></div>
-  <div class="cs-footer">Anamn<span class="mr">e</span>siA · v2.0 · {L["copyright"]}</div>
+  <div class="cs-footer">Anamn<span class="mr">e</span>siA · v2.1 · {L["copyright"]}</div>
 </div>''')
     return '\n\n'.join(html)
 

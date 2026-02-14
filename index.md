@@ -31,7 +31,7 @@ Un gioco di ruolo narrativo di horror psicologico
 
 ---
 
-**ZineQuest 2026** · Edizione Completa v2.0
+**ZineQuest 2026** · Edizione Completa v2.1
 
 Game Design e Testi: Riccardo Scaringi
 

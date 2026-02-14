@@ -12,7 +12,7 @@ nav_order: 11
 
 **Location:** A private clinic, sterile and unsettling · **Atmosphere:** Obsessive silence, flickering fluorescent lights, endless corridors · **Players:** 2–4 patients in an experimental program · **The Question:** *What have they done to you? And above all: what have you done?*
 
-## Hidden Truth
+## The Truth Beneath
 
 *(All players should read this section. Your characters don't know any of this — but you do. Let this knowledge haunt your choices.)*
 

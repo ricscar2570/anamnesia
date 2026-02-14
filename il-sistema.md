@@ -59,9 +59,9 @@ Dopo un tiro che risulta in **Verità Dolorosa** (1 Chiaro) o **Collasso del Ric
 - Collasso del Ricordo → diventa Verità Dolorosa
 - Verità Dolorosa → diventa Successo Parziale
 
-Il prezzo: guadagni immediatamente **+1 Stress**. Non puoi Forzare un Successo Parziale.
+Il prezzo: guadagni immediatamente **+1 Stress**, in aggiunta a qualsiasi Stress derivante dall'esito originale. Non puoi Forzare un Successo Parziale.
 
-*Stringi i denti e costringi la memoria a emergere, anche se il prezzo è il deterioramento mentale. Ogni volta che Forzi, il Breakdown si avvicina.*
+*Stringi i denti e costringi la memoria a emergere. Il prezzo è doppio: lo Stress dell'esito più lo Stress dello sforzo. Ogni volta che Forzi, il Breakdown si avvicina.*
 
 ## Pool di Frammenti
 

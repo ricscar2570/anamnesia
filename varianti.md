@@ -12,7 +12,7 @@ Il sistema di AnamnesiA è pensato per essere flessibile. Queste tre varianti mo
 
 Nessuno guida. La responsabilità narrativa è distribuita.
 
-**Come funziona:** Ogni giocatore scrive in segreto un dettaglio della Verità Nascosta su un foglietto piegato. I foglietti vengono mescolati e rivelati uno alla volta durante la Fase Rivelazioni. In caso di contraddizione tra due verità, il gruppo tira: chi ottiene più Chiari stabilisce la versione canonica. Le complicazioni vengono generate con il Generatore di Complicazioni (1d6) invece che dal Custode.
+**Come funziona:** Ogni giocatore scrive in segreto un dettaglio della Verità Sotto su un foglietto piegato. I foglietti vengono mescolati e rivelati uno alla volta durante la Fase Rivelazioni. In caso di contraddizione tra due verità, il gruppo tira: chi ottiene più Chiari stabilisce la versione canonica. Le complicazioni vengono generate con il Generatore di Complicazioni (1d6) invece che dal Custode.
 
 **Regola della Sedia Vuota:** Al posto del Custode, piazzate una sedia vuota al tavolo. Quando un giocatore ha un Collasso (0 Chiari), il giocatore che interpreta il risultato può rivolgersi alla sedia vuota e chiedere: *«Cosa c'era in quella stanza?»*. Il giocatore alla sua sinistra risponde come se fosse il luogo stesso.
 

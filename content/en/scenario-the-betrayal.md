@@ -14,7 +14,7 @@ nav_order: 12
 
 *Note: This scenario does not use The Incident's Fragment Cards. The Memory Keeper uses the Suggested Fragments below or improvises at the table. Alternatively, The Incident's cards can be adapted by swapping the clinical setting for the apartment.*
 
-## Hidden Truth
+## The Truth Beneath
 
 *(All players should read this section. Your characters don't know any of this — but you do. Let this knowledge haunt your choices.)*
 
