@@ -16,7 +16,7 @@ nav_order: 12
 
 ## Hidden Truth
 
-*(Reserved for Memory Keepers — do not read to players.)*
+*(All players should read this section. Your characters don't know any of this — but you do. Let this knowledge haunt your choices.)*
 
 The apartment belongs to Marco Santini, the Catalyst's best friend. That evening Marco had organized a dinner to announce his upcoming wedding to Sofia. But Sofia and the Catalyst had been having a secret affair for months. During the dinner, drunk, they kissed in the hallway. Marco saw them.
 
