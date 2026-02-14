@@ -36,13 +36,11 @@ Sara rolls 2 dice: 2 and 3. Zero Clear Fragments. Outcome: Memory Collapse. Anna
 
 **Anna:** *"Sara, you say the name on the bracelet and the world turns upside down. You see a flash: a room, hands holding you down, your voice screaming that name. But you don't know if you were asking for help or asking for forgiveness."*
 
-<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
-<img src="assets/7.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
-</div>
 
 Sara gains 1 Echo from the die showing 2. She marks the Collapse, 1 Stress, and 1 additional Echo from the Domino Effect (because the roll is a Collapse). Anna and Marco gain +1 temporary Fragment.
 
-
 <div style="column-span: all; margin-top: 6pt; break-before: avoid;">
-<img src="assets/persone_tavolo.png" style="width: 100%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+<img src="assets/7.png" style="width: 70%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
 </div>
+
+
