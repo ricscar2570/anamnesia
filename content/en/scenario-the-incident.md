@@ -14,7 +14,7 @@ nav_order: 11
 
 ## Hidden Truth
 
-*(Reserved for Memory Keepers — do not read to players.)*
+*(All players should read this section. Your characters don't know any of this — but you do. Let this knowledge haunt your choices.)*
 
 The characters voluntarily submitted to an experimental selective memory erasure program at Dr. Fassini's clinic. Each had a different reason for wanting to forget, but all share the same guilt: they were involved in an event that caused someone's death.
 
