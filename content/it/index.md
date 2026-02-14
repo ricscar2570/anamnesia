@@ -25,14 +25,3 @@ Un gioco di ruolo narrativo di horror psicologico
 
 3–6 dadi a sei facce (d6) per ogni giocatore • Schede Personaggio (una per giocatore, incluse in questa zine) • Carte Frammento (incluse: stampare e ritagliare) oppure le Tabelle Frammenti Universali (vedi cap. 14) • Gettoni per Stress ed Echi (monete, biglie, qualsiasi cosa) • Un timer visibile a tutti (anche un telefono) • Carta e penna per appunti.
 
----
-
-[⚄ Generatore di Personaggio](/generatore){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [📋 Schede & Carte](/materiali){: .btn .fs-5 .mb-4 .mb-md-0 }
-
----
-
-**ZineQuest 2026** · Edizione Completa v2.1
-
-Game Design e Testi: Riccardo Scaringi
-
-YouTube: ilgiocointavolo · Rivista: ioGioco
