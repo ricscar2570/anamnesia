@@ -18,8 +18,6 @@ Il primo Custode della Memoria legge ad alta voce il testo introduttivo dello sc
 
 *Non servono risposte lunghe o elaborate. Poche frasi bastano. L'obiettivo è stabilire la scena e far entrare tutti nel tono del gioco.*
 
----
-
 {: .callout }
 > **⭐ Per chi gioca per la prima volta**
 >

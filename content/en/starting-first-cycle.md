@@ -18,8 +18,6 @@ The first Memory Keeper reads aloud the scenario's introductory text, then start
 
 *Short answers are fine. A few sentences are enough. The goal is to establish the scene and get everyone into the game's tone.*
 
----
-
 {: .callout }
 > **⭐ For first-time players**
 >

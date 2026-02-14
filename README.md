@@ -60,7 +60,7 @@ Push a tag (`git tag v2.1 && git push origin v2.1`) to auto-build all PDFs and c
 | File | Language | Content |
 |------|----------|---------|
 | `anamnesia-zine.pdf` | 🇮🇹 Italian | Complete edition (2 scenarios, keeper guide, variants) |
-| `anamnesia-quickstart-free.pdf` | 🇮🇹 Italian | Free quickstart (1 scenario, full rules) |
+| `anamnesia-quickstart-it.pdf` | 🇮🇹 Italian | Free quickstart (1 scenario, full rules) |
 | `anamnesia-zine-en.pdf` | 🇬🇧 English | Complete edition |
 | `anamnesia-quickstart-en.pdf` | 🇬🇧 English | Free quickstart |
 
