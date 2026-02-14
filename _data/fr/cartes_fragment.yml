@@ -1,0 +1,131 @@
+acte_1:
+  titre: "Acte I — Brume"
+  cartes:
+    - id: 1
+      nome: "Odeur Chimique"
+      citazione: "« Ce n'est pas du désinfectant. C'est autre chose. »"
+      costo: "1 Frag."
+      tipo: "Sensorielle"
+    - id: 2
+      nome: "Lumière Intermittente"
+      citazione: "« Le néon pulse. Comme un battement qui n'est pas le vôtre. »"
+      costo: "1 Frag."
+      tipo: "Sensorielle"
+    - id: 3
+      nome: "Chaise Vide"
+      citazione: "« Il y a une chaise en trop. Pour qui était-elle ? »"
+      costo: "1 Frag."
+      tipo: "Ambiante"
+    - id: 4
+      nome: "Nom au Poignet"
+      citazione: "« Quelque chose d'écrit sur votre peau. Votre écriture. »"
+      costo: "2 Frag."
+      tipo: "Personnelle"
+    - id: 5
+      nome: "Bourdonnement Lointain"
+      citazione: "« Sous le silence, il y a un son. Constant. »"
+      costo: "1 Frag."
+      tipo: "Sensorielle"
+    - id: 6
+      nome: "Marque sur la Main"
+      citazione: "« Un pansement. Un bleu. Un point d'injection. »"
+      costo: "1 Frag."
+      tipo: "Personnelle"
+    - id: 7
+      nome: "Miroir Fêlé"
+      citazione: "« Quelqu'un l'a frappé avec force. »"
+      costo: "1 Frag."
+      tipo: "Sensorielle"
+    - id: 8
+      nome: "Couloir Fermé"
+      citazione: "« La porte est fermée. Une fissure. Odeur douceâtre. »"
+      costo: "2 Frag."
+      tipo: "Ambiante"
+
+acte_2:
+  titre: "Acte II — Connexions"
+  cartes:
+    - id: 1
+      nome: "Le Formulaire de Consentement"
+      citazione: "« Une feuille froissée. Votre signature. »"
+      costo: "2 Frag."
+      tipo: "Document"
+    - id: 2
+      nome: "La Voix Enregistrée"
+      citazione: "« Un enregistreur sous un matelas. »"
+      costo: "2 Frag."
+      tipo: "Découverte"
+    - id: 3
+      nome: "La Photographie"
+      citazione: "« Une photo. Vous y êtes tous. Et une personne en plus. »"
+      costo: "2 Frag."
+      tipo: "Relationnelle"
+    - id: 4
+      nome: "Le Cinquième Lit"
+      citazione: "« Refait avec trop de soin. »"
+      costo: "2 Frag."
+      tipo: "Ambiante"
+    - id: 5
+      nome: "Cicatrices Jumelles"
+      citazione: "« La même marque. Au même endroit. »"
+      costo: "1 Frag."
+      tipo: "Relationnelle"
+    - id: 6
+      nome: "L'Interphone"
+      citazione: "« Il grésille. Une voix mécanique dit un numéro. »"
+      costo: "1 Frag."
+      tipo: "Découverte"
+    - id: 7
+      nome: "Le Dossier Médical"
+      citazione: "« Dans un tiroir. Votre nom sur la couverture. »"
+      costo: "2 Frag."
+      tipo: "Document"
+    - id: 8
+      nome: "Le Souvenir Contesté"
+      citazione: "« Deux d'entre vous se souviennent du même moment. Différemment. »"
+      costo: "0 Frag."
+      tipo: "Narrative"
+
+acte_3:
+  titre: "Acte III — Révélations"
+  cartes:
+    - id: 1
+      nome: "La Vidéo de la Procédure"
+      citazione: "« Une tablette. Vous ne voulez pas appuyer sur Play. »"
+      costo: "3 Frag."
+      tipo: "Révélation"
+    - id: 2
+      nome: "La Salle en Dessous"
+      citazione: "« La porte dans le sol. Des escaliers dans le noir. »"
+      costo: "3 Frag."
+      tipo: "Ambiante"
+    - id: 3
+      nome: "Le Participant Disparu"
+      citazione: "« Vous le retrouvez. Pas là où vous l'attendiez. »"
+      costo: "3 Frag."
+      tipo: "Révélation"
+    - id: 4
+      nome: "La Confession"
+      citazione: "« Quelqu'un sait. Depuis toujours. »"
+      costo: "0 Frag."
+      tipo: "Narrative"
+    - id: 5
+      nome: "Le Journal du Docteur"
+      citazione: "« Dans une blouse. Dernières pages écrites à la hâte. »"
+      costo: "2 Frag."
+      tipo: "Document"
+    - id: 6
+      nome: "La Porte Ouverte"
+      citazione: "« La porte est ouverte. Elle l'a toujours été. »"
+      costo: "2 Frag."
+      tipo: "Finale"
+    - id: 7
+      nome: "Le Choix"
+      citazione: "« Pour oublier. »"
+      costo: "0 Frag."
+      tipo: "Épilogue"
+    - id: 8
+      nome: "Échos de la Salle 0"
+      citazione: "« Le bourdonnement s'arrête. Silence. »"
+      costo: "Tous"
+      tipo: "Révélation"

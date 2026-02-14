@@ -1,0 +1,89 @@
+- id: survivant
+  nome: Le Survivant
+  pool: 5
+  citazione: '"Je suis vivant alors que d''autres ne le sont pas."'
+  approcci:
+    - costo: "Gratuite"
+      nome: "Instinct de Fuite"
+      desc: "Percevoir les dangers, repérer les sorties, lire les signes d'alarme."
+    - costo: "+1 Frag."
+      nome: "Paranoïa Protectrice"
+      desc: "Anticiper la trahison, se préparer au pire."
+    - costo: "+2 Frag."
+      nome: "Mémoire de la Douleur"
+      desc: "Se souvenir de comment vous avez survécu avant. La douleur comme guide."
+  abilita:
+    - nome: "Réflexes de Survie"
+      desc: "Quand vous évitez un danger physique, relancez tous les dés qui affichent 1–2. S'ils affichent de nouveau 1–2, décrivez qui vous n'avez pas réussi à sauver."
+  vulnerabilita:
+    trigger: "Se sentir un fardeau pour les autres."
+    effetto: "Récupère 1 Fragment et −1 Stress (max. 1/cycle)."
+    domanda: '"Qui suis-je en train de décevoir, en étant encore en vie ?"'
+
+- id: temoin
+  nome: Le Témoin
+  pool: 5
+  citazione: '"J''ai tout vu. Mais chaque fois que j''essaie de me souvenir, mon esprit se ferme."'
+  approcci:
+    - costo: "Gratuite"
+      nome: "Observation Détachée"
+      desc: "Remarquer les détails, lire les émotions, rester en retrait."
+    - costo: "+1 Frag."
+      nome: "Connexion Empathique"
+      desc: "Ressentir ce que ressentent les autres, deviner les mensonges."
+    - costo: "+2 Frag."
+      nome: "Vision Complète"
+      desc: "Relier toutes les pièces en un instant de terrible clarté."
+  abilita:
+    - nome: "Mémoire Collective"
+      desc: "En observant le jet d'un autre, dépensez 1 Fragment + recevez 1 Écho pour enregistrer les résultats. N'importe qui peut les utiliser. Max. 2/cycle."
+  vulnerabilita:
+    trigger: "Décisions immédiates forcées."
+    effetto: "Récupère 1 Fragment et −1 Stress (max. 1/cycle)."
+    domanda: '"Quel détail crucial ai-je remarqué mais dont j''ai trop peur de parler ?"'
+
+- id: protecteur
+  nome: Le Protecteur
+  pool: 4
+  citazione: '"C''était ma responsabilité de vous garder en sécurité. J''ai échoué."'
+  approcci:
+    - costo: "Gratuite"
+      nome: "Contrôle Autoritaire"
+      desc: "Organiser, commander, prendre des décisions difficiles."
+    - costo: "+1 Frag."
+      nome: "Sacrifice Calculé"
+      desc: "Se mettre en danger pour sauver les autres."
+    - costo: "+2 Frag."
+      nome: "Poids du Commandement"
+      desc: "Puiser dans l'expérience douloureuse de vos échecs."
+  abilita:
+    - nome: "Bouclier Vivant"
+      desc: "Quand un autre obtient un Effondrement (0 succès), sacrifiez jusqu'à 3 Fragments pour les lui donner. Chaque 2 Fragments sacrifiés = 1 Écho."
+  vulnerabilita:
+    trigger: "D'autres en danger sans pouvoir aider."
+    effetto: "Récupère 1 Fragment et −1 Stress (max. 1/cycle)."
+    domanda: '"Quelle menace suis-je en train d''ignorer et qui ne puis-je pas protéger maintenant ?"'
+
+- id: catalyseur
+  nome: Le Catalyseur
+  pool: 4
+  citazione: '"Tout a commencé par ma faute."'
+  approcci:
+    - costo: "Gratuite"
+      nome: "Invisibilité Sociale"
+      desc: "Rester en retrait, observer sans être vu."
+    - costo: "+1 Frag."
+      nome: "Manipulation Subtile"
+      desc: "Influencer les dynamiques du groupe sans être découvert."
+    - costo: "+2 Frag."
+      nome: "Moment Crucial"
+      desc: "Se souvenir du moment exact où tout a basculé."
+  abilita:
+    - nome: "Effet Domino"
+      desc: "Quand vous obtenez un Effondrement (0 succès), les autres reçoivent +1 Fragment temporaire. Vous recevez 1 Écho."
+    - nome: "Sentiment de Culpabilité (1×/partie)"
+      desc: "Confessez votre responsabilité à un autre personnage. Recevez 3 Fragments. Pas de Stress en cascade."
+  vulnerabilita:
+    trigger: "Être poussé à diriger ou à choisir."
+    effetto: "Récupère 1 Fragment et −1 Stress (max. 1/cycle)."
+    domanda: '"Laquelle de mes actions pourrait tout faire s''effondrer à nouveau ?"'
