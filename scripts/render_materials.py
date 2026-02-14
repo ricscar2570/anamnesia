@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 render_materials.py — Generate HTML for character sheets and fragment cards from YAML.
-Supports bilingual output via environment variables:
-  ANAMNESIA_DATA_DIR  — path to _data/it or _data/en
-  ANAMNESIA_LANG      — 'it', 'en', or 'es' (affects labels on sheets)
+Supports multilingual output via environment variables:
+  ANAMNESIA_DATA_DIR  — path to _data/it, _data/en, _data/es, or _data/fr
+  ANAMNESIA_LANG      — 'it', 'en', 'es', or 'fr' (affects labels on sheets)
 
 Usage:
   python3 render_materials.py sheets archetypes.yml
@@ -18,7 +18,7 @@ DATA_DIR = os.environ.get('ANAMNESIA_DATA_DIR',
                           os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '_data', 'it'))
 LANG = os.environ.get('ANAMNESIA_LANG', 'it')
 
-# Bilingual labels for character sheets
+# Multilingual labels for character sheets
 LABELS = {
     'it': {
         'archetype': 'Archetipo',
@@ -76,7 +76,26 @@ LABELS = {
         'echo_note': '0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: fuera de juego',
         'breakdown_note': '4 = Colapso Parcial · 5 = Colapso Final',
         'copyright': '© 2026 Riccardo Scaringi',
-    }
+    },
+    'fr': {
+        'archetype': 'Archétype',
+        'name': 'Nom',
+        'scenario': 'Scénario',
+        'anchor': 'Ancre',
+        'approaches': 'Approches',
+        'vulnerability': 'Vulnérabilité',
+        'stress': 'Stress',
+        'echoes': 'Échos Traumatiques',
+        'pool_calc': 'Réserve Actuelle',
+        'pool_note': 'Pénalité Échos (min 1)',
+        'cycle': 'Cycle',
+        'anchor_used': 'Ancre utilisée',
+        'last_memory': 'Dernier Souvenir utilisé',
+        'notes': 'Souvenirs et Notes',
+        'echo_note': '0–2 : 0 · 3–5 : −1d · 6–8 : −3d · 9+ : hors jeu',
+        'breakdown_note': '4 = Effondrement Partiel · 5 = Effondrement Final',
+        'copyright': '© 2026 Riccardo Scaringi',
+    },
 }
 
 
