@@ -34,6 +34,12 @@ jobs:
       - name: Build English Quickstart
         run: LANG=en bash scripts/build-quickstart.sh
 
+      - name: Build Spanish Zine
+        run: LANG=es bash scripts/build-pdf.sh
+
+      - name: Build Spanish Quickstart
+        run: LANG=es bash scripts/build-quickstart.sh
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -43,6 +49,8 @@ jobs:
             output/anamnesia-quickstart-it.pdf
             output/anamnesia-zine-en.pdf
             output/anamnesia-quickstart-en.pdf
+            output/anamnesia-zine-es.pdf
+            output/anamnesia-quickstart-es.pdf
 
       - name: Create Release with all PDFs
         if: startsWith(github.ref, 'refs/tags/')
@@ -53,6 +61,8 @@ jobs:
             output/anamnesia-quickstart-it.pdf
             output/anamnesia-zine-en.pdf
             output/anamnesia-quickstart-en.pdf
+            output/anamnesia-zine-es.pdf
+            output/anamnesia-quickstart-es.pdf
           generate_release_notes: true
 
       - name: Setup butler for itch.io
@@ -68,5 +78,11 @@ jobs:
       - name: Push English Quickstart to itch.io
         if: startsWith(github.ref, 'refs/tags/')
         run: butler push output/anamnesia-quickstart-en.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-en --userversion ${GITHUB_REF#refs/tags/v}
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+
+      - name: Push Spanish Quickstart to itch.io
+        if: startsWith(github.ref, 'refs/tags/')
+        run: butler push output/anamnesia-quickstart-es.pdf ${{ vars.ITCHIO_USER }}/anamnesia:quickstart-es --userversion ${GITHUB_REF#refs/tags/v}
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}

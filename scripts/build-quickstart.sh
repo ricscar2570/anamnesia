@@ -34,6 +34,19 @@ if [ "$LANG_CODE" = "en" ]; then
   YAML_ARCH="archetypes.yml"
   YAML_CARDS="fragment_cards.yml"
   OUTPUT_FILE="anamnesia-quickstart-en.pdf"
+elif [ "$LANG_CODE" = "es" ]; then
+  echo "📖 Ensamblando Quickstart (Español)..."
+  PAGES=(
+    index.md pilares.md como-se-juega.md el-sistema.md estres-y-ecos.md
+    arquetipos.md arquetipos/el-superviviente.md arquetipos/el-testigo.md
+    arquetipos/el-protector.md arquetipos/el-catalizador.md
+    sesion-cero.md inicio-primer-ciclo.md ejemplo-de-juego.md
+    escenario-el-incidente.md
+    fragmentos-universales.md referencia-rapida.md
+  )
+  YAML_ARCH="arquetipos.yml"
+  YAML_CARDS="cartas_fragmento.yml"
+  OUTPUT_FILE="anamnesia-quickstart-es.pdf"
 else
   echo "📖 Assemblaggio Quickstart (Italiano)..."
   PAGES=(

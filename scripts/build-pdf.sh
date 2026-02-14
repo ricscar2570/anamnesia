@@ -34,6 +34,19 @@ if [ "$LANG_CODE" = "en" ]; then
   YAML_ARCH="archetypes.yml"
   YAML_CARDS="fragment_cards.yml"
   OUTPUT_FILE="anamnesia-zine-en.pdf"
+elif [ "$LANG_CODE" = "es" ]; then
+  echo "📖 Ensamblando Edición Completa (Español)..."
+  PAGES=(
+    index.md pilares.md como-se-juega.md el-sistema.md estres-y-ecos.md
+    arquetipos.md arquetipos/el-superviviente.md arquetipos/el-testigo.md
+    arquetipos/el-protector.md arquetipos/el-catalizador.md
+    sesion-cero.md guia-del-guardian.md inicio-primer-ciclo.md ejemplo-de-juego.md
+    escenario-el-incidente.md escenario-la-traicion.md
+    fragmentos-universales.md referencia-rapida.md variantes.md changelog.md
+  )
+  YAML_ARCH="arquetipos.yml"
+  YAML_CARDS="cartas_fragmento.yml"
+  OUTPUT_FILE="anamnesia-zine-es.pdf"
 else
   echo "📖 Assemblaggio Edizione Completa (Italiano)..."
   PAGES=(

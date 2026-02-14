@@ -1,0 +1,210 @@
+atti:
+  - id: act1
+    nome: "Acto I"
+    tema: "Niebla"
+    colore: "act1"
+    carte:
+      - titolo: "Olor Químico"
+        flavor: "«No es desinfectante. Es otra cosa.»"
+        corpo: "Describe el olor. Tira: con al menos 1 Claro, asocias el olor a un lugar de tu vida. Con 0 Claros, náusea violenta y un destello de <strong>manos enguantadas</strong>."
+        costo: "1 Frag."
+        tipo: "Sensorial"
+      - titolo: "Luz Intermitente"
+        flavor: "«El neón pulsa. Como un latido que no es el tuyo.»"
+        corpo: "Fija la mirada en la luz. Tira: con al menos 1 Claro, notas algo escrito en el fluorescente — un código. Con 0 Claros, la luz se apaga y cuando vuelve <strong>algo ha cambiado</strong>."
+        costo: "1 Frag."
+        tipo: "Sensorial"
+      - titolo: "Silla Vacía"
+        flavor: "«Hay una silla de más. ¿Para quién era?»"
+        corpo: "Tira: con 2+ Claros, percibes el perfume de <strong>alguien que falta</strong>. Con 1, el cojín está caliente. Con 0, un recuerdo violento: <strong>+1 Estrés</strong>."
+        costo: "1 Frag."
+        tipo: "Ambiental"
+      - titolo: "Nombre en la Muñeca"
+        flavor: "«Algo escrito en tu piel. Tu caligrafía.»"
+        corpo: "Tira: con al menos 1 Claro, el nombre es familiar. Con 0, lo pronuncias y alguien <strong>reacciona</strong>. El jugador a tu izquierda decide quién."
+        costo: "2 Frag."
+        tipo: "Personal"
+      - titolo: "Zumbido Lejano"
+        flavor: "«Bajo el silencio hay un sonido. Constante.»"
+        corpo: "Sigue el sonido. Tira: con al menos 1 Claro, viene de <strong>debajo del suelo</strong>. Con 0, se convierte en un grito — nadie más lo oye."
+        costo: "1 Frag."
+        tipo: "Sensorial"
+      - titolo: "Marca en la Mano"
+        flavor: "«Un vendaje. Un moratón. Un punto de inyección.»"
+        corpo: "Tira: con al menos 1 Claro, recuerdas <strong>frío en las venas</strong>. Con 0, debajo hay un número escrito con bolígrafo. Tu número de cama."
+        costo: "1 Frag."
+        tipo: "Personal"
+      - titolo: "Espejo Agrietado"
+        flavor: "«Alguien lo golpeó con fuerza.»"
+        corpo: "Mírate. Tira: con al menos 1 Claro, el reflejo parece <strong>incorrecto</strong> — ha pasado más tiempo. Con 0, ves otro rostro detrás del tuyo."
+        costo: "1 Frag."
+        tipo: "Sensorial"
+      - titolo: "Pasillo Cerrado"
+        flavor: "«La puerta está cerrada. Una rendija. Olor dulce.»"
+        corpo: "Tira: con al menos 1 Claro, ves <strong>pies inmóviles</strong>. Con 0, alguien llama una vez. <strong>Todos +1 Estrés.</strong>"
+        costo: "2 Frag."
+        tipo: "Ambiental"
+
+  - id: act2
+    nome: "Acto II"
+    tema: "Conexiones"
+    colore: "act2"
+    carte:
+      - titolo: "El Formulario de Consentimiento"
+        flavor: "«Una hoja arrugada. Tu firma.»"
+        corpo: "Tira: con 2+ Claros, firmado <strong>voluntariamente</strong> pero bajo presión. Con 1, no lo recuerdas. Con 0, procedimiento inaceptable. <strong>+1 Estrés.</strong>"
+        costo: "2 Frag."
+        tipo: "Documento"
+      - titolo: "La Voz Grabada"
+        flavor: "«Una grabadora bajo un colchón.»"
+        corpo: "Tira: con 2+ Claros, es <strong>tu voz</strong> en tercera persona. Con 1, sollozos. Con 0, dice un nombre. <strong>El jugador a la derecha decide quién.</strong>"
+        costo: "2 Frag."
+        tipo: "Descubrimiento"
+      - titolo: "La Fotografía"
+        flavor: "«Una foto. Estáis todos. Y una persona de más.»"
+        corpo: "Tira: con al menos 1 Claro, el lugar <strong>no es esta clínica</strong>. Con 0, un rostro tachado. <strong>Cada jugador describe un detalle.</strong>"
+        costo: "2 Frag."
+        tipo: "Relacional"
+      - titolo: "La Quinta Cama"
+        flavor: "«Hecha con demasiado cuidado.»"
+        corpo: "Tira: con 2+ Claros, encuentras una <strong>pulsera idéntica</strong>. Con 1, usada recientemente. Con 0, una carta bajo la almohada. <strong>El Guardián la lee.</strong>"
+        costo: "2 Frag."
+        tipo: "Ambiental"
+      - titolo: "Cicatrices Gemelas"
+        flavor: "«La misma marca. En el mismo punto.»"
+        corpo: "Tira: con al menos 1 Claro, recuerdas una <strong>sala con varios catres</strong>. Con 0, un flashback compartido: el otro ve, tú sientes."
+        costo: "1 Frag."
+        tipo: "Relacional"
+      - titolo: "El Interfono"
+        flavor: "«Crepita. Una voz mecánica dice un número.»"
+        corpo: "Tira: con 2+ Claros, el número es <strong>una fecha, un código</strong>. Con 1, una voz familiar. Con 0, dice tu nombre. <strong>+1 Estrés.</strong>"
+        costo: "1 Frag."
+        tipo: "Descubrimiento"
+      - titolo: "La Historia Clínica"
+        flavor: "«En un cajón. Tu nombre en la portada.»"
+        corpo: "Tira: con 2+ Claros, un diagnóstico <strong>diferente</strong>. Con 1, páginas arrancadas. Con 0, una foto tuya que no recuerdas. <strong>+1 Estrés.</strong>"
+        costo: "2 Frag."
+        tipo: "Documento"
+      - titolo: "El Recuerdo Disputado"
+        flavor: "«Dos de vosotros recordáis el mismo momento. De forma diferente.»"
+        corpo: "<strong>Sin tirada.</strong> El Guardián elige 2 jugadores. Cada uno describe el mismo momento. Se contradicen. Los demás deciden cuál <strong>suena</strong> verdadero."
+        costo: "0 Frag."
+        tipo: "Narrativa"
+
+  - id: act3
+    nome: "Acto III"
+    tema: "Revelaciones"
+    colore: "act3"
+    carte:
+      - titolo: "El Vídeo del Procedimiento"
+        flavor: "«Una tableta. No quieres darle a Play.»"
+        corpo: "Tira: con 2+ Claros, sois <strong>observadores, no pacientes</strong>. Con 1, vídeo parcial. Con 0, estáis sonriendo. <strong>+2 Estrés. Todos +1.</strong>"
+        costo: "3 Frag."
+        tipo: "Revelación"
+      - titolo: "La Habitación de Abajo"
+        flavor: "«Una puerta en el suelo. Escaleras hacia la oscuridad.»"
+        corpo: "Tira: con 2+ Claros, una habitación idéntica, <strong>camas ocupadas</strong>. Con 1, escritos en las paredes. Con 0, en el espejo <strong>no estás solo</strong>. Todos +1 Estrés."
+        costo: "3 Frag."
+        tipo: "Ambiental"
+      - titolo: "El Participante Desaparecido"
+        flavor: "«Lo encontráis. No donde esperabais.»"
+        corpo: "Tira: con 2+ Claros, <strong>eres tú</strong>. Con 1, no te reconoce. Con 0: <strong>«No debíais haber vuelto.»</strong> +2 Estrés."
+        costo: "3 Frag."
+        tipo: "Revelación"
+      - titolo: "La Confesión"
+        flavor: "«Alguien sabe. Desde siempre.»"
+        corpo: '<strong>Sin tirada.</strong> «¿Qué hiciste la noche anterior?» Cada respuesta guarda un secreto. La última: <strong>«¿Por qué no lo dijiste antes?»</strong>'
+        costo: "0 Frag."
+        tipo: "Narrativa"
+      - titolo: "El Diario del Doctor"
+        flavor: "«En una bata. Últimas páginas escritas con prisa.»"
+        corpo: "Tira: con 2+ Claros, <strong>funcionó demasiado bien</strong>. Con 1, 'No deben saberlo.' Con 0, dirigido <strong>a ti</strong>. +2 Estrés."
+        costo: "2 Frag."
+        tipo: "Documento"
+      - titolo: "La Puerta Abierta"
+        flavor: "«La puerta está abierta. Siempre lo ha estado.»"
+        corpo: "Tira: con 2+ Claros, entiendes por qué <strong>nadie salió</strong>. Con 0, te encuentras en la misma habitación. <strong>Si es Ciclo 5, el juego termina.</strong>"
+        costo: "2 Frag."
+        tipo: "Final"
+      - titolo: "La Elección"
+        flavor: "«Para olvidar.»"
+        corpo: '<strong>Carta Final.</strong> «Si pudieras olvidar de nuevo, ¿lo harías?» Quien olvida pierde sus Ecos. Quien recuerda se queda con todo. <strong>El juego termina.</strong>'
+        costo: "0 Frag."
+        tipo: "Epílogo"
+      - titolo: "Ecos de la Sala 0"
+        flavor: "«El zumbido se detiene. Silencio.»"
+        corpo: "Tira <strong>todos</strong> los Fragmentos. 3+: memoria completa. 1–2: el jugador a la derecha rellena los vacíos. 0: <strong>es peor</strong>. +2 Estrés. Colapso."
+        costo: "Todos"
+        tipo: "Revelación"
+
+generatore:
+  nomi:
+    - Elena
+    - Marco
+    - Sara
+    - Luca
+    - Chiara
+    - Andrea
+    - Julia
+    - Mateo
+    - Valentina
+    - David
+    - Francisca
+    - Simón
+    - Anna
+    - Lorenzo
+    - Marta
+    - Tomás
+    - Silvia
+    - Alejandro
+    - Beatriz
+    - Felipe
+    - Irene
+    - Gabriel
+    - Clara
+    - Nicolás
+    - Elisa
+    - Esteban
+    - Violeta
+    - Pedro
+    - Noemí
+    - Federico
+  aspetti:
+    - "Profundas ojeras, mirada evasiva"
+    - "Cabeza rapada recientemente, cicatriz en la sien"
+    - "Manos temblando imperceptiblemente"
+    - "Ojos claros, expresión ausente"
+    - "Postura rígida, mandíbula apretada"
+    - "Cara demacrada, uñas mordidas"
+    - "Mirada vigilante, nunca relajada"
+    - "Canas prematuras, voz baja"
+    - "Rasgos delicados, dedos tamborileando"
+    - "Cicatrices antiguas en los nudillos"
+    - "Palidez antinatural, labios agrietados"
+    - "Mirada distante, como mirando más allá"
+  tic:
+    - "Se toca la muñeca donde está la pulsera"
+    - "Murmura números cuando está nervioso"
+    - "Cierra los ojos brevemente antes de hablar"
+    - "Se mira las manos como si no las reconociera"
+    - "Se sobresalta con sonidos repentinos"
+    - "Cuenta las salidas al entrar en una habitación"
+    - "Se frota un punto específico del brazo"
+    - "Contiene la respiración cuando alguien levanta la voz"
+    - "Repite la última palabra que oyó, en voz baja"
+    - "Se muerde el interior de la mejilla cuando piensa"
+    - "Mira las luces fluorescentes con sospecha"
+    - "Comprueba si los demás duermen antes de moverse"
+  frammenti:
+    - "El sabor metálico de la medicina"
+    - "Una voz suave diciendo 'Todo irá bien'"
+    - "Manos atadas con sujeciones blandas"
+    - "Un pasillo interminable, luces blancas"
+    - "Alguien llorando en la habitación de al lado"
+    - "Un formulario firmado con mano temblorosa"
+    - "El olor a desinfectante mezclado con otra cosa"
+    - "Una puerta cerrándose con un clic definitivo"
+    - "El rostro de alguien que no deberías conocer"
+    - "Un número tatuado en la muñeca — tu número"
+    - "La sensación de caer, luego nada"
+    - "Una risa inapropiada en el peor momento"

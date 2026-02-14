@@ -3,7 +3,7 @@
 render_materials.py — Generate HTML for character sheets and fragment cards from YAML.
 Supports bilingual output via environment variables:
   ANAMNESIA_DATA_DIR  — path to _data/it or _data/en
-  ANAMNESIA_LANG      — 'it' or 'en' (affects labels on sheets)
+  ANAMNESIA_LANG      — 'it', 'en', or 'es' (affects labels on sheets)
 
 Usage:
   python3 render_materials.py sheets archetypes.yml
@@ -56,6 +56,25 @@ LABELS = {
         'notes': 'Memories & Notes',
         'echo_note': '0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: out of play',
         'breakdown_note': '4 = Partial Breakdown · 5 = Final Breakdown',
+        'copyright': '© 2026 Riccardo Scaringi',
+    },
+    'es': {
+        'archetype': 'Arquetipo',
+        'name': 'Nombre',
+        'scenario': 'Escenario',
+        'anchor': 'Ancla',
+        'approaches': 'Enfoques',
+        'vulnerability': 'Vulnerabilidad',
+        'stress': 'Estrés',
+        'echoes': 'Ecos Traumáticos',
+        'pool_calc': 'Reserva Actual',
+        'pool_note': 'Penalización Ecos (mín 1)',
+        'cycle': 'Ciclo',
+        'anchor_used': 'Ancla usada',
+        'last_memory': 'Último Recuerdo usado',
+        'notes': 'Recuerdos y Notas',
+        'echo_note': '0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: fuera de juego',
+        'breakdown_note': '4 = Colapso Parcial · 5 = Colapso Final',
         'copyright': '© 2026 Riccardo Scaringi',
     }
 }
