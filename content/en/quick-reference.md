@@ -29,8 +29,7 @@ Everything you need during play. Print and keep at the center of the table.
 
 ## Push the Memory 
 
-After Painful Truth or Collapse: improve the result by 1 level. Cost: +1 Stress. You cannot Push a Partial Success.
-
+After Painful Truth or Collapse: improve the result by 1 level. Cost: +1 Stress (in addition to the outcome's Stress). You cannot Push a Partial Success.
 ## Current Pool
 
 Base Pool (4 or 5) − Stress − Echo Penalty = Available dice (minimum 1)
