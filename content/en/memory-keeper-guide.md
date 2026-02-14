@@ -16,7 +16,7 @@ Ask questions. Introduce complications when the pace slows. Manage the time and 
 
 Don't decide what "really" happened before the players discover it. Don't force specific interpretations of fragments. Don't punish players for their narrative choices. Never say "No, that's not what happened" — rather: *"How do you explain it?"*
 
-The hidden truth in the scenario is a suggestion, not a script. If the players build something more interesting, follow them.
+The Truth Beneath in the scenario is a suggestion, not a script. All players know it — their characters don't. This dramatic irony makes the game more intense, not less. If the players build something more interesting, follow them.
 
 ## Managing Silence
 
