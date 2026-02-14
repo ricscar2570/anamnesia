@@ -52,8 +52,7 @@ After the roll, classify each die:
 
 **3.** **Pass the word** to the next player. There's no shame in it — improvisation doesn't always come easy.
 
-## Push the Memory *(New in v2.0)*
-
+## Push the Memory 
 After a roll that results in a **Painful Truth** (1 Clear) or **Memory Collapse** (0 Clear), you can choose to Push the Memory. The result improves by one level:
 
 - Memory Collapse → becomes Painful Truth
