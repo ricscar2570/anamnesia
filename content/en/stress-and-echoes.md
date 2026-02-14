@@ -37,7 +37,7 @@ When Stress reaches 4, you suffer a **Partial Breakdown:** choose how your chara
 
 **The Circle of Witness:** every other player recounts a shared memory with the one who suffered the Breakdown, creating a powerful, collective moment.
 
-## The Anchor *(New in v2.0)*
+## The Anchor 
 
 During character creation, each player chooses an **Anchor**: a physical object the character possesses — a broken watch, a photograph, a key, a ring. The Anchor is your last link to reality.
 
