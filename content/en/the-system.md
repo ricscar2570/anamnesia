@@ -58,9 +58,9 @@ After a roll that results in a **Painful Truth** (1 Clear) or **Memory Collapse*
 - Memory Collapse → becomes Painful Truth
 - Painful Truth → becomes Partial Success
 
-The price: you immediately gain **+1 Stress**. You cannot Push a Partial Success.
+The price: you immediately gain **+1 Stress**, in addition to any Stress from the original outcome. You cannot Push a Partial Success.
 
-*You grit your teeth and force the memory to surface, even if the price is mental deterioration. Every time you Push, the Breakdown draws closer.*
+*You grit your teeth and force the memory to surface. The price is double: the Stress from the outcome plus the Stress from the effort. Every time you Push, Breakdown draws closer.*
 
 ## Fragment Pool
 
