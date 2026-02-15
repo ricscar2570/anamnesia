@@ -47,6 +47,32 @@ elif [ "$LANG_CODE" = "de" ]; then
   YAML_ARCH="archetypen.yml"
   YAML_CARDS="fragmentkarten.yml"
   OUTPUT_FILE="anamnesia-zine-de.pdf"
+elif [ "$LANG_CODE" = "es" ]; then
+  echo "📖 Ensamblando Edición Completa (Español)..."
+  PAGES=(
+    index.md pilares.md como-se-juega.md el-sistema.md estres-y-ecos.md
+    arquetipos.md arquetipos/el-superviviente.md arquetipos/el-testigo.md
+    arquetipos/el-protector.md arquetipos/el-catalizador.md
+    sesion-cero.md guia-del-guardian.md inicio-primer-ciclo.md ejemplo-de-juego.md
+    escenario-el-incidente.md escenario-la-traicion.md
+    fragmentos-universales.md referencia-rapida.md variantes.md changelog.md
+  )
+  YAML_ARCH="arquetipos.yml"
+  YAML_CARDS="cartas_fragmento.yml"
+  OUTPUT_FILE="anamnesia-zine-es.pdf"
+elif [ "$LANG_CODE" = "fr" ]; then
+  echo "📖 Assemblage Édition Complète (Français)..."
+  PAGES=(
+    index.md piliers.md comment-jouer.md le-systeme.md stress-et-echos.md
+    archetypes.md archetypes/le-survivant.md archetypes/le-temoin.md
+    archetypes/le-protecteur.md archetypes/le-catalyseur.md
+    session-zero.md guide-du-gardien.md debut-premier-cycle.md exemple-de-jeu.md
+    scenario-incident.md scenario-trahison.md
+    fragments-universels.md reference-rapide.md variantes.md changelog.md
+  )
+  YAML_ARCH="archetypes.yml"
+  YAML_CARDS="cartes_fragment.yml"
+  OUTPUT_FILE="anamnesia-zine-fr.pdf"
 else
   echo "📖 Assemblaggio Edizione Completa (Italiano)..."
   PAGES=(
