@@ -34,32 +34,19 @@ if [ "$LANG_CODE" = "en" ]; then
   YAML_ARCH="archetypes.yml"
   YAML_CARDS="fragment_cards.yml"
   OUTPUT_FILE="anamnesia-quickstart-en.pdf"
-elif [ "$LANG_CODE" = "es" ]; then
-  echo "📖 Ensamblando Quickstart (Español)..."
+elif [ "$LANG_CODE" = "de" ]; then
+  echo "📖 Zusammenstellung Schnellstart (Deutsch)..."
   PAGES=(
-    index.md pilares.md como-se-juega.md el-sistema.md estres-y-ecos.md
-    arquetipos.md arquetipos/el-superviviente.md arquetipos/el-testigo.md
-    arquetipos/el-protector.md arquetipos/el-catalizador.md
-    sesion-cero.md inicio-primer-ciclo.md ejemplo-de-juego.md
-    escenario-el-incidente.md
-    fragmentos-universales.md referencia-rapida.md
+    index.md saeulen.md spielablauf.md das-system.md stress-und-echos.md
+    archetypen.md archetypen/der-ueberlebende.md archetypen/der-zeuge.md
+    archetypen/der-beschuetzer.md archetypen/der-katalysator.md
+    session-zero.md start-erster-zyklus.md spielbeispiel.md
+    szenario-der-vorfall.md
+    universelle-fragmente.md kurzuebersicht.md
   )
-  YAML_ARCH="arquetipos.yml"
-  YAML_CARDS="cartas_fragmento.yml"
-  OUTPUT_FILE="anamnesia-quickstart-es.pdf"
-elif [ "$LANG_CODE" = "fr" ]; then
-  echo "📖 Assemblage Quickstart (Français)..."
-  PAGES=(
-    index.md piliers.md comment-jouer.md le-systeme.md stress-et-echos.md
-    archetypes.md archetypes/le-survivant.md archetypes/le-temoin.md
-    archetypes/le-protecteur.md archetypes/le-catalyseur.md
-    session-zero.md debut-premier-cycle.md exemple-de-jeu.md
-    scenario-incident.md
-    fragments-universels.md reference-rapide.md
-  )
-  YAML_ARCH="archetypes.yml"
-  YAML_CARDS="cartes_fragment.yml"
-  OUTPUT_FILE="anamnesia-quickstart-fr.pdf"
+  YAML_ARCH="archetypen.yml"
+  YAML_CARDS="fragmentkarten.yml"
+  OUTPUT_FILE="anamnesia-quickstart-de.pdf"
 else
   echo "📖 Assemblaggio Quickstart (Italiano)..."
   PAGES=(
@@ -72,7 +59,7 @@ else
   )
   YAML_ARCH="archetipi.yml"
   YAML_CARDS="carte_frammento.yml"
-  OUTPUT_FILE="anamnesia-quickstart-it.pdf"
+  OUTPUT_FILE="anamnesia-quickstart-free.pdf"
 fi
 
 # === 1. Rules: Markdown → HTML ===

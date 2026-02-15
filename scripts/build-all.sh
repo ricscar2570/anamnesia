@@ -1,5 +1,5 @@
 #!/bin/bash
-# build-all.sh — Build all AnamnesiA PDFs (IT + EN + ES + FR × Zine + Quickstart)
+# build-all.sh — Build all 4 AnamnesiA PDFs (IT + EN × Zine + Quickstart)
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -9,36 +9,28 @@ echo "  AnamnesiA — Building all PDFs"
 echo "================================================"
 echo ""
 
-echo "🇮🇹 [1/8] Zine Italiano..."
+echo "🇮🇹 [1/6] Zine Italiano..."
 LANG=it bash "$SCRIPT_DIR/build-pdf.sh"
 
 echo ""
-echo "🇮🇹 [2/8] Quickstart Italiano..."
+echo "🇮🇹 [2/6] Quickstart Italiano..."
 LANG=it bash "$SCRIPT_DIR/build-quickstart.sh"
 
 echo ""
-echo "🇬🇧 [3/8] Zine English..."
+echo "🇬🇧 [3/6] Zine English..."
 LANG=en bash "$SCRIPT_DIR/build-pdf.sh"
 
 echo ""
-echo "🇬🇧 [4/8] Quickstart English..."
+echo "🇬🇧 [4/6] Quickstart English..."
 LANG=en bash "$SCRIPT_DIR/build-quickstart.sh"
 
 echo ""
-echo "🇪🇸 [5/8] Zine Español..."
-LANG=es bash "$SCRIPT_DIR/build-pdf.sh"
+echo "🇩🇪 [5/6] Zine Deutsch..."
+LANG=de bash "$SCRIPT_DIR/build-pdf.sh"
 
 echo ""
-echo "🇪🇸 [6/8] Quickstart Español..."
-LANG=es bash "$SCRIPT_DIR/build-quickstart.sh"
-
-echo ""
-echo "🇫🇷 [7/8] Zine Français..."
-LANG=fr bash "$SCRIPT_DIR/build-pdf.sh"
-
-echo ""
-echo "🇫🇷 [8/8] Quickstart Français..."
-LANG=fr bash "$SCRIPT_DIR/build-quickstart.sh"
+echo "🇩🇪 [6/6] Quickstart Deutsch..."
+LANG=de bash "$SCRIPT_DIR/build-quickstart.sh"
 
 echo ""
 echo "================================================"
