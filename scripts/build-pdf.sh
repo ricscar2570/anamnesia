@@ -85,7 +85,7 @@ else
   )
   YAML_ARCH="archetipi.yml"
   YAML_CARDS="carte_frammento.yml"
-  OUTPUT_FILE="anamnesia-zine.pdf"
+  OUTPUT_FILE="anamnesia-zine-it.pdf"
 fi
 
 # === 1. Rules: Markdown → HTML ===
