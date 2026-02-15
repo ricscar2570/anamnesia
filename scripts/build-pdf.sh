@@ -132,6 +132,9 @@ for i, part in enumerate(parts):
     sections.append(f'<section class="rules">\n{part}\n</section>')
 rules_final = '\n\n'.join(sections)
 
+# Wrap tables in column-spanning divs (WeasyPrint needs wrapper for column-span on tables)
+rules_final = re.sub(r'(<table\b.*?</table>)', r'<div class="table-span">\1</div>', rules_final, flags=re.DOTALL)
+
 html = html.replace('<!-- TOC_PLACEHOLDER -->', toc_html)
 html = html.replace('<!-- RULES_PLACEHOLDER -->', rules_final)
 html = html.replace('<!-- SHEETS_PLACEHOLDER -->', sheets)

@@ -27,6 +27,4 @@ Wenn dies eure erste Rollenspiel-Erfahrung ist, behaltet diese drei Dinge im Hin
 3. **Ihr müsst nicht sofort alles verstehen.** Erinnerungen kommen in Bruchstücken. Vertraut dem Prozess. Wenn ihr nicht wisst, was ihr tun sollt, beschreibt, was euer Charakter empfindet. Das ist immer gültig.
 
 
-<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
-<img src="assets/3.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
-</div>
+<img src="assets/3.png" style="width: 80%; max-height: 130pt; object-fit: contain; display: block; margin: 6pt auto;">

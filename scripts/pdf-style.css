@@ -406,6 +406,10 @@ body {
   font-size: 8.5pt;
   break-inside: avoid;
 }
+/* WeasyPrint needs a wrapper div for column-span on tables */
+.table-span {
+  column-span: all;
+}
 .rules th {
   background: #2c1810;
   color: #f0ebe4;
