@@ -1,0 +1,50 @@
+meta:
+  doc_id: "01"
+  title: "COMPLICATION GENERATORS"
+  subtitle: "Tools for the Memory Keeper"
+  header: "A N A M N E S I A  ·  C O M P L I C A T I O N  G E N E R A T O R S"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Use these generators when the game stalls, after a Memory Collapse (0 Clears),
+  or whenever you need a quick prompt. Roll 1d6 on the table matching the current
+  phase.
+
+phases:
+  - id: fog
+    title: "FOG PHASE — Cycles 1–2"
+    subtitle: "Sensory Complications"
+    col_header: "Complication"
+    rows:
+      - ["1", "A sound that should not be here: a bell, a breath, a ticking."]
+      - ["2", "The temperature drops sharply in one precise spot of the room."]
+      - ["3", "A sharp, fleeting smell that no one else seems to notice."]
+      - ["4", "An object has moved from where you remember it. Or has it?"]
+      - ["5", "Writing on a surface: but when you point it out to the others, they cannot see it."]
+      - ["6", "A shared déjà vu: two characters feel exactly the same thing at the same moment."]
+
+  - id: connections
+    title: "CONNECTIONS PHASE — Cycles 3–4"
+    subtitle: "Relational Complications"
+    col_header: "Complication"
+    rows:
+      - ["1", "Two fragments that surfaced earlier contradict each other. One is false. Which one?"]
+      - ["2", "Someone who should not know, knows. An NPC appears with unsettling information."]
+      - ["3", "A personal item belonging to a PC is found where it should not be."]
+      - ["4", "A PC has a sudden flashback. The player to their right describes what they see."]
+      - ["5", "Something is about to happen. Footsteps in the corridor, a ringing phone, a countdown."]
+      - ["6", "Two characters discover a connection they did not remember. Define it together."]
+
+  - id: revelations
+    title: "REVELATIONS PHASE — Cycle 5"
+    subtitle: "Traumatic Complications"
+    col_header: "Complication"
+    rows:
+      - ["1", "A memory surfacing now contradicts EVERYTHING you have reconstructed so far."]
+      - ["2", "A PC remembers the exact moment of the trauma. The player to their right describes it."]
+      - ["3", "The definitive proof is here: but accepting it means admitting personal guilt."]
+      - ["4", "Someone you believed was a victim was complicit. Or the other way around."]
+      - ["5", "Time is up: the external consequence arrives (police, doctors, family). What do you do?"]
+      - ["6", "The truth is worse than anyone imagined. Each PC says one thing they wish they had not remembered."]
+
+closing_quote: "«The silence after a memory is part of the game.»"

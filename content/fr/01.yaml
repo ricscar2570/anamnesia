@@ -1,0 +1,50 @@
+meta:
+  doc_id: "01"
+  title: "GÉNÉRATEURS DE COMPLICATIONS"
+  subtitle: "Outils pour le Gardien de la Mémoire"
+  header: "A N A M N E S I A  ·  G É N É R A T E U R S  D E  C O M P L I C A T I O N S"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Utilise ces générateurs quand le jeu s'enlise, après un Effondrement du
+  Souvenir (0 Clair), ou quand tu as besoin d'une impulsion rapide. Lance
+  1d6 sur la table de la phase en cours.
+
+phases:
+  - id: brume
+    title: "PHASE BRUME — Tours 1–2"
+    subtitle: "Complications Sensorielles"
+    col_header: "Complication"
+    rows:
+      - ["1", "Un son qui ne devrait pas être là: une cloche, un souffle, un tic-tac."]
+      - ["2", "La température chute brusquement en un point précis de la pièce."]
+      - ["3", "Une odeur âcre et fugace que personne d'autre ne semble percevoir."]
+      - ["4", "Un objet a bougé de là où vous en gardiez le souvenir. Ou pas?"]
+      - ["5", "Une inscription sur une surface: mais quand tu la montres aux autres, ils ne la voient pas."]
+      - ["6", "Un déjà-vu partagé: deux personnages ressentent exactement la même chose au même instant."]
+
+  - id: connexions
+    title: "PHASE CONNEXIONS — Tours 3–4"
+    subtitle: "Complications Relationnelles"
+    col_header: "Complication"
+    rows:
+      - ["1", "Deux fragments apparus jusqu'ici se contredisent. L'un est faux. Lequel?"]
+      - ["2", "Quelqu'un qui ne devrait pas savoir, sait. Un PNJ surgit avec une information troublante."]
+      - ["3", "Un objet personnel appartenant à un PJ est retrouvé là où il ne devrait pas être."]
+      - ["4", "Un PJ a un flash-back soudain. Le joueur à sa droite décrit ce qu'il voit."]
+      - ["5", "Quelque chose est sur le point d'arriver. Des pas dans le couloir, un téléphone qui sonne, un compte à rebours."]
+      - ["6", "Deux personnages découvrent un lien dont ils ne se souvenaient pas. Définissez-le ensemble."]
+
+  - id: revelations
+    title: "PHASE RÉVÉLATIONS — Tour 5"
+    subtitle: "Complications Traumatiques"
+    col_header: "Complication"
+    rows:
+      - ["1", "Un souvenir qui remonte maintenant contredit TOUT ce que vous avez reconstruit jusqu'ici."]
+      - ["2", "Un PJ se souvient du moment exact du trauma. Le joueur à sa droite le décrit."]
+      - ["3", "La preuve définitive est là: mais l'accepter signifie admettre une faute personnelle."]
+      - ["4", "Quelqu'un que vous croyiez victime était complice. Ou l'inverse."]
+      - ["5", "Le temps est écoulé: la conséquence extérieure arrive (police, médecins, famille). Que faites-vous?"]
+      - ["6", "La vérité est pire que quiconque ne l'imaginait. Chaque PJ dit une chose qu'il aurait préféré ne pas se rappeler."]
+
+closing_quote: "«Le silence après un souvenir fait partie du jeu.»"

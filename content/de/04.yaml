@@ -1,0 +1,140 @@
+meta:
+  doc_id: "04"
+  title: "CHARAKTERBÖGEN"
+  subtitle: "Vier Archetypen · Ausdrucken und ausfüllen"
+  header: "A N A M N E S I A  ·  C H A R A K T E R B Ö G E N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+labels:
+  name:          "NAME"
+  scenario:      "SZENARIO"
+  anchor:        "ANKER"
+  approaches:    "ANSÄTZE"
+  ability:       "FÄHIGKEIT"
+  vulnerability: "VERWUNDBARKEIT"
+  tracking:      "PROTOKOLL"
+  pool_formula:  "Aktueller Pool = {pool} − Stress − Echo-Malus (min. 1)"
+  stress_track:  "Stress  1 ■  2 ■  3 ■  4 ■ Partiell  5 ■ Final"
+  echo_track:    "Echos  1  2  3  4  5  6  7  8  9+"
+  cycle_track:   "Runde: ① ② ③ ④ ⑤"
+  anchor_used:   "Anker benutzt: ■"
+  last_memory:   "Letzte Erinnerung benutzt: ■"
+  guilt_used:    "Schuld benutzt: ■"
+  notes:         "Notizen und Erinnerungen:"
+  approach_cost_col: "Kosten"
+  approach_name_col: "Ansatz"
+  approach_desc_col: "Beschreibung"
+  free:          "Kostenlos"
+
+archetypes:
+  - id: ueberlebender
+    name: "DER ÜBERLEBENDE"
+    pool: 5
+    quote: "«Ich lebe, während andere es nicht taten.»"
+    bio: >
+      Du hast überlebt, als andere es nicht schafften. Deine Reflexe sind scharf,
+      aber jedes Überleben lässt dich wie einen Feigling fühlen. Warum du und
+      nicht sie?
+    approaches:
+      - cost: "Kostenlos"
+        name: "Überlebensinstinkt"
+        desc: "Gefahr wahrnehmen, Ausgänge entdecken, Warnsignale lesen."
+      - cost: "+1"
+        name: "Schützende Paranoia"
+        desc: "Verrat antizipieren, sich auf das Schlimmste vorbereiten."
+      - cost: "+2"
+        name: "Erinnerung an den Schmerz"
+        desc: "Erinnere dich, wie du vorher überlebt hast. Schmerz als Leitfaden."
+    ability_name: "ÜBERLEBENSREFLEXE"
+    ability_text: >
+      Wenn du einer körperlichen Gefahr ausweichst, wirf alle Würfel mit 1–2 neu.
+      Zeigen sie wieder 1–2, beschreibe, wen du nicht retten konntest.
+    vulnerability: "Das Gefühl, anderen zur Last zu fallen."
+    vulnerability_reward: "Erhalte 1 Fragment und −1 Stress (max. 1/Runde)."
+    key_question: "«Wen enttäusche ich, indem ich noch am Leben bin?»"
+    special_checkboxes: []
+
+  - id: zeuge
+    name: "DER ZEUGE"
+    pool: 5
+    quote: "«Ich habe alles gesehen. Aber mein Geist schließt sich.»"
+    bio: >
+      Du hast jeden Detail des Grauens miterlebt. Deine Augen haben jede Nuance
+      eingefangen. Aber jetzt sind diese Erinnerungen wie zerbrochenes Glas
+      zersplittert.
+    approaches:
+      - cost: "Kostenlos"
+        name: "Distanzierte Beobachtung"
+        desc: "Details bemerken, Emotionen lesen, im Hintergrund bleiben während du analysierst."
+      - cost: "+1"
+        name: "Empathische Verbindung"
+        desc: "Fühlen, was andere fühlen, Lügen aus dem Schmerz in ihren Augen erahnen."
+      - cost: "+2"
+        name: "Vollständige Vision"
+        desc: "Das ganze Bild sehen, alle Teile in einem Moment schrecklicher Klarheit verbinden."
+    ability_name: "KOLLEKTIVES GEDÄCHTNIS"
+    ability_text: >
+      Beim Beobachten des Wurfs eines anderen: gib 1 Fragment aus und erhalte
+      1 Echo, um die Ergebnisse zu «speichern». Jeder kann sie später in der
+      Runde nutzen. Max. 2/Runde.
+    vulnerability: "Zu sofortigen Entscheidungen gezwungen werden."
+    vulnerability_reward: "Erhalte 1 Fragment und −1 Stress (max. 1/Runde)."
+    key_question: "«Welches entscheidende Detail habe ich bemerkt, aber Angst zu enthüllen?»"
+    special_checkboxes: []
+
+  - id: beschuetzer
+    name: "DER BESCHÜTZER"
+    pool: 4
+    quote: "«Es war meine Verantwortung. Ich habe versagt.»"
+    bio: >
+      Du warst für die Sicherheit der anderen verantwortlich. Im entscheidenden
+      Moment hast du versagt. Deine Hände zittern jedes Mal, wenn du versuchst
+      zu helfen. Aber du kannst nicht aufhören zu versuchen.
+    approaches:
+      - cost: "Kostenlos"
+        name: "Autoritäre Kontrolle"
+        desc: "Organisieren, befehlen, schwierige Entscheidungen für die Gruppe treffen."
+      - cost: "+1"
+        name: "Berechnetes Opfer"
+        desc: "Dich in Gefahr bringen, um andere zu retten, den Schaden absorbieren."
+      - cost: "+2"
+        name: "Last der Verantwortung"
+        desc: "An jedes Mal erinnern, das du versagt hast. Aus dieser schmerzhaften Erfahrung schöpfen."
+    ability_name: "LEBENDER SCHILD"
+    ability_text: >
+      Wenn ein anderer Spieler einen Erinnerungszusammenbruch (0 Erfolge) erleidet:
+      opfere bis zu 3 Fragmente, um sie ihm zu geben. Für je 2 geopferte Fragmente
+      erhältst du 1 Echo.
+    vulnerability: "Andere in Gefahr und unfähig zu helfen."
+    vulnerability_reward: "Erhalte 1 Fragment und −1 Stress (max. 1/Runde)."
+    key_question: "«Welche Bedrohung ignoriere ich, und wen kann ich jetzt nicht schützen?»"
+    special_checkboxes: []
+
+  - id: katalysator
+    name: "DER KATALYSATOR"
+    pool: 4
+    quote: "«Es hat alles durch mich angefangen.»"
+    bio: >
+      Du hast die Ereigniskette ausgelöst. Nicht durch Bosheit, sondern durch
+      eine Wahl, ein Wort, eine Geste. Und alles ist zusammengebrochen. Jetzt
+      trägt jede deiner Handlungen das Echo jener ersten, fatalen Entscheidung.
+    approaches:
+      - cost: "Kostenlos"
+        name: "Soziale Unsichtbarkeit"
+        desc: "Im Hintergrund bleiben, Aufmerksamkeit vermeiden, beobachten ohne gesehen zu werden."
+      - cost: "+1"
+        name: "Subtile Manipulation"
+        desc: "Die Gruppendynamik beeinflussen, ohne entdeckt zu werden."
+      - cost: "+2"
+        name: "Entscheidender Moment"
+        desc: "Den genauen Moment erinnern, als sich alles veränderte."
+    ability_name: "DOMINOEFFEKT"
+    ability_text: >
+      Bei einem Erinnerungszusammenbruch (0 Erfolge): andere Spieler erhalten
+      +1 temporäres Fragment. Du erhältst 1 Echo.
+    special_ability_name: "Schuld (1×/Sitzung)"
+    special_ability_text: "Gestehe deine Verantwortung einem anderen SC. Erhalte 3 Fragmente."
+    vulnerability: "Dazu gedrängt werden, zu führen oder zu wählen."
+    vulnerability_reward: "Erhalte 1 Fragment und −1 Stress (max. 1/Runde)."
+    key_question: "«Welche meiner Handlungen könnte wieder alles zum Einsturz bringen?»"
+    special_checkboxes: ["guilt_used"]

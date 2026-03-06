@@ -1,0 +1,63 @@
+meta:
+  doc_id: "02"
+  title: "GEDÄCHTNISHÜTER-REFERENZBLATT"
+  subtitle: "Memory Keeper Reference Sheet"
+  header: "A N A M N E S I A  ·  G E D Ä C H T N I S H Ü T E R - R E F E R E N Z"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+cycle_section:
+  title: "RUNDENSTRUKTUR"
+  col_headers: ["Phase", "Dauer", "Aktivität"]
+  rows:
+    - ["Erwachen",      "2–3 Min.",   "Der Hüter stellt die Eröffnungsfragen. Keine Würfel."]
+    - ["Erkundung",     "10–15 Min.", "Spieler interagieren mit Fragmentkarten und würfeln."]
+    - ["Konsolidierung","2–3 Min.",   "Pool-Wiederherstellung, Echo-Notiz, Menschliche Verbindung (Runden 1–4)."]
+
+phases_section:
+  title: "SPIELPHASEN"
+  col_headers: ["Phase", "Runden", "Karten", "Atmosphäre"]
+  rows:
+    - ["Nebel",        "1–2", "Nur Akt I",    "Vage Eindrücke, sensorische Verwirrung"]
+    - ["Verbindungen", "3–4", "Akt I + II",   "Konkrete Details, Beziehungsspannung"]
+    - ["Enthüllungen", "5",   "Akt II + III", "Rohe Wahrheit, finale Konfrontation"]
+
+questions_section:
+  title: "FRAGEN PRO PHASE"
+  phases:
+    - label: "Nebel (Runden 1–2)"
+      questions:
+        - "Was spürst du, wenn du die Augen schließt?"
+        - "Warum zittert deine Hand?"
+        - "Das Zeichen auf deinem Handgelenk: hast du es dir selbst gemacht?"
+    - label: "Verbindungen (Runden 3–4)"
+      questions:
+        - "Wer hat euch von dem Programm erzählt?"
+        - "Kanntet ihr den fünften Teilnehmer?"
+        - "Warum wolltet ihr vergessen?"
+    - label: "Enthüllungen (Runde 5)"
+      questions:
+        - "Jetzt, wo ihr euch erinnert: was tut ihr?"
+        - "Könnt ihr euch vergeben?"
+        - "Wenn ihr wieder vergessen könntet, würdet ihr es tun?"
+
+tracking_section:
+  title: "SITZUNGSPROTOKOLL"
+  scenario_label:   "Szenario:"
+  date_label:       "Datum:"
+  players_label:    "Spieler:"
+  col_headers:      ["Spieler", "Archetyp", "Anker", "Stress", "Echos"]
+  cycles_label:     "Runden:"
+  cycles:
+    - "① Nebel"
+    - "② Nebel"
+    - "③ Verbindungen"
+    - "④ Verbindungen"
+    - "⑤ Enthüllungen"
+  tools_label:      "Sicherheitswerkzeuge:"
+  tools:
+    - "X-Karte"
+    - "Lines & Veils"
+    - "Check-in"
+  connections_label: "Entstandene Verbindungen:"
+  truths_label:      "Festgestellte Wahrheiten:"
+  notes_label:       "Notizen nach der Sitzung:"

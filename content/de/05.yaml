@@ -1,0 +1,200 @@
+meta:
+  doc_id: "05"
+  title: "DESIGNNOTIZEN"
+  subtitle: "Die Geschichte von AnamnesiA, vom Konzept bis ZineQuest 2026"
+  header: "A N A M N E S I A  ·  D E S I G N N O T I Z E N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+opening_quote: "«Was bleibt, wenn sogar die Lügen verblasst sind?»"
+
+intro: >
+  Diese Notizen sammeln die Geschichte des Projekts: die aufgegebenen Versionen,
+  die Mechaniken, die nicht funktionierten, die Momente, in denen das Spiel eine
+  andere Wendung nahm als geplant. Dies ist kein Regelwerk. Es ist das Gedächtnis
+  des Spiels über sich selbst.
+
+sections:
+  - num: "1"
+    title: "DER URSPRUNG"
+    paragraphs:
+      - >
+        AnamnesiA entstand aus einer Frage: Was würde passieren, wenn du deine
+        eigene Vergangenheit nicht kontrollieren könntest? Nicht in dem Sinne, dass
+        wir alle Erinnerungen umschreiben, sondern buchstäblich: wenn jemand neben
+        dir entscheiden würde, was du erlebt hast.
+      - >
+        Der Titel kommt vom griechischen anamnesis, der Wiederfindung verlorener
+        Erinnerungen. Platon nutzte es, um Wissen als Erinnerung an Wahrheiten zu
+        beschreiben, die die Seele bereits kannte. In AnamnesiA neigt diese Wahrheit
+        dazu, schlimmer zu sein als erwartet.
+      - >
+        In traditionellen Horrorspielen kommt die Angst von außen, gesteuert vom
+        Spielleiter. Ich wollte diese Richtung umkehren: die Quelle des Schreckens
+        musste die eigene Geschichte sein, erzählt von jemand anderem.
+
+  - num: "2"
+    title: "DIE GOLDENE REGEL"
+    paragraphs:
+      - >
+        Der Spieler zu deiner Rechten interpretiert das Ergebnis deines Wurfs.
+        Nicht du. Diese Regel klingt einfach. Sie ist es nicht.
+      - >
+        In den frühen Versionen interpretierte jeder Spieler seine eigenen Ergebnisse.
+        Das Problem war, dass Menschen dazu neigen, sich zu schützen: Erinnerungen
+        tauchten immer mit einem Ausweg auf, mit einer Erklärung, die die Schuld
+        milderte. Das Spiel hatte keine Schärfe.
+      - >
+        Als ich die Interpretation zum rechten Spieler verschob, passierte etwas
+        Interessantes: die Spieler begannen, einander zu fürchten. Nicht mit
+        Feindseligkeit. Mit der subtilen Spannung von jemandem, der weiß, dass die
+        Person neben ihm ihm sagen kann, wer er war. Kann seine Schuld erfinden.
+      - >
+        Es gab noch ein Restproblem: manchmal erstarrte der zur Interpretation
+        bestimmte Spieler. Improvisation kommt nicht allen im gleichen Moment.
+        Ich fügte drei Notausgänge hinzu: den aktiven Spieler nach einem Sinn fragen,
+        auf dem sensorischen Generator würfeln oder das Wort weitergeben. Es ist
+        keine Schande. Es ist Teil des Systems.
+
+  - num: "3"
+    title: "DIE VERSIONEN"
+    paragraphs:
+      - >
+        <b>v1.0. Das Fundament.</b> Grundregeln, vier Archetypen, Szenario Der Vorfall,
+        Fragmente-und-Würfel-System. Das System funktionierte, hatte aber keine
+        Ventile. Ein wiederkehrendes Problem tauchte in den Playtest auf: Spieler
+        mit niedrigem Pool fühlten sich blockiert, Zuschauer ihrer eigenen Geschichte
+        statt Protagonisten.
+      - >
+        <b>v1.1–1.3. Infrastruktur und Balancing.</b> Technische Infrastruktur aufgebaut
+        und erste mechanische Inkonsistenzen korrigiert. Kollektives Gedächtnis des
+        Zeugen: von 3 auf 2 Aufzeichnungen/Runde, mit zusätzlichen Kosten von 1 Echo.
+        Lebender Schild des Beschützers: Echo-Kosten von 1:1 auf 1 pro 2 geopferte
+        Fragmente geändert. Dominoeffekt des Katalysators: Echo entsteht nur bei
+        Erinnerungszusammenbruch (0 Klare).
+      - >
+        <b>v1.4. Vollständige Inhalte.</b> Hüterhandbuch, erweitertes Sitzung Null mit
+        Checklisten und Lines-und-Veils-Tabellen nach Kategorie, zweites Szenario
+        Der Verrat, Spielvarianten. Der Verrat entstand aus einer anderen Frage als
+        Der Vorfall: nicht «Was haben sie euch angetan?» sondern «Was habt ihr
+        jemandem angetan, den ihr liebtet?»
+      - >
+        <b>v2.0. Vier neue Mechaniken.</b> Erinnerung erzwingen löst das Agency-Problem
+        bei niedrigem Pool. Der Anker ist ein physisches Objekt, das in Sitzung Null
+        gewählt wird. Letzte Erinnerung: mit Pool auf 1 Würfel, würfle 3W6 und ignoriere
+        alle Strafen. Die Wahrheit tritt immer hervor: in Runde 5 enthüllen Zusammenbrüche
+        trotzdem die Erinnerung zum doppelten Preis.
+
+  - num: "4"
+    title: "STRESS UND ECHOS"
+    paragraphs:
+      - >
+        Stress und Echos erodieren beide den Würfel-Pool, aber sie sind zwei
+        verschiedene Dinge.
+      - >
+        Stress misst, wie viel es dich kostet, dich jetzt zu erinnern. Es sind
+        die emotionalen Kosten des Prozesses, nicht der Geschichte. Er kann
+        abnehmen, langsam, mit Mühe, denn Erholung ist auch in der Tragödie möglich.
+      - >
+        Echos messen, wie sehr dich das Gesehene verändert hat. Sie erholen sich
+        nie. Der Charakter in Runde 5 ist anders als der in Runde 1 in Würfeln,
+        nicht nur in Worten. Diese Differenz hat sich Entscheidung für Entscheidung
+        angesammelt.
+      - >
+        Die Zusammenbruch-Schwelle bei 5 statt 4 war eine umstrittene Wahl. Bei
+        Schwelle 4 brachen Figuren zu früh zusammen und Runde 5 kam bereits erschöpft.
+        Bei 5 wird der finale Zusammenbruch fast zu einer bewussten Entscheidung.
+
+  - num: "5"
+    title: "DIE ARCHETYPEN"
+    paragraphs:
+      - >
+        In vielen Spielen definieren Archetypen, was du tun kannst. In AnamnesiA
+        definieren sie, wie du dich zur Schuld verhältst.
+      - >
+        Die vier Archetypen besetzen die vier klassischen Positionen rund um ein
+        kollektives Trauma: derjenige, der überlebte ohne zu verstehen warum,
+        derjenige, der beobachtete ohne zu handeln, derjenige, der die Verantwortung
+        hatte und scheiterte, derjenige, der alles mit einer kleinen Wahl auslöste.
+      - >
+        Um einen Tisch herum bauen diese vier Positionen eine vollständige emotionale
+        Karte desselben Ereignisses auf. Jeder Archetyp betrachtet es aus einem
+        anderen Winkel und die Wahrheit entsteht aus der Summe.
+      - >
+        Der Katalysator hat eine Mechanik ohne Parallele bei den anderen drei
+        Archetypen: Schuld. Es ist der einzige Moment im Spiel, in dem ein Charakter
+        aktiv wählt, seine eigene Verantwortung zu offenbaren. Alle anderen
+        Offenbarungsmechanismen sind unfreiwillig.
+
+  - num: "6"
+    title: "THE LETHE INFECTION"
+    paragraphs:
+      - >
+        The Lethe Infection entstand aus einem praktischen Problem: Wie erreicht man
+        Spieler, die GM-lose Spiele nicht kennen? Indem man die Goldene Regel in die
+        Systeme bringt, die sie bereits spielen.
+      - >
+        Der Anhang passt die Mechanik an drei Systeme an. In Mörk Borg ersetzt die
+        Infektion den Wurf auf der Broken-Tabelle. In OSE/OSR nimmt sie den Platz
+        des Untoten-Level-Drains ein. In Call of Cthulhu 7e setzt sie an den
+        Fugue States während Wahnsinnsanfällen an.
+      - >
+        Die drei W10-Tabellen (Blut, Geist, Seele) geben dem rechten Spieler bereits
+        aufgeladenes Material, ohne kalte Improvisation zu erfordern.
+
+  - num: "7"
+    title: "DIE ÄSTHETIK"
+    paragraphs:
+      - >
+        Die Rorschach-Tintenkleckse waren keine dekorative Wahl. Der Test fordert
+        auf, Formen in mehrdeutigen Bildern zu finden: genau der Prozess, den die
+        Figuren mit ihren eigenen Erinnerungsfragmenten durchführen.
+      - >
+        Die Bilder werden mit einer Python-Pipeline generiert, die nasses Tinte auf
+        Papier simuliert: Pre-Blur bei Sigma 7, Kantendilation bei 16 px, finaler
+        Blur bei 1.2. Blutende Ränder, graduelle Übergänge, verstreute Tropfen.
+
+  - num: "8"
+    title: "ZINEQUEST 2026"
+    subsections:
+      - subtitle: "Launch ohne Liste"
+        paragraphs:
+          - >
+            Ich startete ohne eine bestehende Community. Keine E-Mail-Liste, kein
+            aktiver Discord-Kanal. Die Kampagne startete kalt: die ersten neun Backer
+            kamen im Verlauf von zwei Wochen.
+          - >
+            Crowdfunding verstärkt die bereits vorhandene Community, es baut sie nicht
+            auf. Die Arbeit muss vorher geleistet werden, nicht währenddessen.
+      - subtitle: "Das Quickstart als Hebel"
+        paragraphs:
+          - >
+            Das kostenlose Quickstart in fünf Sprachen (80 Downloads auf itch.io,
+            35 auf DTRPG vor dem Launch) war der effektivste Konversionskanal.
+      - subtitle: "Die Communities"
+        paragraphs:
+          - >
+            r/RPGdesign antwortete am besten: ein Post über die Rechte-Hand-Regel als
+            konkretes Designproblem generierte echte Diskussion, 18 Upvotes und über
+            3.900 Aufrufe. r/jdr (Französisch) zeigte unerwartet hohes Engagement.
+          - >
+            Kickstarter Discovery war der wichtigste Konversionskanal. r/osr war
+            feindseelig: AnamnesiA wird als Storygame wahrgenommen.
+      - subtitle: "Die Zahlen"
+        paragraphs:
+          - >
+            40 Backer · €728 gesammelt · €500-Ziel überschritten · 10 Länder ·
+            5 Sprachen · 34 Backer mit aktiven Belohnungen.
+
+  - num: "9"
+    title: "WAS ICH GELERNT HABE"
+    bullets:
+      - "<b>Community kommt vor der Kampagne.</b> Crowdfunding verstärkt, was bereits existiert. Ohne Basis startet man bergauf."
+      - "<b>Das Spiel muss vor dem Launch funktionieren.</b> Backer haben nach dem Lesen des Quickstarts finanziert, nicht nach dem Betrachten der Kickstarter-Seite."
+      - "<b>Das At-Cost-Modell ist das richtige für Zine-Maßstab.</b> DriveThruRPG POD eliminiert das physische Risiko."
+      - "<b>Spezifität konvertiert, Allgemeinheit nicht.</b> Posts über die Rechte-Hand-Regel als konkretes Designproblem generierten echtes Interesse."
+      - "<b>Nicht jede Community ist das richtige Publikum.</b> AnamnesiA zu r/osr zu bringen war ein Fehler."
+      - "<b>Benutzerdefinierte Würfel warten.</b> Für AnamnesiA wurde bewusst auf Würfel-Stretch-Goals verzichtet. Für The Serpent Road lohnt es sich, das zu überdenken."
+      - "<b>Zu häufige Updates saturieren.</b> Fünf Updates in zwei Tagen hatten den gegenteiligen Effekt. Das richtige Tempo ist alle zwei oder drei Tage."
+
+closing_quote: "«Erinnerungen lügen nicht. Aber sie sagen auch nicht die ganze Wahrheit.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

@@ -1,0 +1,63 @@
+meta:
+  doc_id: "02"
+  title: "MEMORY KEEPER REFERENCE SHEET"
+  subtitle: "Scheda del Custode"
+  header: "A N A M N E S I A  ·  M E M O R Y  K E E P E R  R E F E R E N C E"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+cycle_section:
+  title: "CYCLE STRUCTURE"
+  col_headers: ["Phase", "Duration", "Activity"]
+  rows:
+    - ["Awakening",     "2–3 min",   "The Keeper poses the opening questions. No dice."]
+    - ["Exploration",   "10–15 min", "Players interact with Fragment Cards and roll dice."]
+    - ["Consolidation", "2–3 min",   "Pool recovery, Echo notation, Human Connection (cycles 1–4)."]
+
+phases_section:
+  title: "GAME PHASES"
+  col_headers: ["Phase", "Cycles", "Cards", "Atmosphere"]
+  rows:
+    - ["Fog",         "1–2", "Act I only",    "Vague impressions, sensory confusion"]
+    - ["Connections", "3–4", "Act I + II",    "Concrete details, relational tension"]
+    - ["Revelations", "5",   "Act II + III",  "Raw truth, final confrontation"]
+
+questions_section:
+  title: "QUESTIONS BY PHASE"
+  phases:
+    - label: "Fog (Cycles 1–2)"
+      questions:
+        - "What do you feel when you close your eyes?"
+        - "Why is your hand shaking?"
+        - "That mark on your wrist: did you put it there yourself?"
+    - label: "Connections (Cycles 3–4)"
+      questions:
+        - "Who told you about the programme?"
+        - "Did you know the fifth participant?"
+        - "Why did you want to forget?"
+    - label: "Revelations (Cycle 5)"
+      questions:
+        - "Now that you remember, what do you do?"
+        - "Can you forgive yourselves?"
+        - "If you could forget again, would you?"
+
+tracking_section:
+  title: "SESSION TRACKING"
+  scenario_label:   "Scenario:"
+  date_label:       "Date:"
+  players_label:    "Players:"
+  col_headers:      ["Player", "Archetype", "Anchor", "Stress", "Echoes"]
+  cycles_label:     "Cycles:"
+  cycles:
+    - "① Fog"
+    - "② Fog"
+    - "③ Connections"
+    - "④ Connections"
+    - "⑤ Revelations"
+  tools_label:      "Safety tools:"
+  tools:
+    - "X-Card"
+    - "Lines & Veils"
+    - "Check-in"
+  connections_label: "Connections that emerged:"
+  truths_label:      "Truths established:"
+  notes_label:       "Post-session notes:"

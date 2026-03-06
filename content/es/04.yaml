@@ -1,0 +1,138 @@
+meta:
+  doc_id: "04"
+  title: "HOJAS DE PERSONAJE"
+  subtitle: "Cuatro Arquetipos · Imprimir y rellenar"
+  header: "A N A M N E S I A  ·  H O J A S  D E  P E R S O N A J E"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+labels:
+  name:          "NOMBRE"
+  scenario:      "ESCENARIO"
+  anchor:        "ANCLA"
+  approaches:    "ENFOQUES"
+  ability:       "HABILIDAD"
+  vulnerability: "VULNERABILIDAD"
+  tracking:      "SEGUIMIENTO"
+  pool_formula:  "Reserva actual = {pool} − Estrés − Penalización por Ecos (mín. 1)"
+  stress_track:  "Estrés  1 ■  2 ■  3 ■  4 ■ Parcial  5 ■ Final"
+  echo_track:    "Ecos  1  2  3  4  5  6  7  8  9+"
+  cycle_track:   "Turno: ① ② ③ ④ ⑤"
+  anchor_used:   "Ancla usada: ■"
+  last_memory:   "Último Recuerdo usado: ■"
+  guilt_used:    "Culpa usada: ■"
+  notes:         "Notas y Recuerdos:"
+  approach_cost_col: "Coste"
+  approach_name_col: "Enfoque"
+  approach_desc_col: "Descripción"
+  free:          "Gratuito"
+
+archetypes:
+  - id: superviviente
+    name: "EL SUPERVIVIENTE"
+    pool: 5
+    quote: "«Estoy vivo cuando otros no lo están.»"
+    bio: >
+      Sobreviviste cuando otros no pudieron. Tus reflejos son afilados, pero
+      cada supervivencia te hace sentir un cobarde. ¿Por qué tú y no ellos?
+    approaches:
+      - cost: "Gratuito"
+        name: "Instinto de Supervivencia"
+        desc: "Percibir peligros, localizar salidas, leer las señales de alarma."
+      - cost: "+1"
+        name: "Paranoia Protectora"
+        desc: "Anticipar la traición, prepararse para lo peor antes de que ocurra."
+      - cost: "+2"
+        name: "Memoria del Dolor"
+        desc: "Recordar cómo sobreviviste antes. El dolor como guía."
+    ability_name: "REFLEJOS DE SUPERVIVENCIA"
+    ability_text: >
+      Cuando esquivas un peligro físico, vuelve a tirar todos los dados que
+      muestren 1–2. Si vuelven a mostrar 1–2, describe a quién no pudiste salvar.
+    vulnerability: "Sentirse una carga para los demás."
+    vulnerability_reward: "Recuperas 1 Fragmento y −1 Estrés (máx. 1/turno)."
+    key_question: "«¿A quién estoy decepcionando por seguir vivo?»"
+    special_checkboxes: []
+
+  - id: testigo
+    name: "EL TESTIGO"
+    pool: 5
+    quote: "«Lo vi todo. Pero mi mente se cierra.»"
+    bio: >
+      Fuiste testigo de cada detalle del horror. Tus ojos captaron cada matiz.
+      Pero ahora esos recuerdos están fragmentados como vidrio roto que corta.
+    approaches:
+      - cost: "Gratuito"
+        name: "Observación Distante"
+        desc: "Notar detalles, leer emociones, mantenerse al margen mientras se analiza."
+      - cost: "+1"
+        name: "Conexión Empática"
+        desc: "Sentir lo que sienten los demás, intuir mentiras en el dolor de sus ojos."
+      - cost: "+2"
+        name: "Visión Completa"
+        desc: "Ver la imagen entera, conectar todas las piezas en un instante de claridad aterradora."
+    ability_name: "MEMORIA COLECTIVA"
+    ability_text: >
+      Al observar la tirada de otro jugador: gasta 1 Fragmento y recibe 1 Eco
+      para «registrar» los resultados. Cualquiera puede usarlos más tarde en
+      el turno. Máx. 2/turno.
+    vulnerability: "Verse obligado a tomar decisiones inmediatas."
+    vulnerability_reward: "Recuperas 1 Fragmento y −1 Estrés (máx. 1/turno)."
+    key_question: "«¿Qué detalle crucial noté pero que temo revelar?»"
+    special_checkboxes: []
+
+  - id: protector
+    name: "EL PROTECTOR"
+    pool: 4
+    quote: "«Era mi responsabilidad. Fallé.»"
+    bio: >
+      Eras responsable de la seguridad de los demás. En el momento crucial
+      fallaste. Tus manos tiemblan cada vez que intentas ayudar. Pero no
+      puedes dejar de intentarlo.
+    approaches:
+      - cost: "Gratuito"
+        name: "Control Autoritario"
+        desc: "Organizar, dar órdenes, tomar las decisiones difíciles por el grupo."
+      - cost: "+1"
+        name: "Sacrificio Calculado"
+        desc: "Ponerte en peligro para salvar a otros, absorber el daño."
+      - cost: "+2"
+        name: "Peso del Mando"
+        desc: "Recordar cada vez que fallaste. Recurrir a esa experiencia dolorosa."
+    ability_name: "ESCUDO VIVIENTE"
+    ability_text: >
+      Cuando otro jugador sufre un Colapso del Recuerdo (0 éxitos): sacrifica
+      hasta 3 Fragmentos para dárselos. Por cada 2 Fragmentos sacrificados
+      recibes 1 Eco.
+    vulnerability: "Otros en peligro sin poder ayudar."
+    vulnerability_reward: "Recuperas 1 Fragmento y −1 Estrés (máx. 1/turno)."
+    key_question: "«¿Qué amenaza estoy ignorando y a quién no consigo proteger ahora?»"
+    special_checkboxes: []
+
+  - id: catalizador
+    name: "EL CATALIZADOR"
+    pool: 4
+    quote: "«Todo empezó por mi culpa.»"
+    bio: >
+      Desencadenaste la cadena de sucesos. No por malicia, sino por una
+      elección, una palabra, un gesto. Y todo se derrumbó. Ahora cada una
+      de tus acciones lleva el eco de aquella primera y fatal decisión.
+    approaches:
+      - cost: "Gratuito"
+        name: "Invisibilidad Social"
+        desc: "Quedarse en un segundo plano, evitar la atención, observar sin ser visto."
+      - cost: "+1"
+        name: "Manipulación Sutil"
+        desc: "Influir en la dinámica del grupo sin ser descubierto."
+      - cost: "+2"
+        name: "Momento Decisivo"
+        desc: "Recordar el momento exacto en que todo cambió."
+    ability_name: "EFECTO DOMINÓ"
+    ability_text: >
+      En un Colapso del Recuerdo (0 éxitos): los demás jugadores reciben
+      +1 Fragmento temporal. Tú recibes 1 Eco.
+    special_ability_name: "Culpa (1×/partida)"
+    special_ability_text: "Confiesa tu responsabilidad a otro PJ. Recibes 3 Fragmentos."
+    vulnerability: "Ser empujado a liderar o elegir."
+    vulnerability_reward: "Recuperas 1 Fragmento y −1 Estrés (máx. 1/turno)."
+    key_question: "«¿Qué acción mía podría volver a derrumbarlo todo?»"
+    special_checkboxes: ["guilt_used"]

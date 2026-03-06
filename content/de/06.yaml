@@ -1,0 +1,186 @@
+meta:
+  doc_id: "06"
+  title: "THE LETHE INFECTION"
+  subtitle: "Eine parasitäre Mechanik für traditionelle & kosmische Horror-Rollenspiele"
+  header: "A N A M N E S I A  ·  T H E  L E T H E  I N F E C T I O N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+  rorschach_images: ["rorschach_1.png","rorschach_3.png","rorschach_2.png","rorschach_cthulhu.png"]
+
+opening_quote: >
+  «Du bist nicht der Held dieser Geschichte. Du bist nur das Gefäß, das die
+  Erinnerungen eines Monsters trägt. Und das Schlimmste: der Spieler neben
+  dir hält den Schlüssel zum Käfig.»
+
+intro:
+  paragraphs:
+    - >
+      AnamnesiA beruht auf einer vernichtenden Prämisse: du kontrollierst deine
+      eigene Vergangenheit nicht. Dieser Anhang bietet modulare Regeln, um
+      traditionelle Pen-&-Paper-Rollenspiele mit unserem Kernmotor zu infizieren:
+      der Rechte-Hand-Regel. Kompatibel mit Old-School Essentials, Mörk Borg
+      und Call of Cthulhu (7. Edition).
+    - >
+      Setze dieses Modul nicht leichtfertig ein. Es ersetzt mechanische
+      Standardstrafen durch psychologischen Schrecken und Spannung zwischen
+      den Spielern.
+
+sections:
+  - num: "1"
+    title: "DER VEKTOR: DIE INFEKTION ERLEIDEN"
+    paragraphs:
+      - >
+        Die Lethe-Infektion ist ein Riss in der Seele. Der Spielleiter sollte sie
+        anwenden, wenn ein Charakter:
+    bullets:
+      - "<b>das Unmögliche überlebt.</b> Fällt auf genau 0 TP und wird stabilisiert, oder wird wiederbelebt."
+      - "<b>einen geistverändernden Trauma erleidet.</b> Misslingt ein Rettungswurf gegen Zauber/Verstand durch Gedankenfresser, kosmische Schrecken oder verbotene Artefakte."
+      - "<b>dem Mythischen begegnet.</b> Trinkt aus dem Fluss Lethe, hört den Sirenengesang oder atmet die Lotossamen ein."
+    closing: >
+      Wenn die Infektion einsetzt, überlebt der Charakter, aber seine Identität
+      wird ausgelöscht. Streiche alle Hintergrundmerkmale.
+
+  - num: "2"
+    title: "DIE KERNMECHANIK: DIE RECHTE-HAND-REGEL"
+    paragraphs:
+      - >
+        Sobald der amnesische Charakter jemanden aus seiner Vergangenheit
+        begegnet, einen vertrauten Ort besucht oder versucht, sich an etwas
+        Entscheidendes über sich selbst zu erinnern, darf der Spieler seine
+        eigene Geschichte nicht selbst bestimmen.
+      - >
+        Er muss den Tisch fragen: «Woran erinnere ich mich dabei?» Der Spieler
+        zu seiner physischen Rechten antwortet.
+    choice_table:
+      col_headers: ["AKZEPTANZ", "ABLEHNUNG"]
+      rows:
+        - >
+          Der Spieler nimmt das Trauma an. Die Erinnerung wird Kanon.
+          Er erhält einen systemspezifischen Vorteil.
+        - >
+          Der Spieler lehnt die Erinnerung ab. Sie wird kein Kanon, aber
+          die kognitive Dissonanz verursacht einen dauerhaften Preis.
+    veto_note: >
+      Der Spielleiter behält das Vetorecht über jede Erinnerung, die den
+      Ton oder die innere Logik der Kampagne bricht.
+
+  - num: "3"
+    title: "SYSTEMINTEGRATIONEN"
+    systems:
+      - id: morkborg
+        name: "Mörk Borg: «Vorzeichen der Schuld»"
+        intro: >
+          Die Infektion ersetzt den Effekt des Absinkens auf 0 TP, wenn der SC
+          auf der Broken-Tabelle eine 4 würfelt. Wenn der amnesische SC ein
+          Vorzeichen ausgibt, erfindet der rechte Spieler eine schreckliche
+          Sünde, die der SC in seiner Vergangenheit begangen hat.
+        col_headers: ["", "Effekt", "Ergebnis"]
+        rows:
+          - ["Akzeptanz", "Die Schuld annehmen.", "Das Vorzeichen wirkt wie vorgesehen. Heile 1W6 TP."]
+          - ["Ablehnung",  "Die Erinnerung unterdrücken.", "Das Vorzeichen verbrennt, die Aktion schlägt fehl. Präsenz dauerhaft −1. Bei −3 Präsenz wird der SC ein wilder NSC."]
+
+      - id: ose
+        name: "OSE / OSR: «Der Leere-Fluch»"
+        intro: >
+          Ersetzt den Stufenentzug durch Untote (Geister, Vampire u.ä.).
+          Statt eine Stufe zu verlieren, verliert der SC ein Stück seiner
+          Identität (Rettungswurf gegen Tod zum Widerstehen).
+        col_headers: ["", "Effekt", "Ergebnis"]
+        rows:
+          - ["Akzeptanz", "Dunkle Wahrheit wird Kanon.", "Vorteil (+2) beim nächsten Angriff oder Rettungswurf. Gesinnung verschiebt sich einen Schritt in Richtung Chaotisch."]
+          - ["Ablehnung",  "Die Wahrheit unterdrücken.",  "Weisheit dauerhaft −1. Unter Weisheit 3: unfähig zu sprechen oder Zauber zu wirken."]
+
+      - id: coc
+        name: "Call of Cthulhu 7E: «Der Fugue-Zustand»"
+        intro: >
+          Ausgelöst, wenn ein Ermittler 5 oder mehr Geistespunkte in einem
+          einzigen Wurf verliert oder in unbegrenzte Geisteskrankheit verfällt.
+          Wenn er einen Hintergrundpunkt nutzt, um Geistespunkte während
+          der Erholung zu regenerieren, korrumpiert der rechte Spieler diese
+          Erinnerung stattdessen.
+        col_headers: ["", "Effekt", "Ergebnis"]
+        rows:
+          - ["Akzeptanz", "Den Mythos annehmen.",  "Regeneriere 1W4+1 Geistespunkte. Der Spielleiter aktualisiert dauerhaft den korrumpierten Hintergrundeintrag."]
+          - ["Ablehnung",  "Die Realität ablehnen.", "Kein Gewinn an Geistespunkten. Verliere sofort 1W4 Geistespunkte durch kognitive Dissonanz."]
+
+  - num: "4"
+    title: "DIE MNEMONISCHEN FUNKENTABELLEN"
+    intro: >
+      Wenn die Infektion beginnt oder der rechte Spieler Inspiration braucht,
+      würfle 1W10 auf der zur aktuellen Situation passenden Tabelle.
+    tables:
+      - id: blut
+        name: "Tabelle A: Das Blut"
+        context: "Würfle bei Kampf, Leichen oder Waffen."
+        col_header: "Gewalt, Schuld, Überleben"
+        rows:
+          - ["1",  "Die Narbe auf deiner Brust kommt nicht von einem Monster. Du hast jemanden gebeten, dich zu schneiden. Warum?"]
+          - ["2",  "Du erkennst das Gesicht des Opfers. Du warst derjenige, der es dem Kult ausgeliefert hat."]
+          - ["3",  "Deine Lieblingswaffe gehörte einst einem Helden. Du hast ihn im Schlaf ermordet, um sie zu bekommen."]
+          - ["4",  "Du hast das Massaker überlebt, indem du dich unter den Leichen deiner eigenen Kinder versteckt hast."]
+          - ["5",  "Du erinnerst dich an den Geschmack von Menschenfleisch. Und daran, dass es dir gefallen hat."]
+          - ["6",  "Das Blut an deinen Händen ist frisch, aber du hast heute nicht gekämpft. Wessen ist es?"]
+          - ["7",  "Du erinnerst dich, das Feuer gelegt zu haben. Du wusstest nicht, dass sie darin gefangen waren."]
+          - ["8",  "Du hast den Brunnen vergiftet, um den Krieg zu gewinnen, und dabei das gesamte Dorf getötet."]
+          - ["9",  "Du hast deinen kommandierenden Offizier im Dunkeln sterben lassen, um selbst fliehen zu können."]
+          - ["10", "Du bist nicht der ursprüngliche Besitzer dieses Körpers. Du hast ihn gewaltsam in Besitz genommen."]
+
+      - id: geist
+        name: "Tabelle B: Der Geist"
+        context: "Würfle bei NSCs, Politik oder Ermittlungen."
+        col_header: "Geheimnisse, Lügen, Verrat"
+        rows:
+          - ["1",  "Der NSC, den du zu retten versuchst, ist derjenige, der dich jahrelang gefoltert hat."]
+          - ["2",  "Du kennst das Passwort, weil du der Spion bist, der diese Falle gebaut hat."]
+          - ["3",  "Du hast deine Erinnerung nicht verloren. Du hast eine Hexe bezahlt, sie zu löschen, weil die Wahrheit zu schwer war."]
+          - ["4",  "Du bist heimlich mit dem Schurken dieser Kampagne verheiratet."]
+          - ["5",  "Der Gott, zu dem du betest, existiert nicht. Du hast ihn erfunden, um mit deinen Verbrechen umzugehen."]
+          - ["6",  "Du hast die Identität deines Gefährten gestohlen. Du bist eigentlich der Diener, nicht der Adlige."]
+          - ["7",  "Du hast die Verteidigungspläne des Königreichs verkauft, um eine Spielschuld zu begleichen."]
+          - ["8",  "Du weißt, wie dieses Verlies endet. Du warst schon einmal in dieser Schleife gefangen."]
+          - ["9",  "Der Informant ist nicht verschwunden. Du hast ihn unter deinem Haus begraben."]
+          - ["10", "Jedes Mal, wenn du schläfst, meldest du telepathisch die Bewegungen der Gruppe an den Feind."]
+
+      - id: seele
+        name: "Tabelle C: Die Seele"
+        context: "Würfle bei Magie, Artefakten oder dem Übernatürlichen."
+        col_header: "Flüche, Schulden, Das Unheimliche"
+        rows:
+          - ["1",  "Du schuldest einem Dämon eine Schuld. Die Zahlung ist die Seele des Spielers zu deiner Linken."]
+          - ["2",  "Du erkennst diese alte Sprache. Sie ist deine Muttersprache."]
+          - ["3",  "Dir wird klar, dass du keinen Herzschlag hast. Wie lange bist du schon tot?"]
+          - ["4",  "Das Artefakt, das du gerade berührt hast, gehört dir. Du hast es aus den Knochen eines geliebten Menschen geschmiedet."]
+          - ["5",  "Du erinnerst dich, den Vertrag mit Blut unterzeichnet zu haben. Dir bleibt ein Jahr zu leben."]
+          - ["6",  "Du bist kein Mensch. Du bist ein Wechselbalg und hast deine wahre Form vergessen."]
+          - ["7",  "Der Fluch auf diesem Land ist deine Schuld. Du hast das heilige Siegel gebrochen."]
+          - ["8",  "Du hast einen Parasiten, der in deiner Wirbelsäule lebt. Er spricht zu dir mit der Stimme deiner Mutter."]
+          - ["9",  "Du erinnerst dich, auf genau diesem Altar geopfert worden zu sein."]
+          - ["10", "Dein Spiegelbild blinzelt selbstständig. Es versucht dich zu warnen."]
+
+  - num: "5"
+    title: "DER SCHLEIER DER GNADE"
+    paragraphs:
+      - >
+        Die Mechaniken von AnamnesiA erfordern extreme Verletzlichkeit. Einem
+        anderen Spieler die Macht zu geben, das Trauma deines Charakters zu
+        erfinden, ist eine intime und intensive Erfahrung. Setzt immer
+        Sicherheitswerkzeuge ein, bevor ihr die Lethe-Infektion verwendet.
+        Empfohlen: X-Karte und Linien und Schleier.
+      - >
+        Goldene Regel: schlägt der rechte Spieler eine Erinnerung vor, die den
+        empfangenden Spieler im echten Leben aufrichtig unwohl macht, sagt der
+        empfangende Spieler einfach «Schleier». Die Erinnerung wird sofort ohne
+        mechanische Strafe annulliert und vom Tisch neu geschrieben. Wir spielen,
+        um gemeinsam Angst zu haben, niemals um einander zu verletzen.
+
+licenses:
+  - >
+    AnamnesiA ist eine unabhängige Produktion von Il Gioco in Tavolo und ist
+    nicht mit Ockult Ortmastare Games oder Stockholm Kartell verbunden.
+    Veröffentlicht unter der MÖRK BORG Third-Party-Lizenz.
+  - >
+    Call of Cthulhu ist eine eingetragene Marke von Chaosium Inc. Old-School
+    Essentials ist eine Marke von Necrotic Gnome. Dieses Material ist weder
+    mit einer der beiden Gesellschaften verbunden noch von ihnen genehmigt.
+
+closing_quote: "«Du bist nicht der Held dieser Geschichte.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

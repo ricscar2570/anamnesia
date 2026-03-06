@@ -1,0 +1,50 @@
+meta:
+  doc_id: "01"
+  title: "KOMPLIKATIONSGENERATOREN"
+  subtitle: "Werkzeuge für den Gedächtnishüter"
+  header: "A N A M N E S I A  ·  K O M P L I K A T I O N S G E N E R A T O R E N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Nutze diese Generatoren, wenn das Spiel ins Stocken gerät, nach einem
+  Erinnerungszusammenbruch (0 Klare), oder wenn du einen schnellen Impuls
+  benötigst. Würfle 1W6 auf der Tabelle der aktuellen Phase.
+
+phases:
+  - id: nebel
+    title: "NEBELPHASE — Runden 1–2"
+    subtitle: "Sensorische Komplikationen"
+    col_header: "Komplikation"
+    rows:
+      - ["1", "Ein Geräusch, das nicht hier sein sollte: eine Glocke, ein Atem, ein Ticken."]
+      - ["2", "Die Temperatur ändert sich abrupt an einer genauen Stelle im Raum."]
+      - ["3", "Ein stechender, flüchtiger Geruch, den anscheinend niemand sonst wahrnimmt."]
+      - ["4", "Ein Gegenstand hat sich von dort bewegt, wo ihr ihn in Erinnerung hattet. Oder?"]
+      - ["5", "Eine Schrift auf einer Oberfläche: aber als du die anderen darauf hinweist, sehen sie sie nicht."]
+      - ["6", "Ein gemeinsames Déjà-vu: zwei Figuren haben im gleichen Moment das gleiche Gefühl."]
+
+  - id: verbindungen
+    title: "VERBINDUNGSPHASE — Runden 3–4"
+    subtitle: "Beziehungskomplikationen"
+    col_header: "Komplikation"
+    rows:
+      - ["1", "Zwei bisher aufgetauchte Fragmente widersprechen sich. Eines ist falsch. Welches?"]
+      - ["2", "Jemand, der es nicht wissen sollte, weiß es. Ein NSC taucht mit beunruhigenden Informationen auf."]
+      - ["3", "Ein persönlicher Gegenstand eines SC wird gefunden, wo er nicht sein sollte."]
+      - ["4", "Ein SC hat einen plötzlichen Flashback. Der Spieler zu seiner Rechten beschreibt, was er sieht."]
+      - ["5", "Etwas steht kurz bevor. Schritte im Korridor, ein klingendes Telefon, ein Countdown."]
+      - ["6", "Zwei Figuren entdecken eine Verbindung, an die sie sich nicht erinnerten. Definiert sie gemeinsam."]
+
+  - id: enthüllungen
+    title: "ENTHÜLLUNGSPHASE — Runde 5"
+    subtitle: "Traumatische Komplikationen"
+    col_header: "Komplikation"
+    rows:
+      - ["1", "Eine Erinnerung, die jetzt auftaucht, widerspricht ALLEM, was ihr bisher rekonstruiert habt."]
+      - ["2", "Ein SC erinnert sich an den genauen Moment des Traumas. Der Spieler zu seiner Rechten beschreibt ihn."]
+      - ["3", "Der endgültige Beweis ist hier: ihn anzunehmen bedeutet jedoch, persönliche Schuld einzugestehen."]
+      - ["4", "Jemand, den ihr für ein Opfer hieltet, war Mitschuldiger. Oder umgekehrt."]
+      - ["5", "Die Zeit ist abgelaufen: die externe Konsequenz trifft ein (Polizei, Ärzte, Familie). Was tut ihr?"]
+      - ["6", "Die Wahrheit ist schlimmer als irgendjemand ahnte. Jeder SC nennt eine Sache, die er lieber nicht erinnert hätte."]
+
+closing_quote: "«Die Stille nach einer Erinnerung ist Teil des Spiels.»"

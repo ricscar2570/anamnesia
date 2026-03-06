@@ -1,0 +1,115 @@
+name: Build Digital Extras Pack
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'build/content/**'
+      - 'build/builders/**'
+      - 'build/assets/**'
+      - '.github/workflows/build-pdfs.yml'
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: 'Lingua da generare (lascia vuoto per tutte: it en de fr es)'
+        required: false
+        default: ''
+
+jobs:
+  build:
+    name: Generate PDFs
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── Checkout ───────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Python ─────────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # ── Dipendenze Python ──────────────────────────────────────────────────
+      - name: Install Python dependencies
+        run: pip install reportlab PyYAML fonttools
+
+      # ── Font Lora (istanze statiche da variable font) ──────────────────────
+      - name: Install Lora variable fonts
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q fonts-google-noto || true
+          # Scarica Lora direttamente da Google Fonts se non disponibile
+          if [ ! -f "/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf" ]; then
+            mkdir -p /usr/share/fonts/truetype/google-fonts
+            curl -sL "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf" \
+              -o /usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf
+            curl -sL "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf" \
+              -o /usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf
+          fi
+
+      # ── Genera istanze statiche Lora ───────────────────────────────────────
+      - name: Extract static Lora instances
+        run: |
+          mkdir -p build/assets/fonts
+          python3 - << 'EOF'
+          from fontTools.ttLib import TTFont
+          from fontTools.varLib.instancer import instantiateVariableFont
+          import os
+
+          configs = [
+              ('/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf',
+               [400, 700], ['LoraRegular', 'LoraBold']),
+              ('/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf',
+               [400, 700], ['LoraItalic', 'LoraBoldItalic']),
+          ]
+          out = 'build/assets/fonts'
+          os.makedirs(out, exist_ok=True)
+          for src, weights, names in configs:
+              for w, name in zip(weights, names):
+                  f = TTFont(src)
+                  inst = instantiateVariableFont(f, {'wght': w})
+                  dest = f'{out}/{name}.ttf'
+                  inst.save(dest)
+                  print(f'Saved {dest}')
+          EOF
+
+      # ── Build PDF ──────────────────────────────────────────────────────────
+      - name: Build all PDFs
+        run: |
+          cd build
+          if [ -n "${{ github.event.inputs.lang }}" ]; then
+            python builders/build_all.py ${{ github.event.inputs.lang }}
+          else
+            python builders/build_all.py
+          fi
+
+      # ── Verifica output ────────────────────────────────────────────────────
+      - name: Verify output
+        run: |
+          count=$(find build/output -name "*.pdf" | wc -l)
+          echo "PDF generati: $count"
+          find build/output -name "*.pdf" | sort
+          if [ "$count" -lt 30 ] && [ -z "${{ github.event.inputs.lang }}" ]; then
+            echo "ERRORE: attesi 30 PDF, trovati $count"
+            exit 1
+          fi
+
+      # ── Upload artifact ────────────────────────────────────────────────────
+      - name: Upload PDFs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: anamnesia-digital-extras-pack
+          path: build/output/**/*.pdf
+          retention-days: 30
+          if-no-files-found: error
+
+      # ── Release automatica su tag ──────────────────────────────────────────
+      - name: Upload to release (solo su tag v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/output/**/*.pdf
+          generate_release_notes: true

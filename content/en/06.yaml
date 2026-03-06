@@ -1,0 +1,178 @@
+meta:
+  doc_id: "06"
+  title: "THE LETHE INFECTION"
+  subtitle: "A Parasitic Mechanic for Traditional & Cosmic Horror RPGs"
+  header: "A N A M N E S I A  ·  T H E  L E T H E  I N F E C T I O N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+  rorschach_images: ["rorschach_1.png","rorschach_3.png","rorschach_2.png","rorschach_cthulhu.png"]
+
+opening_quote: >
+  «You are not the hero of this story. You are merely the vessel carrying the
+  memories of a monster. And worst of all: the player sitting next to you
+  holds the key to the cage.»
+
+intro:
+  paragraphs:
+    - >
+      AnamnesiA is built on a devastating premise: you do not control your own
+      past. This appendix provides modular rules to infect traditional tabletop
+      RPGs with our core engine: the Right-Hand Rule. Compatible with
+      Old-School Essentials, Mörk Borg, and Call of Cthulhu (7th edition).
+    - >
+      Do not use this module lightly. It replaces standard mechanical penalties
+      with psychological dread and inter-player tension.
+
+sections:
+  - num: "1"
+    title: "THE VECTOR: CONTRACTING THE INFECTION"
+    paragraphs:
+      - >
+        The Lethe Infection is a fracture of the soul. The GM should apply it
+        when a character:
+    bullets:
+      - "<b>Survives the Impossible.</b> Drops to exactly 0 HP and is stabilized, or is resurrected."
+      - "<b>Suffers Mind-Altering Trauma.</b> Fails a Save vs. Spells/Sanity against mind-flaying entities, cosmic horrors, or forbidden artifacts."
+      - "<b>Encounters the Mythic.</b> Drinks from the River Lethe, hears the Sirens' song, or breathes the Lotus spores."
+    closing: >
+      When the Infection takes hold, the character survives, but their identity
+      is wiped clean. Erase their background traits.
+
+  - num: "2"
+    title: "THE CORE MECHANIC: THE RIGHT-HAND RULE"
+    paragraphs:
+      - >
+        Whenever the amnesic character encounters someone from their past, visits
+        a familiar location, or tries to recall crucial lore about themselves, the
+        player cannot dictate their own history.
+      - >
+        They must ask the table: «What do I remember about this?» The player to
+        their physical right answers.
+    choice_table:
+      col_headers: ["ACCEPTANCE", "DENIAL"]
+      rows:
+        - >
+          The player leans into the trauma. The memory becomes canon.
+          Gain a system-specific boon.
+        - >
+          The player refuses the memory. It does not become canon, but
+          cognitive dissonance inflicts a permanent toll.
+    veto_note: >
+      The GM retains veto power over any memory that breaks the campaign's
+      tone or internal logic.
+
+  - num: "3"
+    title: "SYSTEM INTEGRATIONS"
+    systems:
+      - id: morkborg
+        name: "Mörk Borg: «Omens of Guilt»"
+        intro: >
+          The Infection replaces the effect of dropping to 0 HP if the PC rolls
+          a 4 on the Broken table. When the Amnesic PC spends an Omen, the player
+          to their right invents a terrible sin the PC committed in the past.
+        col_headers: ["", "Effect", "Result"]
+        rows:
+          - ["Acceptance", "Lean into the guilt.", "Omen works as intended. Heal 1d6 HP."]
+          - ["Denial",     "Suppress the memory.", "Omen burns, action fails. Permanent −1 Presence. At −3 Presence the PC becomes a feral NPC."]
+
+      - id: ose
+        name: "OSE / OSR: «The Void Curse»"
+        intro: >
+          Replaces Level Drain used by Wraiths, Vampires, and similar Undead.
+          Instead of losing a level, the PC loses a piece of their identity
+          (Save vs. Death to resist).
+        col_headers: ["", "Effect", "Result"]
+        rows:
+          - ["Acceptance", "Dark truth becomes canon.", "Advantage (+2) on next attack or save. Alignment shifts one step toward Chaotic."]
+          - ["Denial",     "Suppress the truth.",       "Permanent −1 Wisdom. Below Wisdom 3: unable to speak or cast spells."]
+
+      - id: coc
+        name: "Call of Cthulhu 7e: «The Fugue State»"
+        intro: >
+          Triggered when an Investigator loses 5 or more Sanity in a single roll,
+          or enters Indefinite Insanity. When using a Backstory entry to recover
+          Sanity during downtime, the player to the right corrupts the memory instead.
+        col_headers: ["", "Effect", "Result"]
+        rows:
+          - ["Acceptance", "Embrace the Mythos.",  "Recover 1d4+1 Sanity. Keeper permanently updates the corrupted backstory entry."]
+          - ["Denial",     "Reject the reality.",  "Recover zero Sanity. Immediately lose 1d4 Sanity from cognitive dissonance."]
+
+  - num: "4"
+    title: "THE MNEMONIC SPARK TABLES"
+    intro: >
+      When the Infection begins, or when the Right-Hand player needs a prompt,
+      roll 1d10 on the table matching the current situation.
+    tables:
+      - id: blood
+        name: "Table A: The Blood"
+        context: "Roll when dealing with combat, corpses, or weapons."
+        col_header: "Violence, Guilt, Survival"
+        rows:
+          - ["1",  "The scar on your chest is not from a monster. You asked someone to cut you. Why?"]
+          - ["2",  "You recognize the victim's face. You were the one who gave them to the cult."]
+          - ["3",  "Your signature weapon belonged to a hero. You murdered them in their sleep for it."]
+          - ["4",  "You survived the massacre by hiding under the bodies of your own children."]
+          - ["5",  "You remember the taste of human flesh. And you remember liking it."]
+          - ["6",  "The blood on your hands is fresh, but you have not fought today. Whose is it?"]
+          - ["7",  "You remember setting the fire. You did not know they were trapped inside."]
+          - ["8",  "You poisoned the well to win the war, killing the entire village."]
+          - ["9",  "You left your commanding officer to die in the dark so you could escape."]
+          - ["10", "You are not the original owner of this body. You violently possessed it."]
+
+      - id: mind
+        name: "Table B: The Mind"
+        context: "Roll when dealing with NPCs, politics, or investigations."
+        col_header: "Secrets, Lies, Betrayal"
+        rows:
+          - ["1",  "The NPC you are trying to save is the one who tortured you for years."]
+          - ["2",  "You know the password, because you are the spy who built this trap."]
+          - ["3",  "You did not lose your memory. You paid a witch to erase it because the truth was too heavy."]
+          - ["4",  "You are secretly married to the villain of this campaign."]
+          - ["5",  "The god you pray to does not exist. You made it up to cope with your crimes."]
+          - ["6",  "You stole your companion's identity. You are actually the servant, not the noble."]
+          - ["7",  "You sold the kingdom's defense plans to pay off a gambling debt."]
+          - ["8",  "You know how this dungeon ends. You have been trapped in this loop before."]
+          - ["9",  "The informant did not disappear. You buried them under your house."]
+          - ["10", "Every time you sleep, you telepathically report your party's movements to the enemy."]
+
+      - id: soul
+        name: "Table C: The Soul"
+        context: "Roll when dealing with magic, artifacts, or the supernatural."
+        col_header: "Curses, Debts, The Weird"
+        rows:
+          - ["1",  "You owe a debt to a demon. The payment is the soul of the player to your left."]
+          - ["2",  "You recognize this ancient language. It is your mother tongue."]
+          - ["3",  "You realize you do not have a heartbeat. How long have you been dead?"]
+          - ["4",  "The artifact you just touched belongs to you. You forged it from a loved one's bones."]
+          - ["5",  "You remember signing the contract in blood. You have one year left to live."]
+          - ["6",  "You are not human. You are a changeling, and you forgot your true form."]
+          - ["7",  "The curse on this land is your fault. You broke the sacred seal."]
+          - ["8",  "You have a parasite living in your spine. It speaks to you in the voice of your mother."]
+          - ["9",  "You remember being sacrificed on this very altar."]
+          - ["10", "Your reflection in the mirror blinks independently. It has been trying to warn you."]
+
+  - num: "5"
+    title: "THE VEIL OF MERCY"
+    paragraphs:
+      - >
+        Giving another player the power to invent your character's trauma is an
+        intimate experience. Always implement Safety Tools before using the Lethe
+        Infection. Recommended: X-Card and Lines & Veils.
+      - >
+        Golden Rule: if the Right-Hand player suggests a memory that makes the
+        receiving player genuinely uncomfortable in real life, the receiving player
+        says «Veil». The memory is instantly vetoed and rewritten by the table
+        without any mechanical penalty. We play to be terrified together, never
+        to hurt each other.
+
+licenses:
+  - >
+    AnamnesiA is an independent production by Il Gioco in Tavolo and is not
+    affiliated with Ockult Ortmastare Games or Stockholm Kartell. Published
+    under the MORK BORG Third Party License.
+  - >
+    Call of Cthulhu is a registered trademark of Chaosium Inc. Old-School
+    Essentials is a trademark of Necrotic Gnome. This material is not affiliated
+    with or endorsed by either company.
+
+closing_quote: "«You are not the hero of this story.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

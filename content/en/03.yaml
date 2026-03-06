@@ -1,0 +1,75 @@
+meta:
+  doc_id: "03"
+  title: "QUICK REFERENCE CARD"
+  subtitle: "Print and keep at the centre of the table"
+  header: "A N A M N E S I A  ·  Q U I C K  R E F E R E N C E  C A R D"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+roll_section:
+  title: "ROLL FORMULA"
+  steps:
+    - "1. Choose an Approach (free / +1 / +2 Fragments)"
+    - "2. Invest Fragments from the Pool (1–4 dice)"
+    - "3. Roll the dice: the player to your RIGHT interprets"
+  dice_col_headers: ["Die", "Type", "Effect"]
+  dice_rows:
+    - ["5–6", "Clear",     "A vivid memory"]
+    - ["3–4", "Confused",  "An ambiguous memory"]
+    - ["1–2", "Traumatic", "+1 permanent Echo"]
+
+outcomes_section:
+  title: "OUTCOMES"
+  col_headers: ["Clears", "Outcome", "Consequence"]
+  rows:
+    - ["3+", "Full Success",      "No consequence."]
+    - ["2",  "Partial Success",   "Incomplete memory or emotional cost."]
+    - ["1",  "Painful Truth",     "Real but painful memory. Possible Stress."]
+    - ["0",  "Memory Collapse",   "+1 Stress. Narrative complication."]
+
+pool_section:
+  title: "POOL & STRESS"
+  formula: "Current Pool = Base Pool − Stress − Echo Penalty (min. 1)"
+  echi_label: "Echoes:"
+  echi_rows:
+    - ["0–2", "no penalty"]
+    - ["3–5", "−1 die"]
+    - ["6–8", "−3 dice"]
+    - ["9+",  "out of play"]
+  stress_col_headers: ["Stress", "Effect"]
+  stress_rows:
+    - ["0–2", "Control"]
+    - ["3",   "Rising anxiety"]
+    - ["4",   "Partial Breakdown"]
+    - ["5",   "Final Breakdown"]
+
+special_section:
+  title: "SPECIAL MECHANICS"
+  mechanics:
+    - name: "Force the Memory"
+      text: "After Painful Truth or Collapse: improve the result by 1 level. Cost: +1 Stress. You cannot Force a Partial Success."
+    - name: "The Anchor (1× per session)"
+      text: "With at least 2 Stress: narrate a moment tied to your Anchor. The player to your right describes the associated memory. −1 Stress, +1 Fragment."
+    - name: "Last Memory (1× per session)"
+      text: "With Pool at 1 die: roll 3d6 ignoring all penalties. Then +1 Stress regardless."
+    - name: "The Truth Always Emerges (Cycle 5 only)"
+      text: "A Collapse still reveals the memory, but costs +2 Stress instead of +1. The Keeper may add a detail that worsens the truth."
+
+recovery_section:
+  title: "STRESS RECOVERY"
+  items:
+    - "Archetype Vulnerability: −1 Stress, max 1/cycle"
+    - "Human Connection: at end of cycles 1–4, if no Breakdown"
+    - "Anchor: 1× per session, requires Stress ≥ 2"
+
+sensory_section:
+  title: "SENSORY TRIGGER GENERATOR (1d6)"
+  col_headers: ["d6", "Sense", "Examples"]
+  rows:
+    - ["1", "Smell",   "Disinfectant, smoke, blood, perfume"]
+    - ["2", "Sound",   "Hum, intercom, crying, glass, silence"]
+    - ["3", "Sight",   "Flickering neon, cracked mirror, moving shadow"]
+    - ["4", "Touch",   "Cold, wet, a mark on the skin"]
+    - ["5", "Taste",   "Metallic, bitter, medicinal, rust"]
+    - ["6", "Emotion", "Sudden fear, guilt, shame, emptiness"]
+
+closing_quote: "«The player to your right interprets your roll, not you.»"

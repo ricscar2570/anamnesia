@@ -1,0 +1,50 @@
+meta:
+  doc_id: "01"
+  title: "GENERADORES DE COMPLICACIONES"
+  subtitle: "Herramientas para el Guardián de la Memoria"
+  header: "A N A M N E S I A  ·  G E N E R A D O R E S  D E  C O M P L I C A C I O N E S"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Usa estos generadores cuando el juego se estanque, después de un Colapso
+  del Recuerdo (0 Nítidos), o cuando necesites un impulso rápido. Tira 1d6
+  en la tabla de la fase actual.
+
+phases:
+  - id: niebla
+    title: "FASE NIEBLA — Turnos 1–2"
+    subtitle: "Complicaciones Sensoriales"
+    col_header: "Complicación"
+    rows:
+      - ["1", "Un sonido que no debería estar aquí: una campana, una respiración, un tictac."]
+      - ["2", "La temperatura cae bruscamente en un punto preciso de la estancia."]
+      - ["3", "Un olor intenso y fugaz que nadie más parece percibir."]
+      - ["4", "Un objeto se ha movido del lugar donde lo recordabais. ¿O no?"]
+      - ["5", "Una inscripción en una superficie: pero cuando la señalas a los demás, no la ven."]
+      - ["6", "Un déjà vu compartido: dos personajes sienten exactamente lo mismo en el mismo instante."]
+
+  - id: conexiones
+    title: "FASE CONEXIONES — Turnos 3–4"
+    subtitle: "Complicaciones Relacionales"
+    col_header: "Complicación"
+    rows:
+      - ["1", "Dos fragmentos que han surgido hasta ahora se contradicen. Uno es falso. ¿Cuál?"]
+      - ["2", "Alguien que no debería saber, sabe. Un PNJ aparece con una información inquietante."]
+      - ["3", "Un objeto personal de un PJ aparece donde no debería estar."]
+      - ["4", "Un PJ tiene un flashback repentino. El jugador a su derecha describe lo que ve."]
+      - ["5", "Algo está a punto de ocurrir. Pasos en el pasillo, un teléfono que suena, una cuenta atrás."]
+      - ["6", "Dos personajes descubren una conexión que no recordaban. Definidla juntos."]
+
+  - id: revelaciones
+    title: "FASE REVELACIONES — Turno 5"
+    subtitle: "Complicaciones Traumáticas"
+    col_header: "Complicación"
+    rows:
+      - ["1", "Un recuerdo que aflora ahora contradice TODO lo que habíais reconstruido hasta ahora."]
+      - ["2", "Un PJ recuerda el momento exacto del trauma. El jugador a su derecha lo describe."]
+      - ["3", "La prueba definitiva está aquí: pero aceptarla significa admitir una culpa personal."]
+      - ["4", "Alguien a quien creíais víctima era cómplice. O al revés."]
+      - ["5", "El tiempo se ha agotado: llega la consecuencia externa (policía, médicos, familia). ¿Qué hacéis?"]
+      - ["6", "La verdad es peor de lo que nadie imaginaba. Cada PJ dice una cosa que habría preferido no recordar."]
+
+closing_quote: "«El silencio después de un recuerdo es parte del juego.»"

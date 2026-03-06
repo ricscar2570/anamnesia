@@ -1,0 +1,63 @@
+meta:
+  doc_id: "02"
+  title: "HOJA DE REFERENCIA DEL GUARDIÁN"
+  subtitle: "Memory Keeper Reference Sheet"
+  header: "A N A M N E S I A  ·  H O J A  D E L  G U A R D I Á N  D E  L A  M E M O R I A"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+cycle_section:
+  title: "ESTRUCTURA DE UN TURNO"
+  col_headers: ["Fase", "Duración", "Actividad"]
+  rows:
+    - ["Despertar",      "2–3 min",   "El Guardián formula las preguntas de apertura. Sin dados."]
+    - ["Exploración",    "10–15 min", "Los jugadores interactúan con las Cartas Fragmento y tiran los dados."]
+    - ["Consolidación",  "2–3 min",   "Recuperación de la Reserva, anotación de Ecos, Conexión Humana (turnos 1–4)."]
+
+phases_section:
+  title: "FASES DEL JUEGO"
+  col_headers: ["Fase", "Turnos", "Cartas", "Atmósfera"]
+  rows:
+    - ["Niebla",      "1–2", "Solo Acto I",    "Impresiones vagas, confusión sensorial"]
+    - ["Conexiones",  "3–4", "Acto I + II",    "Detalles concretos, tensión relacional"]
+    - ["Revelaciones","5",   "Acto II + III",  "Verdad cruda, confrontación final"]
+
+questions_section:
+  title: "PREGUNTAS POR FASE"
+  phases:
+    - label: "Niebla (Turnos 1–2)"
+      questions:
+        - "¿Qué sientes cuando cierras los ojos?"
+        - "¿Por qué te tiembla la mano?"
+        - "Esa marca en tu muñeca: ¿te la hiciste tú?"
+    - label: "Conexiones (Turnos 3–4)"
+      questions:
+        - "¿Quién os habló del programa?"
+        - "¿Conocíais al quinto participante?"
+        - "¿Por qué queríais olvidar?"
+    - label: "Revelaciones (Turno 5)"
+      questions:
+        - "Ahora que recordáis, ¿qué hacéis?"
+        - "¿Podéis perdonaros?"
+        - "Si pudierais olvidar de nuevo, ¿lo haríais?"
+
+tracking_section:
+  title: "REGISTRO DE SESIÓN"
+  scenario_label:   "Escenario:"
+  date_label:       "Fecha:"
+  players_label:    "Jugadores:"
+  col_headers:      ["Jugador", "Arquetipo", "Ancla", "Estrés", "Ecos"]
+  cycles_label:     "Turnos:"
+  cycles:
+    - "① Niebla"
+    - "② Niebla"
+    - "③ Conexiones"
+    - "④ Conexiones"
+    - "⑤ Revelaciones"
+  tools_label:      "Herramientas de seguridad:"
+  tools:
+    - "Carta X"
+    - "Líneas y Velos"
+    - "Control de bienestar"
+  connections_label: "Conexiones descubiertas:"
+  truths_label:      "Verdades establecidas:"
+  notes_label:       "Notas post-sesión:"

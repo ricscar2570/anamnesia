@@ -1,0 +1,186 @@
+meta:
+  doc_id: "06"
+  title: "THE LETHE INFECTION"
+  subtitle: "Una Mecánica Parasitaria para JdR Tradicionales y de Horror Cósmico"
+  header: "A N A M N E S I A  ·  T H E  L E T H E  I N F E C T I O N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+  rorschach_images: ["rorschach_1.png","rorschach_3.png","rorschach_2.png","rorschach_cthulhu.png"]
+
+opening_quote: >
+  «No eres el héroe de esta historia. Eres solo el recipiente que lleva los
+  recuerdos de un monstruo. Y lo peor: el jugador sentado a tu lado guarda
+  la llave de la jaula.»
+
+intro:
+  paragraphs:
+    - >
+      AnamnesiA se construye sobre una premisa devastadora: no controlas tu
+      propio pasado. Este apéndice ofrece reglas modulares para infectar los
+      juegos de rol de mesa tradicionales con nuestro motor central: la Regla
+      de la Mano Derecha. Compatible con Old-School Essentials, Mörk Borg y
+      La Llamada de Cthulhu (7ª edición).
+    - >
+      No uses este módulo a la ligera. Está diseñado para reemplazar las
+      penalizaciones mecánicas estándar con terror psicológico y tensión
+      entre jugadores.
+
+sections:
+  - num: "1"
+    title: "EL VECTOR: CONTRAER LA INFECCIÓN"
+    paragraphs:
+      - >
+        La Infección de Lete es una fractura del alma. El director de juego
+        debería aplicarla cuando un personaje:
+    bullets:
+      - "<b>Sobrevive a lo Imposible.</b> Cae exactamente a 0 PG y es estabilizado, o es resucitado."
+      - "<b>Sufre un Trauma Mental.</b> Falla una tirada de salvación contra Magia/Cordura frente a entidades devoradoras de mentes, horrores cósmicos o artefactos prohibidos."
+      - "<b>Se Encuentra con lo Mítico.</b> Bebe del río Leteo, escucha el canto de las Sirenas o inhala las esporas del Loto."
+    closing: >
+      Cuando la Infección arraiga, el personaje sobrevive, pero su identidad
+      queda borrada. Tacha todos sus rasgos de trasfondo.
+
+  - num: "2"
+    title: "LA MECÁNICA CENTRAL: LA REGLA DE LA MANO DERECHA"
+    paragraphs:
+      - >
+        Cada vez que el personaje amnésico se encuentre con alguien de su
+        pasado, visite un lugar conocido o intente recordar algo crucial sobre
+        sí mismo, el jugador no puede dictar su propia historia.
+      - >
+        Debe preguntar a la mesa: «¿Qué recuerdo sobre esto?» El jugador
+        sentado físicamente a su derecha responde.
+    choice_table:
+      col_headers: ["ACEPTACIÓN", "RECHAZO"]
+      rows:
+        - >
+          El jugador abraza el trauma. El recuerdo se convierte en canon.
+          Obtiene un beneficio propio del sistema.
+        - >
+          El jugador rechaza el recuerdo. No se convierte en canon, pero
+          la disonancia cognitiva inflige un coste permanente.
+    veto_note: >
+      El director de juego conserva el derecho de veto sobre cualquier
+      recuerdo que rompa el tono o la coherencia interna de la campaña.
+
+  - num: "3"
+    title: "INTEGRACIONES DE SISTEMA"
+    systems:
+      - id: morkborg
+        name: "Mörk Borg: «Presagios de Culpa»"
+        intro: >
+          La Infección reemplaza el efecto de caer a 0 PG si el PJ saca un 4
+          en la tabla Broken. Cuando el PJ Amnésico gasta un Presagio, el
+          jugador a su derecha inventa un terrible pecado que el PJ cometió
+          en el pasado.
+        col_headers: ["", "Efecto", "Resultado"]
+        rows:
+          - ["Aceptación", "Abrazar la culpa.",        "El Presagio funciona con normalidad. Cura 1d6 PG."]
+          - ["Rechazo",    "Suprimir el recuerdo.",     "El Presagio se consume, la acción falla. Presencia permanente −1. Con −3 Presencia el PJ se convierte en un PNJ salvaje."]
+
+      - id: ose
+        name: "OSE / OSR: «La Maldición del Vacío»"
+        intro: >
+          Reemplaza el Drenaje de Niveles de los No Muertos (Espectros,
+          Vampiros y similares). En lugar de perder un nivel, el PJ pierde un
+          fragmento de su identidad (tirada de salvación contra Muerte para
+          resistir).
+        col_headers: ["", "Efecto", "Resultado"]
+        rows:
+          - ["Aceptación", "La verdad oscura se hace canon.", "Ventaja (+2) en el siguiente ataque o tirada de salvación. El Alineamiento se desplaza un paso hacia el Caótico."]
+          - ["Rechazo",    "Suprimir la verdad.",             "Sabiduría permanente −1. Por debajo de 3 en Sabiduría: incapaz de hablar o lanzar conjuros."]
+
+      - id: coc
+        name: "La Llamada de Cthulhu 7ª Ed.: «El Estado de Fuga»"
+        intro: >
+          Se activa cuando un Investigador pierde 5 o más puntos de Cordura
+          en una sola tirada, o entra en Locura Indefinida. Cuando utiliza
+          una entrada de su Trasfondo para recuperar Cordura durante un
+          descanso, el jugador a su derecha corrompe ese recuerdo en su lugar.
+        col_headers: ["", "Efecto", "Resultado"]
+        rows:
+          - ["Aceptación", "Abrazar el Mito.",       "Recupera 1d4+1 puntos de Cordura. El guardián actualiza de forma permanente la entrada corrompida en la hoja de personaje."]
+          - ["Rechazo",    "Rechazar la realidad.",   "Sin recuperación de Cordura. Pierde inmediatamente 1d4 puntos de Cordura por disonancia cognitiva."]
+
+  - num: "4"
+    title: "LAS TABLAS DE CHISPAS MNÉMICAS"
+    intro: >
+      Cuando la Infección comienza, o cuando el jugador de la Mano Derecha
+      necesita inspiración, tira 1d10 en la tabla que corresponda a la
+      situación actual.
+    tables:
+      - id: sangre
+        name: "Tabla A: La Sangre"
+        context: "Tira esta tabla en escenas de combate, cadáveres o armas."
+        col_header: "Violencia, Culpa, Supervivencia"
+        rows:
+          - ["1",  "La cicatriz en tu pecho no viene de un monstruo. Le pediste a alguien que te cortara. ¿Por qué?"]
+          - ["2",  "Reconoces el rostro de la víctima. Fuiste tú quien la entregó al culto."]
+          - ["3",  "Tu arma favorita perteneció a un héroe. Los asesinaste mientras dormían para arrebatársela."]
+          - ["4",  "Sobreviviste a la masacre escondiéndote bajo los cuerpos de tus propios hijos."]
+          - ["5",  "Recuerdas el sabor de la carne humana. Y recuerdas que te gustó."]
+          - ["6",  "La sangre en tus manos está fresca, pero hoy no has combatido. ¿De quién es?"]
+          - ["7",  "Recuerdas haber prendido el fuego. No sabías que estaban atrapados dentro."]
+          - ["8",  "Envenenaste el pozo para ganar la guerra, matando a toda la aldea."]
+          - ["9",  "Abandonaste a tu oficial al mando para que muriera en la oscuridad y poder escapar tú."]
+          - ["10", "No eres el dueño original de este cuerpo. Te apoderaste de él mediante la violencia."]
+
+      - id: mente
+        name: "Tabla B: La Mente"
+        context: "Tira esta tabla en escenas con PNJ, política o investigación."
+        col_header: "Secretos, Mentiras, Traición"
+        rows:
+          - ["1",  "El PNJ al que intentas salvar es quien te torturó durante años."]
+          - ["2",  "Conoces la contraseña porque eres el espía que construyó esta trampa."]
+          - ["3",  "No perdiste la memoria. Le pagaste a una bruja para que la borrara porque la verdad era demasiado pesada."]
+          - ["4",  "Estás casado en secreto con el villano de esta campaña."]
+          - ["5",  "El dios al que rezas no existe. Te lo inventaste para lidiar con tus crímenes."]
+          - ["6",  "Robaste la identidad de tu compañero. En realidad eres el sirviente, no el noble."]
+          - ["7",  "Vendiste los planes de defensa del reino para pagar una deuda de juego."]
+          - ["8",  "Sabes cómo termina esta mazmorra. Ya has estado atrapado en este bucle."]
+          - ["9",  "El informante no desapareció. Lo enterraste bajo tu casa."]
+          - ["10", "Cada vez que duermes, informas telepáticamente de los movimientos del grupo al enemigo."]
+
+      - id: alma
+        name: "Tabla C: El Alma"
+        context: "Tira esta tabla en escenas de magia, artefactos o sobrenatural."
+        col_header: "Maldiciones, Deudas, Lo Extraño"
+        rows:
+          - ["1",  "Le debes una deuda a un demonio. El pago es el alma del jugador a tu izquierda."]
+          - ["2",  "Reconoces esta lengua antigua. Es tu lengua materna."]
+          - ["3",  "Te das cuenta de que no tienes latido. ¿Cuánto tiempo llevas muerto?"]
+          - ["4",  "El artefacto que acabas de tocar te pertenece. Lo forjaste con los huesos de un ser querido."]
+          - ["5",  "Recuerdas haber firmado el contrato con sangre. Te queda un año de vida."]
+          - ["6",  "No eres humano. Eres un cambiante, y olvidaste tu verdadera forma."]
+          - ["7",  "La maldición que pesa sobre esta tierra es culpa tuya. Rompiste el sello sagrado."]
+          - ["8",  "Tienes un parásito que vive en tu columna vertebral. Te habla con la voz de tu madre."]
+          - ["9",  "Recuerdas haber sido sacrificado en este mismo altar."]
+          - ["10", "Tu reflejo en el espejo parpadea por su cuenta. Lleva tiempo intentando avisarte."]
+
+  - num: "5"
+    title: "EL VELO DE LA MISERICORDIA"
+    paragraphs:
+      - >
+        Las mecánicas de AnamnesiA exigen una vulnerabilidad extrema. Darle a
+        otro jugador el poder de inventar el trauma de tu personaje es una
+        experiencia íntima e intensa. Utiliza siempre Herramientas de Seguridad
+        antes de implementar la Infección de Lete. Recomendadas: la Carta X
+        y las Líneas y Velos.
+      - >
+        Regla de Oro: si el jugador de la Mano Derecha sugiere un recuerdo que
+        incomoda genuinamente al jugador receptor en la vida real, ese jugador
+        dice simplemente «Velo». El recuerdo queda anulado y reescrito al
+        instante por la mesa, sin ninguna penalización mecánica. Jugamos para
+        aterrorizarnos juntos, nunca para hacernos daño.
+
+licenses:
+  - >
+    AnamnesiA es una producción independiente de Il Gioco in Tavolo y no está
+    afiliada con Ockult Ortmastare Games ni con Stockholm Kartell. Publicada
+    bajo la Licencia de Terceros de MÖRK BORG.
+  - >
+    La Llamada de Cthulhu es una marca registrada de Chaosium Inc.
+    Old-School Essentials es una marca de Necrotic Gnome. Este material no
+    está afiliado ni avalado por ninguna de las dos empresas.
+
+closing_quote: "«No eres el héroe de esta historia.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

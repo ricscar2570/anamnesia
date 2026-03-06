@@ -1,0 +1,63 @@
+meta:
+  doc_id: "02"
+  title: "SCHEDA DEL CUSTODE"
+  subtitle: "Memory Keeper Reference Sheet"
+  header: "A N A M N E S I A  ·  S C H E D A  D E L  C U S T O D E"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+cycle_section:
+  title: "STRUTTURA DEL CICLO"
+  col_headers: ["Fase", "Durata", "Attività"]
+  rows:
+    - ["Risveglio",      "2–3 min",   "Il Custode pone le domande di apertura. Nessun dado."]
+    - ["Esplorazione",   "10–15 min", "I giocatori interagiscono con le Carte Frammento e tirano i dadi."]
+    - ["Consolidamento", "2–3 min",   "Recupero Pool, annotazione Echi, Connessione Umana (cicli 1–4)."]
+
+phases_section:
+  title: "FASI DEL GIOCO"
+  col_headers: ["Fase", "Cicli", "Carte", "Atmosfera"]
+  rows:
+    - ["Nebbia",      "1–2", "Solo Atto I",  "Impressioni vaghe, confusione sensoriale"]
+    - ["Connessioni", "3–4", "Atto I + II",  "Dettagli concreti, tensione relazionale"]
+    - ["Rivelazioni", "5",   "Atto II + III","Verità cruda, confronto finale"]
+
+questions_section:
+  title: "DOMANDE PER FASE"
+  phases:
+    - label: "Nebbia (Cicli 1–2)"
+      questions:
+        - "Cosa senti quando chiudi gli occhi?"
+        - "Perché la tua mano trema?"
+        - "Quel segno sul polso: te lo sei fatto tu?"
+    - label: "Connessioni (Cicli 3–4)"
+      questions:
+        - "Chi vi ha parlato del programma?"
+        - "Conoscevate il quinto partecipante?"
+        - "Perché volevate dimenticare?"
+    - label: "Rivelazioni (Ciclo 5)"
+      questions:
+        - "Adesso che ricordate, cosa fate?"
+        - "Potete perdonarvi?"
+        - "Se poteste dimenticare di nuovo, lo fareste?"
+
+tracking_section:
+  title: "TRACCIAMENTO SESSIONE"
+  scenario_label:   "Scenario:"
+  date_label:       "Data:"
+  players_label:    "Giocatori:"
+  col_headers:      ["Giocatore", "Archetipo", "Ancora", "Stress", "Echi"]
+  cycles_label:     "Cicli:"
+  cycles:
+    - "① Nebbia"
+    - "② Nebbia"
+    - "③ Connessioni"
+    - "④ Connessioni"
+    - "⑤ Rivelazioni"
+  tools_label:      "Strumenti di sicurezza:"
+  tools:
+    - "X-Card"
+    - "Lines & Veils"
+    - "Check-in"
+  connections_label: "Connessioni emerse:"
+  truths_label:      "Verità stabilite:"
+  notes_label:       "Note post-sessione:"

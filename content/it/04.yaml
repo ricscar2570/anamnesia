@@ -1,0 +1,136 @@
+meta:
+  doc_id: "04"
+  title: "SCHEDE PERSONAGGIO"
+  subtitle: "Quattro Archetipi · Stampare e compilare"
+  header: "A N A M N E S I A  ·  S C H E D E  P E R S O N A G G I O"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+labels:
+  name:          "NOME"
+  scenario:      "SCENARIO"
+  anchor:        "ANCORA"
+  approaches:    "APPROCCI"
+  ability:       "ABILITÀ"
+  vulnerability: "VULNERABILITÀ"
+  tracking:      "TRACCIAMENTO"
+  pool_formula:  "Pool Attuale = {pool} − Stress − Penalità Echi (min. 1)"
+  stress_track:  "Stress  1 ■  2 ■  3 ■  4 ■ Parziale  5 ■ Finale"
+  echo_track:    "Echi  1  2  3  4  5  6  7  8  9+"
+  cycle_track:   "Ciclo: ① ② ③ ④ ⑤"
+  anchor_used:   "Ancora usata: ■"
+  last_memory:   "Ultimo Ricordo usato: ■"
+  guilt_used:    "Senso di Colpa usato: ■"
+  notes:         "Note e Ricordi:"
+  approach_cost_col: "Costo"
+  approach_name_col: "Approccio"
+  approach_desc_col: "Descrizione"
+  free:          "Gratuito"
+
+archetypes:
+  - id: sopravvissuto
+    name: "IL SOPRAVVISSUTO"
+    pool: 5
+    quote: "«Sono vivo quando altri non lo sono.»"
+    bio: >
+      Sei sopravvissuto quando altri non ce l'hanno fatta. I tuoi riflessi sono
+      affilati, ma ogni salvezza ti fa sentire vigliacco. Perché tu e non loro?
+    approaches:
+      - cost: "Gratuito"
+        name: "Istinto di Fuga"
+        desc: "Percepire pericoli, individuare uscite, leggere i segnali d'allarme."
+      - cost: "+1"
+        name: "Paranoia Protettiva"
+        desc: "Anticipare il tradimento, prepararsi al peggio prima che accada."
+      - cost: "+2"
+        name: "Memoria del Dolore"
+        desc: "Ricordare come sei sopravvissuto prima. Il dolore come guida."
+    ability_name: "RIFLESSI DI SOPRAVVIVENZA"
+    ability_text: >
+      Quando eviti un pericolo fisico, ri-tira tutti i dadi 1–2. Se escono di nuovo
+      1–2, descrivi chi non sei riuscito a salvare.
+    vulnerability: "Sentirsi un peso per gli altri."
+    vulnerability_reward: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    key_question: "«Chi sto deludendo, essendo ancora vivo?»"
+    special_checkboxes: []
+
+  - id: testimone
+    name: "IL TESTIMONE"
+    pool: 5
+    quote: "«Ho visto tutto. Ma la mia mente si chiude.»"
+    bio: >
+      Hai assistito a ogni dettaglio dell'orrore. I tuoi occhi hanno catturato ogni
+      sfumatura. Ma ora quei ricordi sono frammentati come vetro che taglia.
+    approaches:
+      - cost: "Gratuito"
+        name: "Osservazione Distaccata"
+        desc: "Notare dettagli, leggere emozioni, restare in disparte mentre analizzi."
+      - cost: "+1"
+        name: "Connessione Empatica"
+        desc: "Sentire cosa provano gli altri, intuire bugie dal dolore negli occhi."
+      - cost: "+2"
+        name: "Visione Completa"
+        desc: "Vedere l'intera immagine, connettere tutti i pezzi in un momento di terribile chiarezza."
+    ability_name: "MEMORIA COLLETTIVA"
+    ability_text: >
+      Osservando il tiro altrui: spendi 1 Frammento + guadagni 1 Eco per
+      «registrare» i risultati. Chiunque può usarli più tardi. Max 2/ciclo.
+    vulnerability: "Decisioni immediate forzate."
+    vulnerability_reward: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    key_question: "«Quale dettaglio cruciale ho notato ma ho troppa paura di rivelare?»"
+    special_checkboxes: []
+
+  - id: protettore
+    name: "IL PROTETTORE"
+    pool: 4
+    quote: "«È stata mia responsabilità. Ho fallito.»"
+    bio: >
+      Eri responsabile della sicurezza degli altri. Nel momento cruciale hai
+      fallito. Le tue mani tremano ogni volta che cerchi di aiutare. Ma non puoi
+      smettere di provare.
+    approaches:
+      - cost: "Gratuito"
+        name: "Controllo Autoritario"
+        desc: "Organizzare, comandare, prendere decisioni difficili per il gruppo."
+      - cost: "+1"
+        name: "Sacrificio Calcolato"
+        desc: "Metterti in pericolo per salvare altri, assorbire il danno."
+      - cost: "+2"
+        name: "Peso del Comando"
+        desc: "Ricordare tutte le volte che hai fallito. Attingere a quell'esperienza dolorosa."
+    ability_name: "SCUDO VIVENTE"
+    ability_text: >
+      Quando un altro ottiene Collasso (0 successi): sacrifica fino a 3 Frammenti
+      per darglieli. Ogni 2 Frammenti sacrificati = 1 Eco.
+    vulnerability: "Altri in pericolo senza poter aiutare."
+    vulnerability_reward: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    key_question: "«Quale minaccia sto ignorando e chi non riesco a proteggere ora?»"
+    special_checkboxes: []
+
+  - id: catalizzatore
+    name: "IL CATALIZZATORE"
+    pool: 4
+    quote: "«È iniziato tutto per colpa mia.»"
+    bio: >
+      Hai innescato la catena di eventi. Non con malvagità, ma con una scelta, una
+      parola, un gesto. E tutto è crollato. Ora ogni tua azione porta l'eco di
+      quella prima, fatale decisione.
+    approaches:
+      - cost: "Gratuito"
+        name: "Invisibilità Sociale"
+        desc: "Restare in secondo piano, evitare attenzione, osservare senza essere visto."
+      - cost: "+1"
+        name: "Manipolazione Sottile"
+        desc: "Influenzare le dinamiche del gruppo senza essere scoperto."
+      - cost: "+2"
+        name: "Momento Cruciale"
+        desc: "Ricordare il momento esatto in cui tutto è cambiato."
+    ability_name: "EFFETTO DOMINO"
+    ability_text: >
+      Su Collasso (0 successi): gli altri guadagnano +1 Frammento temporaneo.
+      Tu guadagni 1 Eco.
+    special_ability_name: "Senso di Colpa (1×/partita)"
+    special_ability_text: "Confessa a un altro PG. +3 Frammenti."
+    vulnerability: "Essere spinto a guidare o scegliere."
+    vulnerability_reward: "Recuperi 1 Frammento e −1 Stress (max 1/ciclo)."
+    key_question: "«Quale mia azione potrebbe far crollare di nuovo tutto?»"
+    special_checkboxes: ["guilt_used"]

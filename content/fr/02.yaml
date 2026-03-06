@@ -1,0 +1,63 @@
+meta:
+  doc_id: "02"
+  title: "FICHE DE RÉFÉRENCE DU GARDIEN"
+  subtitle: "Memory Keeper Reference Sheet"
+  header: "A N A M N E S I A  ·  F I C H E  D U  G A R D I E N  D E  L A  M É M O I R E"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+cycle_section:
+  title: "STRUCTURE D'UN TOUR"
+  col_headers: ["Phase", "Durée", "Activité"]
+  rows:
+    - ["Éveil",          "2–3 min",   "Le Gardien pose les questions d'ouverture. Pas de dés."]
+    - ["Exploration",    "10–15 min", "Les joueurs interagissent avec les Cartes Fragment et lancent les dés."]
+    - ["Consolidation",  "2–3 min",   "Récupération de la Réserve, notation des Échos, Connexion Humaine (tours 1–4)."]
+
+phases_section:
+  title: "PHASES DU JEU"
+  col_headers: ["Phase", "Tours", "Cartes", "Atmosphère"]
+  rows:
+    - ["Brume",       "1–2", "Acte I seul",    "Impressions vagues, confusion sensorielle"]
+    - ["Connexions",  "3–4", "Acte I + II",    "Détails concrets, tension relationnelle"]
+    - ["Révélations", "5",   "Acte II + III",  "Vérité brute, confrontation finale"]
+
+questions_section:
+  title: "QUESTIONS PAR PHASE"
+  phases:
+    - label: "Brume (Tours 1–2)"
+      questions:
+        - "Qu'est-ce que tu ressens quand tu fermes les yeux?"
+        - "Pourquoi ta main tremble-t-elle?"
+        - "Cette marque sur ton poignet: tu te l'es faite toi-même?"
+    - label: "Connexions (Tours 3–4)"
+      questions:
+        - "Qui vous a parlé du programme?"
+        - "Connaissiez-vous le cinquième participant?"
+        - "Pourquoi vouliez-vous oublier?"
+    - label: "Révélations (Tour 5)"
+      questions:
+        - "Maintenant que vous vous souvenez, qu'est-ce que vous faites?"
+        - "Pouvez-vous vous pardonner?"
+        - "Si vous pouviez oublier à nouveau, le feriez-vous?"
+
+tracking_section:
+  title: "SUIVI DE SÉANCE"
+  scenario_label:   "Scénario:"
+  date_label:       "Date:"
+  players_label:    "Joueurs:"
+  col_headers:      ["Joueur", "Archétype", "Ancre", "Stress", "Échos"]
+  cycles_label:     "Tours:"
+  cycles:
+    - "① Brume"
+    - "② Brume"
+    - "③ Connexions"
+    - "④ Connexions"
+    - "⑤ Révélations"
+  tools_label:      "Outils de sécurité:"
+  tools:
+    - "Carte X"
+    - "Lignes et Voiles"
+    - "Point de contrôle"
+  connections_label: "Connexions découvertes:"
+  truths_label:      "Vérités établies:"
+  notes_label:       "Notes post-séance:"
