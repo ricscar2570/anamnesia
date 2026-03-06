@@ -7,6 +7,7 @@ on:
       - 'build/content/**'
       - 'build/builders/**'
       - 'build/assets/**'
+      - 'build/requirements.txt'
       - '.github/workflows/build-pdfs.yml'
   workflow_dispatch:
     inputs:
@@ -31,50 +32,47 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+          cache-dependency-path: 'build/requirements.txt'
 
       # ── Dipendenze Python ──────────────────────────────────────────────────
       - name: Install Python dependencies
-        run: pip install reportlab PyYAML fonttools
+        run: pip install -r build/requirements.txt
 
-      # ── Font Lora (istanze statiche da variable font) ──────────────────────
-      - name: Install Lora variable fonts
-        run: |
-          sudo apt-get update -q
-          sudo apt-get install -y -q fonts-google-noto || true
-          # Scarica Lora direttamente da Google Fonts se non disponibile
-          if [ ! -f "/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf" ]; then
-            mkdir -p /usr/share/fonts/truetype/google-fonts
-            curl -sL "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf" \
-              -o /usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf
-            curl -sL "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf" \
-              -o /usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf
-          fi
-
-      # ── Genera istanze statiche Lora ───────────────────────────────────────
-      - name: Extract static Lora instances
+      # ── Font Lora: scarica variable font da Google Fonts su GitHub ─────────
+      # ubuntu-latest non ha fonts-google installati: li scarichiamo direttamente.
+      - name: Download Lora variable fonts
         run: |
           mkdir -p build/assets/fonts
-          python3 - << 'EOF'
+          curl -fsSL \
+            "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf" \
+            -o build/assets/fonts/Lora-Variable.ttf
+          curl -fsSL \
+            "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf" \
+            -o build/assets/fonts/Lora-Italic-Variable.ttf
+          echo "Font scaricati:"
+          ls -lh build/assets/fonts/
+
+      # ── Genera istanze statiche Lora (Regular, Bold, Italic, BoldItalic) ───
+      - name: Extract static Lora instances
+        run: |
+          python3 - << 'PYEOF'
           from fontTools.ttLib import TTFont
           from fontTools.varLib.instancer import instantiateVariableFont
-          import os
 
           configs = [
-              ('/usr/share/fonts/truetype/google-fonts/Lora-Variable.ttf',
+              ('build/assets/fonts/Lora-Variable.ttf',
                [400, 700], ['LoraRegular', 'LoraBold']),
-              ('/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf',
+              ('build/assets/fonts/Lora-Italic-Variable.ttf',
                [400, 700], ['LoraItalic', 'LoraBoldItalic']),
           ]
-          out = 'build/assets/fonts'
-          os.makedirs(out, exist_ok=True)
           for src, weights, names in configs:
               for w, name in zip(weights, names):
                   f = TTFont(src)
                   inst = instantiateVariableFont(f, {'wght': w})
-                  dest = f'{out}/{name}.ttf'
+                  dest = f'build/assets/fonts/{name}.ttf'
                   inst.save(dest)
-                  print(f'Saved {dest}')
-          EOF
+                  print(f'OK  {dest}')
+          PYEOF
 
       # ── Build PDF ──────────────────────────────────────────────────────────
       - name: Build all PDFs
@@ -92,7 +90,7 @@ jobs:
           count=$(find build/output -name "*.pdf" | wc -l)
           echo "PDF generati: $count"
           find build/output -name "*.pdf" | sort
-          if [ "$count" -lt 30 ] && [ -z "${{ github.event.inputs.lang }}" ]; then
+          if [ -z "${{ github.event.inputs.lang }}" ] && [ "$count" -lt 30 ]; then
             echo "ERRORE: attesi 30 PDF, trovati $count"
             exit 1
           fi
@@ -106,7 +104,7 @@ jobs:
           retention-days: 30
           if-no-files-found: error
 
-      # ── Release automatica su tag ──────────────────────────────────────────
+      # ── Release automatica su tag v* ───────────────────────────────────────
       - name: Upload to release (solo su tag v*)
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
