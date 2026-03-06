@@ -34,6 +34,45 @@ if [ "$LANG_CODE" = "en" ]; then
   YAML_ARCH="archetypes.yml"
   YAML_CARDS="fragment_cards.yml"
   OUTPUT_FILE="anamnesia-zine-en.pdf"
+elif [ "$LANG_CODE" = "de" ]; then
+  echo "📖 Zusammenstellung Vollständige Ausgabe (Deutsch)..."
+  PAGES=(
+    index.md saeulen.md spielablauf.md das-system.md stress-und-echos.md
+    archetypen.md archetypen/der-ueberlebende.md archetypen/der-zeuge.md
+    archetypen/der-beschuetzer.md archetypen/der-katalysator.md
+    session-zero.md hueter-leitfaden.md start-erster-zyklus.md spielbeispiel.md
+    szenario-der-vorfall.md szenario-der-verrat.md
+    universelle-fragmente.md kurzuebersicht.md varianten.md changelog.md
+  )
+  YAML_ARCH="archetypen.yml"
+  YAML_CARDS="fragmentkarten.yml"
+  OUTPUT_FILE="anamnesia-zine-de.pdf"
+elif [ "$LANG_CODE" = "es" ]; then
+  echo "📖 Ensamblando Edición Completa (Español)..."
+  PAGES=(
+    index.md pilares.md como-se-juega.md el-sistema.md estres-y-ecos.md
+    arquetipos.md arquetipos/el-superviviente.md arquetipos/el-testigo.md
+    arquetipos/el-protector.md arquetipos/el-catalizador.md
+    sesion-cero.md guia-del-guardian.md inicio-primer-ciclo.md ejemplo-de-juego.md
+    escenario-el-incidente.md escenario-la-traicion.md
+    fragmentos-universales.md referencia-rapida.md variantes.md changelog.md
+  )
+  YAML_ARCH="arquetipos.yml"
+  YAML_CARDS="cartas_fragmento.yml"
+  OUTPUT_FILE="anamnesia-zine-es.pdf"
+elif [ "$LANG_CODE" = "fr" ]; then
+  echo "📖 Assemblage Édition Complète (Français)..."
+  PAGES=(
+    index.md piliers.md comment-jouer.md le-systeme.md stress-et-echos.md
+    archetypes.md archetypes/le-survivant.md archetypes/le-temoin.md
+    archetypes/le-protecteur.md archetypes/le-catalyseur.md
+    session-zero.md guide-du-gardien.md debut-premier-cycle.md exemple-de-jeu.md
+    scenario-incident.md scenario-trahison.md
+    fragments-universels.md reference-rapide.md variantes.md changelog.md
+  )
+  YAML_ARCH="archetypes.yml"
+  YAML_CARDS="cartes_fragment.yml"
+  OUTPUT_FILE="anamnesia-zine-fr.pdf"
 else
   echo "📖 Assemblaggio Edizione Completa (Italiano)..."
   PAGES=(
@@ -46,7 +85,7 @@ else
   )
   YAML_ARCH="archetipi.yml"
   YAML_CARDS="carte_frammento.yml"
-  OUTPUT_FILE="anamnesia-zine.pdf"
+  OUTPUT_FILE="anamnesia-zine-it.pdf"
 fi
 
 # === 1. Rules: Markdown → HTML ===
@@ -92,6 +131,9 @@ for i, part in enumerate(parts):
         continue
     sections.append(f'<section class="rules">\n{part}\n</section>')
 rules_final = '\n\n'.join(sections)
+
+# Wrap tables in column-spanning divs (WeasyPrint needs wrapper for column-span on tables)
+rules_final = re.sub(r'(<table\b.*?</table>)', r'<div class="table-span">\1</div>', rules_final, flags=re.DOTALL)
 
 html = html.replace('<!-- TOC_PLACEHOLDER -->', toc_html)
 html = html.replace('<!-- RULES_PLACEHOLDER -->', rules_final)

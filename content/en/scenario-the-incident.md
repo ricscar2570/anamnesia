@@ -12,9 +12,9 @@ nav_order: 11
 
 **Location:** A private clinic, sterile and unsettling · **Atmosphere:** Obsessive silence, flickering fluorescent lights, endless corridors · **Players:** 2–4 patients in an experimental program · **The Question:** *What have they done to you? And above all: what have you done?*
 
-## Hidden Truth
+## The Truth Beneath
 
-*(Reserved for Memory Keepers — do not read to players.)*
+*(All players should read this section. Your characters don't know any of this — but you do. Let this knowledge haunt your choices.)*
 
 The characters voluntarily submitted to an experimental selective memory erasure program at Dr. Fassini's clinic. Each had a different reason for wanting to forget, but all share the same guilt: they were involved in an event that caused someone's death.
 
@@ -55,3 +55,13 @@ Questions to ask: *Who told you about the program? Did you know the fifth partic
 **Cycle 5 (Revelations).** The truth emerges. Players discover the missing participant. Discover what they wanted to forget. And discover that maybe it would have been better not to remember. Use Act II + III Cards.
 
 Questions to ask: *Now that you remember, what do you do? Can you forgive yourselves? If you could forget again, would you?*
+
+## Fragment Cards
+
+**➡️ [Open printable Fragment Cards](/fragment-cards)**
+
+The 24 included cards are designed specifically for this scenario. Divide them into three decks: Act I — Fog (8 sensory cards), Act II — Connections (8 relational cards), Act III — Revelations (8 final cards). Print, cut, play.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/5.png" style="width: 80%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

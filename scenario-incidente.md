@@ -18,9 +18,9 @@ nav_order: 11
 
 **La Domanda:** *Cosa vi hanno fatto? E soprattutto: cosa avete fatto voi?*
 
-## Verità Nascosta
+## La Verità Sotto
 
-*(Riservata ai Custodi della Memoria — non leggere ai giocatori.)*
+*(Tutti i giocatori dovrebbero leggere questa sezione. I vostri personaggi non sanno nulla di tutto questo — ma voi sì. Lasciate che questa conoscenza inquieti le vostre scelte.)*
 
 I personaggi si sono sottoposti volontariamente a un programma sperimentale di cancellazione selettiva della memoria presso la clinica del Dott. Fassini. Ognuno aveva un motivo diverso per voler dimenticare, ma tutti condividono la stessa colpa: erano coinvolti in un evento che ha causato la morte di qualcuno.
 
@@ -67,3 +67,7 @@ I personaggi erano coinvolti in un incidente stradale. Il Catalizzatore guidava 
 **➡️ [Apri le Carte Frammento stampabili](/carte-frammento)**
 
 Le 24 carte incluse sono progettate specificamente per questo scenario. Dividetele in tre mazzi: Atto I — Nebbia (8 carte sensoriali), Atto II — Connessioni (8 carte relazionali), Atto III — Rivelazioni (8 carte finali). Stampate, ritagliate, giocate.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/5.png" style="width: 80%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

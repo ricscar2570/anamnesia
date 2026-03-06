@@ -18,8 +18,12 @@ Something terrible happened to all of you. You don't know what. Every fragment o
 
 ## 3. Emergent Truth
 
-The story is not written in advance. It emerges from the cards, the dice rolls, and the players' interpretations. No one knows how it will end. When a scenario includes a Hidden Truth, it is a direction, not a destination.
+The story is not written in advance. It emerges from the cards, the dice rolls, and the players' interpretations. No one knows how it will end. When a scenario includes a Truth Beneath, it is a direction, not a destination.
 
 ## 4. No Winners, No Losers
 
 There is no winning and no losing. The only measure of success is the story you created together and the emotions you explored.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/cranio_clean_whitebg.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

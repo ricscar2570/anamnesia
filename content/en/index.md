@@ -27,8 +27,5 @@ A narrative tabletop RPG of psychological horror
 
 ---
 
-**ZineQuest 2026** · Complete Edition v2.0
 
-Game Design & Writing: Riccardo Scaringi
 
-YouTube: ilgiocointavolo · Magazine: ioGioco

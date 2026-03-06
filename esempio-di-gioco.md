@@ -40,4 +40,6 @@ Sara tira 2 dadi: **2** e **3**. Zero Frammenti Chiari. Esito: **Collasso del Ri
 
 Sara guadagna 1 Eco dal dado che ha mostrato 2. Segna il Collasso, 1 punto di Stress, e 1 Eco aggiuntivo dall'Effetto Domino (perché il tiro è un Collasso). Anna e Marco guadagnano +1 Frammento temporaneo.
 
-<img src="assets/persone-tavolo.png" class="scene-image" alt="">
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/7.png" style="width: 70%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

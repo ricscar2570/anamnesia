@@ -1,0 +1,210 @@
+atti:
+  - id: akt1
+    nome: "Akt I"
+    tema: "Nebel"
+    colore: "act1"
+    carte:
+      - titolo: "Chemischer Geruch"
+        flavor: '"Kein Desinfektionsmittel. Etwas anderes."'
+        corpo: "Beschreibe den Geruch. Wurf: bei mindestens 1 Klarem verbindest du den Geruch mit einem Ort aus deinem Leben. Bei 0 Klaren heftiger Brechreiz und ein Blitz von <strong>behandschuhten Händen</strong>."
+        costo: "1 Frag."
+        tipo: "Sensorisch"
+      - titolo: "Flackerndes Licht"
+        flavor: '"Die Neonröhre pulsiert. Wie ein Herzschlag, der nicht deiner ist."'
+        corpo: "Starre ins Licht. Wurf: bei mindestens 1 Klarem bemerkst du etwas auf der Lampe Geschriebenes — einen Code. Bei 0 Klaren geht das Licht aus und als es zurückkehrt, <strong>hat sich etwas verändert</strong>."
+        costo: "1 Frag."
+        tipo: "Sensorisch"
+      - titolo: "Leerer Stuhl"
+        flavor: '"Da ist ein Stuhl zu viel. Für wen war er?"'
+        corpo: "Wurf: bei 2+ Klaren nimmst du den Duft von <strong>jemandem wahr, der fehlt</strong>. Bei 1 ist das Kissen warm. Bei 0 eine heftige Erinnerung: <strong>+1 Stress</strong>."
+        costo: "1 Frag."
+        tipo: "Umgebung"
+      - titolo: "Name am Handgelenk"
+        flavor: '"Etwas auf deine Haut geschrieben. Deine Handschrift."'
+        corpo: "Wurf: bei mindestens 1 Klarem ist der Name vertraut. Bei 0 sprichst du ihn laut aus und jemand <strong>reagiert</strong>. Der Spieler zu deiner Linken entscheidet, wer."
+        costo: "2 Frag."
+        tipo: "Persönlich"
+      - titolo: "Fernes Summen"
+        flavor: '"Unter der Stille liegt ein Geräusch. Stetig."'
+        corpo: "Folge dem Geräusch. Wurf: bei mindestens 1 Klarem kommt es <strong>von unter dem Boden</strong>. Bei 0 wird es zu einem Schrei — niemand sonst hört ihn."
+        costo: "1 Frag."
+        tipo: "Sensorisch"
+      - titolo: "Mal auf der Hand"
+        flavor: '"Ein Pflaster. Ein blauer Fleck. Eine Einstichstelle."'
+        corpo: "Wurf: bei mindestens 1 Klarem erinnerst du dich an <strong>Kälte in deinen Adern</strong>. Bei 0 ist darunter eine Nummer in Kugelschreiber. Deine Bettnummer."
+        costo: "1 Frag."
+        tipo: "Persönlich"
+      - titolo: "Gesprungener Spiegel"
+        flavor: '"Jemand hat ihn mit Wucht getroffen."'
+        corpo: "Schau dich an. Wurf: bei mindestens 1 Klarem sieht die Spiegelung <strong>falsch</strong> aus — mehr Zeit ist vergangen. Bei 0 siehst du ein anderes Gesicht hinter deinem."
+        costo: "1 Frag."
+        tipo: "Sensorisch"
+      - titolo: "Verschlossener Flur"
+        flavor: '"Die Tür ist verriegelt. Ein Spalt. Süßlicher Geruch."'
+        corpo: "Wurf: bei mindestens 1 Klarem siehst du <strong>reglose Füße</strong>. Bei 0 klopft jemand einmal. <strong>Alle +1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Umgebung"
+
+  - id: akt2
+    nome: "Akt II"
+    tema: "Verbindungen"
+    colore: "act2"
+    carte:
+      - titolo: "Die Einverständniserklärung"
+        flavor: '"Ein zerknittertes Blatt. Deine Unterschrift."'
+        corpo: "Wurf: bei 2+ Klaren <strong>freiwillig</strong> unterschrieben, aber unter Druck. Bei 1 erinnerst du dich nicht. Bei 0 ein inakzeptabler Eingriff. <strong>+1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Dokument"
+      - titolo: "Die aufgenommene Stimme"
+        flavor: '"Ein Aufnahmegerät unter einer Matratze."'
+        corpo: "Wurf: bei 2+ Klaren ist es <strong>deine Stimme</strong> in der dritten Person. Bei 1 Schluchzen. Bei 0 nennt sie einen Namen. <strong>Der Spieler rechts entscheidet, wessen.</strong>"
+        costo: "2 Frag."
+        tipo: "Entdeckung"
+      - titolo: "Die Fotografie"
+        flavor: '"Ein Foto. Ihr seid alle drauf. Und eine Person mehr."'
+        corpo: "Wurf: bei mindestens 1 Klarem ist der Ort <strong>nicht diese Klinik</strong>. Bei 0 ein zerkratztes Gesicht. <strong>Jeder Spieler beschreibt ein Detail.</strong>"
+        costo: "2 Frag."
+        tipo: "Beziehung"
+      - titolo: "Das fünfte Bett"
+        flavor: '"Mit übertriebener Sorgfalt gemacht."'
+        corpo: "Wurf: bei 2+ Klaren findest du ein <strong>identisches Armband</strong>. Bei 1 kürzlich benutzt. Bei 0 ein Brief unter dem Kissen. <strong>Der Hüter der Erinnerung liest ihn vor.</strong>"
+        costo: "2 Frag."
+        tipo: "Umgebung"
+      - titolo: "Zwillingsnarben"
+        flavor: '"Das gleiche Mal. An der gleichen Stelle."'
+        corpo: "Wurf: bei mindestens 1 Klarem erinnerst du dich an einen <strong>Raum mit mehreren Liegen</strong>. Bei 0 ein geteilter Flashback: der andere sieht, du fühlst."
+        costo: "1 Frag."
+        tipo: "Beziehung"
+      - titolo: "Die Sprechanlage"
+        flavor: '"Sie knistert. Eine mechanische Stimme sagt eine Nummer."'
+        corpo: "Wurf: bei 2+ Klaren ist die Nummer <strong>ein Datum, ein Code</strong>. Bei 1 eine vertraute Stimme. Bei 0 sagt sie deinen Namen. <strong>+1 Stress.</strong>"
+        costo: "1 Frag."
+        tipo: "Entdeckung"
+      - titolo: "Die Krankenakte"
+        flavor: '"In einer Schublade. Dein Name auf dem Umschlag."'
+        corpo: "Wurf: bei 2+ Klaren eine <strong>andere</strong> Diagnose. Bei 1 herausgerissene Seiten. Bei 0 ein Foto von dir, an das du dich nicht erinnerst. <strong>+1 Stress.</strong>"
+        costo: "2 Frag."
+        tipo: "Dokument"
+      - titolo: "Die umstrittene Erinnerung"
+        flavor: '"Zwei von euch erinnern sich an denselben Moment. Unterschiedlich."'
+        corpo: "<strong>Kein Wurf.</strong> Der Hüter der Erinnerung wählt 2 Spieler. Jeder beschreibt denselben Moment. Sie widersprechen sich. Die anderen entscheiden, welche Version sich <strong>wahrer anfühlt</strong>."
+        costo: "0 Frag."
+        tipo: "Erzählung"
+
+  - id: akt3
+    nome: "Akt III"
+    tema: "Offenbarungen"
+    colore: "act3"
+    carte:
+      - titolo: "Das Video der Prozedur"
+        flavor: '"Ein Tablet. Du willst nicht auf Play drücken."'
+        corpo: "Wurf: bei 2+ Klaren seid ihr <strong>Beobachter, keine Patienten</strong>. Bei 1 ein unvollständiges Video. Bei 0 lächelst du. <strong>+2 Stress. Alle +1.</strong>"
+        costo: "3 Frag."
+        tipo: "Offenbarung"
+      - titolo: "Der Raum darunter"
+        flavor: '"Eine Tür im Boden. Stufen ins Dunkel."'
+        corpo: "Wurf: bei 2+ Klaren ein identischer Raum, <strong>belegte Betten</strong>. Bei 1 Schriften an den Wänden. Bei 0 im Spiegel <strong>bist du nicht allein</strong>. Alle +1 Stress."
+        costo: "3 Frag."
+        tipo: "Umgebung"
+      - titolo: "Der verschwundene Teilnehmer"
+        flavor: '"Ihr findet ihn. Nicht dort, wo ihr es erwartet habt."'
+        corpo: "Wurf: bei 2+ Klaren <strong>bist du es</strong>. Bei 1 erkennt er dich nicht. Bei 0: <strong>«Du hättest nicht zurückkommen sollen.»</strong> +2 Stress."
+        costo: "3 Frag."
+        tipo: "Offenbarung"
+      - titolo: "Das Geständnis"
+        flavor: '"Jemand weiß es. Schon immer."'
+        corpo: '<strong>Kein Wurf.</strong> "Was hast du in der Nacht davor getan?" Jede Antwort birgt ein Geheimnis. Die letzte: <strong>"Warum hast du es nicht früher gesagt?"</strong>'
+        costo: "0 Frag."
+        tipo: "Erzählung"
+      - titolo: "Das Tagebuch des Doktors"
+        flavor: '"In einem Kittel. Die letzten Seiten hastig geschrieben."'
+        corpo: "Wurf: bei 2+ Klaren <strong>hat es zu gut funktioniert</strong>. Bei 1 'Sie dürfen es nicht erfahren.' Bei 0 an <strong>dich</strong> adressiert. +2 Stress."
+        costo: "2 Frag."
+        tipo: "Dokument"
+      - titolo: "Die offene Tür"
+        flavor: '"Die Tür steht offen. Sie stand immer offen."'
+        corpo: "Wurf: bei 2+ Klaren verstehst du, warum <strong>niemand gegangen ist</strong>. Bei 0 findest du dich im selben Raum wieder. <strong>Wenn Zyklus 5, endet das Spiel.</strong>"
+        costo: "2 Frag."
+        tipo: "Finale"
+      - titolo: "Die Wahl"
+        flavor: '"Um zu vergessen."'
+        corpo: '<strong>Letzte Karte.</strong> "Wenn du wieder vergessen könntest, würdest du es tun?" Wer vergisst, verliert seine Echos. Wer sich erinnert, behält alles. <strong>Das Spiel endet.</strong>'
+        costo: "0 Frag."
+        tipo: "Epilog"
+      - titolo: "Echos aus Raum 0"
+        flavor: '"Das Summen hört auf. Stille."'
+        corpo: "Wirf <strong>alle</strong> Fragmente. 3+: vollständige Erinnerung. 1–2: der Spieler rechts füllt die Lücken. 0: <strong>es ist schlimmer</strong>. +2 Stress. Zusammenbruch."
+        costo: "Alle"
+        tipo: "Offenbarung"
+
+generatore:
+  nomi:
+    - Elena
+    - Marco
+    - Sara
+    - Luca
+    - Chiara
+    - Andrea
+    - Katharina
+    - Matthias
+    - Valentin
+    - David
+    - Franziska
+    - Simon
+    - Anna
+    - Lorenzo
+    - Martha
+    - Thomas
+    - Silvia
+    - Alexander
+    - Beatrice
+    - Philipp
+    - Irene
+    - Gabriel
+    - Clara
+    - Niklas
+    - Elisa
+    - Stefan
+    - Viola
+    - Peter
+    - Naomi
+    - Friedrich
+  aspetti:
+    - "Tiefe Augenringe, ausweichender Blick"
+    - "Frisch rasierter Kopf, Narbe an der Schläfe"
+    - "Unmerklich zitternde Hände"
+    - "Helle Augen, abwesender Ausdruck"
+    - "Starre Haltung, zusammengepresster Kiefer"
+    - "Ausgezehrtes Gesicht, abgekaute Nägel"
+    - "Wachsamer Blick, nie entspannt"
+    - "Vorzeitig ergrautes Haar, leise Stimme"
+    - "Feine Züge, trommelnde Finger"
+    - "Alte Narben an den Knöcheln"
+    - "Unnatürliche Blässe, aufgesprungene Lippen"
+    - "Ferner Blick, als schaue er durch alles hindurch"
+  tic:
+    - "Berührt das Handgelenk, wo das Armband sitzt"
+    - "Murmelt Zahlen vor sich hin, wenn nervös"
+    - "Schließt kurz die Augen, bevor er spricht"
+    - "Schaut auf die Hände, als erkenne er sie nicht"
+    - "Zuckt bei plötzlichen Geräuschen zusammen"
+    - "Zählt die Ausgänge, sobald er einen Raum betritt"
+    - "Reibt eine bestimmte Stelle am Arm"
+    - "Hält den Atem an, wenn jemand die Stimme erhebt"
+    - "Wiederholt das letzte Wort, das er gehört hat, leise"
+    - "Beißt sich auf die Wangeninnenseite beim Nachdenken"
+    - "Starrt argwöhnisch auf Neonröhren"
+    - "Prüft, ob die anderen schlafen, bevor er sich bewegt"
+  frammenti:
+    - "Der metallische Geschmack von Medizin"
+    - "Eine sanfte Stimme, die sagt: 'Alles wird gut'"
+    - "Hände, mit weichen Fesseln gebunden"
+    - "Ein endloser Flur, weißes Licht"
+    - "Jemand weint im Nebenzimmer"
+    - "Ein Formular, mit zitternder Hand unterschrieben"
+    - "Der Geruch von Desinfektionsmittel, gemischt mit etwas anderem"
+    - "Eine Tür, die mit einem endgültigen Klicken schließt"
+    - "Das Gesicht von jemandem, den du nicht kennen solltest"
+    - "Eine Nummer auf dem Handgelenk tätowiert — deine Nummer"
+    - "Das Gefühl zu fallen, dann nichts"
+    - "Ein unangebrachtes Lachen im schlimmsten Moment"

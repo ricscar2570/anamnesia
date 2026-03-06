@@ -6,6 +6,18 @@ nav_order: 16
 
 # Changelog & E Poi?
 
+## Versione 2.1 — Chiarimenti e Coerenza
+
+**Forzare il Ricordo chiarito** — Lo Stress da Forzare (+1) si aggiunge allo Stress dell'esito originale, non lo sostituisce. Il costo è ora esplicito nel testo e nel Riferimento Rapido.
+
+**Verità Nascosta → La Verità Sotto** — La sezione degli scenari è ora pensata per essere letta da tutti i giocatori, non solo dal Custode. I personaggi non sanno nulla — ma i giocatori sì. L'ironia drammatica rende il gioco più intenso.
+
+**Immagini integrate** — Aggiunte illustrazioni Rorschach nelle sezioni Pilastri, Archetipi, Sessione Zero, Avvio del Primo Ciclo, Esempio di Gioco e Scenario L'Incidente.
+
+**Promemoria rapido dadi** — Aggiunta legenda dadi e Regola d'Oro nella pagina degli Archetipi.
+
+**Archetipi ripuliti** — Rimosse note storiche v1.3, formattazione approcci unificata.
+
 ## Versione 2.0 — Meccaniche Affinate
 
 Quattro nuove meccaniche integrate nel sistema base, tutte progettate per dare più agenzia ai giocatori e garantire una conclusione narrativa soddisfacente:

@@ -52,16 +52,15 @@ After the roll, classify each die:
 
 **3.** **Pass the word** to the next player. There's no shame in it — improvisation doesn't always come easy.
 
-## Push the Memory *(New in v2.0)*
-
+## Push the Memory 
 After a roll that results in a **Painful Truth** (1 Clear) or **Memory Collapse** (0 Clear), you can choose to Push the Memory. The result improves by one level:
 
 - Memory Collapse → becomes Painful Truth
 - Painful Truth → becomes Partial Success
 
-The price: you immediately gain **+1 Stress**. You cannot Push a Partial Success.
+The price: you immediately gain **+1 Stress**, in addition to any Stress from the original outcome. You cannot Push a Partial Success.
 
-*You grit your teeth and force the memory to surface, even if the price is mental deterioration. Every time you Push, the Breakdown draws closer.*
+*You grit your teeth and force the memory to surface. The price is double: the Stress from the outcome plus the Stress from the effort. Every time you Push, Breakdown draws closer.*
 
 ## Fragment Pool
 

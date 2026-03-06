@@ -67,3 +67,7 @@ Dopo il gioco, dedicate 10–15 minuti a parlare fuori personaggio. È semplice 
 Domande: *Come vi sentite ora? Quali momenti vi hanno colpito di più? C'è stato qualcosa di troppo intenso? Cosa porterete con voi di questa storia?*
 
 Se il gioco è stato particolarmente pesante, fate qualcosa di leggero insieme — un video divertente, mangiare qualcosa, parlare d'altro. Aiuta a disconnettersi dal personaggio e tornare nel mondo reale.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/4.png" style="width: 100%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

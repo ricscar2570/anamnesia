@@ -20,7 +20,7 @@ There are three ways to reduce Stress during a game:
 
 **Human Connection (Cycles 1–4).** At the end of cycles 1 through 4, if no one suffered a Breakdown that cycle, each player can seek a moment of connection with another character to reduce their Stress by 1. Describe a gesture, a word, a look that brings you back to reality.
 
-**The Anchor (once per game).** *(New in v2.0)* See below.
+**The Anchor (once per game).**  See below.
 
 {: .nota }
 > **Note v1.3: Extended Human Connection** — Compared to the previous version, Human Connection is now available in Cycle 4 as well. This offers one last chance to recover before the final Revelations of Cycle 5. *Cycle 5 intentionally has no recovery: the revelations must hurt.*
@@ -37,7 +37,7 @@ When Stress reaches 4, you suffer a **Partial Breakdown:** choose how your chara
 
 **The Circle of Witnessing:** every other player recounts a shared memory with the one who suffered the Breakdown, creating a powerful, collective moment.
 
-## The Anchor *(New in v2.0)*
+## The Anchor 
 
 During character creation, each player chooses an **Anchor**: a physical object the character possesses — a broken watch, a photograph, a key, a ring. The Anchor is your last link to reality.
 
@@ -45,13 +45,13 @@ During character creation, each player chooses an **Anchor**: a physical object 
 
 *The Anchor is a tactical choice: use it early to stabilize, or save it for a critical moment?*
 
-## Last Memory *(New in v2.0)*
+## Last Memory 
 
 When your Current Pool drops to **1 die** (from any combination of Stress and Echoes), you can activate — **once per game** — the Last Memory: roll **3d6** ignoring all penalties. The result is interpreted normally. However, regardless of the outcome, your Stress increases by 1.
 
 *The mind gathers its last strength to remember something crucial. But the effort might be fatal.*
 
-## The Truth Always Emerges *(New in v2.0)*
+## The Truth Always Emerges 
 
 **Cycle 5 special rule:** In Cycle 5, when you get a Memory Collapse (0 Clear), the memory emerges anyway — distorted, brutal, but real. The player to your right interprets it normally. However, you suffer **+2 Stress** instead of +1, and the Memory Keeper can add a detail that makes the truth worse.
 

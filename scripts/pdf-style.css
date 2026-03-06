@@ -123,7 +123,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 65%;
+  height: 50%;
   z-index: 1;
   opacity: 0.9;
 }
@@ -405,6 +405,10 @@ body {
   margin: 6pt 0;
   font-size: 8.5pt;
   break-inside: avoid;
+}
+/* WeasyPrint needs a wrapper div for column-span on tables */
+.table-span {
+  column-span: all;
 }
 .rules th {
   background: #2c1810;
@@ -851,8 +855,8 @@ body {
 /* Archetype portrait: white-faded Rorschach, centered in column */
 .archetype-portrait {
   display: block;
-  width: 70%;
-  max-height: 160pt;
+  width: 90%;
+  max-height: 220pt;
   margin: 8pt auto 4pt;
   opacity: 0.85;
   object-fit: contain;
@@ -865,5 +869,50 @@ body {
   max-height: 240pt;
   margin: 12pt auto;
   opacity: 0.85;
+  object-fit: contain;
+}
+
+/* =====================================================
+   ILLUSTRATIONS — Public domain artwork
+   ===================================================== */
+
+/* Illustrazione a tutta larghezza colonna (per scene, corridoi) */
+.illustration-full {
+  display: block;
+  width: 80%;
+  max-height: 200pt;
+  margin: 16pt auto;
+  opacity: 0.80;
+  object-fit: contain;
+  column-span: all;
+}
+
+/* Illustrazione media, centrata (per cervelli, diagrammi) */
+.illustration-medium {
+  display: block;
+  width: 75%;
+  max-height: 200pt;
+  margin: 12pt auto;
+  opacity: 0.80;
+  object-fit: contain;
+}
+
+/* Illustrazione piccola, decorativa (per separatori di sezione) */
+.illustration-small {
+  display: block;
+  width: 50%;
+  max-height: 120pt;
+  margin: 8pt auto;
+  opacity: 0.70;
+  object-fit: contain;
+}
+
+/* Illustrazione flottante a destra (inline col testo) */
+.illustration-aside {
+  float: right;
+  width: 40%;
+  max-height: 160pt;
+  margin: 0 0 8pt 12pt;
+  opacity: 0.80;
   object-fit: contain;
 }

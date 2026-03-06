@@ -1,0 +1,89 @@
+- id: superviviente
+  nome: El Superviviente
+  pool: 5
+  citazione: '"Estoy vivo cuando otros no lo están."'
+  approcci:
+    - costo: "Gratis"
+      nome: "Instinto de Huida"
+      desc: "Percibir peligros, localizar salidas, leer las señales de alarma."
+    - costo: "+1 Frag."
+      nome: "Paranoia Protectora"
+      desc: "Anticipar la traición, prepararse para lo peor."
+    - costo: "+2 Frag."
+      nome: "Memoria del Dolor"
+      desc: "Recordar cómo sobreviviste antes. El dolor como guía."
+  abilita:
+    - nome: "Reflejos de Supervivencia"
+      desc: "Cuando evitas un peligro físico, vuelve a tirar todos los dados que muestren 1–2. Si vuelven a salir 1–2, describe a quién no lograste salvar."
+  vulnerabilita:
+    trigger: "Sentirse una carga para los demás."
+    effetto: "Recupera 1 Fragmento y −1 Estrés (máx. 1/ciclo)."
+    domanda: '"¿A quién estoy decepcionando, por seguir vivo?"'
+
+- id: testigo
+  nome: El Testigo
+  pool: 5
+  citazione: '"Lo vi todo. Pero cada vez que intento recordar, mi mente se cierra."'
+  approcci:
+    - costo: "Gratis"
+      nome: "Observación Distanciada"
+      desc: "Notar detalles, leer emociones, mantenerse al margen."
+    - costo: "+1 Frag."
+      nome: "Conexión Empática"
+      desc: "Sentir lo que sienten los demás, intuir mentiras."
+    - costo: "+2 Frag."
+      nome: "Visión Completa"
+      desc: "Conectar todas las piezas en un momento de terrible claridad."
+  abilita:
+    - nome: "Memoria Colectiva"
+      desc: "Observando la tirada de otro, gasta 1 Fragmento + gana 1 Eco para registrar los resultados. Cualquiera puede usarlos. Máx. 2/ciclo."
+  vulnerabilita:
+    trigger: "Decisiones inmediatas forzadas."
+    effetto: "Recupera 1 Fragmento y −1 Estrés (máx. 1/ciclo)."
+    domanda: '"¿Qué detalle crucial noté pero tengo demasiado miedo de revelar?"'
+
+- id: protector
+  nome: El Protector
+  pool: 4
+  citazione: '"Era mi responsabilidad manteneros a salvo. Fallé."'
+  approcci:
+    - costo: "Gratis"
+      nome: "Control Autoritario"
+      desc: "Organizar, comandar, tomar decisiones difíciles."
+    - costo: "+1 Frag."
+      nome: "Sacrificio Calculado"
+      desc: "Ponerte en peligro para salvar a otros."
+    - costo: "+2 Frag."
+      nome: "Peso del Mando"
+      desc: "Recurrir a la experiencia dolorosa de tus fracasos."
+  abilita:
+    - nome: "Escudo Viviente"
+      desc: "Cuando otro obtiene Colapso (0 éxitos), sacrifica hasta 3 Fragmentos para dárselos. Cada 2 Fragmentos sacrificados = 1 Eco."
+  vulnerabilita:
+    trigger: "Otros en peligro sin poder ayudar."
+    effetto: "Recupera 1 Fragmento y −1 Estrés (máx. 1/ciclo)."
+    domanda: '"¿Qué amenaza estoy ignorando y a quién no puedo proteger ahora?"'
+
+- id: catalizador
+  nome: El Catalizador
+  pool: 4
+  citazione: '"Todo empezó por mi culpa."'
+  approcci:
+    - costo: "Gratis"
+      nome: "Invisibilidad Social"
+      desc: "Permanecer en segundo plano, observar sin ser visto."
+    - costo: "+1 Frag."
+      nome: "Manipulación Sutil"
+      desc: "Influir en las dinámicas del grupo sin ser descubierto."
+    - costo: "+2 Frag."
+      nome: "Momento Crucial"
+      desc: "Recordar el momento exacto en que todo cambió."
+  abilita:
+    - nome: "Efecto Dominó"
+      desc: "Cuando obtienes Colapso (0 éxitos), los demás ganan +1 Fragmento temporal. Tú ganas 1 Eco."
+    - nome: "Sentimiento de Culpa (1×/partida)"
+      desc: "Confiesa tu responsabilidad a otro personaje. Gana 3 Fragmentos. Sin Estrés en cascada."
+  vulnerabilita:
+    trigger: "Ser empujado a liderar o elegir."
+    effetto: "Recupera 1 Fragmento y −1 Estrés (máx. 1/ciclo)."
+    domanda: '"¿Cuál de mis acciones podría hacer que todo se derrumbe de nuevo?"'

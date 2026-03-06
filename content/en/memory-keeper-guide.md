@@ -16,7 +16,7 @@ Ask questions. Introduce complications when the pace slows. Manage the time and 
 
 Don't decide what "really" happened before the players discover it. Don't force specific interpretations of fragments. Don't punish players for their narrative choices. Never say "No, that's not what happened" — rather: *"How do you explain it?"*
 
-The hidden truth in the scenario is a suggestion, not a script. If the players build something more interesting, follow them.
+The Truth Beneath in the scenario is a suggestion, not a script. All players know it — their characters don't. This dramatic irony makes the game more intense, not less. If the players build something more interesting, follow them.
 
 ## Managing Silence
 
@@ -66,35 +66,58 @@ If a cycle runs out quickly, don't stretch it artificially. If a cycle won't end
 
 Use when the game stagnates, after a Memory Collapse (0 Clear), or when the Memory Keeper needs a quick prompt. Roll 1d6 on the current phase's table.
 
-**Fog Phase (Cycles 1–2) — Sensory Complications**
+### Fog Phase (Cycles 1–2) — Sensory Complications
 
 | d6 | Complication |
 |:---|:------------|
-| 1 | A sound that shouldn't be there: a bell, a breath, a ticking. |
-| 2 | The temperature changes sharply at a precise spot in the room. |
-| 3 | A piercing, fleeting smell that no one else seems to notice. |
-| 4 | An object has moved from where you remembered it. Or has it? |
-| 5 | Writing on a surface — but when you point it out to the others, they can't see it. |
-| 6 | A shared déjà vu: two characters have the same sensation at the same instant. |
+| **1** | A sound that shouldn't be there: a bell, a breath, a ticking. |
+| **2** | The temperature changes sharply at a precise spot in the room. |
+| **3** | A piercing, fleeting smell that no one else seems to notice. |
+| **4** | An object has moved from where you remembered it. Or has it? |
+| **5** | Writing on a surface — but when you point it out to the others, they can't see it. |
+| **6** | A shared déjà vu: two characters have the same sensation at the same instant. |
 
-**Connections Phase (Cycles 3–4) — Relational Complications**
-
-| d6 | Complication |
-|:---|:------------|
-| 1 | Two fragments that emerged so far contradict each other. One is false. Which one? |
-| 2 | Someone who shouldn't know, knows. An NPC appears with disturbing information. |
-| 3 | A PC's personal object is found where it shouldn't be. |
-| 4 | A PC has a sudden flashback. The player to their right describes what they see. |
-| 5 | Something is about to happen. Footsteps in the hallway, a ringing phone, a countdown. |
-| 6 | Two characters discover a connection they didn't remember. Define it together. |
-
-**Revelations Phase (Cycle 5) — Traumatic Complications**
+### Connections Phase (Cycles 3–4) — Relational Complications
 
 | d6 | Complication |
 |:---|:------------|
-| 1 | A memory that emerges now contradicts EVERYTHING you've reconstructed so far. |
-| 2 | A PC remembers the exact moment of the trauma. The player to their right describes it. |
-| 3 | The definitive proof is here — but accepting it means admitting personal guilt. |
-| 4 | Someone you thought was a victim was complicit. Or vice versa. |
-| 5 | Time's up: the external consequence arrives (police, doctors, family). What do you do? |
-| 6 | The truth is worse than anyone imagined. Each PC states one thing they wish they hadn't remembered. |
+| **1** | Two fragments that emerged so far contradict each other. One is false. Which one? |
+| **2** | Someone who shouldn't know, knows. An NPC appears with disturbing information. |
+| **3** | A PC's personal object is found where it shouldn't be. |
+| **4** | A PC has a sudden flashback. The player to their right describes what they see. |
+| **5** | Something is about to happen. Footsteps in the hallway, a ringing phone, a countdown. |
+| **6** | Two characters discover a connection they didn't remember. Define it together. |
+
+### Revelations Phase (Cycle 5) — Traumatic Complications
+
+| d6 | Complication |
+|:---|:------------|
+| **1** | A memory that emerges now contradicts EVERYTHING you've reconstructed so far. |
+| **2** | A PC remembers the exact moment of the trauma. The player to their right describes it. |
+| **3** | The definitive proof is here — but accepting it means admitting personal guilt. |
+| **4** | Someone you thought was a victim was complicit. Or vice versa. |
+| **5** | Time's up: the external consequence arrives (police, doctors, family). What do you do? |
+| **6** | The truth is worse than anyone imagined. Each PC states one thing they wish they hadn't remembered. |
+
+## Keeper Sheet
+
+Print this page and use it to track the session.
+
+**Scenario:** _________________ **Date:** _________________ **Players:** _____
+
+| Player | Character | Archetype | Anchor | Stress | Echoes | Notes |
+|:-------|:----------|:----------|:-------|:-------|:-------|:------|
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+
+**Cycles:** ① Fog ☐ · ② Fog ☐ · ③ Connections ☐ · ④ Connections ☐ · ⑤ Revelations ☐
+
+**Active safety tools:** X-Card ☐ · Lines & Veils ☐ · Check-in ☐
+
+**Connections emerged:** _______________________________________________
+
+**Truths established:** _______________________________________________
+
+**Post-session notes:** _______________________________________________

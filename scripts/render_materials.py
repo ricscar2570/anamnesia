@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 render_materials.py — Generate HTML for character sheets and fragment cards from YAML.
-Supports bilingual output via environment variables:
-  ANAMNESIA_DATA_DIR  — path to _data/it or _data/en
-  ANAMNESIA_LANG      — 'it' or 'en' (affects labels on sheets)
+Supports multilingual output via environment variables:
+  ANAMNESIA_DATA_DIR  — path to _data/{lang}
+  ANAMNESIA_LANG      — 'it', 'en', 'de', 'es', or 'fr' (affects labels on sheets)
 
 Usage:
   python3 render_materials.py sheets archetypes.yml
@@ -30,6 +30,7 @@ LABELS = {
         'stress': 'Stress',
         'echoes': 'Echi Traumatici',
         'pool_calc': 'Pool Attuale',
+        'base_pool': 'Pool Base',
         'pool_note': 'Penalità Echi (min 1)',
         'cycle': 'Ciclo',
         'anchor_used': 'Ancora usata',
@@ -49,6 +50,7 @@ LABELS = {
         'stress': 'Stress',
         'echoes': 'Traumatic Echoes',
         'pool_calc': 'Current Pool',
+        'base_pool': 'Base Pool',
         'pool_note': 'Echo Penalty (min 1)',
         'cycle': 'Cycle',
         'anchor_used': 'Anchor used',
@@ -56,6 +58,66 @@ LABELS = {
         'notes': 'Memories & Notes',
         'echo_note': '0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: out of play',
         'breakdown_note': '4 = Partial Breakdown · 5 = Final Breakdown',
+        'copyright': '© 2026 Riccardo Scaringi',
+    },
+    'de': {
+        'archetype': 'Archetyp',
+        'name': 'Name',
+        'scenario': 'Szenario',
+        'anchor': 'Anker',
+        'approaches': 'Herangehensweisen',
+        'vulnerability': 'Verletzlichkeit',
+        'stress': 'Stress',
+        'echoes': 'Traumatische Echos',
+        'pool_calc': 'Aktueller Pool',
+        'base_pool': 'Basis-Pool',
+        'pool_note': 'Echo-Abzug (Min. 1)',
+        'cycle': 'Zyklus',
+        'anchor_used': 'Anker verwendet',
+        'last_memory': 'Letzte Erinnerung verwendet',
+        'notes': 'Erinnerungen & Notizen',
+        'echo_note': '0–2: 0 · 3–5: −1W · 6–8: −3W · 9+: aus dem Spiel',
+        'breakdown_note': '4 = Teilw. Zusammenbruch · 5 = Endg. Zusammenbruch',
+        'copyright': '© 2026 Riccardo Scaringi',
+    },
+    'es': {
+        'archetype': 'Arquetipo',
+        'name': 'Nombre',
+        'scenario': 'Escenario',
+        'anchor': 'Ancla',
+        'approaches': 'Enfoques',
+        'vulnerability': 'Vulnerabilidad',
+        'stress': 'Estrés',
+        'echoes': 'Ecos Traumáticos',
+        'pool_calc': 'Reserva Actual',
+        'base_pool': 'Reserva Base',
+        'pool_note': 'Penalización Ecos (mín. 1)',
+        'cycle': 'Ciclo',
+        'anchor_used': 'Ancla usada',
+        'last_memory': 'Último Recuerdo usado',
+        'notes': 'Recuerdos y Notas',
+        'echo_note': '0–2: 0 · 3–5: −1d · 6–8: −3d · 9+: fuera de juego',
+        'breakdown_note': '4 = Colapso Parcial · 5 = Colapso Final',
+        'copyright': '© 2026 Riccardo Scaringi',
+    },
+    'fr': {
+        'archetype': 'Archétype',
+        'name': 'Nom',
+        'scenario': 'Scénario',
+        'anchor': 'Ancre',
+        'approaches': 'Approches',
+        'vulnerability': 'Vulnérabilité',
+        'stress': 'Stress',
+        'echoes': 'Échos Traumatiques',
+        'pool_calc': 'Réserve Actuelle',
+        'base_pool': 'Réserve de Base',
+        'pool_note': 'Pénalité Échos (min. 1)',
+        'cycle': 'Cycle',
+        'anchor_used': 'Ancre utilisée',
+        'last_memory': 'Dernier Souvenir utilisé',
+        'notes': 'Souvenirs & Notes',
+        'echo_note': '0–2 : 0 · 3–5 : −1d · 6–8 : −3d · 9+ : hors jeu',
+        'breakdown_note': '4 = Effondrement Partiel · 5 = Effondrement Final',
         'copyright': '© 2026 Riccardo Scaringi',
     }
 }
@@ -85,7 +147,7 @@ def render_sheets(archetipi):
         html.append(f'''<div class="char-sheet">
   <div class="cs-header">
     <div><div class="cs-archetype-name">{a["nome"]}</div><div class="cs-archetype-label">{L["archetype"]}</div></div>
-    <div class="cs-pool-badge">Base Pool: {a["pool"]}</div>
+    <div class="cs-pool-badge">{L["base_pool"]}: {a["pool"]}</div>
   </div>
   <div class="cs-fields"><div class="cs-field"><div class="cs-field-label">{L["name"]}</div></div><div class="cs-field"><div class="cs-field-label">{L["scenario"]}</div></div><div class="cs-field"><div class="cs-field-label">{L["anchor"]}</div></div></div>
   <div class="cs-quote">{a["citazione"]}</div>

@@ -18,8 +18,12 @@ Qualcosa di terribile è accaduto a tutti voi. Non sapete cosa. Ogni frammento d
 
 ## 3. Verità Emergente
 
-La storia non è scritta in anticipo. Emerge dalle carte, dai tiri di dado e dalle interpretazioni dei giocatori. Nessuno sa come finirà. Quando uno scenario include una Verità Nascosta, questa è una direzione, non una destinazione.
+La storia non è scritta in anticipo. Emerge dalle carte, dai tiri di dado e dalle interpretazioni dei giocatori. Nessuno sa come finirà. Quando uno scenario include una Verità Sotto, questa è una direzione, non una destinazione.
 
 ## 4. Nessun Vincitore
 
 Non si vince e non si perde. L'unica misura del successo è la storia che avete creato insieme e le emozioni che avete esplorato.
+
+<div style="column-span: all; margin-top: 6pt; break-before: avoid;">
+<img src="assets/cranio_clean_whitebg.png" style="width: 45%; max-height: 180pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">
+</div>

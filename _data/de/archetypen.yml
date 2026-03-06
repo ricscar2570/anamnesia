@@ -1,0 +1,89 @@
+- id: ueberlebender
+  nome: Der Überlebende
+  pool: 5
+  citazione: '"Ich lebe, wenn andere es nicht tun."'
+  approcci:
+    - costo: "Frei"
+      nome: "Fluchtinstinkt"
+      desc: "Gefahren spüren, Ausgänge erkennen, Warnsignale lesen."
+    - costo: "+1 Frag."
+      nome: "Schützende Paranoia"
+      desc: "Verrat vorausahnen, sich auf das Schlimmste vorbereiten."
+    - costo: "+2 Frag."
+      nome: "Erinnerung an den Schmerz"
+      desc: "Sich erinnern, wie du zuvor überlebt hast. Der Schmerz als Wegweiser."
+  abilita:
+    - nome: "Überlebensreflexe"
+      desc: "Wenn du einer körperlichen Gefahr ausweichst, wirf alle Würfel mit 1–2 neu. Zeigen sie erneut 1–2, beschreibe, wen du nicht retten konntest."
+  vulnerabilita:
+    trigger: "Sich als Last für andere fühlen."
+    effetto: "Erhalte 1 Fragment und −1 Stress (max. 1/Zyklus)."
+    domanda: '"Wen enttäusche ich, indem ich noch am Leben bin?"'
+
+- id: zeuge
+  nome: Der Zeuge
+  pool: 5
+  citazione: '"Ich habe alles gesehen. Aber jedes Mal, wenn ich mich erinnern will, schaltet mein Verstand ab."'
+  approcci:
+    - costo: "Frei"
+      nome: "Distanzierte Beobachtung"
+      desc: "Details bemerken, Emotionen lesen, abseits stehen."
+    - costo: "+1 Frag."
+      nome: "Empathische Verbindung"
+      desc: "Fühlen, was andere fühlen, Lügen erahnen."
+    - costo: "+2 Frag."
+      nome: "Vollständige Vision"
+      desc: "Alle Teile in einem Moment schrecklicher Klarheit zusammenfügen."
+  abilita:
+    - nome: "Kollektives Gedächtnis"
+      desc: "Beobachte den Wurf eines anderen: Gib 1 Fragment aus + erhalte 1 Echo, um die Ergebnisse zu speichern. Jeder kann sie nutzen. Max. 2/Zyklus."
+  vulnerabilita:
+    trigger: "Zu sofortigen Entscheidungen gezwungen werden."
+    effetto: "Erhalte 1 Fragment und −1 Stress (max. 1/Zyklus)."
+    domanda: '"Welches entscheidende Detail habe ich bemerkt, aber bin zu verängstigt, es zu enthüllen?"'
+
+- id: beschuetzer
+  nome: Der Beschützer
+  pool: 4
+  citazione: '"Es war meine Verantwortung, euch zu schützen. Ich habe versagt."'
+  approcci:
+    - costo: "Frei"
+      nome: "Autoritäre Kontrolle"
+      desc: "Organisieren, befehlen, die schweren Entscheidungen treffen."
+    - costo: "+1 Frag."
+      nome: "Kalkuliertes Opfer"
+      desc: "Sich selbst in Gefahr bringen, um andere zu retten."
+    - costo: "+2 Frag."
+      nome: "Last der Verantwortung"
+      desc: "Aus der schmerzhaften Erfahrung deines Versagens schöpfen."
+  abilita:
+    - nome: "Lebender Schild"
+      desc: "Wenn ein anderer einen Kollaps (0 Erfolge) erleidet, opfere bis zu 3 Fragmente, um sie ihm zu geben. Je 2 geopferte Fragmente = 1 Echo (abgerundet)."
+  vulnerabilita:
+    trigger: "Andere in Gefahr, ohne helfen zu können."
+    effetto: "Erhalte 1 Fragment und −1 Stress (max. 1/Zyklus)."
+    domanda: '"Welche Bedrohung ignoriere ich und wen kann ich gerade nicht beschützen?"'
+
+- id: katalysator
+  nome: Der Katalysator
+  pool: 4
+  citazione: '"Alles hat wegen mir angefangen."'
+  approcci:
+    - costo: "Frei"
+      nome: "Soziale Unsichtbarkeit"
+      desc: "Im Hintergrund bleiben, ungesehen beobachten."
+    - costo: "+1 Frag."
+      nome: "Subtile Manipulation"
+      desc: "Die Dynamik der Gruppe beeinflussen, ohne entdeckt zu werden."
+    - costo: "+2 Frag."
+      nome: "Entscheidender Moment"
+      desc: "Sich an den genauen Moment erinnern, als alles sich veränderte."
+  abilita:
+    - nome: "Dominoeffekt"
+      desc: "Wenn du einen Kollaps (0 Erfolge) erleidest, erhalten die anderen +1 temporäres Fragment. Du erhältst 1 Echo."
+    - nome: "Schuldgefühl (1×/Partie)"
+      desc: "Gestehe einem anderen Charakter deine Verantwortung. Erhalte 3 Fragmente. Kein kaskadierender Stress."
+  vulnerabilita:
+    trigger: "Gedrängt werden zu führen oder zu entscheiden."
+    effetto: "Erhalte 1 Fragment und −1 Stress (max. 1/Zyklus)."
+    domanda: '"Welche meiner Handlungen könnte alles wieder zum Einsturz bringen?"'

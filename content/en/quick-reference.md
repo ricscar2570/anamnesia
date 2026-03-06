@@ -27,10 +27,9 @@ Everything you need during play. Print and keep at the center of the table.
 | 1 | Painful Truth | Real but painful memory. Possible Stress. |
 | 0 | Memory Collapse | The memory overwhelms you. +1 Stress. Complication. |
 
-## Push the Memory *(v2.0)*
+## Push the Memory 
 
-After Painful Truth or Collapse: improve the result by 1 level. Cost: +1 Stress. You cannot Push a Partial Success.
-
+After Painful Truth or Collapse: improve the result by 1 level. Cost: +1 Stress (in addition to the outcome's Stress). You cannot Push a Partial Success.
 ## Current Pool
 
 Base Pool (4 or 5) − Stress − Echo Penalty = Available dice (minimum 1)
@@ -48,7 +47,7 @@ Echoes: 0–2 no penalty · 3–5 penalty −1 die · 6–8 penalty −3 dice ·
 
 **Recovering Stress:** Roleplay Archetype Vulnerability (−1 Stress, max 1/cycle) · Human Connection at end of cycle · Invoke the Anchor (1/game, requires Stress 2+)
 
-## Special Mechanics *(v2.0)*
+## Special Mechanics 
 
 **Last Memory (1/game):** With Pool at 1 die, roll 3d6 ignoring penalties. Then +1 Stress.
 

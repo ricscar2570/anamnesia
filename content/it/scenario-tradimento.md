@@ -20,9 +20,9 @@ nav_order: 12
 
 **Nota:** Questo scenario non usa le Carte Frammento dell'Incidente. Il Custode usa i Frammenti Suggeriti qui sotto oppure li improvvisa al tavolo. In alternativa, le carte dell'Incidente possono essere riadattate cambiando il contesto clinico con l'appartamento.
 
-## Verità Nascosta
+## La Verità Sotto
 
-*(Riservata ai Custodi della Memoria — non leggere ai giocatori.)*
+*(Tutti i giocatori dovrebbero leggere questa sezione. I vostri personaggi non sanno nulla di tutto questo — ma voi sì. Lasciate che questa conoscenza inquieti le vostre scelte.)*
 
 L'appartamento appartiene a Marco Santini, il miglior amico del Catalizzatore. Quella sera Marco aveva organizzato una cena per annunciare il suo imminente matrimonio con Sofia. Ma Sofia e il Catalizzatore hanno avuto una relazione segreta per mesi. Durante la cena, ubriachi, si sono baciati nel corridoio. Marco li ha visti.
 
