@@ -227,8 +227,7 @@ def simple_table(header_row, data_rows, col_widths, S, italic_content=False):
         cells = []
         for j, cell in enumerate(row):
             st = S['table_num'] if j == 0 and len(row) > 1 and str(cell).isdigit() else cell_style
-            # prima colonna: se è numero, usa table_num ma con colore INK (sfondo alternato)
-            cells.append(Paragraph(str(cell), cell_style))
+            cells.append(Paragraph(str(cell), st))
         data.append(cells)
 
     ts = TableStyle([
