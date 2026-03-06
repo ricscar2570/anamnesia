@@ -4,9 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'build/content/**'
-      - 'build/builders/**'
-      - 'build/assets/**'
+      - 'content/**'
+      - 'builders/**'
+      - 'assets/**'
       - '.github/workflows/build-pdfs.yml'
   workflow_dispatch:
     inputs:
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ── Python (senza cache: build rapida, nessuna dipendenza esterna) ─────
+      # ── Python ────────────────────────────────────────────────────────────
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
@@ -38,14 +38,14 @@ jobs:
       # ── Font Lora: scarica variable font da Google Fonts GitHub ───────────
       - name: Download Lora variable fonts
         run: |
-          mkdir -p build/assets/fonts
+          mkdir -p assets/fonts
           curl -fsSL \
             "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf" \
-            -o build/assets/fonts/Lora-Variable.ttf
+            -o assets/fonts/Lora-Variable.ttf
           curl -fsSL \
             "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf" \
-            -o build/assets/fonts/Lora-Italic-Variable.ttf
-          ls -lh build/assets/fonts/
+            -o assets/fonts/Lora-Italic-Variable.ttf
+          ls -lh assets/fonts/
 
       # ── Genera istanze statiche Lora (Regular, Bold, Italic, BoldItalic) ───
       - name: Extract static Lora instances
@@ -55,16 +55,16 @@ jobs:
           from fontTools.varLib.instancer import instantiateVariableFont
 
           configs = [
-              ('build/assets/fonts/Lora-Variable.ttf',
+              ('assets/fonts/Lora-Variable.ttf',
                [400, 700], ['LoraRegular', 'LoraBold']),
-              ('build/assets/fonts/Lora-Italic-Variable.ttf',
+              ('assets/fonts/Lora-Italic-Variable.ttf',
                [400, 700], ['LoraItalic', 'LoraBoldItalic']),
           ]
           for src, weights, names in configs:
               for w, name in zip(weights, names):
                   f = TTFont(src)
                   inst = instantiateVariableFont(f, {'wght': w})
-                  dest = f'build/assets/fonts/{name}.ttf'
+                  dest = f'assets/fonts/{name}.ttf'
                   inst.save(dest)
                   print(f'OK  {dest}')
           PYEOF
@@ -72,7 +72,6 @@ jobs:
       # ── Build PDF ──────────────────────────────────────────────────────────
       - name: Build all PDFs
         run: |
-          cd build
           if [ -n "${{ github.event.inputs.lang }}" ]; then
             python builders/build_all.py ${{ github.event.inputs.lang }}
           else
@@ -82,9 +81,9 @@ jobs:
       # ── Verifica output ────────────────────────────────────────────────────
       - name: Verify output
         run: |
-          count=$(find build/output -name "*.pdf" | wc -l)
+          count=$(find output -name "*.pdf" | wc -l)
           echo "PDF generati: $count"
-          find build/output -name "*.pdf" | sort
+          find output -name "*.pdf" | sort
           if [ -z "${{ github.event.inputs.lang }}" ] && [ "$count" -lt 30 ]; then
             echo "ERRORE: attesi 30 PDF, trovati $count"
             exit 1
@@ -95,7 +94,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: anamnesia-digital-extras-pack
-          path: build/output/**/*.pdf
+          path: output/**/*.pdf
           retention-days: 30
           if-no-files-found: error
 
@@ -104,5 +103,5 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: build/output/**/*.pdf
+          files: output/**/*.pdf
           generate_release_notes: true
