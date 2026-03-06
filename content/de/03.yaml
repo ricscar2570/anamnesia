@@ -46,19 +46,19 @@ special_section:
   title: "SONDERMECHANIKEN"
   mechanics:
     - name: "Erinnerung erzwingen"
-      text: "Nach Schmerzhafte Wahrheit oder Zusammenbruch: verbessere das Ergebnis um 1 Stufe. Kosten: +1 Stress. Teilerfolg kann nicht erzwungen werden."
+      text: "Nach Schmerzhafte Wahrheit oder Erinnerungszusammenbruch: verbessere das Ergebnis um 1 Stufe. Kosten: +1 Stress. Teilerfolg kann nicht erzwungen werden."
     - name: "Der Anker (1× pro Sitzung)"
       text: "Mit mindestens 2 Stress: erzähle einen Moment, der mit deinem Anker verbunden ist. Der Spieler zu deiner Rechten beschreibt die zugehörige Erinnerung. −1 Stress, +1 Fragment."
     - name: "Letzte Erinnerung (1× pro Sitzung)"
       text: "Mit Pool auf 1 Würfel: würfle 3W6 und ignoriere alle Strafen. Dann +1 Stress trotzdem."
     - name: "Die Wahrheit tritt immer hervor (nur Runde 5)"
-      text: "Ein Zusammenbruch enthüllt die Erinnerung trotzdem, kostet aber +2 Stress statt +1. Der Hüter kann ein Detail hinzufügen, das die Wahrheit verschlimmert."
+      text: "Ein Erinnerungszusammenbruch enthüllt die Erinnerung trotzdem, kostet aber +2 Stress statt +1. Der Hüter kann ein Detail hinzufügen, das die Wahrheit verschlimmert."
 
 recovery_section:
   title: "STRESS-ERHOLUNG"
   items:
     - "Archetyp-Verwundbarkeit: −1 Stress, max. 1/Runde"
-    - "Menschliche Verbindung: am Ende der Runden 1–4, wenn kein Zusammenbruch"
+    - "Menschliche Verbindung: am Ende der Runden 1–4, wenn kein Erinnerungszusammenbruch"
     - "Anker: 1× pro Sitzung, erfordert Stress ≥ 2"
 
 sensory_section:

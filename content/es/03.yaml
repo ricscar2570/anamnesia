@@ -46,19 +46,19 @@ special_section:
   title: "MECÁNICAS ESPECIALES"
   mechanics:
     - name: "Forzar el Recuerdo"
-      text: "Tras Verdad Dolorosa o Colapso: mejora el resultado un nivel. Coste: +1 Estrés. No puedes forzar un Éxito Parcial."
+      text: "Tras Verdad Dolorosa o Colapso del Recuerdo: mejora el resultado un nivel. Coste: +1 Estrés. No puedes forzar un Éxito Parcial."
     - name: "El Ancla (1× por partida)"
       text: "Con al menos 2 de Estrés: narra un momento ligado a tu Ancla. El jugador a tu derecha describe el recuerdo asociado. −1 Estrés, +1 Fragmento."
     - name: "Último Recuerdo (1× por partida)"
       text: "Con la Reserva a 1 dado: tira 3d6 ignorando todas las penalizaciones. Luego +1 Estrés de todas formas."
     - name: "La Verdad Siempre Emerge (solo Turno 5)"
-      text: "Un Colapso revela el recuerdo igualmente, pero cuesta +2 Estrés en lugar de +1. El Guardián puede añadir un detalle que agrave la verdad."
+      text: "Un Colapso del Recuerdo revela el recuerdo igualmente, pero cuesta +2 Estrés en lugar de +1. El Guardián puede añadir un detalle que agrave la verdad."
 
 recovery_section:
   title: "RECUPERACIÓN DE ESTRÉS"
   items:
     - "Vulnerabilidad del Arquetipo: −1 Estrés, máx. 1/turno"
-    - "Conexión Humana: al final de los turnos 1–4, si no hay Colapso"
+    - "Conexión Humana: al final de los turnos 1–4, si no hay Colapso del Recuerdo"
     - "Ancla: 1× por partida, requiere Estrés ≥ 2"
 
 sensory_section:

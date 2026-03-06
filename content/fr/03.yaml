@@ -46,19 +46,19 @@ special_section:
   title: "MÉCANIQUES SPÉCIALES"
   mechanics:
     - name: "Forcer le Souvenir"
-      text: "Après Vérité Douloureuse ou Effondrement: améliore le résultat d'un niveau. Coût: +1 Stress. Tu ne peux pas forcer un Succès Partiel."
+      text: "Après Vérité Douloureuse ou Effondrement du Souvenir: améliore le résultat d'un niveau. Coût: +1 Stress. Tu ne peux pas forcer un Succès Partiel."
     - name: "L'Ancre (1× par partie)"
       text: "Avec au moins 2 Stress: narre un moment lié à ton Ancre. Le joueur à ta droite décrit le souvenir associé. −1 Stress, +1 Fragment."
     - name: "Dernier Souvenir (1× par partie)"
       text: "Avec la Réserve à 1 dé: lance 3d6 en ignorant tous les malus. Puis +1 Stress quoi qu'il arrive."
     - name: "La Vérité Émerge Toujours (tour 5 seulement)"
-      text: "Un Effondrement révèle quand même le souvenir, mais coûte +2 Stress au lieu de +1. Le Gardien peut ajouter un détail qui aggrave la vérité."
+      text: "Un Effondrement du Souvenir révèle quand même le souvenir, mais coûte +2 Stress au lieu de +1. Le Gardien peut ajouter un détail qui aggrave la vérité."
 
 recovery_section:
   title: "RÉCUPÉRATION DE STRESS"
   items:
     - "Vulnérabilité de l'Archétype: −1 Stress, max. 1/tour"
-    - "Connexion Humaine: en fin de tours 1–4, si pas d'Effondrement"
+    - "Connexion Humaine: en fin de tours 1–4, si pas d'Effondrement du Souvenir"
     - "Ancre: 1× par partie, nécessite Stress ≥ 2"
 
 sensory_section:
