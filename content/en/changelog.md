@@ -34,7 +34,7 @@ Four new mechanics integrated into the core system, all designed to give players
 
 **Universal Fragments** — 2d6 tables for playing without printed cards or with improvised scenarios. Three tables (one per Act) covering the entire game.
 
-**Golden Rule safety net** — Three concrete options for when the interpreting player is struggling.
+**Right-Hand Rule safety net** — Three concrete options for when the interpreting player is struggling.
 
 ## What's Next?
 

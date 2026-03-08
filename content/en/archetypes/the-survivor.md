@@ -15,7 +15,7 @@ You survived when others didn't make it. Your reflexes are sharp, but every esca
 
 ## Approaches
 
-- **Flight Instinct** (free) — Sense danger, spot exits, read the warning signs.
+- **Escape Instinct** (free) — Sense danger, spot exits, read the warning signs.
 - **Protective Paranoia** (+1) — Anticipate betrayal, prepare for the worst before it happens.
 - **Memory of Pain** (+2) — Remember how you survived before. Pain as a guide.
 

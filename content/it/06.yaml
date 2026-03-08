@@ -1,0 +1,183 @@
+meta:
+  doc_id: "06"
+  title: "THE LETHE INFECTION"
+  subtitle: "Una Meccanica Parassita per GDR Tradizionali e Cosmic Horror"
+  header: "A N A M N E S I A  ·  T H E  L E T H E  I N F E C T I O N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+  rorschach_images: ["rorschach_1.png","rorschach_3.png","rorschach_2.png","rorschach_cthulhu.png"]
+
+opening_quote: >
+  «Non sei l'eroe di questa storia. Sei solo il vaso che porta i ricordi di un
+  mostro. E, peggio di tutto: il giocatore seduto accanto a te tiene la chiave
+  della gabbia.»
+
+intro:
+  paragraphs:
+    - >
+      AnamnesiA si fonda su una premessa devastante: non controlli il tuo
+      passato. Questa appendice fornisce regole modulari per infettare i GDR
+      tradizionali con il nostro motore centrale: la Regola della Mano Destra.
+      Compatibile con Old-School Essentials, Mörk Borg, e Call of Cthulhu
+      (7a edizione).
+    - >
+      Non usare questo modulo con leggerezza. Sostituisce le penalità meccaniche
+      standard con terrore psicologico e tensione tra i giocatori.
+
+sections:
+  - num: "1"
+    title: "IL VETTORE: CONTRARRE L'INFEZIONE"
+    paragraphs:
+      - >
+        L'Infezione di Lethe è una frattura dell'anima. Il GM dovrebbe applicarla
+        quando un personaggio:
+    bullets:
+      - "<b>Sopravvive all'Impossibile.</b> Scende esattamente a 0 PF e viene stabilizzato, o viene resuscitato."
+      - "<b>Subisce un Trauma Mentale.</b> Fallisce un Tiro Salvezza vs. Incantesimi/Sanità contro entità divoratrici di menti, orrori cosmici, o artefatti proibiti."
+      - "<b>Incontra il Mitico.</b> Beve dal Fiume Lete, sente il canto delle Sirene, o respira le spore del Loto."
+    closing: >
+      Quando l'Infezione ha presa, il personaggio sopravvive, ma la sua identità
+      viene cancellata. Cancella i tratti biografici.
+
+  - num: "2"
+    title: "IL NUCLEO MECCANICO: LA REGOLA DELLA MANO DESTRA"
+    paragraphs:
+      - >
+        Ogni volta che il personaggio amnesico incontra qualcuno del suo passato,
+        visita un luogo familiare, o tenta di ricordare qualcosa di cruciale su se
+        stesso, il giocatore non può dettare la propria storia.
+      - >
+        Deve chiedere al tavolo: «Cosa ricordo di questo?» Il giocatore alla sua
+        destra fisica risponde.
+    choice_table:
+      col_headers: ["ACCETTAZIONE", "RIFIUTO"]
+      rows:
+        - >
+          Il giocatore abbraccia il trauma. Il ricordo diventa canone.
+          Ottiene un beneficio specifico del sistema.
+        - >
+          Il giocatore rifiuta il ricordo. Non diventa canone, ma la
+          dissonanza cognitiva infligge un costo permanente.
+    veto_note: >
+      Il GM mantiene il potere di veto su qualsiasi ricordo che rompa il tono o
+      la logica interna della campagna.
+
+  - num: "3"
+    title: "INTEGRAZIONI DI SISTEMA"
+    systems:
+      - id: morkborg
+        name: "Mörk Borg: «Presagi di Colpa»"
+        intro: >
+          L'Infezione sostituisce l'effetto di scendere a 0 PF se il PG tira 4
+          sulla tabella Broken. Quando il PG Amnesico spende un Presagio, il
+          giocatore alla sua destra inventa un terribile peccato che il PG ha
+          commesso nel passato.
+        col_headers: ["", "Effetto", "Risultato"]
+        rows:
+          - ["Accettazione", "Abbraccia la colpa.", "Il Presagio funziona normalmente. Cura 1d6 PF."]
+          - ["Rifiuto",      "Sopprime il ricordo.", "Il Presagio brucia, l'azione fallisce. Presenza permanente −1. A −3 Presenza il PG diventa un PNG ferino."]
+
+      - id: ose
+        name: "OSE / OSR: «La Maledizione del Vuoto»"
+        intro: >
+          Sostituisce il Drenaggio di Livello usato da Non Morti (Spettri, Vampiri
+          e simili). Invece di perdere un livello, il PG perde un pezzo della
+          propria identità (Tiro Salvezza vs. Morte per resistere).
+        col_headers: ["", "Effetto", "Risultato"]
+        rows:
+          - ["Accettazione", "La verità oscura diventa canone.", "Vantaggio (+2) al prossimo attacco o tiro salvezza. L'Allineamento scivola di un passo verso il Caotico."]
+          - ["Rifiuto",      "Sopprime la verità.",              "Saggezza permanente −1. Sotto Saggezza 3: incapace di parlare o lanciare incantesimi."]
+
+      - id: coc
+        name: "Call of Cthulhu 7e: «Lo Stato di Fuga»"
+        intro: >
+          Attivato quando un Investigatore perde 5 o più punti Sanità in un
+          singolo tiro, o entra in Follia Indefinita. Quando usa una voce della
+          Biografia per recuperare Sanità durante il riposo, il giocatore alla
+          sua destra corrompe quel ricordo.
+        col_headers: ["", "Effetto", "Risultato"]
+        rows:
+          - ["Accettazione", "Abbraccia il Mythos.",     "Recupera 1d4+1 Sanità. Il Custode aggiorna permanentemente la voce corrotta sulla scheda."]
+          - ["Rifiuto",      "Rifiuta la realtà.",       "Recupera zero Sanità. Perde immediatamente 1d4 Sanità per dissonanza cognitiva."]
+
+  - num: "4"
+    title: "LE TABELLE MNEMONICHE"
+    intro: >
+      Quando l'Infezione inizia, o quando il giocatore alla mano destra ha bisogno
+      di ispirazione, tira 1d10 sulla tabella adatta alla situazione corrente.
+    tables:
+      - id: blood
+        name: "Tabella A: Il Sangue"
+        context: "Tira quando si tratta di combattimento, cadaveri, o armi."
+        col_header: "Violenza, Colpa, Sopravvivenza"
+        rows:
+          - ["1",  "La cicatrice sul petto non viene da un mostro. Hai chiesto a qualcuno di tagliarti. Perché?"]
+          - ["2",  "Riconosci il volto della vittima. Sei stato tu a consegnarla al culto."]
+          - ["3",  "La tua arma caratteristica apparteneva a un eroe. Li hai uccisi nel sonno per averla."]
+          - ["4",  "Sei sopravvissuto al massacro nascondendoti sotto i corpi dei tuoi stessi figli."]
+          - ["5",  "Ricordi il sapore della carne umana. E ricordi di averlo apprezzato."]
+          - ["6",  "Il sangue sulle tue mani è fresco, ma non hai combattuto oggi. Di chi è?"]
+          - ["7",  "Ricordi di aver appiccato l'incendio. Non sapevi che erano intrappolati dentro."]
+          - ["8",  "Hai avvelenato il pozzo per vincere la guerra, uccidendo l'intero villaggio."]
+          - ["9",  "Hai lasciato il tuo ufficiale comandante a morire nel buio per poter scappare."]
+          - ["10", "Non sei il proprietario originale di questo corpo. Lo hai posseduto con violenza."]
+
+      - id: mind
+        name: "Tabella B: La Mente"
+        context: "Tira quando si tratta di PNG, politica, o indagini."
+        col_header: "Segreti, Bugie, Tradimento"
+        rows:
+          - ["1",  "Il PNG che stai cercando di salvare è quello che ti ha torturato per anni."]
+          - ["2",  "Conosci la password perché sei la spia che ha costruito questa trappola."]
+          - ["3",  "Non hai perso la memoria. Hai pagato una strega per cancellarla perché la verità era troppo pesante."]
+          - ["4",  "Sei segretamente sposato/a con il villain della campagna."]
+          - ["5",  "Il dio a cui preghi non esiste. Te lo sei inventato per far fronte ai tuoi crimini."]
+          - ["6",  "Hai rubato l'identità del tuo compagno. Sei in realtà il servo, non il nobile."]
+          - ["7",  "Hai venduto i piani difensivi del regno per saldare un debito di gioco."]
+          - ["8",  "Sai come finisce questo dungeon. Sei già rimasto intrappolato in questo loop."]
+          - ["9",  "L'informatore non è scomparso. Lo hai sepolto sotto casa tua."]
+          - ["10", "Ogni volta che dormi, riferisci telepaticamente i movimenti del gruppo al nemico."]
+
+      - id: soul
+        name: "Tabella C: L'Anima"
+        context: "Tira quando si tratta di magia, artefatti, o soprannaturale."
+        col_header: "Maledizioni, Debiti, L'Assurdo"
+        rows:
+          - ["1",  "Devi un debito a un demone. Il pagamento è l'anima del giocatore alla tua sinistra."]
+          - ["2",  "Riconosci questa lingua antica. È la tua lingua madre."]
+          - ["3",  "Ti rendi conto che non hai un battito cardiaco. Da quanto tempo sei morto/a?"]
+          - ["4",  "L'artefatto che hai appena toccato appartiene a te. Lo hai forgiato con le ossa di una persona cara."]
+          - ["5",  "Ricordi di aver firmato il contratto con il sangue. Ti resta un anno da vivere."]
+          - ["6",  "Non sei umano/a. Sei un changeling, e hai dimenticato la tua vera forma."]
+          - ["7",  "La maledizione su questa terra è colpa tua. Hai rotto il sigillo sacro."]
+          - ["8",  "Hai un parassita che vive nella tua spina dorsale. Ti parla con la voce di tua madre."]
+          - ["9",  "Ricordi di essere stato/a sacrificato/a su questo stesso altare."]
+          - ["10", "Il tuo riflesso nello specchio sbatte le palpebre autonomamente. Sta cercando di avvertirti."]
+
+  - num: "5"
+    title: "IL VELO DELLA MISERICORDIA"
+    paragraphs:
+      - >
+        Le meccaniche di AnamnesiA richiedono estrema vulnerabilità. Dare a un
+        altro giocatore il potere di inventare il trauma del tuo personaggio è
+        un'esperienza intima e intensa. Usa sempre gli Strumenti di Sicurezza
+        prima di implementare l'Infezione di Lethe. Raccomandati: X-Card e
+        Lines e Veils.
+      - >
+        Regola d'Oro: se il giocatore alla mano destra suggerisce un ricordo che
+        mette genuinamente a disagio il giocatore ricevente nella vita reale, il
+        giocatore ricevente dice semplicemente «Velo». Il ricordo viene
+        immediatamente annullato e riscritto dal tavolo senza alcuna penalità
+        meccanica. Si gioca per terrorizzarsi insieme, mai per farsi del male.
+
+licenses:
+  - >
+    AnamnesiA è una produzione indipendente di Il Gioco in Tavolo e non è
+    affiliata con Ockult Ortmastare Games o Stockholm Kartell. Pubblicata sotto
+    la Licenza Third Party di Mörk Borg.
+  - >
+    Call of Cthulhu è un marchio registrato di Chaosium Inc. Old-School
+    Essentials è un marchio di Necrotic Gnome. Questo materiale non è affiliato
+    né approvato da nessuna delle due società.
+
+closing_quote: "«Non sei l'eroe di questa storia.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

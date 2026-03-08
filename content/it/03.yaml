@@ -1,0 +1,75 @@
+meta:
+  doc_id: "03"
+  title: "RIFERIMENTO RAPIDO"
+  subtitle: "Stampare e tenere al centro del tavolo"
+  header: "A N A M N E S I A  ·  R I F E R I M E N T O  R A P I D O"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+roll_section:
+  title: "FORMULA DEL TIRO"
+  steps:
+    - "1. Scegli Approccio (gratuito / +1 / +2 Frammenti)"
+    - "2. Investi Frammenti dal Pool (1–4 dadi)"
+    - "3. Tira i dadi: il giocatore alla tua DESTRA interpreta"
+  dice_col_headers: ["Dado", "Tipo", "Effetto"]
+  dice_rows:
+    - ["5–6", "Chiaro",     "Un ricordo nitido"]
+    - ["3–4", "Confuso",    "Un ricordo ambiguo"]
+    - ["1–2", "Traumatico", "+1 Eco permanente"]
+
+outcomes_section:
+  title: "ESITI"
+  col_headers: ["Chiari", "Esito", "Conseguenza"]
+  rows:
+    - ["3+", "Successo Pieno",      "Nessuna conseguenza."]
+    - ["2",  "Successo Parziale",   "Ricordo incompleto o con costo emotivo."]
+    - ["1",  "Verità Dolorosa",     "Ricordo doloroso. Possibile Stress."]
+    - ["0",  "Collasso del Ricordo","+1 Stress. Complicazione narrativa."]
+
+pool_section:
+  title: "POOL E STRESS"
+  formula: "Pool Attuale = Pool Base − Stress − Penalità Echi (min. 1)"
+  echi_label: "Echi:"
+  echi_rows:
+    - ["0–2", "nessuna penalità"]
+    - ["3–5", "−1 dado"]
+    - ["6–8", "−3 dadi"]
+    - ["9+",  "fuori gioco"]
+  stress_col_headers: ["Stress", "Effetto"]
+  stress_rows:
+    - ["0–2", "Controllo"]
+    - ["3",   "Ansia crescente"]
+    - ["4",   "Breakdown Parziale"]
+    - ["5",   "Breakdown Finale"]
+
+special_section:
+  title: "MECCANICHE SPECIALI"
+  mechanics:
+    - name: "Forzare il Ricordo"
+      text: "Dopo Verità Dolorosa o Collasso: migliora il risultato di 1 livello. Costo: +1 Stress. Non puoi Forzare un Successo Parziale."
+    - name: "L'Ancora (1× per partita)"
+      text: "Con almeno 2 Stress: narra un momento legato alla tua Ancora. Il giocatore alla tua destra descrive il ricordo associato. −1 Stress, +1 Frammento."
+    - name: "Ultimo Ricordo (1× per partita)"
+      text: "Con Pool a 1 dado: tira 3d6 ignorando tutte le penalità. Poi +1 Stress comunque."
+    - name: "La Verità Emerge Sempre (solo Ciclo 5)"
+      text: "Un Collasso rivela comunque il ricordo, ma costa +2 Stress invece di +1. Il Custode può aggiungere un dettaglio che peggiora la verità."
+
+recovery_section:
+  title: "RECUPERO STRESS"
+  items:
+    - "Vulnerabilità dell'Archetipo: −1 Stress, max 1/ciclo"
+    - "Connessione Umana: a fine cicli 1–4, se nessun Breakdown"
+    - "Ancora: 1× per partita, richiede Stress ≥ 2"
+
+sensory_section:
+  title: "GENERATORE TRIGGER SENSORIALI (1d6)"
+  col_headers: ["d6", "Senso", "Esempi"]
+  rows:
+    - ["1", "Odore",   "Disinfettante, fumo, sangue, profumo"]
+    - ["2", "Suono",   "Ronzio, interfono, pianto, vetri, silenzio"]
+    - ["3", "Vista",   "Neon tremolante, specchio incrinato, ombra"]
+    - ["4", "Tatto",   "Freddo, bagnato, segno sulla pelle"]
+    - ["5", "Gusto",   "Metallico, amaro, medicinale, ruggine"]
+    - ["6", "Emozione","Paura improvvisa, senso di colpa, vuoto"]
+
+closing_quote: "«Il giocatore alla tua destra interpreta il tuo tiro, non tu.»"

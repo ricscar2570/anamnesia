@@ -17,7 +17,7 @@ You witnessed every detail of the horror. Your eyes captured every nuance. But n
 
 - **Detached Observation** (free) — Notice details, read emotions, stand apart while you analyze.
 - **Empathic Connection** (+1) — Feel what others feel, sense lies from the pain in their eyes.
-- **Complete Vision** (+2) — See the full picture, connect all the pieces in a moment of terrible clarity.
+- **Terrible Clarity** (+2) — See the full picture, connect all the pieces in a single, devastating moment of understanding.
 
 ## Ability: Collective Memory
 

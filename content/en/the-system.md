@@ -24,7 +24,7 @@ After the roll, classify each die:
 | Die | Type | Effect |
 |:----|:-----|:-------|
 | **5–6** | Clear Fragment | A vivid memory |
-| **3–4** | Muddled Fragment | An ambiguous memory |
+| **3–4** | Hazy Fragment | An ambiguous memory |
 | **1–2** | Traumatic Fragment | Generates 1 permanent Echo |
 
 ## Outcome Table
@@ -39,12 +39,12 @@ After the roll, classify each die:
 {: .nota }
 > *Note: Full Success (3+ Clear) is intentionally rare. The most common results are Partial Successes and Painful Truths. This is not a flaw: the game is designed so that every attempt to remember has a cost.*
 
-## The Golden Rule
+## The Right-Hand Rule
 
 {: .regola-oro }
 > **The player to your right interprets your roll's result, not you.** This ensures that memories emerge in unexpected ways and that no one controls their own narrative.
 
-**If the Golden Rule stalls:** The interpreting player can do one of these things:
+**If the Right-Hand Rule stalls:** The interpreting player can do one of these things:
 
 **1.** **Ask for a sense** from the active player: *"Give me a sense — sight, sound, smell — and I'll start from there."*
 

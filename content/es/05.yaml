@@ -1,0 +1,240 @@
+meta:
+  doc_id: "05"
+  title: "NOTAS DE DISEÑO"
+  subtitle: "La historia de AnamnesiA, del concepto a ZineQuest 2026"
+  header: "A N A M N E S I A  ·  N O T A S  D E  D I S E Ñ O"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+opening_quote: "«¿Qué queda cuando incluso las mentiras se han desvanecido?»"
+
+intro: >
+  Estas notas recogen la historia del proyecto: las versiones abandonadas,
+  las mecánicas que no funcionaron, los momentos en que el juego tomó una
+  dirección diferente a la prevista. Esto no es un reglamento. Es la memoria
+  del juego sobre sí mismo.
+
+sections:
+  - num: "1"
+    title: "EL ORIGEN"
+    paragraphs:
+      - >
+        AnamnesiA nació de una pregunta: ¿qué pasaría si no pudieras controlar
+        tu propio pasado? No en el sentido de que todos reescribimos los
+        recuerdos, sino literalmente: si alguien sentado junto a ti decidiera
+        qué habías vivido.
+      - >
+        El título proviene del griego anamnesis, la recuperación de los recuerdos
+        perdidos. Platón lo usaba para describir el conocimiento como una
+        reminiscencia de verdades que el alma ya conocía. En AnamnesiA, esa verdad
+        tiende a ser peor de lo esperado.
+      - >
+        En los juegos de rol de terror tradicionales, el miedo viene de fuera,
+        controlado por el director de juego. Quería invertir esa dirección: la
+        fuente del horror debía ser la propia historia, contada por otra persona.
+
+  - num: "2"
+    title: "LA REGLA DE ORO"
+    paragraphs:
+      - >
+        El jugador a tu derecha interpreta el resultado de tu tirada. No tú.
+        Esta regla parece sencilla. No lo es.
+      - >
+        En las primeras versiones, cada jugador interpretaba sus propios
+        resultados. El problema era que la gente tiende a protegerse: los
+        recuerdos siempre emergían con una salida, con una explicación que
+        aliviaba la culpa. Al juego le faltaba mordiente.
+      - >
+        Cuando trasladé la interpretación al jugador de la derecha ocurrió algo
+        interesante: los jugadores empezaron a temerse mutuamente. No con
+        hostilidad. Con la tensión sutil de quien sabe que la persona de al
+        lado puede decirte quién has sido. Puede inventar tu culpa.
+      - >
+        Quedaba un problema residual: a veces el jugador encargado de
+        interpretar se quedaba en blanco. La improvisación no llega a todos
+        en el mismo momento. Añadí tres salidas de emergencia: pedir un
+        sentido al jugador activo, tirar en el Generador Sensorial o pasar
+        la palabra. No hay vergüenza en ello. Es parte del sistema.
+
+  - num: "3"
+    title: "LAS VERSIONES"
+    paragraphs:
+      - >
+        <b>v1.0. Los Cimientos.</b> Reglas base, cuatro Arquetipos, escenario El
+        Incidente, sistema Fragmentos y Dados. El sistema funcionaba pero carecía
+        de válvulas de escape. Un problema recurrente emergió en las pruebas de
+        juego: los jugadores con una Reserva baja se sentían bloqueados,
+        espectadores de su propia historia en lugar de protagonistas.
+      - >
+        <b>v1.1–1.3. Infraestructura y Equilibrado.</b> Construcción de la
+        infraestructura técnica y corrección de las primeras inconsistencias
+        mecánicas. Memoria Colectiva del Testigo: de 3 registros/turno a 2,
+        con un coste adicional de 1 Eco. Escudo Viviente del Protector: coste
+        en Ecos cambiado de 1:1 a 1 por cada 2 Fragmentos sacrificados. Efecto
+        Dominó del Catalizador: el Eco solo se genera en un Colapso del Recuerdo
+        (0 Nítidos).
+      - >
+        <b>v1.4. Contenido Completo.</b> Guía del Guardián, Sesión Cero ampliada
+        con listas de verificación y tablas de Líneas y Velos por categoría,
+        segundo escenario La Traición, Variantes de Juego (Sin Guardián,
+        Campaña, Thriller Ligero). La Traición nació de una pregunta diferente
+        a El Incidente: no «¿qué os hicieron?» sino «¿qué le hicisteis a
+        alguien que amabais?» Amplié la Conexión Humana hasta el Turno 4:
+        una última oportunidad de recuperación antes de las Revelaciones.
+        El Turno 5 sigue sin recuperación: las revelaciones deben doler.
+      - >
+        <b>v2.0. Cuatro Mecánicas Nuevas.</b> Forzar el Recuerdo responde al
+        problema de la agencia cuando la Reserva es baja. El Ancla es un objeto
+        físico elegido en la Sesión Cero: invocarlo una vez por partida reduce
+        el Estrés y devuelve un Fragmento. Último Recuerdo: con la Reserva a
+        1 dado, tira 3d6 ignorando todas las penalizaciones. La Verdad Siempre
+        Emerge: en el Turno 5, los Colapsos revelan igualmente el recuerdo al
+        doble de coste. Ninguna sesión puede cerrarse en una ambigüedad total.
+
+  - num: "4"
+    title: "ESTRÉS Y ECOS"
+    paragraphs:
+      - >
+        El Estrés y los Ecos erosionan ambos la Reserva de dados, pero son dos
+        cosas distintas.
+      - >
+        El Estrés mide cuánto te cuesta recordar ahora mismo. Es el coste
+        emocional del proceso, no de la historia. Puede reducirse, lentamente,
+        con esfuerzo, porque recuperarse es posible incluso en la tragedia.
+      - >
+        Los Ecos miden cuánto te ha cambiado lo que has visto. Nunca se recuperan.
+        El personaje en el Turno 5 es distinto al del Turno 1 en dados, no solo
+        en palabras. Esa diferencia se ha acumulado una elección tras otra.
+      - >
+        Fijar el umbral del Colapso en 5 en lugar de 4 fue una decisión debatida.
+        Con umbral en 4, los personajes colapsaban demasiado pronto y el Turno 5
+        llegaba ya agotado. Con 5, el Colapso Final se convierte casi en una
+        decisión consciente: los jugadores ven acercarse el umbral y eligen cómo
+        cruzarlo.
+
+  - num: "5"
+    title: "LOS ARQUETIPOS"
+    paragraphs:
+      - >
+        En muchos juegos, los arquetipos definen lo que puedes hacer. En
+        AnamnesiA definen cómo te relacionas con la culpa.
+      - >
+        Los cuatro Arquetipos ocupan las cuatro posiciones clásicas en torno
+        a un trauma colectivo: quien sobrevivió sin entender por qué, quien
+        observó sin actuar, quien tenía la responsabilidad y fracasó, quien
+        desencadenó todo con una elección que parecía pequeña.
+      - >
+        Alrededor de una mesa, estas cuatro posiciones construyen un mapa
+        emocional completo del mismo suceso. Cada Arquetipo lo contempla desde
+        un ángulo distinto y la verdad emerge de su suma.
+      - >
+        El Catalizador tiene una mecánica sin paralelo en los otros tres
+        Arquetipos: la Culpa. Es el único momento del juego en que un personaje
+        elige activamente revelar su propia responsabilidad. Todos los demás
+        mecanismos de revelación son involuntarios. Usado en el momento
+        adecuado, transforma por completo la dinámica de la mesa.
+
+  - num: "6"
+    title: "THE LETHE INFECTION"
+    paragraphs:
+      - >
+        The Lethe Infection nació de un problema práctico: ¿cómo llegar a
+        jugadores que no conocen los juegos sin director? Llevando la Regla
+        de la Mano Derecha a los sistemas que ya juegan.
+      - >
+        El apéndice adapta la mecánica a tres sistemas. En Mörk Borg, la
+        Infección sustituye la tirada en la tabla Broken. En OSE/OSR ocupa
+        el lugar del drenaje de niveles de los No Muertos, narrativamente más
+        rico que una simple penalización matemática. En La Llamada de Cthulhu
+        7ª edición se injerta en los Estados de Fuga durante los Ataques de
+        Locura.
+      - >
+        Las tres tablas de 1d10 (Sangre, Mente, Alma) proporcionan al jugador
+        de la derecha material ya cargado, sin necesidad de improvisar en frío.
+        No castigan al personaje: le entregan una historia que no esperaba.
+      - >
+        The Lethe Infection no es una expansión de AnamnesiA. Es un punto de
+        entrada. El objetivo es que quien la use en una campaña OSR se pregunte:
+        «¿hay un juego entero construido alrededor de esto?»
+
+  - num: "7"
+    title: "LA ESTÉTICA"
+    paragraphs:
+      - >
+        Las manchas de Rorschach no fueron una elección decorativa. La prueba
+        pide encontrar formas en imágenes ambiguas: es exactamente el proceso
+        que los personajes realizan con sus propios fragmentos de memoria.
+      - >
+        Las imágenes se generan con una cadena de procesado en Python que simula
+        tinta húmeda sobre papel: desenfoque previo a sigma 7, dilatación de
+        bordes a 16 px, desenfoque final a 1.2. Bordes que sangran, transiciones
+        graduales, gotas dispersas. Difuminadas en los márgenes, más densas en
+        el centro, como los recuerdos.
+      - >
+        Las ilustraciones médicas de dominio público (Wellcome Collection,
+        rawpixel) completan el registro visual: la anatomía como documento del
+        trauma, el cuerpo como archivo de lo que la mente rechaza.
+
+  - num: "8"
+    title: "ZINEQUEST 2026"
+    subsections:
+      - subtitle: "Lanzar sin lista"
+        paragraphs:
+          - >
+            Lancé sin comunidad preexistente. Sin lista de correo, sin canal de
+            Discord activo, sin preparación promocional antes del lanzamiento.
+            La campaña arrancó en frío: los primeros nueve mecenas llegaron a lo
+            largo de dos semanas.
+          - >
+            El micromecenazgo amplifica la comunidad que ya existe, no la
+            construye. El trabajo hay que hacerlo antes, no durante.
+      - subtitle: "El inicio rápido como palanca"
+        paragraphs:
+          - >
+            El inicio rápido gratuito en cinco idiomas en itch.io y DriveThruRPG
+            (80 descargas en itch.io, 35 en DTRPG antes del lanzamiento) fue el
+            canal de conversión más eficaz. Quienes luego apoyaron la campaña
+            lo habían leído. Un juego accesible y terminado convence más que
+            cualquier descripción en una página de Kickstarter.
+      - subtitle: "Las comunidades"
+        paragraphs:
+          - >
+            r/RPGdesign respondió mejor que nadie: una publicación sobre la Regla
+            de la Mano Derecha como problema concreto de diseño generó un debate
+            genuino, 18 votos positivos y más de 3.900 visualizaciones. r/jdr
+            (francés) mostró un engagement inesperadamente alto. El mercado
+            francófono demostró ser uno de los más receptivos al tema.
+          - >
+            Kickstarter Discovery fue el principal canal de conversión, por encima
+            de cualquier publicación en Reddit o Facebook. r/osr fue hostil:
+            AnamnesiA se percibe como un storygame, y esa comunidad tiene una
+            posición firme al respecto. La comunidad italiana vive principalmente
+            en Discord y Facebook: Reddit no es el lugar adecuado para llegar
+            a ella.
+      - subtitle: "El modelo DTRPG a precio de coste"
+        paragraphs:
+          - >
+            DriveThruRPG con códigos a precio de coste eliminó el riesgo
+            financiero en el cumplimiento físico: la impresión y el envío los
+            gestiona directamente DTRPG, el mecenas paga al coste real, el
+            creador no adelanta nada. BackerKit se evaluó y se descartó: al
+            volumen de este lanzamiento, la comisión no se justificaba.
+      - subtitle: "Las cifras"
+        paragraphs:
+          - >
+            40 mecenas · 728 € recaudados · objetivo de 500 € superado · 10 países
+            (Italia, EE.UU., Reino Unido, Francia, Alemania, Dinamarca, Países Bajos,
+            Brasil, Croacia, Canadá) · 5 idiomas · 34 mecenas con recompensas activas.
+
+  - num: "9"
+    title: "LO QUE APRENDÍ"
+    bullets:
+      - "<b>La comunidad va antes que la campaña.</b> El micromecenazgo amplifica lo que ya existe. Sin una base, se parte cuesta arriba y cada mecenas cuesta el triple de esfuerzo."
+      - "<b>El juego debe funcionar antes del lanzamiento.</b> Los mecenas apoyaron después de leer el inicio rápido, no después de ver la página de Kickstarter. Un producto terminado convence más que cualquier texto promocional."
+      - "<b>El modelo a precio de coste es el adecuado para la escala zine.</b> DriveThruRPG POD elimina el riesgo físico. BackerKit tiene sentido con volúmenes altos o catálogos complejos: no para un primer lanzamiento."
+      - "<b>La especificidad convierte, la generalidad no.</b> Las publicaciones que trataban la Regla de la Mano Derecha como un problema concreto de diseño generaron interés real. Las publicaciones genéricas sobre la campaña, no."
+      - "<b>No toda comunidad es el público adecuado.</b> Llevar AnamnesiA a r/osr fue un error. El mensaje equivocado en el lugar equivocado produce fricción, no confianza."
+      - "<b>Los dados personalizados esperan.</b> Para AnamnesiA elegí no proponer dados a medida como objetivo de financiación para mantener la gestión sencilla. Para The Serpent Road merece la pena reconsiderarlo."
+      - "<b>Las actualizaciones demasiado frecuentes saturan.</b> Cinco actualizaciones en dos días tuvieron el efecto contrario. El ritmo adecuado es cada dos o tres días, con contenido diferente cada vez."
+
+closing_quote: "«Los recuerdos no mienten. Pero tampoco dicen toda la verdad.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

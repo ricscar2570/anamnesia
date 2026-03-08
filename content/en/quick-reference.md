@@ -15,7 +15,7 @@ Everything you need during play. Print and keep at the center of the table.
 | Die | Type | Effect |
 |:----|:-----|:-------|
 | 5–6 | Clear | A vivid memory |
-| 3–4 | Muddled | An ambiguous memory |
+| 3–4 | Hazy | An ambiguous memory |
 | 1–2 | Traumatic | Generates 1 permanent Echo |
 
 ## Outcome Table
@@ -61,7 +61,7 @@ Echoes: 0–2 no penalty · 3–5 penalty −1 die · 6–8 penalty −3 dice ·
 | Connections | 3–4 | Act I + II | Concrete details, tension |
 | Revelations | 5 | Act II + III | Raw truth, confrontation |
 
-## The Golden Rule
+## The Right-Hand Rule
 
 The player to your right interprets your roll's result, not you.
 

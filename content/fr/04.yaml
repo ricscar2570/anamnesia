@@ -1,0 +1,140 @@
+meta:
+  doc_id: "04"
+  title: "FEUILLES DE PERSONNAGE"
+  subtitle: "Quatre Archétypes · Imprimer et remplir"
+  header: "A N A M N E S I A  ·  F E U I L L E S  D E  P E R S O N N A G E"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+labels:
+  name:          "NOM"
+  scenario:      "SCÉNARIO"
+  anchor:        "ANCRE"
+  approaches:    "APPROCHES"
+  ability:       "CAPACITÉ"
+  vulnerability: "VULNÉRABILITÉ"
+  tracking:      "SUIVI"
+  pool_formula:  "Réserve actuelle = {pool} − Stress − Malus d'Écho (min. 1)"
+  stress_track:  "Stress  1 ■  2 ■  3 ■  4 ■ Partiel  5 ■ Final"
+  echo_track:    "Échos  1  2  3  4  5  6  7  8  9+"
+  cycle_track:   "Tour: ① ② ③ ④ ⑤"
+  anchor_used:   "Ancre utilisée: ■"
+  last_memory:   "Dernier Souvenir utilisé: ■"
+  guilt_used:    "Culpabilité utilisée: ■"
+  notes:         "Notes et Souvenirs:"
+  approach_cost_col: "Coût"
+  approach_name_col: "Approche"
+  approach_desc_col: "Description"
+  free:          "Gratuite"
+
+archetypes:
+  - id: survivant
+    name: "LE SURVIVANT"
+    pool: 5
+    quote: "«Je suis en vie quand d'autres ne le sont plus.»"
+    bio: >
+      Tu as survécu là où d'autres ont échoué. Tes réflexes sont aiguisés,
+      mais chaque survie te fait te sentir comme un lâche. Pourquoi toi
+      et pas eux?
+    approaches:
+      - cost: "Gratuite"
+        name: "Instinct de Survie"
+        desc: "Percevoir les dangers, repérer les sorties, lire les signaux d'alerte."
+      - cost: "+1"
+        name: "Paranoïa Protectrice"
+        desc: "Anticiper la trahison, se préparer au pire avant qu'il n'arrive."
+      - cost: "+2"
+        name: "Mémoire de la Douleur"
+        desc: "Se souvenir de comment on a survécu avant. La douleur comme guide."
+    ability_name: "RÉFLEXES DE SURVIE"
+    ability_text: >
+      Quand tu esquives un danger physique, relance tous les dés affichant 1–2.
+      S'ils affichent à nouveau 1–2, décris qui tu n'as pas réussi à sauver.
+    vulnerability: "Se sentir un fardeau pour les autres."
+    vulnerability_reward: "Récupère 1 Fragment et −1 Stress (max. 1/tour)."
+    key_question: "«Qui est-ce que je déçois en étant encore en vie?»"
+    special_checkboxes: []
+
+  - id: temoin
+    name: "LE TÉMOIN"
+    pool: 5
+    quote: "«J'ai tout vu. Mais mon esprit se ferme.»"
+    bio: >
+      Tu as assisté à chaque détail de l'horreur. Tes yeux ont saisi chaque
+      nuance. Mais ces souvenirs sont désormais fragmentés comme du verre
+      brisé qui tranche.
+    approaches:
+      - cost: "Gratuite"
+        name: "Observation Détachée"
+        desc: "Remarquer les détails, lire les émotions, rester en retrait pendant qu'on analyse."
+      - cost: "+1"
+        name: "Connexion Empathique"
+        desc: "Ressentir ce que les autres éprouvent, deviner les mensonges dans la douleur de leurs yeux."
+      - cost: "+2"
+        name: "Vision d'Ensemble"
+        desc: "Voir l'image complète, relier toutes les pièces en un éclair de lucidité terrifiante."
+    ability_name: "MÉMOIRE COLLECTIVE"
+    ability_text: >
+      En observant le jet d'un autre joueur: dépense 1 Fragment et reçois
+      1 Écho pour «enregistrer» les résultats. N'importe qui peut les utiliser
+      plus tard dans le tour. Max. 2/tour.
+    vulnerability: "Être contraint à des décisions immédiates."
+    vulnerability_reward: "Récupère 1 Fragment et −1 Stress (max. 1/tour)."
+    key_question: "«Quel détail crucial ai-je remarqué mais que j'ai trop peur de révéler?»"
+    special_checkboxes: []
+
+  - id: protecteur
+    name: "LE PROTECTEUR"
+    pool: 4
+    quote: "«C'était ma responsabilité. J'ai échoué.»"
+    bio: >
+      Tu étais responsable de la sécurité des autres. Au moment crucial tu
+      as échoué. Tes mains tremblent chaque fois que tu essaies d'aider.
+      Mais tu ne peux pas t'arrêter d'essayer.
+    approaches:
+      - cost: "Gratuite"
+        name: "Contrôle Autoritaire"
+        desc: "Organiser, diriger, prendre les décisions difficiles pour le groupe."
+      - cost: "+1"
+        name: "Sacrifice Calculé"
+        desc: "Te mettre en danger pour sauver les autres, absorber les dégâts."
+      - cost: "+2"
+        name: "Poids du Commandement"
+        desc: "Te souvenir de chaque fois que tu as échoué. Puiser dans cette expérience douloureuse."
+    ability_name: "BOUCLIER VIVANT"
+    ability_text: >
+      Quand un autre joueur obtient un Effondrement du Souvenir (0 succès):
+      sacrifie jusqu'à 3 Fragments pour les lui donner. Pour 2 Fragments
+      sacrifiés, tu reçois 1 Écho.
+    vulnerability: "Les autres en danger sans pouvoir intervenir."
+    vulnerability_reward: "Récupère 1 Fragment et −1 Stress (max. 1/tour)."
+    key_question: "«Quelle menace est-ce que j'ignore, et qui n'arrive pas à protéger en ce moment?»"
+    special_checkboxes: []
+
+  - id: catalyseur
+    name: "LE CATALYSEUR"
+    pool: 4
+    quote: "«Tout a commencé par ma faute.»"
+    bio: >
+      Tu as déclenché la chaîne d'événements. Pas par malveillance, mais par
+      un choix, un mot, un geste. Et tout s'est effondré. Chacune de tes
+      actions porte désormais l'écho de cette première décision fatale.
+    approaches:
+      - cost: "Gratuite"
+        name: "Invisibilité Sociale"
+        desc: "Rester en retrait, éviter l'attention, observer sans être vu."
+      - cost: "+1"
+        name: "Manipulation Subtile"
+        desc: "Influencer la dynamique du groupe sans être découvert."
+      - cost: "+2"
+        name: "Moment Décisif"
+        desc: "Se souvenir du moment exact où tout a basculé."
+    ability_name: "EFFET DOMINO"
+    ability_text: >
+      En cas d'Effondrement du Souvenir (0 succès): les autres joueurs
+      reçoivent +1 Fragment temporaire. Tu reçois 1 Écho.
+    special_ability_name: "Culpabilité (1×/partie)"
+    special_ability_text: "Confesse ta responsabilité à un autre PJ. Reçois 3 Fragments."
+    vulnerability: "Être poussé à diriger ou à choisir."
+    vulnerability_reward: "Récupère 1 Fragment et −1 Stress (max. 1/tour)."
+    key_question: "«Quelle action de ma part pourrait tout faire s'effondrer à nouveau?»"
+    special_checkboxes: ["guilt_used"]

@@ -1,0 +1,136 @@
+meta:
+  doc_id: "04"
+  title: "CHARACTER SHEETS"
+  subtitle: "Four Archetypes · Print and fill in"
+  header: "A N A M N E S I A  ·  C H A R A C T E R  S H E E T S"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+labels:
+  name:          "NAME"
+  scenario:      "SCENARIO"
+  anchor:        "ANCHOR"
+  approaches:    "APPROACHES"
+  ability:       "ABILITY"
+  vulnerability: "VULNERABILITY"
+  tracking:      "TRACKING"
+  pool_formula:  "Current Pool = {pool} − Stress − Echo Penalty (min. 1)"
+  stress_track:  "Stress  1 ■  2 ■  3 ■  4 ■ Partial  5 ■ Final"
+  echo_track:    "Echoes  1  2  3  4  5  6  7  8  9+"
+  cycle_track:   "Cycle: ① ② ③ ④ ⑤"
+  anchor_used:   "Anchor used: ■"
+  last_memory:   "Last Memory used: ■"
+  guilt_used:    "Guilt used: ■"
+  notes:         "Notes & Memories:"
+  approach_cost_col: "Cost"
+  approach_name_col: "Approach"
+  approach_desc_col: "Description"
+  free:          "Free"
+
+archetypes:
+  - id: survivor
+    name: "THE SURVIVOR"
+    pool: 5
+    quote: "«I am alive when others are not.»"
+    bio: >
+      You survived when others did not. Your reflexes are sharp, but every survival
+      makes you feel like a coward. Why you and not them?
+    approaches:
+      - cost: "Free"
+        name: "Survival Instinct"
+        desc: "Perceive danger, spot exits, read warning signs."
+      - cost: "+1"
+        name: "Protective Paranoia"
+        desc: "Anticipate betrayal, prepare for the worst before it happens."
+      - cost: "+2"
+        name: "Memory of Pain"
+        desc: "Remember how you survived before. Pain as a guide."
+    ability_name: "SURVIVAL REFLEXES"
+    ability_text: >
+      When you avoid physical danger, re-roll all dice showing 1–2. If they show
+      1–2 again, describe who you failed to save.
+    vulnerability: "Feeling like a burden to others."
+    vulnerability_reward: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    key_question: "«Who am I letting down by still being alive?»"
+    special_checkboxes: []
+
+  - id: witness
+    name: "THE WITNESS"
+    pool: 5
+    quote: "«I saw everything. But my mind shuts down.»"
+    bio: >
+      You witnessed every detail of the horror. Your eyes caught every nuance.
+      But now those memories are fragmented like cutting glass.
+    approaches:
+      - cost: "Free"
+        name: "Detached Observation"
+        desc: "Notice details, read emotions, stand back while you analyse."
+      - cost: "+1"
+        name: "Empathic Connection"
+        desc: "Feel what others feel, sense lies from the pain in their eyes."
+      - cost: "+2"
+        name: "Full Vision"
+        desc: "See the whole picture, connect all the pieces in a moment of terrible clarity."
+    ability_name: "COLLECTIVE MEMORY"
+    ability_text: >
+      Watching another player's roll: spend 1 Fragment + gain 1 Echo to
+      «record» the results. Anyone can use them later in the cycle. Max 2/cycle.
+    vulnerability: "Being forced into immediate decisions."
+    vulnerability_reward: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    key_question: "«What crucial detail did I notice but am too afraid to reveal?»"
+    special_checkboxes: []
+
+  - id: protector
+    name: "THE PROTECTOR"
+    pool: 4
+    quote: "«It was my responsibility. I failed.»"
+    bio: >
+      You were responsible for keeping the others safe. At the crucial moment
+      you failed. Your hands tremble every time you try to help. But you cannot
+      stop trying.
+    approaches:
+      - cost: "Free"
+        name: "Authoritative Control"
+        desc: "Organise, command, make hard decisions for the group."
+      - cost: "+1"
+        name: "Calculated Sacrifice"
+        desc: "Put yourself in danger to save others, absorb the damage."
+      - cost: "+2"
+        name: "Weight of Command"
+        desc: "Remember every time you have failed. Draw on that painful experience."
+    ability_name: "LIVING SHIELD"
+    ability_text: >
+      When another player gets a Memory Collapse (0 successes): sacrifice up to
+      3 Fragments to give them. Every 2 Fragments sacrificed = 1 Echo.
+    vulnerability: "Others in danger and unable to help."
+    vulnerability_reward: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    key_question: "«What threat am I ignoring, and who can I not protect right now?»"
+    special_checkboxes: []
+
+  - id: catalyst
+    name: "THE CATALYST"
+    pool: 4
+    quote: "«It all started because of me.»"
+    bio: >
+      You triggered the chain of events. Not through malice, but through a choice,
+      a word, a gesture. And everything collapsed. Now every action you take carries
+      the echo of that first, fatal decision.
+    approaches:
+      - cost: "Free"
+        name: "Social Invisibility"
+        desc: "Stay in the background, avoid attention, observe without being seen."
+      - cost: "+1"
+        name: "Subtle Manipulation"
+        desc: "Influence the group's dynamics without being discovered."
+      - cost: "+2"
+        name: "Crucial Moment"
+        desc: "Remember the exact moment when everything changed."
+    ability_name: "DOMINO EFFECT"
+    ability_text: >
+      On a Memory Collapse (0 successes): other players gain +1 temporary Fragment.
+      You gain 1 Echo.
+    special_ability_name: "Guilt (1×/session)"
+    special_ability_text: "Confess your responsibility to another PC. Gain 3 Fragments."
+    vulnerability: "Being pushed to lead or choose."
+    vulnerability_reward: "Recover 1 Fragment and −1 Stress (max 1/cycle)."
+    key_question: "«What action of mine could make everything collapse again?»"
+    special_checkboxes: ["guilt_used"]

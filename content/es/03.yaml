@@ -1,0 +1,75 @@
+meta:
+  doc_id: "03"
+  title: "AYUDA DE JUEGO RÁPIDA"
+  subtitle: "Imprimir y dejar en el centro de la mesa"
+  header: "A N A M N E S I A  ·  A Y U D A  D E  J U E G O  R Á P I D A"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+roll_section:
+  title: "FÓRMULA DE LA TIRADA"
+  steps:
+    - "1. Elige un Enfoque (gratuito / +1 / +2 Fragmentos)"
+    - "2. Invierte Fragmentos de tu Reserva (1–4 dados)"
+    - "3. Tira los dados: el jugador a tu DERECHA interpreta el resultado"
+  dice_col_headers: ["Dado", "Tipo", "Efecto"]
+  dice_rows:
+    - ["5–6", "Nítido",     "Un recuerdo vívido"]
+    - ["3–4", "Turbio",     "Un recuerdo ambiguo"]
+    - ["1–2", "Traumático", "+1 Eco permanente"]
+
+outcomes_section:
+  title: "RESULTADOS"
+  col_headers: ["Nítidos", "Resultado", "Consecuencia"]
+  rows:
+    - ["3+", "Éxito Total",          "Sin consecuencias."]
+    - ["2",  "Éxito Parcial",        "Recuerdo incompleto o coste emocional."]
+    - ["1",  "Verdad Dolorosa",      "Recuerdo real pero doloroso. Posible Estrés."]
+    - ["0",  "Colapso del Recuerdo", "+1 Estrés. Complicación narrativa."]
+
+pool_section:
+  title: "RESERVA Y ESTRÉS"
+  formula: "Reserva actual = Reserva base − Estrés − Penalización por Ecos (mín. 1)"
+  echi_label: "Ecos:"
+  echi_rows:
+    - ["0–2", "sin penalización"]
+    - ["3–5", "−1 dado"]
+    - ["6–8", "−3 dados"]
+    - ["9+",  "fuera de juego"]
+  stress_col_headers: ["Estrés", "Efecto"]
+  stress_rows:
+    - ["0–2", "Control"]
+    - ["3",   "Ansiedad creciente"]
+    - ["4",   "Colapso Parcial"]
+    - ["5",   "Colapso Final"]
+
+special_section:
+  title: "MECÁNICAS ESPECIALES"
+  mechanics:
+    - name: "Forzar el Recuerdo"
+      text: "Tras Verdad Dolorosa o Colapso del Recuerdo: mejora el resultado un nivel. Coste: +1 Estrés. No puedes forzar un Éxito Parcial."
+    - name: "El Ancla (1× por partida)"
+      text: "Con al menos 2 de Estrés: narra un momento ligado a tu Ancla. El jugador a tu derecha describe el recuerdo asociado. −1 Estrés, +1 Fragmento."
+    - name: "Último Recuerdo (1× por partida)"
+      text: "Con la Reserva a 1 dado: tira 3d6 ignorando todas las penalizaciones. Luego +1 Estrés de todas formas."
+    - name: "La Verdad Siempre Emerge (solo Turno 5)"
+      text: "Un Colapso del Recuerdo revela el recuerdo igualmente, pero cuesta +2 Estrés en lugar de +1. El Guardián puede añadir un detalle que agrave la verdad."
+
+recovery_section:
+  title: "RECUPERACIÓN DE ESTRÉS"
+  items:
+    - "Vulnerabilidad del Arquetipo: −1 Estrés, máx. 1/turno"
+    - "Conexión Humana: al final de los turnos 1–4, si no hay Colapso del Recuerdo"
+    - "Ancla: 1× por partida, requiere Estrés ≥ 2"
+
+sensory_section:
+  title: "GENERADOR DE DETONANTES SENSORIALES (1d6)"
+  col_headers: ["d6", "Sentido", "Ejemplos"]
+  rows:
+    - ["1", "Olfato",  "Desinfectante, humo, sangre, perfume"]
+    - ["2", "Oído",    "Zumbido, interfono, llanto, cristales, silencio"]
+    - ["3", "Vista",   "Neón parpadeante, espejo agrietado, sombra que se mueve"]
+    - ["4", "Tacto",   "Frío, humedad, una marca en la piel"]
+    - ["5", "Gusto",   "Metálico, amargo, medicinal, óxido"]
+    - ["6", "Emoción", "Miedo repentino, culpa, vergüenza, vacío"]
+
+closing_quote: "«El jugador a tu derecha interpreta tu tirada, no tú.»"

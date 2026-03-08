@@ -1,0 +1,50 @@
+meta:
+  doc_id: "01"
+  title: "GENERATORI DI COMPLICAZIONI"
+  subtitle: "Strumenti per il Custode della Memoria"
+  header: "A N A M N E S I A  ·  G E N E R A T O R I  D I  C O M P L I C A Z I O N I"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Usa questi generatori quando il gioco ristagna, dopo un Collasso del Ricordo (0
+  Chiari), o quando hai bisogno di un innesco rapido. Tira 1d6 sulla tabella della
+  fase corrente.
+
+phases:
+  - id: nebbia
+    title: "FASE NEBBIA — Cicli 1–2"
+    subtitle: "Complicazioni Sensoriali"
+    col_header: "Complicazione"
+    rows:
+      - ["1", "Un suono che non dovrebbe esserci: un campanello, un respiro, un ticchettio."]
+      - ["2", "La temperatura cambia bruscamente in un punto preciso della stanza."]
+      - ["3", "Un odore penetrante e fugace che nessun altro sembra percepire."]
+      - ["4", "Un oggetto si è spostato da dove lo ricordavate. O forse no?"]
+      - ["5", "Una scritta su una superficie: ma quando la indichi agli altri, non la vedono."]
+      - ["6", "Un déjà vu condiviso: due personaggi hanno la stessa sensazione nello stesso istante."]
+
+  - id: connessioni
+    title: "FASE CONNESSIONI — Cicli 3–4"
+    subtitle: "Complicazioni Relazionali"
+    col_header: "Complicazione"
+    rows:
+      - ["1", "Due frammenti emersi finora si contraddicono. Uno dei due è falso. Quale?"]
+      - ["2", "Qualcuno che non dovrebbe sapere, sa. Un PNG compare con un'informazione inquietante."]
+      - ["3", "Un oggetto personale di un PG viene trovato dove non dovrebbe essere."]
+      - ["4", "Un PG ha un flashback improvviso. Il giocatore alla sua destra descrive cosa vede."]
+      - ["5", "Qualcosa sta per accadere. Passi nel corridoio, un telefono che squilla, un countdown."]
+      - ["6", "Due personaggi scoprono una connessione che non ricordavano. Definitela insieme."]
+
+  - id: rivelazioni
+    title: "FASE RIVELAZIONI — Ciclo 5"
+    subtitle: "Complicazioni Traumatiche"
+    col_header: "Complicazione"
+    rows:
+      - ["1", "Un ricordo che emerge adesso contraddice TUTTO ciò che avete ricostruito finora."]
+      - ["2", "Un PG ricorda il momento esatto del trauma. Il giocatore alla sua destra lo descrive."]
+      - ["3", "La prova definitiva è qui: ma accettarla significa ammettere una colpa personale."]
+      - ["4", "Qualcuno che credevate vittima era complice. O viceversa."]
+      - ["5", "Il tempo è scaduto: la conseguenza esterna arriva (polizia, medici, familiari). Cosa fate?"]
+      - ["6", "La verità è peggio di quanto chiunque immaginasse. Ogni PG dice una cosa che avrebbe preferito non ricordare."]
+
+closing_quote: "«Il silenzio dopo un ricordo è parte del gioco.»"

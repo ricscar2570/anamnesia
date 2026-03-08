@@ -1,0 +1,223 @@
+meta:
+  doc_id: "05"
+  title: "DESIGN NOTES"
+  subtitle: "The story of AnamnesiA, from concept to ZineQuest 2026"
+  header: "A N A M N E S I A  ·  D E S I G N  N O T E S"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+opening_quote: "«What remains when even the lies have faded?»"
+
+intro: >
+  These notes collect the story of the project: the abandoned versions, the
+  mechanics that did not work, the moments when the game took a different turn
+  from the one planned. This is not a manual. It is the game's memory of itself.
+
+sections:
+  - num: "1"
+    title: "THE ORIGIN"
+    paragraphs:
+      - >
+        AnamnesiA was born from a question: what would happen if you could not
+        control your own past? Not in the sense that we all rewrite memories, but
+        literally: if someone sitting next to you decided what you had lived through.
+      - >
+        The title comes from the Greek anamnesis, the recovery of lost memories.
+        Plato used it to describe knowledge as a reminiscence of truths already known
+        by the soul. In AnamnesiA, that truth tends to be worse than expected.
+      - >
+        In traditional horror games, fear comes from the outside, controlled by
+        the GM. I wanted to reverse that direction: the source of horror had to be
+        one's own story, told by someone else.
+
+  - num: "2"
+    title: "THE GOLDEN RULE"
+    paragraphs:
+      - >
+        The player to your right interprets the result of your roll. Not you. This
+        rule sounds simple. It is not.
+      - >
+        In the early versions every player interpreted their own results. The problem
+        was that people tend to protect themselves: memories always surfaced with an
+        escape route, with an explanation that softened the guilt. The game had no bite.
+      - >
+        When I moved interpretation to the right-hand player, something interesting
+        happened: players began to fear each other. Not with hostility. With the subtle
+        tension of someone who knows the person beside them can tell you who you have
+        been. Can invent your guilt.
+      - >
+        There was still a residual problem: sometimes the player tasked with
+        interpreting froze. Improvisation does not come to everyone at the same
+        moment. I added three emergency exits: ask the active player for a sense,
+        roll on the Sensory Generator, or pass the word. There is no shame in it.
+        It is part of the system.
+
+  - num: "3"
+    title: "THE VERSIONS"
+    paragraphs:
+      - >
+        <b>v1.0. The Foundation.</b> Core rules, four Archetypes, scenario The
+        Incident, Fragments and Dice system. The system worked but lacked release
+        valves. A recurring problem emerged from playtests: players with a low Pool
+        felt stuck, spectators of their own story rather than protagonists.
+      - >
+        <b>v1.1–1.3. Infrastructure and Balancing.</b> Built the technical
+        infrastructure (Jekyll site, GitHub Pages deploy, WeasyPrint PDF pipeline,
+        A5 two-column layout) and corrected the first mechanical inconsistencies.
+        Witness's Collective Memory: from 3 records/cycle to 2, with an additional
+        cost of 1 Echo. Protector's Living Shield: Echo cost changed from 1:1 to 1
+        per every 2 Fragments sacrificed. Catalyst's Domino Effect: Echo now
+        generates only on Memory Collapse (0 Clears).
+      - >
+        <b>v1.4. Complete Content.</b> Keeper's Guide, expanded Session Zero with
+        checklists and Lines and Veils tables by category, the second scenario The
+        Betrayal, Game Variants (Keeperless, Campaign, Light Thriller). The Betrayal
+        was born from a different question than The Incident: not «what did they do
+        to you?» but «what did you do to someone you loved?» I extended Human
+        Connection to Cycle 4: one last chance at recovery before the Revelations.
+        Cycle 5 remains without recovery: the revelations must hurt.
+      - >
+        <b>v2.0. Four New Mechanics.</b> Force the Memory addresses the agency
+        problem when the Pool is low. The Anchor is a physical object chosen at
+        Session Zero: invoking it once per session reduces Stress and returns a
+        Fragment. Last Memory: with Pool at 1 die, roll 3d6 ignoring all penalties.
+        The Truth Always Emerges: in Cycle 5 Collapses still reveal the memory at
+        double cost. No session can close in total ambiguity.
+
+  - num: "4"
+    title: "STRESS AND ECHOES"
+    paragraphs:
+      - >
+        Stress and Echoes both erode the dice Pool, but they are two different things.
+      - >
+        Stress measures how much it costs you to remember right now. It is the
+        emotional cost of the process, not of the story. It can decrease, slowly,
+        with effort, because recovering is possible even in tragedy.
+      - >
+        Echoes measure how much what you have seen has changed you. They never
+        recover. The character in Cycle 5 is different from the one in Cycle 1 in
+        dice, not just in words. That difference accumulated one choice at a time.
+      - >
+        Setting the Breakdown threshold at 5 rather than 4 was a debated choice.
+        At threshold 4, characters collapsed too early and Cycle 5 arrived already
+        drained. At 5, the Final Breakdown becomes almost a conscious decision:
+        players see the threshold approaching and choose how to cross it.
+
+  - num: "5"
+    title: "THE ARCHETYPES"
+    paragraphs:
+      - >
+        In many games, archetypes define what you can do. In AnamnesiA they define
+        how you relate to guilt.
+      - >
+        The four Archetypes occupy the four classic positions around a collective
+        trauma: the one who survived without understanding why, the one who watched
+        without acting, the one who bore responsibility and failed, the one who
+        triggered everything with a choice that seemed small.
+      - >
+        Around a table, these four positions build a complete emotional map of the
+        same event. Each Archetype views it from a different angle and the truth
+        emerges from the sum.
+      - >
+        The Catalyst has a mechanic with no parallel in the other three Archetypes:
+        Guilt. It is the only moment in the game where a character actively chooses
+        to reveal their own responsibility. All other revelation mechanisms are
+        involuntary. Used at the right moment, it changes the entire dynamic at the
+        table.
+
+  - num: "6"
+    title: "THE LETHE INFECTION"
+    paragraphs:
+      - >
+        The Lethe Infection was born from a practical problem: how to reach players
+        who do not know GM-less games? By bringing the Right-Hand Rule into the
+        systems they already play.
+      - >
+        The appendix adapts the mechanic to three systems. In Mörk Borg the Infection
+        replaces the roll on the Broken table. In OSE/OSR it takes the place of Undead
+        level drain, narratively richer than a simple mathematical penalty. In Call of
+        Cthulhu 7e it grafts onto Fugue States during Bouts of Madness.
+      - >
+        The three d10 tables (Blood, Mind, Soul) give the right-hand player ready-loaded
+        material without requiring cold improvisation. They do not punish the character:
+        they hand them a story they did not expect.
+      - >
+        The Lethe Infection is not an expansion of AnamnesiA. It is an entry point.
+        The goal is that anyone who uses it in an OSR campaign will ask: «is there an
+        entire game built around this?»
+
+  - num: "7"
+    title: "THE AESTHETIC"
+    paragraphs:
+      - >
+        The Rorschach inkblots were not a decorative choice. The test asks you to find
+        shapes in ambiguous images: this is exactly the process characters perform with
+        their own memory fragments.
+      - >
+        The images are generated with a Python pipeline that simulates wet ink on paper:
+        pre-blur at sigma 7, edge dilation at 16 px, final blur at 1.2. Bleeding edges,
+        gradual transitions, scattered drops. Faded at the margins, denser at the centre,
+        like memories.
+      - >
+        The public domain medical illustrations (Wellcome Collection, rawpixel) complete
+        the visual register: anatomy as a document of trauma, the body as an archive of
+        what the mind refuses.
+
+  - num: "8"
+    title: "ZINEQUEST 2026"
+    subsections:
+      - subtitle: "Launching without a list"
+        paragraphs:
+          - >
+            I launched without a pre-existing community. No email list, no active Discord
+            channel, no promotional preparation before launch. The campaign started cold:
+            the first nine backers arrived over the course of two weeks.
+          - >
+            Crowdfunding amplifies the community that already exists, it does not build
+            one. The work must be done before, not during.
+      - subtitle: "The quickstart as a lever"
+        paragraphs:
+          - >
+            The free quickstart in five languages on itch.io and DriveThruRPG (80
+            downloads on itch.io, 35 on DTRPG before launch) was the most effective
+            conversion channel. Those who then backed the campaign had read it.
+            A finished, accessible game is more convincing than any Kickstarter
+            page description.
+      - subtitle: "The communities"
+        paragraphs:
+          - >
+            r/RPGdesign responded best of all: a post about the Right-Hand Rule as a
+            concrete design problem generated genuine discussion, 18 upvotes and over
+            3,900 views. r/jdr (French) showed unexpectedly high engagement. The
+            French-speaking market proved to be among the most receptive to the theme.
+          - >
+            Kickstarter Discovery was the main conversion channel, more than any Reddit
+            or Facebook post. r/osr was hostile: AnamnesiA is perceived as a storygame,
+            and that community has a firm position on the point. The Italian community
+            lives mainly on Discord and Facebook: Reddit is not the right place to reach them.
+      - subtitle: "The DTRPG at-cost model"
+        paragraphs:
+          - >
+            DriveThruRPG with at-cost codes eliminated the financial risk on physical
+            fulfilment: printing and shipping are handled directly by DTRPG, the backer
+            pays at actual cost, the creator advances nothing. BackerKit was evaluated
+            and rejected: at this launch's volume, the commission was not justified.
+      - subtitle: "The numbers"
+        paragraphs:
+          - >
+            40 backers · €728 raised · €500 goal surpassed · 10 countries (Italy, USA,
+            UK, France, Germany, Denmark, Netherlands, Brazil, Croatia, Canada) ·
+            5 languages · 34 backers with active rewards.
+
+  - num: "9"
+    title: "WHAT I LEARNED"
+    bullets:
+      - "<b>Community comes before the campaign.</b> Crowdfunding amplifies what already exists. Without a base, you start uphill and every backer costs triple the effort."
+      - "<b>The game must work before launch.</b> Backers funded after reading the quickstart, not after seeing the Kickstarter page. A finished product is more convincing than any promotional text."
+      - "<b>The at-cost model is right for the zine scale.</b> DriveThruRPG POD eliminates physical risk. BackerKit makes sense at high volumes or with complex catalogues: not for a first launch."
+      - "<b>Specificity converts, generality does not.</b> Posts that discussed the Right-Hand Rule as a concrete design problem generated real interest. Generic campaign posts did not."
+      - "<b>Not every community is the right audience.</b> Taking AnamnesiA to r/osr was a mistake. The wrong message in the wrong place produces friction, not trust."
+      - "<b>Custom dice can wait.</b> For AnamnesiA I chose not to propose custom dice as a stretch goal to keep operations simple. For The Serpent Road it is worth reconsidering."
+      - "<b>Too-frequent updates saturate.</b> Five updates in two days had the opposite effect. The right pace is every two or three days, with different content each time."
+
+closing_quote: "«Memories do not lie. But they do not tell the whole truth either.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"

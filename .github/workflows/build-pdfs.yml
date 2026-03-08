@@ -1,0 +1,107 @@
+name: Build Digital Extras Pack
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'builders/**'
+      - 'assets/**'
+      - '.github/workflows/build-pdfs.yml'
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: 'Lingua da generare (lascia vuoto per tutte: it en de fr es)'
+        required: false
+        default: ''
+
+jobs:
+  build:
+    name: Generate PDFs
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── Checkout ───────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Python ────────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── Dipendenze Python ──────────────────────────────────────────────────
+      - name: Install Python dependencies
+        run: pip install reportlab PyYAML fonttools
+
+      # ── Font Lora: scarica variable font da Google Fonts GitHub ───────────
+      - name: Download Lora variable fonts
+        run: |
+          mkdir -p assets/fonts
+          curl -fsSL \
+            "https://github.com/google/fonts/raw/main/ofl/lora/Lora%5Bwght%5D.ttf" \
+            -o assets/fonts/Lora-Variable.ttf
+          curl -fsSL \
+            "https://github.com/google/fonts/raw/main/ofl/lora/Lora-Italic%5Bwght%5D.ttf" \
+            -o assets/fonts/Lora-Italic-Variable.ttf
+          ls -lh assets/fonts/
+
+      # ── Genera istanze statiche Lora (Regular, Bold, Italic, BoldItalic) ───
+      - name: Extract static Lora instances
+        run: |
+          python3 - << 'PYEOF'
+          from fontTools.ttLib import TTFont
+          from fontTools.varLib.instancer import instantiateVariableFont
+
+          configs = [
+              ('assets/fonts/Lora-Variable.ttf',
+               [400, 700], ['LoraRegular', 'LoraBold']),
+              ('assets/fonts/Lora-Italic-Variable.ttf',
+               [400, 700], ['LoraItalic', 'LoraBoldItalic']),
+          ]
+          for src, weights, names in configs:
+              for w, name in zip(weights, names):
+                  f = TTFont(src)
+                  inst = instantiateVariableFont(f, {'wght': w})
+                  dest = f'assets/fonts/{name}.ttf'
+                  inst.save(dest)
+                  print(f'OK  {dest}')
+          PYEOF
+
+      # ── Build PDF ──────────────────────────────────────────────────────────
+      - name: Build all PDFs
+        run: |
+          if [ -n "${{ github.event.inputs.lang }}" ]; then
+            python builders/build_all.py ${{ github.event.inputs.lang }}
+          else
+            python builders/build_all.py
+          fi
+
+      # ── Verifica output ────────────────────────────────────────────────────
+      - name: Verify output
+        run: |
+          count=$(find output -name "*.pdf" | wc -l)
+          echo "PDF generati: $count"
+          find output -name "*.pdf" | sort
+          if [ -z "${{ github.event.inputs.lang }}" ] && [ "$count" -lt 30 ]; then
+            echo "ERRORE: attesi 30 PDF, trovati $count"
+            exit 1
+          fi
+
+      # ── Upload artifact ────────────────────────────────────────────────────
+      - name: Upload PDFs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: anamnesia-digital-extras-pack
+          path: output/**/*.pdf
+          retention-days: 30
+          if-no-files-found: error
+
+      # ── Release automatica su tag v* ───────────────────────────────────────
+      - name: Upload to release (solo su tag v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: output/**/*.pdf
+          generate_release_notes: true

@@ -24,13 +24,13 @@ Three players: Anna (Survivor, Pool 5), Marco (Witness, Pool 5), and Sara (Catal
 
 Marco draws 4 cards from the Act I deck (3 players + 1) and lays them out: *Chemical Smell, Flickering Light, Name on the Wrist, Empty Chair.*
 
-**Anna:** *"I want to interact with the Empty Chair. I use my free Approach, Flight Instinct, to read the signals in the room. I invest 2 Fragments."*
+**Anna:** *"I want to interact with the Empty Chair. I use my free Approach, Escape Instinct, to read the signals in the room. I invest 2 Fragments."*
 
-Anna rolls 2 dice: 4 and 6. One Clear Fragment, one Muddled Fragment. Outcome: Painful Truth. Marco interprets:
+Anna rolls 2 dice: 4 and 6. One Clear Fragment, one Hazy Fragment. Outcome: Painful Truth. Marco interprets:
 
 **Marco:** *"Anna, you approach the chair and catch a scent. Not disinfectant: it's someone's perfume. Someone you knew. The cushion is still warm, but no one's there anymore. And suddenly you know, with terrible certainty, that this person didn't leave willingly."*
 
-**Sara:** *"I want to use Crucial Moment (+2) on the Name on the Wrist. I start with 4 dice, spend 2 for the Approach, and roll 2 dice."*
+**Sara:** *"I want to use Pivotal Moment (+2) on the Name on the Wrist. I start with 4 dice, spend 2 for the Approach, and roll 2 dice."*
 
 Sara rolls 2 dice: 2 and 3. Zero Clear Fragments. Outcome: Memory Collapse. Anna interprets:
 

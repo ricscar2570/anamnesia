@@ -86,102 +86,120 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: center;
   position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
-   }
-/* Texture overlay */
+}
+/* Gradient overlay: trasparente in alto, scuro dal 55% in giu */
 .cover::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: 
-    radial-gradient(ellipse at 30% 20%, rgba(140,80,70,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 80%, rgba(80,60,100,0.06) 0%, transparent 50%);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(10,9,16,0)    0%,
+      rgba(10,9,16,0)    45%,
+      rgba(10,9,16,0.7)  62%,
+      rgba(10,9,16,0.95) 75%,
+      rgba(10,9,16,1)    88%
+    );
+  z-index: 2;
 }
-/* Border frame */
+/* Bordo doppio */
 .cover::after {
   content: '';
   position: absolute;
-  top: 8mm;
-  left: 8mm;
-  right: 8mm;
-  bottom: 8mm;
-  border: 0.4pt solid rgba(196,115,110,0.25);
+  top: 7mm;
+  left: 7mm;
+  right: 7mm;
+  bottom: 7mm;
+  border: 0.6pt solid rgba(196,115,110,0.55);
+  outline: 1.2pt solid rgba(196,115,110,0.18);
+  outline-offset: -3.2pt;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .cover-inner {
   position: relative;
-  z-index: 2;
-  padding: 20mm 15mm;
+  z-index: 4;
+  padding: 0 14mm 30mm;
+  width: 100%;
+  box-sizing: border-box;
 }
+/* Figura a piena altezza, full bleed */
 .cover-figure {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 50%;
+  height: 73%;
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
+  object-position: center top;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.88;
 }
-.cover-ornament-top,
-.cover-ornament-bottom {
-  color: #6b4a45;
-  font-size: 11pt;
-  letter-spacing: 0.6em;
-  margin: 6pt 0;
+.cover-ornament-top {
+  color: #7a5850;
+  font-size: 10pt;
+  letter-spacing: 0.55em;
+  margin: 0 0 8pt;
+  display: block;
 }
 .cover-title {
   font-family: 'Cinzel', serif;
-  font-size: 42pt;
+  font-size: 44pt;
   font-weight: 800;
-  color: #e8e0d4;
-  letter-spacing: 0.12em;
-  margin: 10pt 0 0;
+  color: #ede5d8;
+  letter-spacing: 0.1em;
+  margin: 0;
   border: none;
-  text-shadow: 0 0 40pt rgba(196,115,110,0.15);
+  line-height: 1;
 }
 .cover-rule {
-  width: 40%;
-  height: 1.2pt;
-  background: linear-gradient(90deg, transparent, #8b5a50, transparent);
-  margin: 10pt auto;
+  width: 44%;
+  height: 1pt;
+  background: linear-gradient(90deg, transparent, #9b6a60, transparent);
+  margin: 9pt auto;
 }
 .cover-subtitle {
   font-family: 'Alegreya SC', serif;
-  font-size: 10pt;
+  font-size: 8.5pt;
   color: #a09488;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 14pt;
 }
 .cover-tagline {
   font-style: italic;
-  font-size: 11pt;
+  font-size: 10.5pt;
   color: #c4736e;
-  margin: 20pt 0 0;
+  margin: 0;
   line-height: 1.5;
 }
 .cover-bottom {
   position: absolute;
-  bottom: 14mm;
+  bottom: 12mm;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 4;
 }
 .cover-version {
   font-family: 'Alegreya SC', serif;
-  font-size: 7.5pt;
-  color: #5a5048;
-  letter-spacing: 0.12em;
+  font-size: 7pt;
+  color: #6a5e56;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .cover-author {
-  font-size: 8pt;
-  color: #5a5048;
+  font-size: 7.5pt;
+  color: #6a5e56;
   margin-top: 3pt;
 }
 
@@ -915,4 +933,52 @@ body {
   margin: 0 0 8pt 12pt;
   opacity: 0.80;
   object-fit: contain;
+}
+
+/* =====================================================
+   BACKERS CREDITS
+   ===================================================== */
+.backers-credits {
+  page-break-before: always;
+  text-align: center;
+  padding: 10% 8% 8%;
+}
+.backers-credits .bc-ornament {
+  font-size: 10pt;
+  color: #c4a89a;
+  margin: 8pt 0;
+  letter-spacing: 0.6em;
+}
+.backers-credits .bc-title {
+  font-family: 'Alegreya SC', serif;
+  font-size: 16pt;
+  color: #2c1810;
+  letter-spacing: 0.08em;
+  margin-bottom: 2pt;
+  font-weight: normal;
+  border: none;
+}
+.backers-credits .bc-subtitle {
+  font-size: 8pt;
+  color: #8b5a50;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14pt;
+}
+.backers-credits .bc-body {
+  font-style: italic;
+  font-size: 9.5pt;
+  color: #5a4a3a;
+  margin-bottom: 14pt;
+}
+.backers-credits .bc-names {
+  font-size: 8pt;
+  color: #3a2a1a;
+  line-height: 1.9;
+  margin-bottom: 12pt;
+}
+.backers-credits .bc-note {
+  font-size: 7pt;
+  color: #8b7b6b;
+  font-style: italic;
 }

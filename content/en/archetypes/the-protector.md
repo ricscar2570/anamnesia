@@ -15,7 +15,7 @@ You were responsible for everyone's safety. In the crucial moment, you failed �
 
 ## Approaches
 
-- **Authoritative Control** (free) — Organize, command, make the hard decisions for the group.
+- **Take Command** (free) — Organize, command, make the hard decisions for the group.
 - **Calculated Sacrifice** (+1) — Put yourself in danger to save others, absorb the damage.
 - **Weight of Command** (+2) — Remember all the times you failed. Draw from that painful experience.
 

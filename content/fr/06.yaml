@@ -1,0 +1,184 @@
+meta:
+  doc_id: "06"
+  title: "THE LETHE INFECTION"
+  subtitle: "Une Mécanique Parasitaire pour les JdR Traditionnels et d'Horreur Cosmique"
+  header: "A N A M N E S I A  ·  T H E  L E T H E  I N F E C T I O N"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+  rorschach_images: ["rorschach_1.png","rorschach_3.png","rorschach_2.png","rorschach_cthulhu.png"]
+
+opening_quote: >
+  «Tu n'es pas le héros de cette histoire. Tu es simplement le vase qui porte
+  les souvenirs d'un monstre. Et le pire: le joueur assis à côté de toi
+  tient la clé de la cage.»
+
+intro:
+  paragraphs:
+    - >
+      AnamnesiA repose sur une prémisse dévastatrice: tu ne contrôles pas ton
+      propre passé. Cette annexe fournit des règles modulaires pour infecter
+      les jeux de rôle traditionnels avec notre moteur central: la Règle de
+      la Main Droite. Compatible avec Old-School Essentials, Mörk Borg et
+      Call of Cthulhu (7e édition).
+    - >
+      N'utilise pas ce module à la légère. Il remplace les pénalités mécaniques
+      standard par une terreur psychologique et une tension entre joueurs.
+
+sections:
+  - num: "1"
+    title: "LE VECTEUR: CONTRACTER L'INFECTION"
+    paragraphs:
+      - >
+        L'Infection de Léthé est une fracture de l'âme. Le meneur devrait
+        l'appliquer quand un personnage:
+    bullets:
+      - "<b>Survit à l'Impossible.</b> Tombe exactement à 0 PV et est stabilisé, ou est ressuscité."
+      - "<b>Subit un Trauma Mental.</b> Échoue un jet de sauvegarde contre Magie/Sanité contre des entités dévoreuses d'esprits, des horreurs cosmiques ou des artefacts interdits."
+      - "<b>Rencontre le Mythique.</b> Boit au fleuve Léthé, entend le chant des Sirènes ou respire les spores du Lotus."
+    closing: >
+      Quand l'Infection s'installe, le personnage survit, mais son identité est
+      effacée. Raye tous ses traits de personnalité et d'historique.
+
+  - num: "2"
+    title: "LA MÉCANIQUE CENTRALE: LA RÈGLE DE LA MAIN DROITE"
+    paragraphs:
+      - >
+        Dès que le personnage amnésique rencontre quelqu'un de son passé,
+        visite un lieu familier ou tente de se rappeler quelque chose de
+        crucial sur lui-même, le joueur ne peut pas dicter sa propre histoire.
+      - >
+        Il doit demander à la table: «De quoi est-ce que je me souviens à ce
+        sujet?» Le joueur assis physiquement à sa droite répond.
+    choice_table:
+      col_headers: ["ACCEPTATION", "REFUS"]
+      rows:
+        - >
+          Le joueur assume le trauma. Le souvenir devient canon.
+          Il obtient un avantage propre au système.
+        - >
+          Le joueur refuse le souvenir. Il ne devient pas canon, mais la
+          dissonance cognitive inflige un coût permanent.
+    veto_note: >
+      Le meneur conserve un droit de veto sur tout souvenir qui briserait
+      le ton ou la cohérence interne de la campagne.
+
+  - num: "3"
+    title: "INTÉGRATIONS SYSTÈME"
+    systems:
+      - id: morkborg
+        name: "Mörk Borg: «Présages de Culpabilité»"
+        intro: >
+          L'Infection remplace l'effet de la chute à 0 PV si le PJ tire 4
+          sur la table Broken. Quand le PJ Amnésique dépense un Présage, le
+          joueur à sa droite invente un péché terrible que le PJ a commis
+          dans son passé.
+        col_headers: ["", "Effet", "Résultat"]
+        rows:
+          - ["Acceptation", "Assumer la culpabilité.", "Le Présage fonctionne normalement. Soigne 1d6 PV."]
+          - ["Refus",       "Réprimer le souvenir.",   "Le Présage brûle, l'action échoue. Présence permanente −1. À −3 Présence, le PJ devient un PNJ sauvage."]
+
+      - id: ose
+        name: "OSE / OSR: «La Malédiction du Vide»"
+        intro: >
+          Remplace le Drain de Niveaux des Morts-Vivants (Spectres, Vampires
+          et similaires). Au lieu de perdre un niveau, le PJ perd un fragment
+          de son identité (jet de sauvegarde contre la Mort pour résister).
+        col_headers: ["", "Effet", "Résultat"]
+        rows:
+          - ["Acceptation", "La vérité sombre devient canon.", "Avantage (+2) à la prochaine attaque ou au prochain jet de sauvegarde. L'Alignement glisse d'un cran vers le Chaotique."]
+          - ["Refus",       "Réprimer la vérité.",             "Sagesse permanente −1. En dessous de 3 en Sagesse: incapable de parler ou de lancer des sorts."]
+
+      - id: coc
+        name: "Call of Cthulhu 7e: «L'État de Fugue»"
+        intro: >
+          Déclenché quand un Investigateur perd 5 points de Sanité ou plus en
+          un seul jet, ou entre en Folie Indéfinie. Quand il utilise une entrée
+          de son Historique pour récupérer de la Sanité pendant un repos, le
+          joueur à sa droite corrompt ce souvenir à la place.
+        col_headers: ["", "Effet", "Résultat"]
+        rows:
+          - ["Acceptation", "Embrasser le Mythe.",       "Récupère 1d4+1 points de Sanité. Le gardien met à jour définitivement l'entrée corrompue sur la fiche."]
+          - ["Refus",       "Rejeter la réalité.",        "Aucune récupération de Sanité. Perd immédiatement 1d4 points de Sanité par dissonance cognitive."]
+
+  - num: "4"
+    title: "LES TABLES D'ÉTINCELLES MNÉMONIQUES"
+    intro: >
+      Quand l'Infection commence, ou quand le joueur de la Main Droite a
+      besoin d'inspiration, lance 1d10 sur la table correspondant à la
+      situation actuelle.
+    tables:
+      - id: sang
+        name: "Table A: Le Sang"
+        context: "Lance cette table lors de combat, cadavres ou armes."
+        col_header: "Violence, Culpabilité, Survie"
+        rows:
+          - ["1",  "La cicatrice sur ta poitrine ne vient pas d'un monstre. Tu as demandé à quelqu'un de te couper. Pourquoi?"]
+          - ["2",  "Tu reconnais le visage de la victime. C'est toi qui l'as livré au culte."]
+          - ["3",  "Ton arme de prédilection appartenait à un héros. Tu les as assassinés dans leur sommeil pour l'obtenir."]
+          - ["4",  "Tu as survécu au massacre en te cachant sous les corps de tes propres enfants."]
+          - ["5",  "Tu te souviens du goût de la chair humaine. Et tu te souviens que ça t'avait plu."]
+          - ["6",  "Le sang sur tes mains est frais, mais tu n'as pas combattu aujourd'hui. À qui appartient-il?"]
+          - ["7",  "Tu te souviens d'avoir allumé l'incendie. Tu ne savais pas qu'ils étaient piégés à l'intérieur."]
+          - ["8",  "Tu as empoisonné le puits pour gagner la guerre, tuant tout le village."]
+          - ["9",  "Tu as abandonné ton officier commandant pour mourir dans le noir afin de pouvoir t'échapper."]
+          - ["10", "Tu n'es pas le propriétaire original de ce corps. Tu t'en es emparé par la violence."]
+
+      - id: esprit
+        name: "Table B: L'Esprit"
+        context: "Lance cette table lors de scènes avec des PNJ, de politique ou d'enquête."
+        col_header: "Secrets, Mensonges, Trahison"
+        rows:
+          - ["1",  "Le PNJ que tu essaies de sauver est celui qui t'a torturé pendant des années."]
+          - ["2",  "Tu connais le mot de passe parce que c'est toi l'espion qui a construit ce piège."]
+          - ["3",  "Tu n'as pas perdu ta mémoire. Tu as payé une sorcière pour l'effacer parce que la vérité était trop lourde."]
+          - ["4",  "Tu es secrètement marié au grand méchant de cette campagne."]
+          - ["5",  "Le dieu à qui tu pries n'existe pas. Tu l'as inventé pour faire face à tes crimes."]
+          - ["6",  "Tu as volé l'identité de ton compagnon. Tu es en réalité le serviteur, pas le noble."]
+          - ["7",  "Tu as vendu les plans de défense du royaume pour rembourser une dette de jeu."]
+          - ["8",  "Tu sais comment ce donjon se termine. Tu as déjà été piégé dans cette boucle."]
+          - ["9",  "L'informateur n'a pas disparu. Tu l'as enterré sous ta maison."]
+          - ["10", "Chaque fois que tu dors, tu rapportes télépatiquement les mouvements du groupe à l'ennemi."]
+
+      - id: ame
+        name: "Table C: L'Âme"
+        context: "Lance cette table lors de magie, d'artefacts ou de surnaturel."
+        col_header: "Malédictions, Dettes, L'Étrange"
+        rows:
+          - ["1",  "Tu dois une dette à un démon. Le paiement est l'âme du joueur à ta gauche."]
+          - ["2",  "Tu reconnais cette langue ancienne. C'est ta langue maternelle."]
+          - ["3",  "Tu réalises que tu n'as pas de battement de coeur. Depuis combien de temps es-tu mort?"]
+          - ["4",  "L'artefact que tu viens de toucher t'appartient. Tu l'as forgé avec les os d'un être cher."]
+          - ["5",  "Tu te souviens d'avoir signé le contrat dans le sang. Il te reste un an à vivre."]
+          - ["6",  "Tu n'es pas humain. Tu es un changelin, et tu as oublié ta vraie forme."]
+          - ["7",  "La malédiction qui pèse sur cette terre est ta faute. Tu as brisé le sceau sacré."]
+          - ["8",  "Tu as un parasite qui vit dans ta colonne vertébrale. Il te parle avec la voix de ta mère."]
+          - ["9",  "Tu te souviens d'avoir été sacrifié sur cet autel même."]
+          - ["10", "Ton reflet dans le miroir cligne des yeux de manière autonome. Il cherche à t'avertir."]
+
+  - num: "5"
+    title: "LE VOILE DE GRÂCE"
+    paragraphs:
+      - >
+        Les mécaniques d'AnamnesiA exigent une extrême vulnérabilité. Donner
+        à un autre joueur le pouvoir d'inventer le trauma de ton personnage
+        est une expérience intime et intense. Utilise toujours des Outils de
+        Sécurité avant d'implémenter l'Infection de Léthé. Recommandés:
+        la Carte X et les Lignes et Voiles.
+      - >
+        Règle d'Or: si le joueur de la Main Droite suggère un souvenir qui met
+        véritablement mal à l'aise le joueur récepteur dans la vraie vie, ce
+        dernier dit simplement «Voile». Le souvenir est annulé et réécrit
+        instantanément par la table, sans aucune pénalité mécanique. On joue
+        pour avoir peur ensemble, jamais pour se blesser mutuellement.
+
+licenses:
+  - >
+    AnamnesiA est une production indépendante d'Il Gioco in Tavolo et n'est
+    affiliée ni à Ockult Ortmastare Games ni à Stockholm Kartell. Publiée
+    sous la Licence Third Party de MÖRK BORG.
+  - >
+    Call of Cthulhu est une marque déposée de Chaosium Inc. Old-School
+    Essentials est une marque de Necrotic Gnome. Ce matériel n'est ni
+    affilié ni approuvé par l'une ou l'autre de ces sociétés.
+
+closing_quote: "«Tu n'es pas le héros de cette histoire.»"
+closing_credit: "Riccardo Scaringi · ilgiocointavolo · ioGioco · ZineQuest 2026"
