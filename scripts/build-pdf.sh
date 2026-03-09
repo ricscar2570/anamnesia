@@ -96,7 +96,7 @@ for page in "${PAGES[@]}"; do
   [ -f "$f" ] && sed '1{/^---$/!q;};1,/^---$/d' "$f" | sed 's/{:.*}//g' >> "$RULES_MD" && echo -e "\n\n" >> "$RULES_MD"
 done
 echo "   Markdown → HTML..."
-pandoc "$RULES_MD" -f markdown -t html5 --toc --toc-depth=2 --metadata title="" -o "$TMP_DIR/rules-body.html"
+pandoc "$RULES_MD" -f markdown -t html5 --toc --toc-depth=1 --metadata title="" --standalone -o "$TMP_DIR/rules-body.html"
 
 # === 2. Render materials from YAML ===
 echo "   YAML → Sheets + Cards..."
@@ -119,9 +119,15 @@ rules_raw = pathlib.Path("$TMP_DIR/rules-body.html").read_text()
 sheets = pathlib.Path("$TMP_DIR/sheets.html").read_text()
 cards = pathlib.Path("$TMP_DIR/cards.html").read_text()
 
-toc = re.search(r'<nav[^>]*id="TOC".*?</nav>', rules_raw, re.DOTALL)
+# Con --standalone pandoc genera HTML completo: estrai solo il body
+body_match = re.search(r'<body[^>]*>(.*?)</body>', rules_raw, re.DOTALL)
+body_content = body_match.group(1) if body_match else rules_raw
+# Rimuovi l'header del titolo generato da pandoc (title vuoto)
+body_content = re.sub(r'<header[^>]*id="title-block-header".*?</header>', '', body_content, flags=re.DOTALL)
+
+toc = re.search(r'<nav[^>]*id="TOC".*?</nav>', body_content, re.DOTALL)
 toc_html = toc.group(0) if toc else ''
-rules_html = re.sub(r'<nav[^>]*id="TOC".*?</nav>', '', rules_raw, flags=re.DOTALL)
+rules_html = re.sub(r'<nav[^>]*id="TOC".*?</nav>', '', body_content, flags=re.DOTALL)
 
 parts = re.split(r'(?=<h1[ >])', rules_html)
 sections = []
