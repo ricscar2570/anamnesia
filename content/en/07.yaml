@@ -1,0 +1,605 @@
+meta:
+  doc_id: "07"
+  title: "ROLL20 DIGITAL PACK"
+  subtitle: "Setup Guide & Assets for AnamnesiA"
+  header: "A N A M N E S I A  ·  R O L L 2 0  D I G I T A L  P A C K"
+  footer: "© 2026 Riccardo Scaringi · ilgiocointavolo · ioGioco"
+
+intro: >
+  Open SETUP_GUIDE.html in any browser for step-by-step Roll20 setup instructions
+  with one-click copy buttons for all content. This pack is English-only.
+
+tables:
+  - id: anamnesia_sensory
+    name: "AnamnesiA Sensory Triggers"
+    label: "Sensory Triggers"
+    dice: "1d6"
+    description: "Roll when the Right-Hand player needs an anchor for memory interpretation."
+    rows:
+      - ["1", "SMELL — Disinfectant, smoke, blood, perfume, burnt food"]
+      - ["2", "SOUND — Hum, intercom, crying, glass breaking, sudden silence"]
+      - ["3", "SIGHT — Flickering neon, cracked mirror, a shadow that moves"]
+      - ["4", "TOUCH — Cold, wet, a mark on the skin, gloved hands"]
+      - ["5", "TASTE — Metallic, bitter, medicinal, salt, rust"]
+      - ["6", "EMOTION — Sudden fear, guilt, shame, emptiness, déjà vu"]
+
+  - id: anamnesia_complication_fog
+    name: "AnamnesiA Complication — Fog"
+    label: "Fog Complications (Cycles 1–2)"
+    dice: "1d6"
+    description: "Use during Cycles 1–2 (Fog Phase) when the game stalls."
+    rows:
+      - ["1", "A sound that should not be here: a bell, a breath, a ticking."]
+      - ["2", "The temperature drops sharply in one precise spot of the room."]
+      - ["3", "A sharp, fleeting smell that no one else seems to notice."]
+      - ["4", "An object has moved from where you remember it. Or has it?"]
+      - ["5", "Writing on a surface: but when you point it out, the others cannot see it."]
+      - ["6", "A shared déjà vu: two characters feel exactly the same thing at the same moment."]
+
+  - id: anamnesia_complication_connections
+    name: "AnamnesiA Complication — Connections"
+    label: "Connections Complications (Cycles 3–4)"
+    dice: "1d6"
+    description: "Use during Cycles 3–4 (Connections Phase) when the game stalls."
+    rows:
+      - ["1", "Two fragments that surfaced earlier contradict each other. One is false. Which one?"]
+      - ["2", "Someone who should not know, knows. An NPC appears with unsettling information."]
+      - ["3", "A personal item belonging to a PC is found where it should not be."]
+      - ["4", "A PC has a sudden flashback. The player to their right describes what they see."]
+      - ["5", "Something is about to happen. Footsteps in the corridor, a ringing phone, a countdown."]
+      - ["6", "Two characters discover a connection they did not remember. Define it together."]
+
+  - id: anamnesia_complication_revelations
+    name: "AnamnesiA Complication — Revelations"
+    label: "Revelations Complications (Cycle 5)"
+    dice: "1d6"
+    description: "Use during Cycle 5 (Revelations Phase) when the game stalls."
+    rows:
+      - ["1", "A memory surfacing now contradicts EVERYTHING you have reconstructed so far."]
+      - ["2", "A PC remembers the exact moment of the trauma. The player to their right describes it."]
+      - ["3", "The definitive proof is here: but accepting it means admitting personal guilt."]
+      - ["4", "Someone you believed was a victim was complicit. Or the other way around."]
+      - ["5", "Time is up: the external consequence arrives (police, doctors, family). What do you do?"]
+      - ["6", "The truth is worse than anyone imagined. Each PC says one thing they wish they had not remembered."]
+
+  - id: anamnesia_fragment_act1
+    name: "AnamnesiA Fragment — Act I (Fog)"
+    label: "Universal Fragments Act I"
+    dice: "1d9"
+    description: "Use in place of printed Fragment Cards during Cycles 1–2. Each result costs 1 Fragment."
+    rows:
+      - ["1", "A smell that does not belong here. Describe it."]
+      - ["2", "A distant, constant sound — like a hum or a breath."]
+      - ["3", "An object out of place: something that should not be here."]
+      - ["4", "A mark on your skin you do not remember."]
+      - ["5", "The light changes: a pulsing neon, a moving shadow."]
+      - ["6", "A sudden physical sensation: cold, heat, dull pain."]
+      - ["7", "A taste in your mouth: metallic, bitter, sweet."]
+      - ["8", "Someone or something is missing. An absence that weighs."]
+      - ["9", "A déjà vu: you have been here before. But when?"]
+
+  - id: anamnesia_fragment_act2
+    name: "AnamnesiA Fragment — Act II (Connections)"
+    label: "Universal Fragments Act II"
+    dice: "1d9"
+    description: "Use in place of printed Fragment Cards during Cycles 3–4. Each result costs 1–2 Fragments."
+    rows:
+      - ["1", "A document with your signature. You do not remember signing it."]
+      - ["2", "A photograph where you are all there — and one extra person."]
+      - ["3", "Two of you remember the same moment differently. Who is lying?"]
+      - ["4", "A name that no one wants to say aloud. Who is it?"]
+      - ["5", "The same mark, on another character's skin."]
+      - ["6", "A recorded voice. It is yours — but you speak of yourself in the third person."]
+      - ["7", "A personal item belonging to someone who is not here."]
+      - ["8", "A date written somewhere. What happened that day?"]
+      - ["9", "Someone has known something all along and never said it."]
+
+  - id: anamnesia_fragment_act3
+    name: "AnamnesiA Fragment — Act III (Revelations)"
+    label: "Universal Fragments Act III"
+    dice: "1d9"
+    description: "Use in place of printed Fragment Cards during Cycle 5. Costs 2–3 Fragments. The Truth Always Surfaces."
+    rows:
+      - ["1", "The definitive proof of what happened. Everyone +1 Stress."]
+      - ["2", "You find who was missing. Not where you expected."]
+      - ["3", "The diary, the video, the recording: raw truth, unfiltered. +2 Stress."]
+      - ["4", "Someone confesses. 'What did you do the night before?'"]
+      - ["5", "The door is open. It always was. Why did you not leave?"]
+      - ["6", "Everything you remembered was false. The truth is worse."]
+      - ["7", "You discover your specific role. The guilt is personal."]
+      - ["8", "'If you could forget again, would you?' — Who forgets loses Echoes. Who remembers keeps everything."]
+      - ["9", "The final memory: roll all Fragments. 3+: complete. 1–2: right-hand player fills the gaps. 0: it is worse. +2 Stress."]
+
+  - id: lethe_blood
+    name: "Lethe Infection — Blood"
+    label: "Mnemonic Sparks: Blood"
+    dice: "1d10"
+    description: "Roll when dealing with combat, corpses, or weapons."
+    rows:
+      - ["1", "The scar on your chest is not from a monster. You asked someone to cut you. Why?"]
+      - ["2", "You recognise the victim's face. You were the one who gave them to the cult."]
+      - ["3", "Your signature weapon belonged to a hero. You murdered them in their sleep for it."]
+      - ["4", "You survived the massacre by hiding under the bodies of your own companions."]
+      - ["5", "You remember the taste of human flesh. And you remember liking it."]
+      - ["6", "The blood on your hands is fresh, but you have not fought today. Whose is it?"]
+      - ["7", "You remember setting the fire. You did not know they were trapped inside."]
+      - ["8", "You poisoned the well to win the war, killing everyone in the village."]
+      - ["9", "You left your commanding officer to die in the dark so you could escape."]
+      - ["10", "You are not the original owner of this body. You violently possessed it."]
+
+  - id: lethe_mind
+    name: "Lethe Infection — Mind"
+    label: "Mnemonic Sparks: Mind"
+    dice: "1d10"
+    description: "Roll when dealing with NPCs, politics, or investigations."
+    rows:
+      - ["1", "The NPC you are trying to save is the one who tortured you for years."]
+      - ["2", "You know the password, because you are the spy who built this trap."]
+      - ["3", "You did not lose your memory; you paid a witch to erase it because the truth was too heavy."]
+      - ["4", "You are secretly married to the villain of this campaign."]
+      - ["5", "The god you pray to does not exist. You made it up to cope with your crimes."]
+      - ["6", "You stole your companion's identity. You are the servant, not the noble."]
+      - ["7", "You sold the kingdom's defence plans to pay off a gambling debt."]
+      - ["8", "You know how this dungeon ends. You have been trapped in this loop before."]
+      - ["9", "The informant did not disappear. You buried them under your house."]
+      - ["10", "Every time you sleep, you telepathically report your party's movements to the enemy."]
+
+  - id: lethe_soul
+    name: "Lethe Infection — Soul"
+    label: "Mnemonic Sparks: Soul"
+    dice: "1d10"
+    description: "Roll when dealing with magic, artifacts, or the supernatural."
+    rows:
+      - ["1", "You owe a debt to a demon. The payment is the soul of the player to your left."]
+      - ["2", "You recognise this ancient language. It is your mother tongue."]
+      - ["3", "You realise you do not have a heartbeat. How long have you been dead?"]
+      - ["4", "The artifact you just touched belongs to you. You forged it from a loved one's bones."]
+      - ["5", "You remember signing the contract in blood. You have one year left to live."]
+      - ["6", "You are not human. You are a changeling, and you forgot your true form."]
+      - ["7", "The curse on this land is your fault. You broke the sacred seal."]
+      - ["8", "You have a parasite living in your spine. It speaks to you in the voice of your mother."]
+      - ["9", "You remember being sacrificed on this very altar."]
+      - ["10", "Your reflection in the mirror blinks independently. It has been trying to warn you."]
+
+macros:
+  - name: "AnamnesiA_Roll"
+    description: "Core roll: choose how many dice to invest (1–4)"
+    code: "&{template:default} {{name=MEMORY ROLL}} {{roll=[[?{Invest fragments|1|2|3|4}d6]]}} {{note=5–6 Clear · 3–4 Confused · 1–2 Traumatic +1 Echo}} {{right_hand=Player to your RIGHT interprets the result.}}"
+
+  - name: "AnamnesiA_Roll_Full"
+    description: "Full roll with Approach selection"
+    code: "&{template:default} {{name=MEMORY ROLL}} {{approach=?{Approach|Free (no cost)|+1 Fragment|+2 Fragments}}} {{dice=?{Dice to roll|1|2|3|4}d6}} {{roll=[[?{Dice to roll|1|2|3|4}d6]]}} {{reminder=5–6 Clear · 3–4 Confused · 1–2 +1 Echo}} {{right_hand=Player to your RIGHT interprets.}}"
+
+  - name: "AnamnesiA_Pool"
+    description: "Display current pool calculation from character sheet attributes"
+    code: "&{template:default} {{name=CURRENT POOL}} {{base=@{pool_base}}} {{stress=-@{stress}}} {{echo_penalty=-@{echo_penalty}}} {{available=[[(max(1, @{pool_base} - @{stress} - @{echo_penalty}))]]d6}}"
+
+  - name: "AnamnesiA_Force"
+    description: "Force Memory: upgrade result one level, pay +1 Stress"
+    code: "&{template:default} {{name=FORCE MEMORY}} {{effect=Result improves one level}} {{cost=+1 Stress}} {{limit=Cannot Force a Partial Success}} /w gm @{selected|token_name} forces a memory — mark +1 Stress."
+
+  - name: "AnamnesiA_LastMemory"
+    description: "Last Memory: roll 3d6 ignoring all penalties (once per game)"
+    code: "&{template:default} {{name=LAST MEMORY}} {{roll=[[3d6]]}} {{cost=+1 Stress regardless of result}} {{condition=Only when Pool = 1 die · Once per game}} /w gm @{selected|token_name} activates Last Memory — mark +1 Stress."
+
+  - name: "AnamnesiA_Anchor"
+    description: "Invoke Anchor: –1 Stress, +1 Fragment (once per game, requires Stress 2+)"
+    code: "&{template:default} {{name=INVOKE ANCHOR}} {{effect=–1 Stress · +1 Fragment}} {{condition=Requires at least 2 Stress · Once per game}} {{right_hand=Player to your RIGHT describes the associated memory.}} /w gm @{selected|token_name} invokes their Anchor — –1 Stress, +1 Fragment."
+
+  - name: "AnamnesiA_HumanConnection"
+    description: "Human Connection: –1 Stress at end of Cycles 1–4 (no Breakdown this cycle)"
+    code: "&{template:default} {{name=HUMAN CONNECTION}} {{effect=–1 Stress}} {{condition=End of Cycles 1–4 · No Breakdown this cycle}} {{prompt=Describe a gesture, a word, a glance that brings you back.}}"
+
+  - name: "AnamnesiA_Vulnerability"
+    description: "Play Vulnerability: –1 Stress, +1 Fragment (once per cycle)"
+    code: "&{template:default} {{name=VULNERABILITY}} {{effect=–1 Stress · +1 Fragment}} {{limit=Max once per cycle per player}} /w gm @{selected|token_name} plays their Vulnerability — –1 Stress, +1 Fragment."
+
+  - name: "AnamnesiA_Breakdown"
+    description: "Trigger Breakdown and Circle of Testimony"
+    code: "&{template:default} {{name=BREAKDOWN}} {{type=?{Type|Partial — Stress 4|Final — Stress 5}}} {{prompt=Choose how your character collapses: dissociation · flight · aggression · paralysis}} {{circle=Every other player shares a memory with this character.}} /w gm Breakdown: @{selected|token_name}."
+
+  - name: "AnamnesiA_Sensory"
+    description: "Roll on the Sensory Trigger table"
+    code: "&{template:default} {{name=SENSORY TRIGGER}} {{result=[[1t[AnamnesiA Sensory Triggers]]]}} {{use=Anchor for Right-Hand Rule interpretation.}}"
+
+  - name: "Complication_Fog"
+    description: "Roll Fog Phase complication (Cycles 1–2)"
+    code: "&{template:default} {{name=COMPLICATION — FOG}} {{result=[[1t[AnamnesiA Complication — Fog]]]}} {{phase=Cycles 1–2}}"
+
+  - name: "Complication_Connections"
+    description: "Roll Connections Phase complication (Cycles 3–4)"
+    code: "&{template:default} {{name=COMPLICATION — CONNECTIONS}} {{result=[[1t[AnamnesiA Complication — Connections]]]}} {{phase=Cycles 3–4}}"
+
+  - name: "Complication_Revelations"
+    description: "Roll Revelations Phase complication (Cycle 5)"
+    code: "&{template:default} {{name=COMPLICATION — REVELATIONS}} {{result=[[1t[AnamnesiA Complication — Revelations]]]}} {{phase=Cycle 5}}"
+
+  - name: "AnamnesiA_Guilt"
+    description: "Catalyst — Sense of Guilt: confess, gain 3 Fragments (once per game)"
+    code: "&{template:default} {{name=SENSE OF GUILT}} {{archetype=The Catalyst}} {{effect=Confess to another PC · Gain 3 Fragments · No cascade Stress}} {{limit=Once per game}} /w gm @{selected|token_name} (Catalyst) uses Sense of Guilt — grant 3 Fragments."
+
+  - name: "AnamnesiA_Shield"
+    description: "Protector — Living Shield: sacrifice up to 3 Fragments (every 2 = 1 Echo)"
+    code: "&{template:default} {{name=LIVING SHIELD}} {{archetype=The Protector}} {{sacrifice=?{Fragments to sacrifice|1|2|3}}} {{echo_cost=[[floor(?{Fragments to sacrifice|1|2|3} / 2)]] Echo(es)}} {{narrate=Describe how you absorb their pain.}} /w gm @{selected|token_name} uses Living Shield."
+
+  - name: "AnamnesiA_CollectiveMemory"
+    description: "Witness — Collective Memory: record a roll (1 Fragment + 1 Echo, max 2/cycle)"
+    code: "&{template:default} {{name=COLLECTIVE MEMORY}} {{archetype=The Witness}} {{cost=1 Fragment + 1 Echo}} {{effect=Record this roll. Anyone may use it later instead of rolling.}} {{limit=Max 2 recordings per cycle}} /w gm @{selected|token_name} (Witness) records a memory."
+
+  - name: "AnamnesiA_Truth"
+    description: "Cycle 5 — The Truth Always Surfaces (Collapse costs +2 Stress)"
+    code: "&{template:default} {{name=THE TRUTH ALWAYS SURFACES}} {{cycle=CYCLE 5 ONLY}} {{effect=Memory Collapse (0 Clears) still reveals the memory.}} {{cost=+2 Stress instead of +1}} {{keeper=Memory Keeper may add a detail that worsens the truth.}} /w gm Cycle 5 Collapse: @{selected|token_name} — +2 Stress, Right-Hand player interprets."
+
+handouts:
+  - id: introduction
+    title: "AnamnesiA — Introduction"
+    visibility: public
+    body: |
+      WHAT IS ANAMNESIA?
+
+      AnamnesiA is a GM-less psychological horror RPG for 2–4 players. There is no traditional Game Master: everyone collaborates to reconstruct a buried truth. Your characters wake up with no memory of a traumatic event. Through ambiguous, painful memory fragments, you discover together what happened.
+
+      There is no victory. There is no defeat. There is only the story you will create, and the price you will pay to remember.
+
+      THE RIGHT-HAND RULE
+
+      The player to YOUR RIGHT interprets the result of YOUR dice roll — not you. This is the core mechanic. It ensures memories surface in unexpected ways and that no one controls their own narrative.
+
+      If the Right-Hand player is stuck: ask for a sensory anchor (sight, sound, smell), roll the Sensory Trigger table, or pass to the next player.
+
+      «Memories do not lie. But they do not tell the whole truth either.»
+
+  - id: quick_reference
+    title: "Quick Reference"
+    visibility: public
+    body: |
+      ROLL FORMULA
+      1. Choose an Approach: Free / +1 Fragment / +2 Fragments
+      2. Invest Fragments from your Pool: 1–4 dice
+      3. Roll — the player to your RIGHT interprets the result
+
+      READING DICE
+      5–6: CLEAR (vivid memory)
+      3–4: CONFUSED (ambiguous memory)
+      1–2: TRAUMATIC — +1 Echo
+
+      OUTCOMES
+      3+ Clears: Full Success — no negative consequence
+      2 Clears: Partial Success — incomplete or emotionally costly
+      1 Clear: Painful Truth — possible Stress
+      0 Clears: Memory Collapse — +1 Stress, narrative complication
+
+      POOL FORMULA
+      Pool = Base (4 or 5) – Stress – Echo Penalty (minimum 1)
+      Echoes 0–2: no penalty
+      Echoes 3–5: –1 die
+      Echoes 6–8: –3 dice
+      Echoes 9+: out of play
+
+      STRESS RECOVERY
+      Play Vulnerability: –1 Stress, +1 Fragment (max 1/cycle)
+      Human Connection (end Cycles 1–4, no Breakdown): –1 Stress
+      Invoke Anchor (1×/game, Stress 2+): –1 Stress, +1 Fragment
+
+      PHASES
+      Fog (Cycles 1–2): Act I cards only
+      Connections (Cycles 3–4): Act I + II cards
+      Revelations (Cycle 5): Act II + III cards
+      Cycle 5 special: The Truth Always Surfaces — Collapse costs +2 Stress, memory revealed anyway
+
+  - id: safety_tools
+    title: "Safety Tools"
+    visibility: public
+    body: |
+      SESSION ZERO (mandatory before playing)
+
+      AnamnesiA addresses trauma, guilt, violence and loss. Spend 30 minutes on group calibration before the first session. If anyone is not comfortable during Session Zero, the game does not start.
+
+      X-CARD
+      Place a card with an X in the centre of the table (pin it as a handout in Roll20). Anyone can tap it — or type «X» in chat — at any time to signal discomfort. No explanation required. The scene changes immediately. No one asks why.
+
+      LINES & VEILS
+      Lines: themes that will never appear in the game, in any form.
+      Veils: themes that may exist in the story but happen off-screen, without explicit details.
+      Go around the table. Record Lines and Veils in a shared handout visible to everyone.
+
+      EMOTIONAL CHECK-IN
+      Every 30–45 minutes, the Memory Keeper calls a brief pause.
+      «How is everyone? Does anyone need to slow down?»
+
+  - id: archetypes_reference
+    title: "Archetypes Reference"
+    visibility: public
+    body: |
+      THE SURVIVOR — Pool Base: 5
+      «I am alive when others are not.»
+      Free: Survival Instinct — sense dangers, find exits.
+      +1: Protective Paranoia — anticipate betrayal.
+      +2: Memory of Pain — past pain as a guide.
+      Ability (Survival Reflexes): Re-roll 1–2s on physical dangers; if they show again, describe who you failed to save.
+      Vulnerability: Feeling like a burden to others — –1 Stress, +1 Fragment (max 1/cycle).
+
+      THE WITNESS — Pool Base: 5
+      «I saw everything. But my mind shuts down.»
+      Free: Detached Observation — notice details, read emotions.
+      +1: Empathic Connection — sense others' feelings, detect lies.
+      +2: Complete Vision — connect all pieces in a flash of terrible clarity.
+      Ability (Collective Memory): Spend 1 Fragment + 1 Echo to record another player's roll. Anyone may use it later. Max 2/cycle.
+      Vulnerability: Forced immediate decisions — –1 Stress, +1 Fragment (max 1/cycle).
+
+      THE PROTECTOR — Pool Base: 4
+      «It was my responsibility. I failed.»
+      Free: Authoritative Control — organise, command, decide.
+      +1: Calculated Sacrifice — put yourself in danger to save others.
+      +2: Weight of Command — draw on painful past failures.
+      Ability (Living Shield): On another's Collapse, sacrifice up to 3 Fragments for them. Every 2 sacrificed = 1 Echo.
+      Vulnerability: Others in danger without being able to help — –1 Stress, +1 Fragment (max 1/cycle).
+
+      THE CATALYST — Pool Base: 4
+      «It all started because of me.»
+      Free: Social Invisibility — stay in the background, observe.
+      +1: Subtle Manipulation — influence group dynamics unseen.
+      +2: Crucial Moment — remember the exact moment everything changed.
+      Ability (Domino Effect): On your Collapse, others gain +1 Fragment this cycle. You gain 1 Echo.
+      Special (Sense of Guilt, 1×/game): Confess to another PC, gain 3 Fragments immediately.
+      Vulnerability: Being pushed to lead or decide — –1 Stress, +1 Fragment (max 1/cycle).
+
+  - id: scenario_incident_opener
+    title: "Scenario: The Incident — Read Aloud"
+    visibility: public
+    body: |
+      OPENING (read aloud at the start of the first cycle)
+
+      «You wake up in a white, sterile room. The smell of disinfectant is overwhelming. None of you remember how you got here. But you all have the feeling that something terrible has happened.»
+
+      FIRST CYCLE QUESTIONS (ask one at a time)
+      — Who wakes up first? Describe how you feel physically.
+      — What is the first thing you notice? A sound, a smell, a sensation.
+      — You look at the others: do you recognise them? What do you feel seeing them?
+
+  - id: scenario_betrayal_opener
+    title: "Scenario: The Betrayal — Read Aloud"
+    visibility: public
+    body: |
+      OPENING (read aloud at the start of the first cycle)
+
+      «The apartment is silent. Dawn filters through the curtains. On the table are the remains of a dinner: empty bottles, dirty plates, overturned glasses. On the floor, near the sofa, there is a dark stain. It could be red wine. Or maybe not.»
+
+      FIRST CYCLE QUESTIONS (ask one at a time)
+      — Who wakes up first, and where are they?
+      — What is the first thing you notice in the room?
+      — You look at the stain on the floor. What do you think it is?
+
+  - id: keeper_incident_truth
+    title: "[KEEPER] The Incident — Hidden Truth"
+    visibility: keeper
+    body: |
+      THE TRUTH (do not read aloud — for the Memory Keeper only)
+
+      The characters voluntarily enrolled in an experimental programme of selective memory erasure at Dr Fassini's clinic. Each had a different reason to forget, but all share the same guilt: they were involved in an event that caused someone's death.
+
+      The procedure did not work as planned. Memories are returning, fragmented and distorted. The fifth bed — empty, made with too much care — belonged to another participant who did not survive.
+
+      DEFAULT TRUTH (the Memory Keeper may modify this based on what emerges at the table)
+      The characters were involved in a road accident. The Catalyst was driving drunk. The Protector had insisted on taking that road. The Witness saw the danger but hesitated. The Survivor was not present, but persuaded the others to cover it up. One person died. They turned to Dr Fassini's clinic to forget.
+
+      KEY NPCs
+      Dr Fassini: calm voice, always perfectly clean hands. Heard on the intercom, glimpsed through glass — never met in person.
+      The Missing Participant: no name in the characters' memories. Fifth bed. Dead, escaped, or still hidden in the clinic.
+      The Nurse: young, nervous, evasive eyes. Knows something. «It is not my fault. I just do my job.»
+
+      PHASE GUIDE
+      Cycles 1–2 (Fog): Explore the clinic. Sensations only. No concrete answers.
+      Cycles 3–4 (Connections): Memories begin to contradict. Someone signed willingly; another was brought by force. Who is lying? Perhaps neither.
+      Cycle 5 (Revelations): The truth surfaces. The missing participant. What they wanted to forget.
+      Final questions: Now that you remember, what do you do? Can you forgive yourselves? If you could forget again, would you?
+
+  - id: keeper_betrayal_truth
+    title: "[KEEPER] The Betrayal — Hidden Truth"
+    visibility: keeper
+    body: |
+      THE TRUTH (do not read aloud — for the Memory Keeper only)
+
+      The apartment belongs to Marco Santini, the Catalyst's best friend. That evening Marco had organised a dinner to announce his engagement to Sofia. But Sofia and the Catalyst had been in a secret relationship for months. During the dinner, drunk, they kissed in the corridor. Marco saw them.
+
+      WHAT HAPPENED
+      The Protector tried to mediate and made things worse. The Witness saw everything but did not intervene. In the fight that followed, Marco fell and hit his head on the corner of the table. The stain on the floor is blood. Marco died that night.
+
+      All of them decided to hide the body in the boot of his car and pretend Marco had disappeared. Sofia fled with the car and no longer answers her phone.
+
+      KEY NPCs
+      Marco Santini (28): optimistic, loyal, betrayed. Never appears directly — only as an absence.
+      Sofia Marchetti (26): complex, frightened, in flight. Players remember her in contradictory ways.
+      The Neighbour (60): chronic insomniac. Heard the shouting. Has not called the police yet — but will.
+
+      PHASE GUIDE
+      Cycles 1–2: Sensory fragments — the bitter taste of wine, the smell of an elegant dress.
+      Cycles 3–4: The kiss. Marco's eyes — disbelief, then fury. A body on the floor. Something heavy lifted.
+      Cycle 5: The police found Marco's car. The neighbour heard everything. Time is running out.
+      Final questions: Can you still protect each other? Who calls the police? What do you say to Sofia, if you find her?
+
+  - id: keeper_lethe_summary
+    title: "[KEEPER] The Lethe Infection — Rules Summary"
+    visibility: keeper
+    body: |
+      THE LETHE INFECTION
+      A parasitic mechanic for OSE, Mörk Borg, and Call of Cthulhu. Full rules in the Appendix PDF.
+
+      CONTRACTING THE INFECTION
+      Apply when a character: survives the impossible (0 HP, stabilised or resurrected); fails a Save vs. Spells/Sanity against mind-altering trauma; encounters the mythic (Lethe water, Sirens' song, Lotus spores).
+      When the Infection takes hold: the character survives, but their backstory becomes a hostile entity. Erase their background traits.
+
+      THE RIGHT-HAND RULE (INFECTED)
+      Whenever the amnesiac tries to recall their past, they cannot invent it. They must ask: «What do I remember about this?» The player to their physical RIGHT answers.
+
+      THE CHOICE
+      ACCEPTANCE: The dark truth becomes canon. The character receives a system-specific boon.
+      DENIAL: The memory is rejected. Not canonical, but a permanent toll is inflicted.
+
+      MNEMONIC SPARK TABLES
+      Use the Lethe Blood / Mind / Soul tables in Roll20 when the Right-Hand player needs inspiration. Roll 1d10 on the table matching the current situation type.
+
+      SAFETY NOTE
+      Always use X-Card and Lines & Veils before implementing the Lethe Infection. If a memory suggested by the Right-Hand player causes real discomfort: the receiving player says «Veil». The memory is instantly vetoed and rewritten. No mechanical penalty.
+
+card_decks:
+  - id: act1
+    name: "AnamnesiA — Act I (Fog)"
+    description: "Fragment Cards for Cycles 1–2."
+    setup: "At the start of each cycle, draw (players + 1) cards face-up to the centre. Unexplored cards return to the deck at cycle end."
+    cards:
+      - id: "I-1"
+        name: "Chemical Smell"
+        quote: "«It is not disinfectant. It is something else.»"
+        cost: "1 Fragment"
+        text: "A smell that cuts through the antiseptic air. Wrong. Familiar in a way that makes your stomach tighten."
+
+      - id: "I-2"
+        name: "Flickering Light"
+        quote: "«The neon pulses. Like a heartbeat that is not yours.»"
+        cost: "1 Fragment"
+        text: "The light stutters in an irregular rhythm. Every time it dims, something in the shadows shifts."
+
+      - id: "I-3"
+        name: "Empty Chair"
+        quote: "«There is an extra chair. Who was it for?»"
+        cost: "1 Fragment"
+        text: "Five chairs, four of you. The fifth has been here long enough to leave a mark on the linoleum."
+
+      - id: "I-4"
+        name: "Name on Wrist"
+        quote: "«Something written on your skin. Your own handwriting.»"
+        cost: "2 Fragments"
+        text: "You wrote this before the procedure. Before you forgot why you were here."
+
+      - id: "I-5"
+        name: "Distant Hum"
+        quote: "«Beneath the silence there is a sound. Constant.»"
+        cost: "1 Fragment"
+        text: "It has been there since you woke up. You stopped hearing it — until now."
+
+      - id: "I-6"
+        name: "Mark on Hand"
+        quote: "«A plaster. A bruise. An injection point.»"
+        cost: "1 Fragment"
+        text: "Someone put something into you, or took something out. You consented to this. Did you know what it meant?"
+
+      - id: "I-7"
+        name: "Cracked Mirror"
+        quote: "«Someone hit it with force.»"
+        cost: "1 Fragment"
+        text: "The fracture pattern says impact from the inside. Someone was looking at their reflection when they broke it."
+
+      - id: "I-8"
+        name: "Closed Corridor"
+        quote: "«The door is shut. A gap. A sweet smell.»"
+        cost: "2 Fragments"
+        text: "The smell is wrong — not chemical, not clean. Sweet and heavy. You have smelled it before."
+
+  - id: act2
+    name: "AnamnesiA — Act II (Connections)"
+    description: "Fragment Cards for Cycles 3–4."
+    setup: "Add Act II cards to the Act I deck from Cycle 3 onward."
+    cards:
+      - id: "II-1"
+        name: "The Consent Form"
+        quote: "«A crumpled sheet. Your signature.»"
+        cost: "2 Fragments"
+        text: "You signed it. You read it first — or did you? The date at the top is three weeks ago."
+
+      - id: "II-2"
+        name: "The Recorded Voice"
+        quote: "«A recorder under a mattress.»"
+        cost: "2 Fragments"
+        text: "Someone hid it before the procedure. They knew they would not remember. They left a message for themselves."
+
+      - id: "II-3"
+        name: "The Photograph"
+        quote: "«A photo. You are all there. And one extra person.»"
+        cost: "2 Fragments"
+        text: "Five faces. Four of you recognise yourselves. The fifth — you know them. Why can no one say their name?"
+
+      - id: "II-4"
+        name: "The Fifth Bed"
+        quote: "«Made with too much care.»"
+        cost: "2 Fragments"
+        text: "The sheets are pulled tight, the pillow smoothed flat. Someone erased that a person was here."
+
+      - id: "II-5"
+        name: "Twin Scars"
+        quote: "«The same mark. In the same place.»"
+        cost: "1 Fragment"
+        text: "You show each other. Every one of you has it. Whatever they did, they did it to all of you."
+
+      - id: "II-6"
+        name: "The Intercom"
+        quote: "«It crackles. A mechanical voice says a number.»"
+        cost: "1 Fragment"
+        text: "The number means something. One of you recognises it. Why do they go quiet when the others look at them?"
+
+      - id: "II-7"
+        name: "The Medical File"
+        quote: "«In a drawer. Your name on the cover.»"
+        cost: "2 Fragments"
+        text: "Your diagnosis. Your reasons for enrolling. Written in your own words during the intake interview."
+
+      - id: "II-8"
+        name: "The Contested Memory"
+        quote: "«Two of you remember the same moment. Differently.»"
+        cost: "0 Fragments"
+        text: "Both of you are certain. Both of you are right. The memory was altered — but whose version is real?"
+
+  - id: act3
+    name: "AnamnesiA — Act III (Revelations)"
+    description: "Fragment Cards for Cycle 5. The Truth Always Surfaces."
+    setup: "Use Act II + Act III cards in Cycle 5. In this phase, even a Memory Collapse (0 Clears) reveals the memory — at +2 Stress."
+    cards:
+      - id: "III-1"
+        name: "The Procedure Video"
+        quote: "«A tablet. You do not want to press Play.»"
+        cost: "3 Fragments"
+        text: "You are in the footage. All of you are. You are conscious, and you are talking — before you chose to forget."
+
+      - id: "III-2"
+        name: "The Room Below"
+        quote: "«The door in the floor. Steps into the dark.»"
+        cost: "3 Fragments"
+        text: "It has always been here. How did none of you see it before? What is at the bottom?"
+
+      - id: "III-3"
+        name: "The Missing Participant"
+        quote: "«You find them. Not where you expected.»"
+        cost: "3 Fragments"
+        text: "They are here. They have been here all along. And they remember everything."
+
+      - id: "III-4"
+        name: "The Confession"
+        quote: "«Someone has known all along.»"
+        cost: "0 Fragments"
+        text: "They have been carrying it since you woke up. Now they can no longer stay silent."
+
+      - id: "III-5"
+        name: "The Doctor's Journal"
+        quote: "«In a coat pocket. Last pages written in haste.»"
+        cost: "2 Fragments"
+        text: "Fassini knew the procedure was failing. He kept going. His last entry is dated yesterday."
+
+      - id: "III-6"
+        name: "The Open Door"
+        quote: "«The door is open. It always was.»"
+        cost: "2 Fragments"
+        text: "It was never locked. You could have left at any time. Why did you stay?"
+
+      - id: "III-7"
+        name: "The Choice"
+        quote: "«To forget.»"
+        cost: "0 Fragments"
+        text: "Someone is offering you the chance to forget all of this — again. The machine is still here. The forms are still signed."
+
+      - id: "III-8"
+        name: "Echoes from Room 0"
+        quote: "«The hum stops. Silence.»"
+        cost: "All Fragments"
+        text: "The truth is not at the end of a corridor. It is in the silence between what you remember and what you chose to forget."
+
+closing_quote: "«Memories do not lie. But they do not tell the whole truth either.»"

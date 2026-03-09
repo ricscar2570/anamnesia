@@ -84,6 +84,8 @@ jobs:
           count=$(find output -name "*.pdf" | wc -l)
           echo "PDF generati: $count"
           find output -name "*.pdf" | sort
+          echo "ZIP generati:"
+          find output -name "*.zip" | sort
           if [ -z "${{ github.event.inputs.lang }}" ] && [ "$count" -lt 30 ]; then
             echo "ERRORE: attesi 30 PDF, trovati $count"
             exit 1
@@ -94,7 +96,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: anamnesia-digital-extras-pack
-          path: output/**/*.pdf
+          path: output/
           retention-days: 30
           if-no-files-found: error
 
@@ -103,5 +105,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          files: output/**/*.pdf
+          files: |
+            output/**/*.pdf
+            output/**/*.zip
           generate_release_notes: true

@@ -17,8 +17,9 @@ from build_03 import build as b03
 from build_04 import build as b04
 from build_05 import build as b05
 from build_06 import build as b06
+from build_07 import build as b07
 
-BUILDERS = [b01, b02, b03, b04, b05, b06]
+BUILDERS = [b01, b02, b03, b04, b05, b06, b07]
 LANGS    = ['it', 'en', 'de', 'fr', 'es']
 
 LANG_NAMES = {
