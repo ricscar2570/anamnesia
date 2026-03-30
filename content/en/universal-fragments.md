@@ -16,7 +16,7 @@ Cost: 1 Fragment to interact.
 |:--|:----|:----|:----|
 | **1–2** | A smell that doesn't belong here. Describe it. | A distant, constant sound, like a hum or a breath. | An object out of place — something that shouldn't be here. |
 | **3–4** | A mark on your skin you don't remember. | The light changes: a pulsing fluorescent, a shifting shadow. | A sudden physical sensation: cold, heat, dull pain. |
-| **5–6** | A taste in your mouth — metallic, bitter, sickly sweet. | Someone or something is missing. An absence that weighs. | A déjà vu: you've been here before. But when? |
+| **5–6** | A taste in your mouth — metallic, bitter, sickly sweet. | Someone or something is missing. A weight where they used to be. | A déjà vu: you've been here before. But when? |
 
 ## Act II — Connections (Cycles 3–4)
 

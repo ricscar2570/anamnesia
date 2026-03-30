@@ -38,7 +38,7 @@ Four new mechanics integrated into the core system, all designed to give players
 
 ## What's Next?
 
-AnamnesiA is a living project. Possible future directions:
+AnamnesiA is an evolving project. Possible future directions:
 
 **Expansion: Echoes from the Abyss** — A cosmic horror module with new Archetypes, Cosmic Entities, Impossible Fragments, and new mechanics.
 

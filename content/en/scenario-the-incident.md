@@ -6,7 +6,7 @@ nav_order: 11
 
 # Scenario: The Incident
 
-*"You wake up in a white, sterile room. The smell of disinfectant is overwhelming. None of you remembers how you got here. But you all sense that something terrible has happened."*
+*"You wake up in a white, sterile room. The smell of disinfectant is overwhelming. None of you remember how you got here. But you all sense that something terrible has happened."*
 
 ## Quick Setup
 
@@ -18,7 +18,7 @@ nav_order: 11
 
 The characters voluntarily submitted to an experimental selective memory erasure program at Dr. Fassini's clinic. Each had a different reason for wanting to forget, but all share the same guilt: they were involved in an event that caused someone's death.
 
-The procedure didn't work as planned. The memories are coming back, fragmented and distorted. Worse: the procedure itself caused damage. The fifth bed — the empty one, made up with too much care — belonged to another participant. Someone who didn't make it. It's unclear whether the procedure killed them or whether they remembered too much.
+The procedure didn't work as planned. The memories are coming back, fragmented and distorted. Worse: the procedure itself caused damage. The fifth bed—the empty one, made up with too much care—belonged to another participant. Someone who didn't make it. It's unclear whether the procedure killed them or whether they remembered too much.
 
 The central truth changes depending on how the players interpret the fragments. Here is the default version — the Memory Keeper can modify it based on what emerges at the table:
 
@@ -30,7 +30,7 @@ The characters were involved in a car accident. The Catalyst was driving after d
 
 **The Missing Participant** — Has no name in the players' memories. The fifth bed was theirs. Could be dead, escaped, or still hidden somewhere in the clinic. The only certainty: they wore the same identification bracelet.
 
-**The Nurse** — Young, nervous, evasive eyes. Does her job but isn't comfortable. She knows something she won't say. If the players press her, she looks down: *"It's not my fault. I'm just doing my job."*
+**The Nurse** — Young, nervous, evasive eyes. She goes through the motions but looks uneasy. She knows something she won't say. If the players press her, she looks down: *"It's not my fault. I'm just doing my job."*
 
 ## Real Timeline
 
@@ -48,11 +48,11 @@ The characters were involved in a car accident. The Catalyst was driving after d
 
 Questions to ask: *What do you feel when you close your eyes? Why is your hand trembling? That mark on your wrist — did you do that to yourself?*
 
-**Cycles 3–4 (Connections).** Memories start to contradict each other. One player remembers signing voluntarily. Another remembers being brought by force. Who's lying? Maybe no one. The consent form exists — but what did it really say? Use Act I + II Cards.
+**Cycles 3–4 (Connections).** Memories start to contradict each other. One player remembers signing voluntarily. Another remembers being brought by force. Who's lying? Maybe no one — the consent form exists, but what did it really say? Use Act I + II Cards.
 
 Questions to ask: *Who told you about the program? Did you know the fifth participant? Why did you want to forget?*
 
-**Cycle 5 (Revelations).** The truth emerges. Players discover the missing participant. Discover what they wanted to forget. And discover that maybe it would have been better not to remember. Use Act II + III Cards.
+**Cycle 5 (Revelations).** The truth emerges. Players discover the missing participant. Discover what they wanted to forget. And discover that some things were better left buried. Use Act II + III Cards.
 
 Questions to ask: *Now that you remember, what do you do? Can you forgive yourselves? If you could forget again, would you?*
 

@@ -16,7 +16,7 @@ If anyone doesn't feel comfortable during Session Zero, the game doesn't start. 
 
 | Time | Phase | Activity |
 |:-----|:------|:---------|
-| 0–10 min | Introduction | Explain what AnamnesiA is, its themes, why safety matters |
+| 0–10 min | Introduction | Explain what AnamnesiA is about, its themes, and why safety matters |
 | 10–20 min | Lines & Veils | Discuss limits and implement safety tools |
 | 20–30 min | Character Creation | Each player chooses Archetype, Anchor, fills in their sheet |
 | 30–40 min | Calibration | Tone, intensity, confirm everyone is ready |
@@ -48,7 +48,7 @@ For particularly intense scenes, the Memory Keeper can do a silent **OK Check-in
 
 ## Tone Calibration
 
-Discuss the intensity level together. No formal questionnaire needed — just an honest conversation.
+Discuss the intensity level together. No formal questionnaire is needed—just an honest conversation.
 
 | Level | Description | For whom |
 |:------|:-----------|:---------|
@@ -68,7 +68,7 @@ After the game, dedicate 10–15 minutes to talking out of character. Simple but
 
 Questions: *How do you feel now? What moments struck you most? Was anything too intense? What will you take away from this story?*
 
-If the game was particularly heavy, do something light together — a funny video, grab a snack, talk about something else. It helps to disconnect from the character and return to the real world.
+If the game was particularly heavy, do something light together — a funny video, grab a snack, chat about unrelated things. It helps to disconnect from the character and return to the real world.
 
 <div style="column-span: all; margin-top: 6pt; break-before: avoid;">
 <img src="assets/4.png" style="width: 100%; max-height: 320pt; object-fit: contain; display: block; margin-left: auto; margin-right: auto;">

@@ -21,7 +21,7 @@ You set off the chain of events. Not with malice, but with a choice, a word, a g
 
 ## Ability: Domino Effect
 
-When your roll results in a Memory Collapse (0 successes), the other involved players gain +1 Fragment (for this cycle only). You gain 1 Echo. Your actions always have a chain reaction.
+When your roll results in a Memory Collapse (0 successes), any other involved players gain +1 Fragment (for this cycle only). You gain 1 Echo. Your actions always have a chain reaction.
 
 ## Special Ability: Burden of Guilt
 

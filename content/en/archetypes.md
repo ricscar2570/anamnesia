@@ -7,7 +7,7 @@ has_children: true
 
 # The Archetypes
 
-Choose your Archetype with your heart, not tactically. Each one represents a different way of facing trauma and contributes to the group with unique strengths and fragilities. Duplicates are allowed.
+Choose your Archetype from the heart, not for tactical advantage. Each one represents a different way of facing trauma and contributes to the group with unique strengths and vulnerabilities. Duplicates are allowed.
 
 | Archetype | Base Pool | Identity |
 |:----------|:----------|:---------|

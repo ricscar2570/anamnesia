@@ -45,7 +45,7 @@ Echoes: 0–2 no penalty · 3–5 penalty −1 die · 6–8 penalty −3 dice ·
 | 4 | Partial Breakdown. Overwhelming emotions. |
 | 5 | Final Breakdown. The character enters crisis. |
 
-**Recovering Stress:** Roleplay Archetype Vulnerability (−1 Stress, max 1/cycle) · Human Connection at end of cycle · Invoke the Anchor (1/game, requires Stress 2+)
+**Recovering Stress:** Roleplay your Archetype's Vulnerability (−1 Stress, max 1/cycle) · Human Connection at end of cycle · Invoke the Anchor (1/game, requires Stress 2+)
 
 ## Special Mechanics 
 
@@ -65,7 +65,7 @@ Echoes: 0–2 no penalty · 3–5 penalty −1 die · 6–8 penalty −3 dice ·
 
 The player to your right interprets your roll's result, not you.
 
-*If you stall: ask for a sense, roll on the Sensory Generator, or pass the word.*
+*If you stall: ask for a sense, roll on the Sensory Generator, or pass it along.*
 
 ## Sensory Trigger Generator (1d6)
 

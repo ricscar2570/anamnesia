@@ -15,7 +15,7 @@ A narrative tabletop RPG of psychological horror
 
 ---
 
-**AnamnesiA** is a narrative tabletop RPG of psychological horror for 2–4 players. There is no traditional Game Master: everyone collaborates to uncover a buried truth. Your characters awaken with no memory of a traumatic event. Through ambiguous and painful fragments of memory, you will discover together what happened.
+**AnamnesiA** is a narrative tabletop RPG of psychological horror for 2–4 players. There is no traditional Game Master: everyone collaborates to uncover a buried truth. Your characters awaken with no memory of a traumatic event. Through ambiguous and painful memory fragments, you'll piece together what happened.
 
 *There is no victory. There is no defeat. There is only the story you create, and the price you pay to remember.*
 

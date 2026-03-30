@@ -10,7 +10,7 @@ AnamnesiA is built on four principles that guide every moment of play.
 
 ## 1. Fragmented Memory
 
-Memories don't come back whole. They arrive in pieces, distorted, contradictory. Two players can remember the same event in opposite ways — and neither is lying.
+Memories don't come back whole. They arrive in pieces, distorted, contradictory. Two players can remember the same event in completely opposite ways — and neither one is lying.
 
 ## 2. Shared Trauma
 

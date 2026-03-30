@@ -14,7 +14,7 @@ Ask questions. Introduce complications when the pace slows. Manage the time and 
 
 ## What You Don't Do
 
-Don't decide what "really" happened before the players discover it. Don't force specific interpretations of fragments. Don't punish players for their narrative choices. Never say "No, that's not what happened" — rather: *"How do you explain it?"*
+Don't decide what "really" happened before the players discover it. Don't force specific interpretations of fragments. Don't punish players for their narrative choices. Never say "No, that's not right" — instead, ask: *"How do you explain it?"*
 
 The Truth Beneath in the scenario is a suggestion, not a script. All players know it — their characters don't. This dramatic irony makes the game more intense, not less. If the players build something more interesting, follow them.
 
@@ -28,9 +28,9 @@ But there's another kind of silence — the one where nobody knows what to do. I
 
 AnamnesiA is designed to be emotionally intense. Your job is to keep the intensity high enough to engage, low enough not to cause harm.
 
-**Signs the intensity is right:** Players speak softly. They look at each other. They hesitate before describing a fragment. They laugh nervously. They lean into the table.
+**Signs that the intensity is right:** Players speak softly. They look at each other. They hesitate before describing a fragment. They laugh nervously. They lean into the table.
 
-**Signs the intensity is too much:** A player withdraws. They get distracted by their phone. They respond with short, mechanical phrases. They physically distance themselves from the table. They crack jokes that completely break the tone.
+**Signs that the intensity is too high:** A player withdraws. They get distracted by their phone. They respond with short, mechanical phrases. They physically distance themselves from the table. They crack jokes that completely break the tone.
 
 When you notice these signs, don't ignore them. Call a check-in break. No justification needed — just say: *"Let's take a 2-minute break."*
 
@@ -40,7 +40,7 @@ Every group is different. Some players want to dive into the rawest detail. Othe
 
 If a player describes fragments rich in sensory detail, they're comfortable with intensity — match their level. If a player stays vague and generic, respect their boundary — don't force detail.
 
-Your goal is for each player to find their own depth, without anyone having to justify how they play.
+Your goal is for every player to find their own depth, without anyone feeling like they have to justify how they play.
 
 ## The Art of the Question
 
@@ -58,7 +58,7 @@ Questions are the engine of the game. Here are the categories that work:
 
 Keep a sheet with the 5 cycles marked. At the start of each cycle, announce the phase: *"We enter the Fog"* or *"Connections are beginning to form."* This gives the game rhythm and helps players calibrate their fragments' tone.
 
-If a cycle runs out quickly, don't stretch it artificially. If a cycle won't end, give it a few extra minutes — but no more than 25, or the pacing is lost.
+If a cycle runs out quickly, don't stretch it artificially. If a cycle refuses to end, give it a few extra minutes — but no more than 25, or the pacing falls apart.
 
 **Recommended timer:** 15 minutes per cycle. When the timer goes off, wrap up the current scene and move to consolidation (Pool recovery, Echo notation).
 

@@ -6,7 +6,7 @@ nav_order: 12
 
 # Scenario: The Betrayal
 
-*"The apartment is silent. Dawn filters through the curtains. On the table are the remains of a dinner: empty bottles, dirty plates, overturned glasses. On the floor, near the couch, there's a dark stain. It could be red wine. Or maybe not."*
+*"The apartment is quiet. Dawn filters through the curtains. On the table are the remains of a dinner: empty bottles, dirty dishes, overturned glasses. On the floor, near the couch, there's a dark stain. It could be red wine. Or maybe not."*
 
 ## Quick Setup
 
@@ -22,7 +22,7 @@ The apartment belongs to Marco Santini, the Catalyst's best friend. That evening
 
 What happened next: the Protector tried to mediate but made things worse. The Witness saw everything but didn't intervene. In the scuffle that followed, Marco fell and hit his head on the corner of the table. The stain on the floor is blood.
 
-Marco died that night. It's unclear whether it was an accident or whether someone pushed him. Everyone decided to hide the body in the trunk of his car and pretend Marco had disappeared. Sofia fled with the car and stopped answering her phone.
+Marco died that night. It's unclear whether it was an accident or whether someone pushed him. Everyone decided to hide the body in the trunk of his car and pretend Marco had disappeared. Sofia fled with the car and stopped picking up her phone.
 
 ## Key NPCs
 
@@ -30,7 +30,7 @@ Marco died that night. It's unclear whether it was an accident or whether someon
 
 **Sofia Marchetti** — 26. Complex, scared, on the run. The players remember her in contradictory ways: someone sees her crying, someone sees her calm and calculating. Where is she now? What will she do with what she knows?
 
-**The Neighbor** — 60. Chronic insomniac. He heard the screaming. He hasn't called the police yet, but he will soon. The players catch glimpses of him through the window, awake, watching them.
+**The Neighbor** — 60. A chronic insomniac. He heard the screaming. He hasn't called the police yet, but he will soon. The players catch glimpses of him through the window, awake, watching them.
 
 ## Real Timeline
 
@@ -68,6 +68,6 @@ The Memory Keeper uses these as narrative triggers or improvised cards during th
 
 **Fog:** The taste of wine turning bitter in your mouth · Laughter transforming into something shrill · Something breaking — glass? Or bone? · The scent of an elegant outfit that isn't yours · Sudden silence after chaos · Hands trembling while dialing a number
 
-**Connections:** A stolen kiss in the shadow of the hallway · Marco staring with disbelieving eyes · *"He was my best friend!"* · A motionless body on the floor, head at a wrong angle · Four people lifting something heavy · The inside of a car trunk, at night
+**Connections:** A stolen kiss in the shadow of the hallway · Marco staring with disbelieving eyes · *"He was my best friend!"* · A motionless body on the floor, head at an odd angle · Four people lifting something heavy · The inside of a car trunk, at night
 
 **Revelations:** You and Sofia had been seeing each other secretly for months · Marco fell during the scuffle — or did you push him? · All of you decided to hide the body · Sofia ran and isn't answering · The police found Marco's car at the port · One of you knew exactly what to do — as if you'd done it before

@@ -10,7 +10,7 @@ AnamnesiA's system is designed to be flexible. These three variants modify the g
 
 ## Keeperless Mode
 
-No one guides. Narrative responsibility is shared.
+No one takes the lead. Narrative responsibility is shared.
 
 **How it works:** Each player secretly writes down one detail of the Truth Beneath on a folded slip of paper. The slips are shuffled and revealed one at a time during the Revelations Phase. If two truths contradict, the group rolls: whoever gets more Clear results establishes the canonical version. Complications are generated with the Complication Generator (1d6) instead of the Memory Keeper.
 

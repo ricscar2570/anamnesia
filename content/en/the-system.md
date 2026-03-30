@@ -46,11 +46,11 @@ After the roll, classify each die:
 
 **If the Right-Hand Rule stalls:** The interpreting player can do one of these things:
 
-**1.** **Ask for a sense** from the active player: *"Give me a sense — sight, sound, smell — and I'll start from there."*
+**1.** **Ask for a sense** from the active player: *"Give me a sense—sight, sound, smell—and I'll start from there."*
 
 **2.** **Use the Sensory Trigger Generator** (1d6, see Quick Reference) as a prompt.
 
-**3.** **Pass the word** to the next player. There's no shame in it — improvisation doesn't always come easy.
+**3.** **Pass the spotlight** to the next player. There's no shame in it; improvisation isn't always easy.
 
 ## Push the Memory 
 After a roll that results in a **Painful Truth** (1 Clear) or **Memory Collapse** (0 Clear), you can choose to Push the Memory. The result improves by one level:
@@ -60,7 +60,7 @@ After a roll that results in a **Painful Truth** (1 Clear) or **Memory Collapse*
 
 The price: you immediately gain **+1 Stress**, in addition to any Stress from the original outcome. You cannot Push a Partial Success.
 
-*You grit your teeth and force the memory to surface. The price is double: the Stress from the outcome plus the Stress from the effort. Every time you Push, Breakdown draws closer.*
+*You grit your teeth and force the memory to surface, even if it costs you. Every time you Push, Breakdown draws closer.*
 
 ## Fragment Pool
 

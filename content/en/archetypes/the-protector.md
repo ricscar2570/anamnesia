@@ -21,7 +21,7 @@ You were responsible for everyone's safety. In the crucial moment, you failed â€
 
 ## Ability: Living Shield
 
-When another player gets a Memory Collapse (0 successes), you can sacrifice up to 3 Fragments to give them. For every 2 Fragments sacrificed, you gain 1 Echo (rounded down). You must narrate how you take on the responsibility for their pain.
+When another player gets a Memory Collapse (0 successes), you can sacrifice up to 3 Fragments to transfer to them. For every 2 Fragments sacrificed, you gain 1 Echo (rounded down). You must narrate how you take on the responsibility for their pain.
 
 ## Vulnerability
 

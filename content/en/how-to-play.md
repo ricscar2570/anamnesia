@@ -28,6 +28,6 @@ At the start of each cycle, the Memory Keeper shuffles the deck matching the cur
 
 Each cycle, a different player takes the role of Memory Keeper. This is not a Game Master: it's a **rotating facilitator**. The role passes clockwise after each Reset.
 
-**Memory Keeper responsibilities:** Manage the timer and pace the cycle's phases. Read aloud the Echoes recorded in the previous cycle. Draw and lay out the Fragment Cards for the current cycle. Facilitate time distribution.
+**The Memory Keeper's responsibilities:** Manage the timer and pace the cycle's phases. Read aloud the Echoes recorded in the previous cycle. Draw and lay out the Fragment Cards for the current cycle. Facilitate time distribution.
 
 The Memory Keeper plays their own character normally during the Exploration phase. They can roll dice, interact with cards, and roleplay their Archetype like everyone else.

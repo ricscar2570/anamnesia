@@ -6,7 +6,7 @@ nav_order: 9
 
 # Starting the First Cycle
 
-The first cycle can be the hardest moment, especially if the group has no experience with GM-less games. Here's a guide to break the ice.
+The first cycle is often the most challenging part of the game, especially for groups with no prior experience playing GM-less games. Here's a guide to help you break the ice.
 
 The first Memory Keeper reads aloud the scenario's introductory text, then starts the timer for the Awakening phase and asks these questions, one at a time:
 
@@ -23,7 +23,7 @@ The first Memory Keeper reads aloud the scenario's introductory text, then start
 >
 > If this is your first tabletop RPG experience, keep these three things in mind:
 >
-> **1. Catching Your Breath is essential.** At the end of each cycle, actively seek a moment to roleplay your Vulnerability: it recovers 1 Fragment and reduces Stress. It's not a secondary option — it's your main pressure valve.
+> **1. Catching Your Breath is essential.** At the end of each cycle, actively seek a moment to roleplay your Archetype's Vulnerability: it recovers 1 Fragment and reduces Stress. It's not a secondary option — it's your main pressure valve.
 >
 > **2. Human Connection in Cycles 1–4:** if no one had a Breakdown, you can seek a moment of connection with another character to reduce Stress by 1. Always do this when you can.
 >

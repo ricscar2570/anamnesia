@@ -10,7 +10,7 @@ nav_order: 5
 
 Stress represents the mental deterioration caused by the process of remembering. Each point of Stress removes one die from your Pool. Stress is hard to reduce: the only ways are to roleplay your Archetype's Vulnerability, Human Connection at the end of a cycle, or invoking your Anchor (see below). Once gained, it stays with you as a persistent weight.
 
-**You gain Stress when:** you uncover a trauma, a roll has emotional consequences, a companion's Collapse affects you, certain Memory Cards have explicit triggers, you Push the Memory.
+**You gain Stress when:** you uncover a trauma, a roll carries emotional consequences, a companion's Collapse affects you, certain Memory Cards have explicit triggers, or you Push the Memory.
 
 ## Catching Your Breath
 
@@ -31,7 +31,7 @@ Traumatic Echoes represent permanent damage to your psyche. Every die showing 1 
 
 ## The Breakdown
 
-When Stress reaches 4, you suffer a **Partial Breakdown:** choose how your character collapses (dissociation, flight, aggression, paralysis). At Stress 5, the **Final Breakdown** is inevitable: the character is beyond the limit and reaches their epilogue.
+When Stress reaches 4, you suffer a **Partial Breakdown:** choose how your character collapses (dissociation, flight, aggression, paralysis). At Stress 5, the **Final Breakdown** is inevitable: the character has reached their limit and arrives at their final chapter.
 
 *A Breakdown is not elimination. It is the dramatic climax of your narrative arc.*
 
