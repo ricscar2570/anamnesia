@@ -1,0 +1,131 @@
+# AnamnesiA card deck visual theme
+# All colours in CMYK (cyan, magenta, yellow, black) with values 0.0 - 1.0
+# Edit this file to change the look of all generated cards.
+
+# ── DriveThruCards Euro Poker Premium specs ───────────────────────────────────
+card:
+  width_mm: 69.4         # final card width including bleed
+  height_mm: 94.4        # final card height including bleed
+  bleed_mm: 3.2          # bleed area on every edge
+
+# ── Per-act header colours (also used for cost badge) ─────────────────────────
+acts:
+  1:
+    label_it: "ATTO I - NEBBIA"
+    label_en: "ACT I - FOG"
+    color_cmyk: [0.55, 0.30, 0.10, 0.45]   # navy
+  2:
+    label_it: "ATTO II - CONNESSIONI"
+    label_en: "ACT II - CONNECTIONS"
+    color_cmyk: [0.55, 0.10, 0.55, 0.45]   # forest green
+  3:
+    label_it: "ATTO III - RIVELAZIONI"
+    label_en: "ACT III - REVELATIONS"
+    color_cmyk: [0.05, 0.65, 0.55, 0.40]   # burgundy
+
+# ── Layout colours ────────────────────────────────────────────────────────────
+colors:
+  paper_cream:    [0.00, 0.03, 0.10, 0.04]
+  header_text:    [0.00, 0.00, 0.00, 0.00]   # white
+  title_dark:     [0.50, 0.40, 0.30, 0.85]
+  quote_sepia:    [0.20, 0.40, 0.50, 0.45]
+  divider:        [0.30, 0.40, 0.45, 0.55]
+  instruction:    [0.30, 0.30, 0.30, 0.65]
+  type_label:     [0.30, 0.30, 0.30, 0.55]
+  copyright:      [0.30, 0.30, 0.30, 0.55]
+  cost_fg:        [0.00, 0.00, 0.00, 0.00]   # white
+
+# ── Category icon colours (also defines the available category set) ───────────
+categories:
+  # Italian categories
+  SENSORIALE:    [0.10, 0.45, 0.95, 0.10]
+  PERSONALE:     [0.10, 0.80, 0.65, 0.20]
+  AMBIENTALE:    [0.75, 0.20, 0.65, 0.45]
+  DOCUMENTO:     [0.05, 0.35, 0.85, 0.25]
+  SCOPERTA:      [0.85, 0.45, 0.10, 0.30]
+  RELAZIONALE:   [0.40, 0.85, 0.15, 0.30]
+  NARRATIVA:     [0.55, 0.15, 0.55, 0.45]
+  RIVELAZIONE:   [0.05, 0.65, 0.85, 0.10]
+  FINALE:        [0.10, 0.30, 0.85, 0.20]
+  EPILOGO:       [0.30, 0.40, 0.45, 0.85]
+  # English categories (same colours, different keys)
+  SENSORY:       [0.10, 0.45, 0.95, 0.10]
+  PERSONAL:      [0.10, 0.80, 0.65, 0.20]
+  ENVIRONMENTAL: [0.75, 0.20, 0.65, 0.45]
+  DOCUMENT:      [0.05, 0.35, 0.85, 0.25]
+  DISCOVERY:     [0.85, 0.45, 0.10, 0.30]
+  RELATIONAL:    [0.40, 0.85, 0.15, 0.30]
+  NARRATIVE:     [0.55, 0.15, 0.55, 0.45]
+  REVELATION:    [0.05, 0.65, 0.85, 0.10]
+  FINAL:         [0.10, 0.30, 0.85, 0.20]
+  EPILOGUE:      [0.30, 0.40, 0.45, 0.85]
+
+# Mapping from per-language category to a canonical icon shape
+icon_shape_for_category:
+  SENSORIALE: eye
+  SENSORY:    eye
+  PERSONALE:  person
+  PERSONAL:   person
+  AMBIENTALE: frame
+  ENVIRONMENTAL: frame
+  DOCUMENTO:  document
+  DOCUMENT:   document
+  SCOPERTA:   magnifier
+  DISCOVERY:  magnifier
+  RELAZIONALE: rings
+  RELATIONAL:  rings
+  NARRATIVA:  speech
+  NARRATIVE:  speech
+  RIVELAZIONE: warning
+  REVELATION:  warning
+  FINALE:     key
+  FINAL:      key
+  EPILOGO:    hourglass
+  EPILOGUE:   hourglass
+
+# ── Fonts (ReportLab built-in PostScript names) ───────────────────────────────
+fonts:
+  scenario_tag:  ["Helvetica",        6.5]
+  act_header:    ["Helvetica-Bold",   12.5]
+  title:         ["Times-Bold",       14]      # auto-shrunk if too long
+  title_min:     10                            # minimum auto-shrink size
+  quote:         ["Times-Italic",     11]      # auto-shrunk if 3+ lines
+  quote_min:     10
+  instruction:   ["Helvetica",        8]
+  instruction_min: 7.5
+  type_label:    ["Helvetica",        5.8]
+  copyright:     ["Helvetica",        4.8]
+
+# ── Cost badge tuning (after the spacing fix) ─────────────────────────────────
+badge:
+  radius_mm: 6.0
+  center_offset_y_pt: 18    # vertical position above bleed
+  # FRAG. / FRAM. badges
+  cost_label_size: 5
+  cost_value_size: 11
+  label_offset_y: 4         # label above centre
+  value_offset_y: -7        # value below centre
+  # FREE / LIBERA badges
+  free_label_size: 5
+  # ALL FRAG. / TUTTI FRAM. badges
+  all_top_size: 6           # 'ALL' / 'TUTTI'
+  all_bottom_size: 4.8      # 'FRAG.' / 'FRAM.'
+  all_top_offset_y: 2
+  all_bottom_offset_y: -5.5
+
+# ── Per-language UI strings ───────────────────────────────────────────────────
+ui_strings:
+  it:
+    scenario_label: "L'INCIDENTE"
+    cost_frag: "FRAM."
+    cost_free: "LIBERA"
+    cost_all_top: "TUTTI"
+    cost_all_bottom: "FRAM."
+    copyright: "© 2026 Riccardo Scaringi - Temple Games"
+  en:
+    scenario_label: "THE INCIDENT"
+    cost_frag: "FRAG."
+    cost_free: "FREE"
+    cost_all_top: "ALL"
+    cost_all_bottom: "FRAG."
+    copyright: "© 2026 Riccardo Scaringi - Temple Games"

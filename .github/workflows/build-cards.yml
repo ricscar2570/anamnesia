@@ -1,0 +1,45 @@
+name: build-cards
+
+on:
+  push:
+    paths:
+      - 'cards/**'
+      - '.github/workflows/build-cards.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [it, en]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: cards/requirements.txt
+
+      - name: Install poppler-utils (provides pdftoppm)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
+
+      - name: Install Python dependencies
+        run: pip install -r cards/requirements.txt
+
+      - name: Build deck (${{ matrix.lang }})
+        run: python -m cards.builders.deck --lang ${{ matrix.lang }}
+
+      - name: Upload artifacts (${{ matrix.lang }})
+        uses: actions/upload-artifact@v4
+        with:
+          name: anamnesia-deck-${{ matrix.lang }}
+          path: |
+            cards/output/${{ matrix.lang }}/deck_${{ matrix.lang }}.pdf
+            cards/output/${{ matrix.lang }}/jpgs/deck_${{ matrix.lang }}_dtc.zip
+          if-no-files-found: error
+          retention-days: 30

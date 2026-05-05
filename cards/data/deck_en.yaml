@@ -1,0 +1,169 @@
+# AnamnesiA - Fragment Cards "The Incident"
+# English deck, 36 cards. Order = print order (001..036).
+#
+# Schema for each card:
+#   number:       Sequential 1-36 (must match list order)
+#   act:          1 (Fog), 2 (Connections), 3 (Revelations)
+#   title:        Card title
+#   quote:        Quote text (chevron quotes added automatically)
+#   cost_label:   FRAG. | FREE | ALL
+#   cost_value:   "0", "1", "2", "3" (for FRAG./FREE) or "FRAG." (for ALL)
+#   category:     SENSORY, PERSONAL, ENVIRONMENTAL, DOCUMENT, DISCOVERY,
+#                 RELATIONAL, NARRATIVE, REVELATION, FINAL, EPILOGUE
+#   instruction:  (optional) rules text below the quote
+
+cards:
+  # ═══ ACT I - FOG ═══════════════════════════════════════════════════════════
+  - { number: 1,  act: 1, title: "Chemical Smell",
+      quote: "Not disinfectant. Something else.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  - { number: 2,  act: 1, title: "Flickering Light",
+      quote: "The light pulses. Like a heartbeat. Not yours.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  - { number: 3,  act: 1, title: "Empty Chair",
+      quote: "There's an extra chair. Whose was it?",
+      cost_label: "FRAG.", cost_value: "1", category: "ENVIRONMENTAL" }
+
+  - { number: 4,  act: 1, title: "Name on the Wrist",
+      quote: "Something written on your skin. Your own handwriting.",
+      cost_label: "FRAG.", cost_value: "2", category: "PERSONAL" }
+
+  - { number: 5,  act: 1, title: "Distant Hum",
+      quote: "Beneath the silence, a sound. Constant.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  - { number: 6,  act: 1, title: "Mark on the Hand",
+      quote: "A bandage. A bruise. An injection mark.",
+      cost_label: "FRAG.", cost_value: "1", category: "PERSONAL" }
+
+  - { number: 7,  act: 1, title: "Cracked Mirror",
+      quote: "Someone struck it. Hard.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  - { number: 8,  act: 1, title: "Sealed Corridor",
+      quote: "The door is closed. A crack. A sweet smell.",
+      cost_label: "FRAG.", cost_value: "2", category: "ENVIRONMENTAL" }
+
+  - { number: 9,  act: 1, title: "Voice on the Intercom",
+      quote: "One word. Then silence.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  - { number: 10, act: 1, title: "ID Bracelet",
+      quote: "A number. Not your name.",
+      cost_label: "FRAG.", cost_value: "1", category: "PERSONAL" }
+
+  - { number: 11, act: 1, title: "Barred Window",
+      quote: "The light filters through. You can't get out.",
+      cost_label: "FRAG.", cost_value: "1", category: "ENVIRONMENTAL" }
+
+  - { number: 12, act: 1, title: "Taste of Medication",
+      quote: "Bitter. Lingering. Familiar.",
+      cost_label: "FRAG.", cost_value: "1", category: "SENSORY" }
+
+  # ═══ ACT II - CONNECTIONS ══════════════════════════════════════════════════
+  - { number: 13, act: 2, title: "The Contested Memory",
+      quote: "Two of you remember the same moment. Differently.",
+      cost_label: "FREE",  cost_value: "0", category: "NARRATIVE",
+      instruction: "Two players narrate the same moment in opposite ways. No roll." }
+
+  - { number: 14, act: 2, title: "The Handwritten Note",
+      quote: "Someone left you a message. When?",
+      cost_label: "FRAG.", cost_value: "2", category: "DOCUMENT" }
+
+  - { number: 15, act: 2, title: "The Access Code",
+      quote: "You know it. You don't know how.",
+      cost_label: "FRAG.", cost_value: "2", category: "DISCOVERY" }
+
+  - { number: 16, act: 2, title: "The Common Room",
+      quote: "You were all here together. Once.",
+      cost_label: "FRAG.", cost_value: "2", category: "RELATIONAL" }
+
+  - { number: 17, act: 2, title: "The Doctor's Coat",
+      quote: "Folded with care. Too much care.",
+      cost_label: "FRAG.", cost_value: "1", category: "ENVIRONMENTAL" }
+
+  - { number: 18, act: 2, title: "The Medical File",
+      quote: "In a drawer. Your name on the cover.",
+      cost_label: "FRAG.", cost_value: "2", category: "DOCUMENT" }
+
+  - { number: 19, act: 2, title: "The Consent Form",
+      quote: "A crumpled sheet. Your signature.",
+      cost_label: "FRAG.", cost_value: "2", category: "DOCUMENT" }
+
+  - { number: 20, act: 2, title: "The Recorded Voice",
+      quote: "A tape recorder. Beneath a mattress.",
+      cost_label: "FRAG.", cost_value: "2", category: "DISCOVERY" }
+
+  - { number: 21, act: 2, title: "The Photograph",
+      quote: "A photo. You're all in it. And one more.",
+      cost_label: "FRAG.", cost_value: "2", category: "RELATIONAL" }
+
+  - { number: 22, act: 2, title: "The Fifth Bed",
+      quote: "Made with too much care.",
+      cost_label: "FRAG.", cost_value: "2", category: "ENVIRONMENTAL" }
+
+  - { number: 23, act: 2, title: "Twin Scars",
+      quote: "The same mark. In the same place.",
+      cost_label: "FRAG.", cost_value: "1", category: "RELATIONAL" }
+
+  - { number: 24, act: 2, title: "The Intercom",
+      quote: "Static. A mechanical voice. A number.",
+      cost_label: "FRAG.", cost_value: "1", category: "DISCOVERY" }
+
+  # ═══ ACT III - REVELATIONS ══════════════════════════════════════════════════
+  - { number: 25, act: 3, title: "The Confession",
+      quote: "Someone knows. They always have.",
+      cost_label: "FREE",  cost_value: "0", category: "NARRATIVE",
+      instruction: "One character reveals what they have always known. No roll." }
+
+  - { number: 26, act: 3, title: "The Procedure Tape",
+      quote: "A tablet. You don't want to press Play.",
+      cost_label: "FRAG.", cost_value: "3", category: "REVELATION",
+      instruction: "Full Success: choose what to show. Memory Collapse: see something irreversible." }
+
+  - { number: 27, act: 3, title: "The Room Below",
+      quote: "The door in the floor. Stairs into the dark.",
+      cost_label: "FRAG.", cost_value: "3", category: "ENVIRONMENTAL",
+      instruction: "Whoever explores cannot Push the Memory on this roll." }
+
+  - { number: 28, act: 3, title: "The Missing Participant",
+      quote: "You find them. Not where you expected.",
+      cost_label: "FRAG.", cost_value: "3", category: "REVELATION",
+      instruction: "The player on your right decides where and how they are found." }
+
+  - { number: 29, act: 3, title: "The Doctor's Journal",
+      quote: "In a coat pocket. The last pages written in haste.",
+      cost_label: "FRAG.", cost_value: "2", category: "DOCUMENT" }
+
+  - { number: 30, act: 3, title: "The Open Door",
+      quote: "The door is open. It always was.",
+      cost_label: "FRAG.", cost_value: "2", category: "FINAL" }
+
+  - { number: 31, act: 3, title: "The Choice",
+      quote: "To forget.",
+      cost_label: "FREE",  cost_value: "0", category: "EPILOGUE",
+      instruction: "Each player declares whether their character would choose to forget again." }
+
+  - { number: 32, act: 3, title: "Echoes from Room 0",
+      quote: "The hum stops. Silence.",
+      cost_label: "ALL",   cost_value: "FRAG.", category: "REVELATION",
+      instruction: "Every player spends their entire Pool. The Memory Keeper narrates the final revelation." }
+
+  - { number: 33, act: 3, title: "The Original Contract",
+      quote: "What did you really sign?",
+      cost_label: "FRAG.", cost_value: "3", category: "DOCUMENT" }
+
+  - { number: 34, act: 3, title: "The Testimony",
+      quote: "Someone knows. Someone will speak.",
+      cost_label: "FRAG.", cost_value: "2", category: "REVELATION" }
+
+  - { number: 35, act: 3, title: "The Price of Silence",
+      quote: "What is forgetting worth?",
+      cost_label: "FREE",  cost_value: "0", category: "EPILOGUE",
+      instruction: "Each player describes what they kept hidden. No roll." }
+
+  - { number: 36, act: 3, title: "Beyond the Door",
+      quote: "There is still something to find.",
+      cost_label: "FRAG.", cost_value: "2", category: "FINAL" }

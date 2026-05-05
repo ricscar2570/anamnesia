@@ -1,0 +1,169 @@
+# AnamnesiA - Carte Frammento "L'Incidente"
+# Mazzo italiano, 36 carte. Ordine = ordine di stampa (001..036).
+#
+# Schema di ogni carta:
+#   number:       Numero progressivo 1-36 (deve corrispondere all'ordine nella lista)
+#   act:          1 (Nebbia), 2 (Connessioni), 3 (Rivelazioni)
+#   title:        Titolo della carta
+#   quote:        Citazione tra virgolette caporali (verra' aggiunta automaticamente)
+#   cost_label:   FRAM. | LIBERA | TUTTI
+#   cost_value:   "0", "1", "2", "3"  (per FRAM./LIBERA) oppure "FRAM." (per TUTTI)
+#   category:     SENSORIALE, PERSONALE, AMBIENTALE, DOCUMENTO, SCOPERTA,
+#                 RELAZIONALE, NARRATIVA, RIVELAZIONE, FINALE, EPILOGO
+#   instruction:  (opzionale) testo regolistico sotto la citazione
+
+cards:
+  # ═══ ATTO I - NEBBIA ═══════════════════════════════════════════════════════
+  - { number: 1,  act: 1, title: "Odore Chimico",
+      quote: "Non è disinfettante. È qualcos'altro.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  - { number: 2,  act: 1, title: "Luce Intermittente",
+      quote: "Il neon pulsa. Come un battito che non è il tuo.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  - { number: 3,  act: 1, title: "Sedia Vuota",
+      quote: "C'è una sedia in più. Per chi era?",
+      cost_label: "FRAM.",  cost_value: "1", category: "AMBIENTALE" }
+
+  - { number: 4,  act: 1, title: "Nome sul Polso",
+      quote: "Qualcosa scritto sulla tua pelle. La tua calligrafia.",
+      cost_label: "FRAM.",  cost_value: "2", category: "PERSONALE" }
+
+  - { number: 5,  act: 1, title: "Ronzio Lontano",
+      quote: "Sotto il silenzio c'è un suono. Costante.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  - { number: 6,  act: 1, title: "Segno sulla Mano",
+      quote: "Un cerotto. Un livido. Un punto di iniezione.",
+      cost_label: "FRAM.",  cost_value: "1", category: "PERSONALE" }
+
+  - { number: 7,  act: 1, title: "Specchio Incrinato",
+      quote: "Qualcuno l'ha colpito con forza.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  - { number: 8,  act: 1, title: "Corridoio Chiuso",
+      quote: "La porta è chiusa. Una fessura. Odore dolce.",
+      cost_label: "FRAM.",  cost_value: "2", category: "AMBIENTALE" }
+
+  - { number: 9,  act: 1, title: "Voce nell'Interfono",
+      quote: "Una parola. Poi silenzio.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  - { number: 10, act: 1, title: "Braccialetto Identificativo",
+      quote: "Un numero. Non il tuo nome.",
+      cost_label: "FRAM.",  cost_value: "1", category: "PERSONALE" }
+
+  - { number: 11, act: 1, title: "Finestra Sbarrata",
+      quote: "La luce filtra. Non puoi uscire.",
+      cost_label: "FRAM.",  cost_value: "1", category: "AMBIENTALE" }
+
+  - { number: 12, act: 1, title: "Sapore di Farmaci",
+      quote: "Amaro. Persistente. Familiare.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SENSORIALE" }
+
+  # ═══ ATTO II - CONNESSIONI ══════════════════════════════════════════════════
+  - { number: 13, act: 2, title: "Il Ricordo Conteso",
+      quote: "Due di voi ricordano lo stesso momento. Diversamente.",
+      cost_label: "LIBERA", cost_value: "0", category: "NARRATIVA",
+      instruction: "Due giocatori narrano lo stesso momento in modo opposto. Nessun tiro." }
+
+  - { number: 14, act: 2, title: "La Nota a Mano",
+      quote: "Qualcuno ti ha lasciato un messaggio. Quando?",
+      cost_label: "FRAM.",  cost_value: "2", category: "DOCUMENTO" }
+
+  - { number: 15, act: 2, title: "Il Codice di Accesso",
+      quote: "Lo conosci. Non sai come.",
+      cost_label: "FRAM.",  cost_value: "2", category: "SCOPERTA" }
+
+  - { number: 16, act: 2, title: "La Stanza Comune",
+      quote: "Eravate qui tutti insieme. Una volta.",
+      cost_label: "FRAM.",  cost_value: "2", category: "RELAZIONALE" }
+
+  - { number: 17, act: 2, title: "Il Camice del Dottore",
+      quote: "Piegato con cura. Troppa cura.",
+      cost_label: "FRAM.",  cost_value: "1", category: "AMBIENTALE" }
+
+  - { number: 18, act: 2, title: "La Cartella Clinica",
+      quote: "In un cassetto. Il tuo nome sulla copertina.",
+      cost_label: "FRAM.",  cost_value: "2", category: "DOCUMENTO" }
+
+  - { number: 19, act: 2, title: "Il Modulo di Consenso",
+      quote: "Un foglio accartocciato. La tua firma.",
+      cost_label: "FRAM.",  cost_value: "2", category: "DOCUMENTO" }
+
+  - { number: 20, act: 2, title: "La Voce Registrata",
+      quote: "Un registratore sotto un materasso.",
+      cost_label: "FRAM.",  cost_value: "2", category: "SCOPERTA" }
+
+  - { number: 21, act: 2, title: "La Fotografia",
+      quote: "Una foto. Siete tutti lì. E una persona in più.",
+      cost_label: "FRAM.",  cost_value: "2", category: "RELAZIONALE" }
+
+  - { number: 22, act: 2, title: "Il Quinto Letto",
+      quote: "Rifatto con troppa cura.",
+      cost_label: "FRAM.",  cost_value: "2", category: "AMBIENTALE" }
+
+  - { number: 23, act: 2, title: "Cicatrici Gemelle",
+      quote: "Lo stesso segno. Nello stesso punto.",
+      cost_label: "FRAM.",  cost_value: "1", category: "RELAZIONALE" }
+
+  - { number: 24, act: 2, title: "L'Interfono",
+      quote: "Gracchia. Una voce meccanica dice un numero.",
+      cost_label: "FRAM.",  cost_value: "1", category: "SCOPERTA" }
+
+  # ═══ ATTO III - RIVELAZIONI ═════════════════════════════════════════════════
+  - { number: 25, act: 3, title: "La Confessione",
+      quote: "Qualcuno sa. Da sempre.",
+      cost_label: "LIBERA", cost_value: "0", category: "NARRATIVA",
+      instruction: "Un personaggio rivela ciò che sa da sempre. Nessun tiro." }
+
+  - { number: 26, act: 3, title: "Il Video della Procedura",
+      quote: "Un tablet. Non vuoi premere Play.",
+      cost_label: "FRAM.",  cost_value: "3", category: "RIVELAZIONE",
+      instruction: "Successo Pieno: scegli cosa mostrare. Collasso del Ricordo: vedi qualcosa di irreversibile." }
+
+  - { number: 27, act: 3, title: "La Stanza Sotto",
+      quote: "La porta nel pavimento. Scale nel buio.",
+      cost_label: "FRAM.",  cost_value: "3", category: "AMBIENTALE",
+      instruction: "Chi esplora non può Forzare il Ricordo su questo tiro." }
+
+  - { number: 28, act: 3, title: "Il Partecipante Mancante",
+      quote: "Lo trovate. Non dove vi aspettavate.",
+      cost_label: "FRAM.",  cost_value: "3", category: "RIVELAZIONE",
+      instruction: "Il giocatore alla destra decide dove e come viene trovato." }
+
+  - { number: 29, act: 3, title: "Il Diario del Dottore",
+      quote: "In un camice. Ultime pagine scritte di fretta.",
+      cost_label: "FRAM.",  cost_value: "2", category: "DOCUMENTO" }
+
+  - { number: 30, act: 3, title: "La Porta Aperta",
+      quote: "La porta è aperta. Lo è sempre stata.",
+      cost_label: "FRAM.",  cost_value: "2", category: "FINALE" }
+
+  - { number: 31, act: 3, title: "La Scelta",
+      quote: "Per dimenticare.",
+      cost_label: "LIBERA", cost_value: "0", category: "EPILOGO",
+      instruction: "Ogni giocatore dichiara se il proprio personaggio sceglierebbe di dimenticare di nuovo." }
+
+  - { number: 32, act: 3, title: "Echi dalla Stanza 0",
+      quote: "Il ronzio si ferma. Silenzio.",
+      cost_label: "TUTTI",  cost_value: "FRAM.", category: "RIVELAZIONE",
+      instruction: "Tutti i giocatori spendono l'intero Pool. Il Custode narra la rivelazione finale." }
+
+  - { number: 33, act: 3, title: "Il Contratto Originale",
+      quote: "Cosa avete firmato davvero?",
+      cost_label: "FRAM.",  cost_value: "3", category: "DOCUMENTO" }
+
+  - { number: 34, act: 3, title: "La Testimonianza",
+      quote: "Qualcuno sa. Qualcuno parlerà.",
+      cost_label: "FRAM.",  cost_value: "2", category: "RIVELAZIONE" }
+
+  - { number: 35, act: 3, title: "Il Prezzo del Silenzio",
+      quote: "Quanto vale dimenticare?",
+      cost_label: "LIBERA", cost_value: "0", category: "EPILOGO",
+      instruction: "Ogni giocatore descrive cosa ha taciuto. Nessun tiro." }
+
+  - { number: 36, act: 3, title: "Oltre la Porta",
+      quote: "C'è ancora qualcosa da scoprire.",
+      cost_label: "FRAM.",  cost_value: "2", category: "FINALE" }
